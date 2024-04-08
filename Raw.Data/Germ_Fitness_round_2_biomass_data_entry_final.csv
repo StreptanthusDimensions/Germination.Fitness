@@ -1,0 +1,2747 @@
+﻿Pop,Cohort,Bench,Position,Envelope 1 Biomass (g),Envelope 2 Biomass (g),Envelope 3 Biomass (g),Below Ground Biomass (g) STTO-BH,Notes 
+CAAN2,blank,1,G11,,,,,
+CAAM,cohort 1,1,A03,,,,,
+CAAM,cohort 1,1,A05,0.0407,,,,
+CAAM,cohort 1,1,B12,0.0058,,,,
+CAAM,cohort 1,1,E01,0.034,,,, 
+CAAM,cohort 1,1,F04,0.0633,,,,
+CAAM,cohort 1,1,F06,0.0468,,,,
+CAAM,cohort 2,1,B02,0.0261,,,,
+CAAM,cohort 2,1,D04,0.0451,,,,
+CAAM,cohort 2,1,F08,0.0171,,,,
+CAAM,cohort 2,1,F14,0.0183,0.0023,,,
+CAAM,cohort 2,1,G03,0.0159,,,,
+CAAM,cohort 2,1,G07,0.0226,,,,
+CAAM,cohort 3,1,A11,0.0128,,,,
+CAAM,cohort 3,1,B08,0.013,,,,
+CAAM,cohort 3,1,C11,0.0064,,,,
+CAAM,cohort 3,1,D06,0.0126,,,,
+CAAM,cohort 3,1,D08,,,,,NO PLANT
+CAAM,cohort 3,1,D10,,,,,NO PLANT
+CAAM,cohort 4,1,A13,,,,,NO PLANT
+CAAM,cohort 4,1,B04,,,,,NO PLANT
+CAAM,cohort 4,1,C13,,,,,NO PLANT
+CAAM,cohort 4,1,E07,0.0104,,,,
+CAAM,cohort 4,1,E11,0.0114,,,,
+CAAM,cohort 4,1,G11,0.0047,,,,
+CAAM,cohort 5,1,A07,0.0279,,,,
+CAAM,cohort 5,1,A09,0.0259,,,,
+CAAM,cohort 5,1,C05,0.017,,,,
+CAAM,cohort 5,1,C07,0.0164,,,,
+CAAM,cohort 5,1,E09,0.0395,,,,
+CAAM,cohort 5,1,G09,0.0246,,,,
+CAAM,cohort 6,1,A01,0.0088,,,,
+CAAM,cohort 6,1,B10,0.0247,,,,
+CAAM,cohort 6,1,B14,0.0106,,,,
+CAAM,cohort 6,1,D02,,,,,NO PLANT
+CAAM,cohort 6,1,E05,,,,,NO PLANT
+CAAM,cohort 6,1,G05,,,,,NO PLANT
+CAAM,cohort 7,1,B06,0.0026,,,,
+CAAM,cohort 7,1,C03,,,,,
+CAAM,cohort 7,1,C09,,,,,
+CAAM,cohort 7,1,E03,,,,,NO PLANT
+CAAM,cohort 7,1,E13,,,,,NO PLANT
+CAAM,cohort 7,1,G01,,,,,NO PLANT
+CAAM,cohort 8,1,C01,0.0051,,,,
+CAAM,cohort 8,1,D14,,,,,NO PLANT
+CAAM,cohort 8,1,F02,,,,,NO PLANT
+CAAM,cohort 8,1,F10,,,,,NO PLANT
+CAAM,cohort 8,1,F12,,,,,NO PLANT
+CAAM,cohort 8,1,G13,,,,,NO PLANT
+STIN,blank,1,D12,,,,,
+CAAM,cohort 1,2,A03,0.0286,,,,
+CAAM,cohort 1,2,A07,0.037,,,,
+CAAM,cohort 1,2,B02,0.039,,,, 
+CAAM,cohort 1,2,C07,0.0774,,,,
+CAAM,cohort 1,2,C11,0.0359,,,,
+CAAM,cohort 1,2,D08,0.034,,,,
+CAAM,cohort 2,2,A13,0.0076,,,,
+CAAM,cohort 2,2,B04,0.017,,,,
+CAAM,cohort 2,2,C03,0.0416,,,,
+CAAM,cohort 2,2,D14,0.0129,,,,
+CAAM,cohort 2,2,F10,,,,,
+CAAM,cohort 2,2,G07,0.0112,,,,
+CAAM,cohort 3,2,A01,0.0011,,,,
+CAAM,cohort 3,2,A05,0.0073,,,,
+CAAM,cohort 3,2,B10,0.0069,,,,
+CAAM,cohort 3,2,D04,0.0081,,,,
+CAAM,cohort 3,2,G01,,,,,NO PLANT
+CAAM,cohort 3,2,G09,,,,,NO PLANT
+CAAM,cohort 4,2,B06,0.0075,,,,
+CAAM,cohort 4,2,C01,0.0135,,,,
+CAAM,cohort 4,2,D06,0.0105,,,,
+CAAM,cohort 4,2,E05,0.02,,,,
+CAAM,cohort 4,2,E09,,,,,NO PLANT
+CAAM,cohort 4,2,G13,,,,,NO PLANT
+CAAM,cohort 5,2,C09,0.036,,,,
+CAAM,cohort 5,2,D02,0.0367,,,,
+CAAM,cohort 5,2,D10,0.0306,,,,
+CAAM,cohort 5,2,F12,0.0178,,,,
+CAAM,cohort 5,2,G03,0.0101,,,,
+CAAM,cohort 5,2,G05,0.0138,,,,
+CAAM,cohort 6,2,A11,0.133,,,,
+CAAM,cohort 6,2,B14,0.015,,,,
+CAAM,cohort 6,2,E03,0.0074,,,,
+CAAM,cohort 6,2,E11,,,,,NO PLANT
+CAAM,cohort 6,2,F04,0.0235,,,,
+CAAM,cohort 6,2,G11,,,,,NO PLANT
+CAAM,cohort 7,2,A09,0.0042,,,,
+CAAM,cohort 7,2,B08,0.0045,,,,
+CAAM,cohort 7,2,C13,,,,,NO PLANT
+CAAM,cohort 7,2,E13,,,,,NO PLANT
+CAAM,cohort 7,2,F06,,,,,NO PLANT
+CAAM,cohort 7,2,F08,,,,,NO PLANT
+CAAM,cohort 8,2,B12,0.0043,,,,
+CAAM,cohort 8,2,C05,,,,,NO PLANT
+CAAM,cohort 8,2,D12,,,,,NO PLANT
+CAAM,cohort 8,2,E01,,,,,NO PLANT
+CAAM,cohort 8,2,F02,,,,,NO PLANT
+CAAM,cohort 8,2,F14,,,,,NO PLANT
+STPO,blank,1,B06,,,,,
+CAAM,cohort 1,3,A01,0.0168,,,,
+CAAM,cohort 1,3,A05,0.0263,,,,
+CAAM,cohort 1,3,C05,0.0188,,,,
+CAAM,cohort 1,3,D02,0.0663,,,,
+CAAM,cohort 1,3,F10,,,,,NO PLANT
+CAAM,cohort 1,3,G01,0.0549,,,,
+CAAM,cohort 2,3,D10,0.0511,,,,
+CAAM,cohort 2,3,D12,0.024,,,,
+CAAM,cohort 2,3,D14,0.0118,,,,
+CAAM,cohort 2,3,E11,0.0223,,,,
+CAAM,cohort 2,3,F04,0.0308,,,,
+CAAM,cohort 2,3,F14,0.0305,,,,
+CAAM,cohort 3,3,A11,0.0081,,,,
+CAAM,cohort 3,3,B04,0.0126,,,,
+CAAM,cohort 3,3,B08,0.0095,,,,
+CAAM,cohort 3,3,C01,0.0054,,,,
+CAAM,cohort 3,3,D06,,,,,NO PLANT
+CAAM,cohort 3,3,G09,,,,,NO PLANT
+CAAM,cohort 4,3,A03,0.0129,,,,
+CAAM,cohort 4,3,A13,,,,,NO PLANT
+CAAM,cohort 4,3,B06,0.0212,,,,
+CAAM,cohort 4,3,B14,0.0202,,,,
+CAAM,cohort 4,3,C09,0.0204,,,,
+CAAM,cohort 4,3,G03,,,,,NO PLANT
+CAAM,cohort 5,3,B02,0.012,,,,
+CAAM,cohort 5,3,C07,0.0272,,,,
+CAAM,cohort 5,3,E03,0.0101,,,,
+CAAM,cohort 5,3,E09,0.042,,,,
+CAAM,cohort 5,3,E13,0.0344,,,,
+CAAM,cohort 5,3,F06,0.0272,,,,
+CAAM,cohort 6,3,C03,0.0168,,,,
+CAAM,cohort 6,3,C13,0.0111,,,,
+CAAM,cohort 6,3,F08,0.0159,,,,
+CAAM,cohort 6,3,F12,0.0348,,,,
+CAAM,cohort 6,3,G05,,,,,NO PLANT
+CAAM,cohort 6,3,G07,,,,,NO PLANT
+CAAM,cohort 7,3,A07,0.0053,,,,
+CAAM,cohort 7,3,B10,0.0157,,,,
+CAAM,cohort 7,3,B12,,,,,NO PLANT
+CAAM,cohort 7,3,C11,,,,,NO PLANT
+CAAM,cohort 7,3,D08,,,,,NO PLANT
+CAAM,cohort 7,3,E07,,,,,NO PLANT
+CAAM,cohort 8,3,A09,0.0056,,,,
+CAAM,cohort 8,3,D04,0.0103,,,,
+CAAM,cohort 8,3,E05,,,,,NO PLANT
+CAAM,cohort 8,3,F02,,,,,NO PLANT
+CAAM,cohort 8,3,G11,,,,,NO PLANT
+CAAM,cohort 8,3,G13,,,,,NO PLANT
+STGL1,blank,1,G07,,,,,
+CAAM,cohort 1,4,A07,0.0508,,,,
+CAAM,cohort 1,4,B02,0.0334,,,,
+CAAM,cohort 1,4,D06,0.0344,,,,
+CAAM,cohort 1,4,E13,0.0115,,,,
+CAAM,cohort 1,4,G03,0.0569,,,,
+CAAM,cohort 1,4,G05,0.0092,,,,
+CAAM,cohort 2,4,A03,0.0358,,,,
+CAAM,cohort 2,4,B12,0.023,,,,
+CAAM,cohort 2,4,C01,0.0183,,,,
+CAAM,cohort 2,4,D14,0.0212,,,,
+CAAM,cohort 2,4,F04,0.0108,,,,
+CAAM,cohort 2,4,F14,0.0156,,,,
+CAAM,cohort 3,4,A09,0.0025,,,,
+CAAM,cohort 3,4,B10,0.0107,,,,
+CAAM,cohort 3,4,D04,0.0108,,,,
+CAAM,cohort 3,4,E11,0.0076,,,,
+CAAM,cohort 3,4,F08,,,,,NO PLANT
+CAAM,cohort 3,4,G13,,,,,NO PLANT
+CAAM,cohort 4,4,B06,0.0257,,,,
+CAAM,cohort 4,4,C09,0.0198,,,,
+CAAM,cohort 4,4,C11,,,,,NO PLANT
+CAAM,cohort 4,4,D02,,,,,NO PLANT
+CAAM,cohort 4,4,E01,0.0401,,,,
+CAAM,cohort 4,4,F10,0.012,,,,
+CAAM,cohort 5,4,A01,0.0471,,,,
+CAAM,cohort 5,4,B14,0.0461,,,,
+CAAM,cohort 5,4,C03,0.0105,,,,
+CAAM,cohort 5,4,D12,0.0083,,,,
+CAAM,cohort 5,4,E09,0.0355,,,,
+CAAM,cohort 5,4,F12,,,,,NO PLANT
+CAAM,cohort 6,4,B08,0.0104,,,,
+CAAM,cohort 6,4,C05,0.0116,,,,
+CAAM,cohort 6,4,C07,0.0119,,,,
+CAAM,cohort 6,4,D08,0.0125,,,,
+CAAM,cohort 6,4,D10,,,,,NO PLANT
+CAAM,cohort 6,4,G07,,,,,NO PLANT
+CAAM,cohort 7,4,A11,,,,,
+CAAM,cohort 7,4,B04,0.0041,,,,
+CAAM,cohort 7,4,C13,,,,,NO PLANT
+CAAM,cohort 7,4,F02,,,,,NO PLANT
+CAAM,cohort 7,4,F06,,,,,NO PLANT
+CAAM,cohort 7,4,G01,,,,,NO PLANT
+CAAM,cohort 8,4,A05,0.0072,,,,
+CAAM,cohort 8,4,E03,0.0066,,,,
+CAAM,cohort 8,4,E05,,,,,NO PLANT
+CAAM,cohort 8,4,E07,,,,,NO PLANT
+CAAM,cohort 8,4,G09,,,,,NO PLANT
+CAAM,cohort 8,4,G11,,,,,NO PLANT
+STDR2,blank,1,C07,,,,,
+CAAN1,cohort 1,1,B12,0.0036,,,,
+CAAN1,cohort 1,1,C05,0.0078,,,,
+CAAN1,cohort 1,1,F02,0.0242,,,,
+CAAN1,cohort 1,1,F10,0.0183,,,,
+CAAN1,cohort 1,1,F12,0.0067,,,,
+CAAN1,cohort 1,1,G03,0.0092,,,,
+CAAN1,cohort 2,1,A09,0.0176,,,,
+CAAN1,cohort 2,1,B10,,,,,NO PLANT
+CAAN1,cohort 2,1,C01,,,,,NO PLANT
+CAAN1,cohort 2,1,C09,,,,,NO PLANT
+CAAN1,cohort 2,1,C11,0.0037,,,,
+CAAN1,cohort 2,1,D06,,,,,NO PLANT
+CAAN1,cohort 3,1,A05,0.0121,,,,
+CAAN1,cohort 3,1,B04,0.0037,,,,
+CAAN1,cohort 3,1,C07,0.0132,,,,
+CAAN1,cohort 3,1,E07,0.0041,,,,
+CAAN1,cohort 3,1,G01,,,,,NO PLANT
+CAAN1,cohort 3,1,G07,,,,,NO PLANT
+CAAN1,cohort 4,1,A07,0.0252,,,,
+CAAN1,cohort 4,1,A13,0.013,,,,
+CAAN1,cohort 4,1,D02,0.0132,,,,
+CAAN1,cohort 4,1,E13,0.0089,,,,
+CAAN1,cohort 4,1,G09,0.0065,,,,
+CAAN1,cohort 4,1,G13,0.0051,,,,
+CAAN1,cohort 5,1,B06,0.0037,,,,
+CAAN1,cohort 5,1,C03,0.004,,,,
+CAAN1,cohort 5,1,C13,0.0093,,,,
+CAAN1,cohort 5,1,D04,0.0083,,,,
+CAAN1,cohort 5,1,D12,0.0055,,,,
+CAAN1,cohort 5,1,F06,,,,,NO PLANT
+CAAN1,cohort 6,1,A01,0.0023,,,,
+CAAN1,cohort 6,1,B02,0.0034,,,,
+CAAN1,cohort 6,1,D08,0.0056,,,,
+CAAN1,cohort 6,1,E01,0.0084,,,,
+CAAN1,cohort 6,1,E05,,,,,NO PLANT
+CAAN1,cohort 6,1,E11,,,,,NO PLANT
+CAAN1,cohort 7,1,B08,,,,,
+CAAN1,cohort 7,1,B14,,,,,
+CAAN1,cohort 7,1,D10,,,,,NO PLANT
+CAAN1,cohort 7,1,F04,,,,,NO PLANT
+CAAN1,cohort 7,1,F14,,,,,NO PLANT
+CAAN1,cohort 7,1,G05,,,,,NO PLANT
+CAAN1,cohort 8,1,A03,,,,,NO PLANT
+CAAN1,cohort 8,1,A11,,,,,NO PLANT
+CAAN1,cohort 8,1,E03,,,,,NO PLANT
+CAAN1,cohort 8,1,E09,,,,,NO PLANT
+CAAN1,cohort 8,1,F08,,,,,NO PLANT
+CAAN1,cohort 8,1,G11,,,,,NO PLANT
+STTO_TM2,blank,1,E07,,,,,
+CAAN1,cohort 1,2,A01,0.0258,,,,
+CAAN1,cohort 1,2,C01,0.0051,,,,
+CAAN1,cohort 1,2,C09,0.0031,,,,
+CAAN1,cohort 1,2,D02,0.003,,,,
+CAAN1,cohort 1,2,E09,0.0479,,,,
+CAAN1,cohort 1,2,G09,0.0262,,,,
+CAAN1,cohort 2,2,C05,0.0047,,,,
+CAAN1,cohort 2,2,C07,,,,,NO PLANT
+CAAN1,cohort 2,2,D06,,,,,NO PLANT
+CAAN1,cohort 2,2,D10,,,,,NO PLANT
+CAAN1,cohort 2,2,E03,0.0065,,,,
+CAAN1,cohort 2,2,F06,0.0032,,,,
+CAAN1,cohort 3,2,B02,0.0184,,,,
+CAAN1,cohort 3,2,E13,0.0044,,,,
+CAAN1,cohort 3,2,F02,0.0029,,,,
+CAAN1,cohort 3,2,F10,0.011,,,,
+CAAN1,cohort 3,2,G03,,,,,NO PLANT
+CAAN1,cohort 3,2,G07,,,,,NO PLANT
+CAAN1,cohort 4,2,A03,0.0141,,,,
+CAAN1,cohort 4,2,A11,0.019,,,,
+CAAN1,cohort 4,2,B06,0.0173,,,,
+CAAN1,cohort 4,2,B08,0.0115,,,,
+CAAN1,cohort 4,2,D08,0.0068,,,,
+CAAN1,cohort 4,2,G13,0.0144,,,,
+CAAN1,cohort 5,2,B12,,,,,
+CAAN1,cohort 5,2,B14,0.0034,,,,
+CAAN1,cohort 5,2,C11,0.0172,0.0047,,,
+CAAN1,cohort 5,2,D14,0.0168,,,,
+CAAN1,cohort 5,2,E11,,,,,NO PLANT
+CAAN1,cohort 5,2,F08,,,,,NO PLANT
+CAAN1,cohort 6,2,A05,0.0024,,,,
+CAAN1,cohort 6,2,A07,0.0037,,,,
+CAAN1,cohort 6,2,C03,,,,,
+CAAN1,cohort 6,2,D12,0.0046,,,,
+CAAN1,cohort 6,2,E05,,,,,NO PLANT
+CAAN1,cohort 6,2,G05,,,,,NO PLANT
+CAAN1,cohort 7,2,A09,,,,,
+CAAN1,cohort 7,2,A13,,,,,
+CAAN1,cohort 7,2,B10,,,,,NO PLANT
+CAAN1,cohort 7,2,D04,,,,,NO PLANT
+CAAN1,cohort 7,2,E01,,,,,NO PLANT
+CAAN1,cohort 7,2,F04,,,,,NO PLANT
+CAAN1,cohort 8,2,B04,,,,,NO PLANT
+CAAN1,cohort 8,2,C13,,,,,NO PLANT
+CAAN1,cohort 8,2,E07,,,,,NO PLANT
+CAAN1,cohort 8,2,F12,,,,,NO PLANT
+CAAN1,cohort 8,2,F14,,,,,NO PLANT
+CAAN1,cohort 8,2,G01,,,,,NO PLANT
+CACO1,blank,1,B14,,,,,
+CAAN1,cohort 1,3,D04,0.0051,0.0044,,,
+CAAN1,cohort 1,3,E01,0.0082,,,,
+CAAN1,cohort 1,3,E05,0.0322,,,,
+CAAN1,cohort 1,3,E09,0.0161,,,,
+CAAN1,cohort 1,3,F04,0.0078,0.0107,,,
+CAAN1,cohort 1,3,G03,0.0125,,,,
+CAAN1,cohort 2,3,A11,0.0007,,,,
+CAAN1,cohort 2,3,D02,,,,,NO PLANT
+CAAN1,cohort 2,3,D08,,,,,NO PLANT
+CAAN1,cohort 2,3,D14,,,,,NO PLANT
+CAAN1,cohort 2,3,F06,0.0076,,,,
+CAAN1,cohort 2,3,G13,0.0066,,,,
+CAAN1,cohort 3,3,B04,,,,,NO PLANT
+CAAN1,cohort 3,3,C09,0.0022,,,,
+CAAN1,cohort 3,3,D10,0.0173,,,,
+CAAN1,cohort 3,3,E03,0.0127,,,,
+CAAN1,cohort 3,3,G05,0.0103,,,,
+CAAN1,cohort 3,3,G09,,,,,NO PLANT
+CAAN1,cohort 4,3,B02,0.0116,,,,
+CAAN1,cohort 4,3,B12,0.016,,,,
+CAAN1,cohort 4,3,D12,0.005,0.0355,,,
+CAAN1,cohort 4,3,E07,0.0141,,,,
+CAAN1,cohort 4,3,F08,0.0158,,,,
+CAAN1,cohort 4,3,F10,0.0157,,,,
+CAAN1,cohort 5,3,A13,0.0121,,,,
+CAAN1,cohort 5,3,B06,0.0041,,,,
+CAAN1,cohort 5,3,D06,0.0071,,,,
+CAAN1,cohort 5,3,F02,0.0084,,,,
+CAAN1,cohort 5,3,F12,,,,,NO PLANT
+CAAN1,cohort 5,3,F14,,,,,NO PLANT
+CAAN1,cohort 6,3,A03,0.0056,,,,
+CAAN1,cohort 6,3,A07,0.0114,,,,
+CAAN1,cohort 6,3,C07,,,,,
+CAAN1,cohort 6,3,C11,0.0074,,,,
+CAAN1,cohort 6,3,G07,,,,,NO PLANT
+CAAN1,cohort 6,3,G11,,,,,NO PLANT
+CAAN1,cohort 7,3,A01,,,,,
+CAAN1,cohort 7,3,B08,,,,,
+CAAN1,cohort 7,3,B10,,,,,NO PLANT
+CAAN1,cohort 7,3,C05,,,,,NO PLANT
+CAAN1,cohort 7,3,C13,,,,,NO PLANT
+CAAN1,cohort 7,3,G01,,,,,NO PLANT
+CAAN1,cohort 8,3,A05,0.0086,,,,
+CAAN1,cohort 8,3,A09,,,,,NO PLANT
+CAAN1,cohort 8,3,B14,,,,,NO PLANT
+CAAN1,cohort 8,3,C01,,,,,NO PLANT
+CAAN1,cohort 8,3,E11,,,,,NO PLANT
+CAAN1,cohort 8,3,E13,,,,,NO PLANT
+STBR3,blank,1,E07,,,,,
+CAAN1,cohort 1,4,A09,0.0204,,,,
+CAAN1,cohort 1,4,A11,0.0356,,,,
+CAAN1,cohort 1,4,B14,0.0057,,,,
+CAAN1,cohort 1,4,C07,0.0032,,,, 
+CAAN1,cohort 1,4,D10,0.0155,,,,
+CAAN1,cohort 1,4,E13,0.0046,,,,
+CAAN1,cohort 2,4,A13,,,,,NO PLANT
+CAAN1,cohort 2,4,B06,,,,,NO PLANT
+CAAN1,cohort 2,4,D02,0.009,,,,
+CAAN1,cohort 2,4,E07,0.0058,,,,
+CAAN1,cohort 2,4,E09,0.0026,,,,
+CAAN1,cohort 2,4,G03,,,,,NO PLANT
+CAAN1,cohort 3,4,C03,0.0092,,,,
+CAAN1,cohort 3,4,C05,0.0043,,,,
+CAAN1,cohort 3,4,D06,,,,,
+CAAN1,cohort 3,4,D08,0.0016,,,,
+CAAN1,cohort 3,4,E11,,,,,NO PLANT
+CAAN1,cohort 3,4,G09,,,,,NO PLANT
+CAAN1,cohort 4,4,A01,0.0175,,,,
+CAAN1,cohort 4,4,A05,0.0303,,,,
+CAAN1,cohort 4,4,B10,0.0128,,,,
+CAAN1,cohort 4,4,C11,0.0126,,,,
+CAAN1,cohort 4,4,D12,0.0223,,,,
+CAAN1,cohort 4,4,F04,0.0133,,,,
+CAAN1,cohort 5,4,A03,0.0091,,,,
+CAAN1,cohort 5,4,B12,0.0056,,,,
+CAAN1,cohort 5,4,C09,0.0032,,,,
+CAAN1,cohort 5,4,E03,0.005,,,,
+CAAN1,cohort 5,4,E05,,,,,NO PLANT
+CAAN1,cohort 5,4,F06,,,,,NO PLANT
+CAAN1,cohort 6,4,A07,0.0078,,,,
+CAAN1,cohort 6,4,B02,0.0141,,,,
+CAAN1,cohort 6,4,C01,0.0134,,,,
+CAAN1,cohort 6,4,D04,0.0058,,,,
+CAAN1,cohort 6,4,E01,0.0022,,,,
+CAAN1,cohort 6,4,G01,,,,,NO PLANT
+CAAN1,cohort 7,4,C13,0.0033,,,,
+CAAN1,cohort 7,4,D14,,,,,NO PLANT
+CAAN1,cohort 7,4,G05,,,,,NO PLANT
+CAAN1,cohort 7,4,G07,,,,,NO PLANT
+CAAN1,cohort 7,4,G11,,,,,NO PLANT
+CAAN1,cohort 7,4,G13,,,,,NO PLANT
+CAAN1,cohort 8,4,B04,0.0053,,,,
+CAAN1,cohort 8,4,F02,,,,,NO PLANT
+CAAN1,cohort 8,4,F08,,,,,NO PLANT
+CAAN1,cohort 8,4,F10,,,,,NO PLANT
+CAAN1,cohort 8,4,F12,,,,,NO PLANT
+CAAN1,cohort 8,4,F14,,,,,NO PLANT
+STDI,blank,1,A03,,,,,
+CAAN2,cohort 1,1,B02,0.0071,,,,
+CAAN2,cohort 1,1,B04,0.0018,,,,
+CAAN2,cohort 1,1,B10,,,,,might be bench 2 F02
+CAAN2,cohort 1,1,C05,0.0228,,,,
+CAAN2,cohort 1,1,C07,0.0019,,,,
+CAAN2,cohort 1,1,E07,0.0053,,,,
+CAAN2,cohort 2,1,A09,,,,,NO PLANT
+CAAN2,cohort 2,1,B06,,,,,NO PLANT
+CAAN2,cohort 2,1,C03,,,,,NO PLANT
+CAAN2,cohort 2,1,D04,,,,,NO PLANT
+CAAN2,cohort 2,1,D12,,,,,NO PLANT
+CAAN2,cohort 2,1,G05,0.01,,,,
+CAAN2,cohort 3,1,A07,0.0085,,,,
+CAAN2,cohort 3,1,A11,0.0115,,,,
+CAAN2,cohort 3,1,B08,,,,,
+CAAN2,cohort 3,1,E05,,,,,NO PLANT
+CAAN2,cohort 3,1,E11,,,,,NO PLANT
+CAAN2,cohort 3,1,G03,,,,,NO PLANT
+CAAN2,cohort 4,1,A03,0.0198,,,,
+CAAN2,cohort 4,1,C09,0.0143,,,,
+CAAN2,cohort 4,1,C11,,,,,NO PLANT
+CAAN2,cohort 4,1,D10,0.0212,,,,
+CAAN2,cohort 4,1,E01,,,,,NO PLANT
+CAAN2,cohort 4,1,E09,,,,,NO PLANT
+CAAN2,cohort 5,1,A13,0.0085,,,,
+CAAN2,cohort 5,1,B12,0.003,,,,
+CAAN2,cohort 5,1,D14,0.0165,,,,
+CAAN2,cohort 5,1,E13,0.0258,,,,
+CAAN2,cohort 5,1,F14,0.0062,,,,
+CAAN2,cohort 5,1,G09,,,,,NO PLANT
+CAAN2,cohort 6,1,A01,0.0081,,,,
+CAAN2,cohort 6,1,B14,,,,,NO PLANT
+CAAN2,cohort 6,1,C01,,,,,NO PLANT
+CAAN2,cohort 6,1,D06,,,,,NO PLANT
+CAAN2,cohort 6,1,E03,,,,,NO PLANT
+CAAN2,cohort 6,1,F08,,,,,NO PLANT
+CAAN2,cohort 7,1,A05,,,,,
+CAAN2,cohort 7,1,D02,,,,,
+CAAN2,cohort 7,1,F02,,,,,
+CAAN2,cohort 7,1,F10,,,,,NO PLANT
+CAAN2,cohort 7,1,F12,,,,,NO PLANT
+CAAN2,cohort 7,1,G01,,,,,NO PLANT
+CAAN2,cohort 8,1,C13,,,,,No plant
+CAAN2,cohort 8,1,D08,,,,,
+CAAN2,cohort 8,1,F04,,,,,NO PLANT
+CAAN2,cohort 8,1,F06,,,,,NO PLANT
+CAAN2,cohort 8,1,G07,,,,,NO PLANT
+CAAN2,cohort 8,1,G13,,,,,NO PLANT
+STTO_BH,blank,1,E01,,,,,
+CAAN2,cohort 1,2,A05,0.0628,,,,
+CAAN2,cohort 1,2,B12,0.0038,,,,
+CAAN2,cohort 1,2,E07,0.0309,,,,
+CAAN2,cohort 1,2,F02,0.0012,,,,might be bench 1 B10
+CAAN2,cohort 1,2,F10,0.0113,,,,
+CAAN2,cohort 1,2,G13,0.0083,,,,
+CAAN2,cohort 2,2,B06,,,,,NO PLANT
+CAAN2,cohort 2,2,C03,,,,,NO PLANT
+CAAN2,cohort 2,2,C07,,,,,NO PLANT
+CAAN2,cohort 2,2,D02,,,,,NO PLANT
+CAAN2,cohort 2,2,D10,0.0052,,,,
+CAAN2,cohort 2,2,D14,,,,,NO PLANT
+CAAN2,cohort 3,2,A01,0.0046,,,,
+CAAN2,cohort 3,2,B10,,,,,
+CAAN2,cohort 3,2,D12,,,,,NO PLANT
+CAAN2,cohort 3,2,E03,,,,,NO PLANT
+CAAN2,cohort 3,2,F08,,,,,NO PLANT
+CAAN2,cohort 3,2,G07,,,,,NO PLANT
+CAAN2,cohort 4,2,A07,0.0168,,,,
+CAAN2,cohort 4,2,B14,,,,,NO PLANT
+CAAN2,cohort 4,2,E13,,,,,NO PLANT
+CAAN2,cohort 4,2,F12,,,,,NO PLANT
+CAAN2,cohort 4,2,F14,,,,,
+CAAN2,cohort 4,2,G09,0.0007,,,,
+CAAN2,cohort 5,2,A09,0.0129,,,,
+CAAN2,cohort 5,2,A11,,,,,
+CAAN2,cohort 5,2,B02,,,,,NO PLANT
+CAAN2,cohort 5,2,D04,,,,,NO PLANT
+CAAN2,cohort 5,2,E11,0.0121,,,,
+CAAN2,cohort 5,2,G05,0.0172,,,,
+CAAN2,cohort 6,2,B04,,,,,
+CAAN2,cohort 6,2,C01,,,,,NO PLANT
+CAAN2,cohort 6,2,C13,,,,,NO PLANT
+CAAN2,cohort 6,2,E05,,,,,NO PLANT
+CAAN2,cohort 6,2,E09,,,,,NO PLANT
+CAAN2,cohort 6,2,F04,,,,,NO PLANT
+CAAN2,cohort 7,2,A03,0.0013,,,,
+CAAN2,cohort 7,2,A13,,,,,
+CAAN2,cohort 7,2,B08,,,,,NO PLANT
+CAAN2,cohort 7,2,C05,,,,,NO PLANT
+CAAN2,cohort 7,2,C11,,,,,NO PLANT
+CAAN2,cohort 7,2,D08,,,,,NO PLANT
+CAAN2,cohort 8,2,C09,,,,,NO PLANT
+CAAN2,cohort 8,2,D06,,,,,NO PLANT
+CAAN2,cohort 8,2,F06,,,,,NO PLANT
+CAAN2,cohort 8,2,G01,,,,,NO PLANT
+CAAN2,cohort 8,2,G03,,,,,
+CAAN2,cohort 8,2,G11,,,,,NO PLANT
+CAIN3,blank,1,F06,,,,,
+CAAN2,cohort 1,3,B04,0.022,,,,
+CAAN2,cohort 1,3,D04,0.0097,,,,
+CAAN2,cohort 1,3,F08,0.0251,,,,
+CAAN2,cohort 1,3,G01,0.044,,,,
+CAAN2,cohort 1,3,G07,,,,,
+CAAN2,cohort 1,3,G09,0.0237,,,,NO PLANT
+CAAN2,cohort 2,3,B12,,,,,NO PLANT
+CAAN2,cohort 2,3,C07,,,,,NO PLANT
+CAAN2,cohort 2,3,F10,,,,,NO PLANT
+CAAN2,cohort 2,3,F12,,,,,NO PLANT
+CAAN2,cohort 2,3,G03,,,,,NO PLANT
+CAAN2,cohort 2,3,G05,,,,,NO PLANT
+CAAN2,cohort 3,3,A01,0.0047,,,,
+CAAN2,cohort 3,3,A03,0.0064,,,,
+CAAN2,cohort 3,3,B10,,,,,NO PLANT
+CAAN2,cohort 3,3,E07,,,,,NO PLANT
+CAAN2,cohort 3,3,E11,,,,,NO PLANT
+CAAN2,cohort 3,3,F06,,,,,NO PLANT
+CAAN2,cohort 4,3,B08,0.0043,,,,
+CAAN2,cohort 4,3,B14,0.0074,,,,
+CAAN2,cohort 4,3,C13,0.0158,,,,
+CAAN2,cohort 4,3,D10,0.01,,,,
+CAAN2,cohort 4,3,E05,,,,,NO PLANT
+CAAN2,cohort 4,3,E13,,,,,NO PLANT
+CAAN2,cohort 5,3,A09,0.0071,,,,
+CAAN2,cohort 5,3,A13,0.0096,,,,
+CAAN2,cohort 5,3,C01,0.016,,,,
+CAAN2,cohort 5,3,C03,,,,,NO PLANT
+CAAN2,cohort 5,3,D06,,,,,NO PLANT
+CAAN2,cohort 5,3,E03,,,,,NO PLANT
+CAAN2,cohort 6,3,A05,0.0046,,,,
+CAAN2,cohort 6,3,B06,0.0064,,,,
+CAAN2,cohort 6,3,C11,,,,,NO PLANT
+CAAN2,cohort 6,3,D08,,,,,NO PLANT
+CAAN2,cohort 6,3,F04,,,,,NO PLANT
+CAAN2,cohort 6,3,G13,,,,,NO PLANT
+CAAN2,cohort 7,3,A07,,,,,
+CAAN2,cohort 7,3,B02,,,,,
+CAAN2,cohort 7,3,C05,,,,,NO PLANT
+CAAN2,cohort 7,3,C09,,,,,NO PLANT
+CAAN2,cohort 7,3,E09,,,,,NO PLANT
+CAAN2,cohort 7,3,G11,,,,,NO PLANT
+CAAN2,cohort 8,3,A11,,,,,NO PLANT
+CAAN2,cohort 8,3,D02,,,,,NO PLANT
+CAAN2,cohort 8,3,D14,,,,,NO PLANT
+CAAN2,cohort 8,3,E01,,,,,NO PLANT
+CAAN2,cohort 8,3,F02,,,,,NO PLANT
+CAAN2,cohort 8,3,F14,,,,,NO PLANT
+CAAM,blank,1,D12,,,,,
+CAAN2,cohort 1,4,B08,0.0196,,,,
+CAAN2,cohort 1,4,C09,0.0057,,,,
+CAAN2,cohort 1,4,C11,0.0115,,,,
+CAAN2,cohort 1,4,D10,0.0191,,,,
+CAAN2,cohort 1,4,D12,0.0279,,,,
+CAAN2,cohort 1,4,G13,0.0025,,,,
+CAAN2,cohort 2,4,A11,,,,,NO PLANT
+CAAN2,cohort 2,4,B02,,,,,NO PLANT
+CAAN2,cohort 2,4,D08,,,,,NO PLANT
+CAAN2,cohort 2,4,E05,,,,,NO PLANT
+CAAN2,cohort 2,4,G07,,,,,NO PLANT
+CAAN2,cohort 2,4,G11,,,,,NO PLANT
+CAAN2,cohort 3,4,A03,0.0031,,,,
+CAAN2,cohort 3,4,B06,0.0057,,,,
+CAAN2,cohort 3,4,B10,,,,,NO PLANT
+CAAN2,cohort 3,4,C03,,,,,NO PLANT
+CAAN2,cohort 3,4,D02,,,,,NO PLANT
+CAAN2,cohort 3,4,E13,,,,,NO PLANT
+CAAN2,cohort 4,4,B04,0.0088,,,,
+CAAN2,cohort 4,4,C07,0.0099,,,,
+CAAN2,cohort 4,4,F02,0.0102,,,,
+CAAN2,cohort 4,4,F12,,,,,NO PLANT
+CAAN2,cohort 4,4,G05,0.0132,,,,
+CAAN2,cohort 4,4,G09,,,,,NO PLANT
+CAAN2,cohort 5,4,C13,0.0062,,,,
+CAAN2,cohort 5,4,D04,0.0058,,,,
+CAAN2,cohort 5,4,E09,,,,,NO PLANT
+CAAN2,cohort 5,4,F04,,,,,NO PLANT
+CAAN2,cohort 5,4,F08,,,,,NO PLANT
+CAAN2,cohort 5,4,G01,0.0265,,,,
+CAAN2,cohort 6,4,A01,0.0042,,,,
+CAAN2,cohort 6,4,A09,,,,,
+CAAN2,cohort 6,4,A13,,,,,NO PLANT
+CAAN2,cohort 6,4,B12,,,,,NO PLANT
+CAAN2,cohort 6,4,D06,,,,,NO PLANT
+CAAN2,cohort 6,4,F14,,,,,NO PLANT
+CAAN2,cohort 7,4,A05,,,,,
+CAAN2,cohort 7,4,B14,,,,,
+CAAN2,cohort 7,4,C01,,,,,NO PLANT
+CAAN2,cohort 7,4,C05,,,,,NO PLANT
+CAAN2,cohort 7,4,E11,,,,,NO PLANT
+CAAN2,cohort 7,4,F10,,,,,NO PLANT
+CAAN2,cohort 8,4,A07,0.0064,,,,
+CAAN2,cohort 8,4,D14,,,,,NO PLANT
+CAAN2,cohort 8,4,E01,,,,,NO PLANT
+CAAN2,cohort 8,4,E03,,,,,NO PLANT
+CAAN2,cohort 8,4,E07,,,,,NO PLANT
+CAAN2,cohort 8,4,G03,,,,,NO PLANT
+CAIN4,blank,1,F02,,,,,
+CACO1,cohort 1,1,A13,0.0229,,,,
+CACO1,cohort 1,1,B02,0.0201,,,,
+CACO1,cohort 1,1,D14,0.0138,,,,
+CACO1,cohort 1,1,E09,0.0421,,,,
+CACO1,cohort 1,1,G01,0.0488,,,,
+CACO1,cohort 1,1,G07,0.0796,,,,
+CACO1,cohort 2,1,B06,0.0163,,,,
+CACO1,cohort 2,1,C13,,,,,NO PLANT
+CACO1,cohort 2,1,D04,,,,,NO PLANT
+CACO1,cohort 2,1,D12,0.0283,,,,
+CACO1,cohort 2,1,E01,,,,,NO PLANT
+CACO1,cohort 2,1,G03,0.0025,,,,
+CACO1,cohort 3,1,B04,0.0072,,,,
+CACO1,cohort 3,1,C05,0.0156,,,,
+CACO1,cohort 3,1,C09,0.0058,,,,
+CACO1,cohort 3,1,D02,0.0097,,,,
+CACO1,cohort 3,1,F14,,,,,NO PLANT
+CACO1,cohort 3,1,G05,,,,,NO PLANT
+CACO1,cohort 4,1,A03,0.0301,,,,
+CACO1,cohort 4,1,A05,0.0257,,,,
+CACO1,cohort 4,1,D10,0.0392,,,,
+CACO1,cohort 4,1,F04,0.0385,,,,
+CACO1,cohort 4,1,F10,,,,,NO PLANT
+CACO1,cohort 4,1,G09,,,,,NO PLANT
+CACO1,cohort 5,1,A01,0.0233,,,,
+CACO1,cohort 5,1,A09,0.0159,,,,
+CACO1,cohort 5,1,A11,0.027,,,,
+CACO1,cohort 5,1,C03,0.0268,,,,
+CACO1,cohort 5,1,C07,0.019,,,,
+CACO1,cohort 5,1,F08,0.026,,,,
+CACO1,cohort 6,1,C01,0.0209,,,,
+CACO1,cohort 6,1,E13,0.0122,,,,
+CACO1,cohort 6,1,F02,0.0105,,,,
+CACO1,cohort 6,1,F12,0.0317,,,,
+CACO1,cohort 6,1,G11,,,,,NO PLANT
+CACO1,cohort 6,1,G13,,,,,NO PLANT
+CACO1,cohort 7,1,B08,,,,,
+CACO1,cohort 7,1,B12,0.012,,,,
+CACO1,cohort 7,1,C11,,,,,NO PLANT
+CACO1,cohort 7,1,D06,,,,,NO PLANT
+CACO1,cohort 7,1,E03,,,,,NO PLANT
+CACO1,cohort 7,1,E07,,,,,NO PLANT
+CACO1,cohort 8,1,A07,,,,,NO PLANT
+CACO1,cohort 8,1,B10,,,,,NO PLANT
+CACO1,cohort 8,1,D08,,,,,NO PLANT
+CACO1,cohort 8,1,E05,,,,,NO PLANT
+CACO1,cohort 8,1,E11,,,,,NO PLANT
+CACO1,cohort 8,1,F06,,,,,NO PLANT
+CAAN1,blank,1,D14,,,,,
+CACO1,cohort 1,2,B02,0.0294,,,,
+CACO1,cohort 1,2,B06,0.0277,,,,
+CACO1,cohort 1,2,C05,0.0468,,,,
+CACO1,cohort 1,2,E03,0.0395,,,,
+CACO1,cohort 1,2,F02,0.0253,0.0477,,,
+CACO1,cohort 1,2,F10,,,,,
+CACO1,cohort 2,2,B14,,,,,NO PLANT
+CACO1,cohort 2,2,C07,0.0372,,,,
+CACO1,cohort 2,2,D06,,,,,
+CACO1,cohort 2,2,E07,,,,,NO PLANT
+CACO1,cohort 2,2,F14,,,,,NO PLANT
+CACO1,cohort 2,2,G07,0.0189,,,,
+CACO1,cohort 3,2,A09,0.0076,,,,
+CACO1,cohort 3,2,C09,0.0072,,,,
+CACO1,cohort 3,2,D04,0.0327,,,,
+CACO1,cohort 3,2,D12,0.0209,,,,
+CACO1,cohort 3,2,E01,,,,,NO PLANT
+CACO1,cohort 3,2,G03,,,,,NO PLANT
+CACO1,cohort 4,2,B08,,,,,
+CACO1,cohort 4,2,E05,,,,,
+CACO1,cohort 4,2,E11,0.0351,,,,
+CACO1,cohort 4,2,E13,0.0317,,,,
+CACO1,cohort 4,2,F08,0.0368,,,,
+CACO1,cohort 4,2,G05,,,,,NO PLANT
+CACO1,cohort 5,2,A03,0.0234,,,,
+CACO1,cohort 5,2,A05,0.0249,,,,
+CACO1,cohort 5,2,A07,0.0291,,,,
+CACO1,cohort 5,2,B04,0.0221,,,,
+CACO1,cohort 5,2,C11,0.0354,,,,
+CACO1,cohort 5,2,G01,0.039,,,,
+CACO1,cohort 6,2,A01,0.0125,,,,
+CACO1,cohort 6,2,C01,0.0197,,,,
+CACO1,cohort 6,2,E09,0.0187,,,,
+CACO1,cohort 6,2,F12,0.036,,,,
+CACO1,cohort 6,2,G09,,,,,
+CACO1,cohort 6,2,G13,,,,,NO PLANT
+CACO1,cohort 7,2,A11,,,,,
+CACO1,cohort 7,2,B10,,,,,NO PLANT
+CACO1,cohort 7,2,B12,,,,,NO PLANT
+CACO1,cohort 7,2,D10,,,,,NO PLANT
+CACO1,cohort 7,2,D14,,,,,NO PLANT
+CACO1,cohort 7,2,F06,,,,,NO PLANT
+CACO1,cohort 8,2,A13,,,,,NO PLANT
+CACO1,cohort 8,2,C13,,,,,NO PLANT
+CACO1,cohort 8,2,D02,,,,,NO PLANT
+CACO1,cohort 8,2,D08,,,,,NO PLANT
+CACO1,cohort 8,2,F04,,,,,NO PLANT
+CACO1,cohort 8,2,G11,,,,,NO PLANT
+CACO1,blank,2,C03,,,,,
+CACO1,cohort 1,3,B02,0.0218,,,,
+CACO1,cohort 1,3,B04,0.0157,,,,
+CACO1,cohort 1,3,C09,0.0196,,,,
+CACO1,cohort 1,3,E01,0.021,,,,
+CACO1,cohort 1,3,F14,0.0481,,,,
+CACO1,cohort 1,3,G01,0.039,,,,
+CACO1,cohort 2,3,A01,,,,,
+CACO1,cohort 2,3,A05,,,,,NO PLANT
+CACO1,cohort 2,3,C05,0.0068,,,,
+CACO1,cohort 2,3,D02,0.0166,,,,
+CACO1,cohort 2,3,D10,,,,,NO PLANT
+CACO1,cohort 2,3,E13,,,,,NO PLANT
+CACO1,cohort 3,3,A07,0.0065,,,,
+CACO1,cohort 3,3,A11,0.0024,,,,
+CACO1,cohort 3,3,B14,,,,,NO PLANT
+CACO1,cohort 3,3,C03,0.0145,,,,
+CACO1,cohort 3,3,C13,,,,,NO PLANT
+CACO1,cohort 3,3,F12,,,,,NO PLANT
+CACO1,cohort 4,3,B08,0.0174,,,,
+CACO1,cohort 4,3,B10,0.015,,,,
+CACO1,cohort 4,3,E07,0.031,,,,
+CACO1,cohort 4,3,E09,0.0291,,,,
+CACO1,cohort 4,3,G03,0.0266,,,,
+CACO1,cohort 4,3,G13,,,,,NO PLANT
+CACO1,cohort 5,3,C11,0.0278,,,,
+CACO1,cohort 5,3,F02,0.0211,,,,
+CACO1,cohort 5,3,F04,0.0164,,,,
+CACO1,cohort 5,3,F08,0.0357,,,,
+CACO1,cohort 5,3,F10,0.0294,,,,
+CACO1,cohort 5,3,G11,0.0177,,,,
+CACO1,cohort 6,3,A13,0.0063,,,,
+CACO1,cohort 6,3,D04,0.0192,,,,
+CACO1,cohort 6,3,D12,0.0139,,,,
+CACO1,cohort 6,3,E05,0.0137,,,,
+CACO1,cohort 6,3,G07,0.0211,,,,
+CACO1,cohort 6,3,G09,,,,,NO PLANT
+CACO1,cohort 7,3,A09,0.0096,,,,
+CACO1,cohort 7,3,C01,,,,,NO PLANT
+CACO1,cohort 7,3,D08,,,,,NO PLANT
+CACO1,cohort 7,3,E11,,,,,NO PLANT
+CACO1,cohort 7,3,F06,,,,,NO PLANT
+CACO1,cohort 7,3,G05,,,,,NO PLANT
+CACO1,cohort 8,3,A03,0.0183,,,,
+CACO1,cohort 8,3,B06,,,,,NO PLANT
+CACO1,cohort 8,3,C07,,,,,NO PLANT
+CACO1,cohort 8,3,D06,,,,,NO PLANT
+CACO1,cohort 8,3,D14,,,,,NO PLANT
+CACO1,cohort 8,3,E03,,,,,NO PLANT
+STDR2,blank,2,F06,,,,,
+CACO1,cohort 1,4,B02,0.0303,,,,
+CACO1,cohort 1,4,C05,0.0313,,,,
+CACO1,cohort 1,4,D10,0.0296,,,,
+CACO1,cohort 1,4,E11,0.0303,,,,
+CACO1,cohort 1,4,F14,0.0147,,,,
+CACO1,cohort 1,4,G09,0.0645,,,,
+CACO1,cohort 2,4,A11,0.0029,0.005,,,
+CACO1,cohort 2,4,B08,0.0137,,,,
+CACO1,cohort 2,4,D06,,,,,NO PLANT
+CACO1,cohort 2,4,D14,,,,,NO PLANT
+CACO1,cohort 2,4,F04,,,,,NO PLANT
+CACO1,cohort 2,4,F08,0.0048,0.0224,,,
+CACO1,cohort 3,4,A05,0.0257,,,,
+CACO1,cohort 3,4,B04,0.0091,,,,
+CACO1,cohort 3,4,C11,0.0308,,,,
+CACO1,cohort 3,4,E05,,,,,NO PLANT
+CACO1,cohort 3,4,E07,,,,,NO PLANT
+CACO1,cohort 3,4,F02,,,,,NO PLANT
+CACO1,cohort 4,4,A07,0.0145,,,,
+CACO1,cohort 4,4,B14,0.0316,,,,
+CACO1,cohort 4,4,D08,0.0267,,,,
+CACO1,cohort 4,4,E03,0.0144,,,,
+CACO1,cohort 4,4,E09,,,,,NO PLANT
+CACO1,cohort 4,4,F06,,,,,NO PLANT
+CACO1,cohort 5,4,A03,0.0419,,,,
+CACO1,cohort 5,4,B06,0.05,,,,
+CACO1,cohort 5,4,B10,0.0329,,,,
+CACO1,cohort 5,4,C01,0.0228,,,,
+CACO1,cohort 5,4,C07,0.0166,,,,
+CACO1,cohort 5,4,G13,0.0339,,,,
+CACO1,cohort 6,4,A01,0.0159,,,,
+CACO1,cohort 6,4,A09,0.0169,,,,
+CACO1,cohort 6,4,C09,0.0146,,,,
+CACO1,cohort 6,4,C13,0.0118,,,,
+CACO1,cohort 6,4,D04,0.0201,,,,
+CACO1,cohort 6,4,D12,,,,,NO PLANT
+CACO1,cohort 7,4,A13,,,,,
+CACO1,cohort 7,4,F12,,,,,NO PLANT
+CACO1,cohort 7,4,G01,,,,,NO PLANT
+CACO1,cohort 7,4,G05,,,,,NO PLANT
+CACO1,cohort 7,4,G07,,,,,NO PLANT
+CACO1,cohort 7,4,G11,,,,,NO PLANT
+CACO1,cohort 8,4,C03,,,,,
+CACO1,cohort 8,4,D02,0.0298,,,,
+CACO1,cohort 8,4,E01,,,,,NO PLANT
+CACO1,cohort 8,4,E13,,,,,NO PLANT 
+CACO1,cohort 8,4,F10,,,,,NO PLANT
+CACO1,cohort 8,4,G03,,,,,NO PLANT
+CAIN3,blank,2,A09,,,,,
+CAIN3,cohort 1,1,C03,0.0028,,,,
+CAIN3,cohort 1,1,C09,,,,,NO PLANT
+CAIN3,cohort 1,1,D08,0.0384,,,,
+CAIN3,cohort 1,1,D14,0.0041,,,,
+CAIN3,cohort 1,1,F04,,,,,
+CAIN3,cohort 1,1,F12,0.006,,,,
+CAIN3,cohort 2,1,A11,,,,,NO PLANT
+CAIN3,cohort 2,1,B10,0.0162,,,,
+CAIN3,cohort 2,1,B14,,,,,
+CAIN3,cohort 2,1,C11,0.0213,,,,
+CAIN3,cohort 2,1,E05,,,,,NO PLANT
+CAIN3,cohort 2,1,E09,0.0218,,,,
+CAIN3,cohort 3,1,B12,0.0446,,,,
+CAIN3,cohort 3,1,C07,0.0247,,,,
+CAIN3,cohort 3,1,D02,,,,,
+CAIN3,cohort 3,1,F14,,,,,NO PLANT
+CAIN3,cohort 3,1,G03,,,,,NO PLANT
+CAIN3,cohort 3,1,G11,,,,,NO PLANT
+CAIN3,cohort 4,1,A03,0.0108,,,,
+CAIN3,cohort 4,1,B06,0.0107,,,,
+CAIN3,cohort 4,1,D04,0.0086,,,,
+CAIN3,cohort 4,1,D12,0.0135,,,,
+CAIN3,cohort 4,1,E07,0.0212,,,,
+CAIN3,cohort 4,1,E11,0.0101,,,,
+CAIN3,cohort 5,1,A05,0.0309,,,,
+CAIN3,cohort 5,1,C01,0.0209,,,,
+CAIN3,cohort 5,1,E03,0.0167,,,,
+CAIN3,cohort 5,1,E13,0.0147,,,,
+CAIN3,cohort 5,1,F02,,,,,NO PLANT
+CAIN3,cohort 5,1,G01,,,,,NO PLANT
+CAIN3,cohort 6,1,A07,0.014,,,,
+CAIN3,cohort 6,1,A13,0.0123,,,,
+CAIN3,cohort 6,1,B02,0.0053,,,,
+CAIN3,cohort 6,1,C05,0.0064,,,,
+CAIN3,cohort 6,1,F08,0.0086,,,,
+CAIN3,cohort 6,1,G05,,,,,NO PLANT
+CAIN3,cohort 7,1,D06,,,,,
+CAIN3,cohort 7,1,D10,,,,,
+CAIN3,cohort 7,1,E01,,,,,
+CAIN3,cohort 7,1,G07,,,,,NO PLANT
+CAIN3,cohort 7,1,G09,,,,,NO PLANT
+CAIN3,cohort 7,1,G13,,,,,NO PLANT
+CAIN3,cohort 8,1,A01,,,,,NO PLANT
+CAIN3,cohort 8,1,A09,,,,,NO PLANT
+CAIN3,cohort 8,1,B04,,,,,NO PLANT
+CAIN3,cohort 8,1,B08,,,,,NO PLANT
+CAIN3,cohort 8,1,C13,,,,,NO PLANT
+CAIN3,cohort 8,1,F10,,,,,NO PLANT
+STIN,blank,2,B10,,,,,
+CAIN3,cohort 1,2,A03,0.0398,,,,
+CAIN3,cohort 1,2,B14,0.0099,,,,
+CAIN3,cohort 1,2,D06,0.0153,,,,
+CAIN3,cohort 1,2,D10,0.0428,,,,
+CAIN3,cohort 1,2,E09,0.0058,,,,
+CAIN3,cohort 1,2,G05,0.0285,,,,
+CAIN3,cohort 2,2,A07,0.0097,,,,
+CAIN3,cohort 2,2,B08,0.0011,,,,
+CAIN3,cohort 2,2,D08,,,,,NO PLANT
+CAIN3,cohort 2,2,E01,,,,,NO PLANT
+CAIN3,cohort 2,2,F04,0.0106,,,,
+CAIN3,cohort 2,2,F10,,,,,NO PLANT
+CAIN3,cohort 3,2,A13,,,,,
+CAIN3,cohort 3,2,C11,,,,,NO PLANT
+CAIN3,cohort 3,2,F06,0.0171,,,,
+CAIN3,cohort 3,2,F08,,,,,NO PLANT
+CAIN3,cohort 3,2,G03,,,,,NO PLANT
+CAIN3,cohort 3,2,G11,,,,,NO PLANT
+CAIN3,cohort 4,2,B06,0.0094,,,,
+CAIN3,cohort 4,2,C01,0.0028,,,,
+CAIN3,cohort 4,2,C07,0.0034,,,,
+CAIN3,cohort 4,2,D02,0.016,,,,
+CAIN3,cohort 4,2,D04,0.0019,,,,
+CAIN3,cohort 4,2,E13,0.0054,,,,
+CAIN3,cohort 5,2,B02,0.0238,,,,
+CAIN3,cohort 5,2,C09,0.0182,,,,
+CAIN3,cohort 5,2,D12,0.0053,,,,
+CAIN3,cohort 5,2,D14,0.011,,,,
+CAIN3,cohort 5,2,G07,,,,,NO PLANT
+CAIN3,cohort 5,2,G09,,,,,NO PLANT
+CAIN3,cohort 6,2,A01,0.0034,,,,
+CAIN3,cohort 6,2,A05,0.0012,0.0053,,,
+CAIN3,cohort 6,2,A11,0.0022,,,,
+CAIN3,cohort 6,2,E11,0.0122,,,,
+CAIN3,cohort 6,2,F14,0.011,,,,
+CAIN3,cohort 6,2,G13,,,,,NO PLANT
+CAIN3,cohort 7,2,B12,,,,,
+CAIN3,cohort 7,2,C13,0.0042,,,,
+CAIN3,cohort 7,2,E07,0.0036,,,,
+CAIN3,cohort 7,2,F02,,,,,NO PLANT
+CAIN3,cohort 7,2,F12,,,,,NO PLANT
+CAIN3,cohort 7,2,G01,,,,,NO PLANT
+CAIN3,cohort 8,2,B04,0.0135,,,,
+CAIN3,cohort 8,2,B10,,,,,NO PLANT
+CAIN3,cohort 8,2,C03,,,,,NO PLANT
+CAIN3,cohort 8,2,C05,,,,,NO PLANT
+CAIN3,cohort 8,2,E03,,,,,NO PLANT
+CAIN3,cohort 8,2,E05,,,,,NO PLANT
+STBR3,blank,2,B04,,,,,
+CAIN3,cohort 1,3,A05,0.0284,,,,
+CAIN3,cohort 1,3,B14,0.0449,,,,
+CAIN3,cohort 1,3,C09,0.0314,,,,
+CAIN3,cohort 1,3,E13,0.0453,,,,
+CAIN3,cohort 1,3,G03,,,,,
+CAIN3,cohort 1,3,G07,0.0208,,,,
+CAIN3,cohort 2,3,E01,,,,,NO PLANT
+CAIN3,cohort 2,3,E03,,,,,NO PLANT
+CAIN3,cohort 2,3,F14,,,,,NO PLANT
+CAIN3,cohort 2,3,G01,0.0083,,,,
+CAIN3,cohort 2,3,G09,,,,,NO PLANT
+CAIN3,cohort 2,3,G13,0.0077,,,,
+CAIN3,cohort 3,3,A13,0.0185,,,,
+CAIN3,cohort 3,3,D02,0.0056,,,,
+CAIN3,cohort 3,3,E05,,,,,NO PLANT
+CAIN3,cohort 3,3,E07,,,,,NO PLANT
+CAIN3,cohort 3,3,E09,,,,,NO PLANT
+CAIN3,cohort 3,3,G05,,,,,NO PLANT
+CAIN3,cohort 4,3,A11,0.0115,,,,
+CAIN3,cohort 4,3,B06,0.0056,,,,
+CAIN3,cohort 4,3,C05,0.0087,,,,
+CAIN3,cohort 4,3,C11,0.0195,,,,
+CAIN3,cohort 4,3,D06,0.0042,,,,
+CAIN3,cohort 4,3,D14,,,,,NO PLANT
+CAIN3,cohort 5,3,A07,0.0118,,,,
+CAIN3,cohort 5,3,A09,,,,,NO PLANT
+CAIN3,cohort 5,3,B02,0.0056,,,,
+CAIN3,cohort 5,3,C07,0.0097,,,,
+CAIN3,cohort 5,3,F10,,,,,NO PLANT
+CAIN3,cohort 5,3,F12,,,,,NO PLANT
+CAIN3,cohort 6,3,C01,0.0054,,,,
+CAIN3,cohort 6,3,C03,0.0219,,,,
+CAIN3,cohort 6,3,D04,0.0296,,,,
+CAIN3,cohort 6,3,F02,0.0153,,,,
+CAIN3,cohort 6,3,F08,0.0204,,,,
+CAIN3,cohort 6,3,G11,0.0171,,,,
+CAIN3,cohort 7,3,A01,0.0056,,,,
+CAIN3,cohort 7,3,B04,0.0056,,,,
+CAIN3,cohort 7,3,B10,,,,,NO PLANT
+CAIN3,cohort 7,3,D10,,,,,NO PLANT
+CAIN3,cohort 7,3,D12,,,,,NO PLANT
+CAIN3,cohort 7,3,F06,,,,,NO PLANT
+CAIN3,cohort 8,3,A03,0.0057,,,,
+CAIN3,cohort 8,3,B12,,,,,
+CAIN3,cohort 8,3,C13,,,,,NO PLANT
+CAIN3,cohort 8,3,D08,,,,,NO PLANT
+CAIN3,cohort 8,3,E11,,,,,NO PLANT
+CAIN3,cohort 8,3,F04,,,,,NO PLANT
+CAAN2,blank,2,E01,,,,,
+CAIN3,cohort 1,4,B08,0.0341,0.0174,,,
+CAIN3,cohort 1,4,C07,0.035,,,,
+CAIN3,cohort 1,4,D06,0.0958,,,,
+CAIN3,cohort 1,4,E01,0.0436,,,,
+CAIN3,cohort 1,4,E09,0.0065,,,,
+CAIN3,cohort 1,4,G13,0.0084,,,,
+CAIN3,cohort 2,4,B02,0.0062,,,,
+CAIN3,cohort 2,4,E11,0.0067,,,,
+CAIN3,cohort 2,4,E13,,,,,NO PLANT
+CAIN3,cohort 2,4,F02,,,,,NO PLANT
+CAIN3,cohort 2,4,G01,0.0149,,,,
+CAIN3,cohort 2,4,G03,0.0085,,,,
+CAIN3,cohort 3,4,B12,0.0367,,,,
+CAIN3,cohort 3,4,C01,0.0341,,,,
+CAIN3,cohort 3,4,D08,,,,,NO PLANT
+CAIN3,cohort 3,4,D10,,,,,NO PLANT
+CAIN3,cohort 3,4,E07,,,,,NO PLANT
+CAIN3,cohort 3,4,F08,,,,,NO PLANT
+CAIN3,cohort 4,4,A01,0.0079,,,,
+CAIN3,cohort 4,4,A11,,,,,
+CAIN3,cohort 4,4,A13,0.0056,,,,
+CAIN3,cohort 4,4,C03,0.0171,,,,
+CAIN3,cohort 4,4,C09,0.0181,,,,
+CAIN3,cohort 4,4,F14,0.0049,,,,
+CAIN3,cohort 5,4,A05,0.0193,,,,
+CAIN3,cohort 5,4,B06,0.007,,,,
+CAIN3,cohort 5,4,B14,,,,,NO PLANT
+CAIN3,cohort 5,4,D04,,,,,NO PLANT
+CAIN3,cohort 5,4,D12,,,,,NO PLANT
+CAIN3,cohort 5,4,G05,,,,,NO PLANT
+CAIN3,cohort 6,4,A03,0.0088,,,,
+CAIN3,cohort 6,4,B10,0.0052,,,,
+CAIN3,cohort 6,4,C11,0.023,,,,
+CAIN3,cohort 6,4,F06,0.018,,,,
+CAIN3,cohort 6,4,G09,0.0088,,,,
+CAIN3,cohort 6,4,G11,0.0106,,,,
+CAIN3,cohort 7,4,A09,,,,,NO PLANT
+CAIN3,cohort 7,4,B04,0.0018,,,,
+CAIN3,cohort 7,4,C05,,,,,NO PLANT
+CAIN3,cohort 7,4,C13,,,,,NO PLANT
+CAIN3,cohort 7,4,D14,,,,,NO PLANT
+CAIN3,cohort 7,4,G07,,,,,NO PLANT
+CAIN3,cohort 8,4,A07,0.0059,,,,
+CAIN3,cohort 8,4,D02,,,,,NO PLANT
+CAIN3,cohort 8,4,E03,,,,,NO PLANT
+CAIN3,cohort 8,4,E05,,,,,NO PLANT
+CAIN3,cohort 8,4,F04,,,,,
+CAIN3,cohort 8,4,F12,,,,,NO PLANT
+STPO,blank,2,C01,,,,,
+CAIN4,cohort 1,1,A03,0.0353,,,,
+CAIN4,cohort 1,1,A05,0.0211,,,,
+CAIN4,cohort 1,1,B12,0.0324,,,,
+CAIN4,cohort 1,1,E05,0.0076,,,,
+CAIN4,cohort 1,1,E09,0.0222,,,,
+CAIN4,cohort 1,1,E13,0.0358,,,,
+CAIN4,cohort 2,1,A11,,,,,NO PLANT
+CAIN4,cohort 2,1,B14,,,,,NO PLANT
+CAIN4,cohort 2,1,D08,0.0226,,,,
+CAIN4,cohort 2,1,E03,0.0075,,,,
+CAIN4,cohort 2,1,F06,,,,,NO PLANT
+CAIN4,cohort 2,1,G07,0.0224,,,,
+CAIN4,cohort 3,1,A01,0.0178,,,,
+CAIN4,cohort 3,1,B02,0.01,,,,
+CAIN4,cohort 3,1,C03,0.006,0.0172,,,
+CAIN4,cohort 3,1,G05,,,,,NO PLANT
+CAIN4,cohort 3,1,G09,,,,,NO PLANT
+CAIN4,cohort 3,1,G13,,,,,NO PLANT
+CAIN4,cohort 4,1,A13,,,,,NO PLANT
+CAIN4,cohort 4,1,C07,,,,,NO PLANT
+CAIN4,cohort 4,1,D02,,,,,
+CAIN4,cohort 4,1,D12,,,,,NO PLANT
+CAIN4,cohort 4,1,E01,,,,,NO PLANT
+CAIN4,cohort 4,1,G03,,,,,NO PLANT
+CAIN4,cohort 5,1,A09,0.0287,,,,
+CAIN4,cohort 5,1,B04,,,,,NO PLANT
+CAIN4,cohort 5,1,B06,,,,,NO PLANT
+CAIN4,cohort 5,1,C05,,,,,NO PLANT
+CAIN4,cohort 5,1,C13,0.0096,,,,
+CAIN4,cohort 5,1,G01,,,,,NO PLANT
+CAIN4,cohort 6,1,A07,0.0121,,,,
+CAIN4,cohort 6,1,B10,0.0065,0.0146,,,
+CAIN4,cohort 6,1,C11,,,,,
+CAIN4,cohort 6,1,D04,,,,,
+CAIN4,cohort 6,1,E11,,,,,NO PLANT
+CAIN4,cohort 6,1,F10,,,,,NO PLANT
+CAIN4,cohort 7,1,C01,,,,,
+CAIN4,cohort 7,1,C09,,,,,
+CAIN4,cohort 7,1,D10,0.0054,,,,
+CAIN4,cohort 7,1,F08,,,,,NO PLANT
+CAIN4,cohort 7,1,F14,,,,,NO PLANT
+CAIN4,cohort 7,1,G11,,,,,NO PLANT
+CAIN4,cohort 8,1,B08,,,,,NO PLANT
+CAIN4,cohort 8,1,D06,,,,,
+CAIN4,cohort 8,1,D14,,,,,NO PLANT
+CAIN4,cohort 8,1,E07,,,,,NO PLANT
+CAIN4,cohort 8,1,F04,,,,,NO PLANT
+CAIN4,cohort 8,1,F12,,,,,NO PLANT
+CAAM,blank,2,E07,,,,,
+CAIN4,cohort 1,2,A01,,,,,
+CAIN4,cohort 1,2,B02,,,,,
+CAIN4,cohort 1,2,C05,0.037,,,,
+CAIN4,cohort 1,2,C09,0.0292,,,,
+CAIN4,cohort 1,2,E01,0.0238,,,,
+CAIN4,cohort 1,2,E07,0.0162,,,,
+CAIN4,cohort 2,2,B08,,,,,NO PLANT
+CAIN4,cohort 2,2,B10,,,,,NO PLANT
+CAIN4,cohort 2,2,D04,,,,,NO PLANT
+CAIN4,cohort 2,2,D10,,,,,NO PLANT
+CAIN4,cohort 2,2,E11,,,,,
+CAIN4,cohort 2,2,G01,0.0057,,,,
+CAIN4,cohort 3,2,A05,0.0266,,,,
+CAIN4,cohort 3,2,B04,0.0161,,,,
+CAIN4,cohort 3,2,D12,,,,,
+CAIN4,cohort 3,2,F04,,,,,NO PLANT
+CAIN4,cohort 3,2,F08,,,,,NO PLANT
+CAIN4,cohort 3,2,F14,,,,,NO PLANT
+CAIN4,cohort 4,2,A07,,,,,NO PLANT
+CAIN4,cohort 4,2,C01,,,,,NO PLANT
+CAIN4,cohort 4,2,C11,,,,,NO PLANT
+CAIN4,cohort 4,2,D14,0.0148,,,,
+CAIN4,cohort 4,2,E05,0.0066,,,,
+CAIN4,cohort 4,2,F10,0.0171,,,,
+CAIN4,cohort 5,2,A13,0.013,,,,
+CAIN4,cohort 5,2,B14,,,,,NO PLANT
+CAIN4,cohort 5,2,E13,,,,,NO PLANT
+CAIN4,cohort 5,2,G03,0.0329,,,,
+CAIN4,cohort 5,2,G07,,,,,NO PLANT
+CAIN4,cohort 5,2,G13,,,,,NO PLANT
+CAIN4,cohort 6,2,A03,0.0124,,,,
+CAIN4,cohort 6,2,A11,0.0114,,,,
+CAIN4,cohort 6,2,C03,0.0071,,,,
+CAIN4,cohort 6,2,D06,0.0193,,,,
+CAIN4,cohort 6,2,F12,,,,,NO PLANT
+CAIN4,cohort 6,2,G11,,,,,NO PLANT
+CAIN4,cohort 7,2,B06,0.0036,,,,
+CAIN4,cohort 7,2,C07,0.0017,,,,
+CAIN4,cohort 7,2,D02,,,,,NO PLANT
+CAIN4,cohort 7,2,D08,0.0012,,,,
+CAIN4,cohort 7,2,G05,,,,,NO PLANT
+CAIN4,cohort 7,2,G09,,,,,NO PLANT
+CAIN4,cohort 8,2,A09,,,,,NO PLANT
+CAIN4,cohort 8,2,B12,,,,,NO PLANT
+CAIN4,cohort 8,2,C13,,,,,NO PLANT
+CAIN4,cohort 8,2,E03,,,,,NO PLANT
+CAIN4,cohort 8,2,E09,,,,,NO PLANT
+CAIN4,cohort 8,2,F02,,,,,NO PLANT
+CAAN1,blank,2,G11,,,,,
+CAIN4,cohort 1,3,D10,0.015,,,,
+CAIN4,cohort 1,3,D12,0.035,,,,
+CAIN4,cohort 1,3,E11,0.0378,,,,
+CAIN4,cohort 1,3,F02,0.0146,,,,
+CAIN4,cohort 1,3,G01,0.0194,,,,
+CAIN4,cohort 1,3,G07,0.0119,,,,
+CAIN4,cohort 2,3,A03,,,,,NO PLANT
+CAIN4,cohort 2,3,B08,,,,,NO PLANT
+CAIN4,cohort 2,3,C09,0.0012,,,,
+CAIN4,cohort 2,3,F04,0.0185,,,,
+CAIN4,cohort 2,3,F12,,,,,
+CAIN4,cohort 2,3,G05,,,,,NO PLANT
+CAIN4,cohort 3,3,A01,0.0222,,,,
+CAIN4,cohort 3,3,B04,0.0278,,,,
+CAIN4,cohort 3,3,B14,0.0027,,,,
+CAIN4,cohort 3,3,C03,,,,,NO PLANT
+CAIN4,cohort 3,3,D08,,,,,NO PLANT
+CAIN4,cohort 3,3,F14,,,,,NO PLANT
+CAIN4,cohort 4,3,D02,,,,,NO PLANT
+CAIN4,cohort 4,3,E05,,,,,NO PLANT
+CAIN4,cohort 4,3,E07,,,,,NO PLANT
+CAIN4,cohort 4,3,F06,0.0036,,,,
+CAIN4,cohort 4,3,F08,0.0462,,,,
+CAIN4,cohort 4,3,G11,0.0095,,,,
+CAIN4,cohort 5,3,A11,0.0095,,,,
+CAIN4,cohort 5,3,B06,,,,,NO PLANT
+CAIN4,cohort 5,3,C05,,,,,NO PLANT
+CAIN4,cohort 5,3,C11,,,,,NO PLANT
+CAIN4,cohort 5,3,C13,0.0274,,,,
+CAIN4,cohort 5,3,D14,,,,,NO PLANT
+CAIN4,cohort 6,3,A07,0.019,,,,
+CAIN4,cohort 6,3,A13,0.0124,,,,
+CAIN4,cohort 6,3,C07,0.0175,,,,
+CAIN4,cohort 6,3,E03,0.0424,,,,
+CAIN4,cohort 6,3,E09,0.0239,,,,
+CAIN4,cohort 6,3,G03,,,,,NO PLANT
+CAIN4,cohort 7,3,A05,0.0127,,,,
+CAIN4,cohort 7,3,A09,0.0038,,,,
+CAIN4,cohort 7,3,B12,,,,,NO PLANT
+CAIN4,cohort 7,3,C01,,,,,NO PLANT
+CAIN4,cohort 7,3,E01,,,,,NO PLANT
+CAIN4,cohort 7,3,F10,,,,,NO PLANT
+CAIN4,cohort 8,3,B02,,,,,NO PLANT
+CAIN4,cohort 8,3,B10,,,,,NO PLANT
+CAIN4,cohort 8,3,D04,,,,,NO PLANT
+CAIN4,cohort 8,3,D06,,,,,NO PLANT
+CAIN4,cohort 8,3,E13,,,,,NO PLANT
+CAIN4,cohort 8,3,G09,,,,,NO PLANT
+STTO_TM2,blank,2,A13,,,,,
+CAIN4,cohort 1,4,A05,0.0012,,,,
+CAIN4,cohort 1,4,C07,0.0157,,,,
+CAIN4,cohort 1,4,D02,0.0135,,,,
+CAIN4,cohort 1,4,D04,0.0236,,,,
+CAIN4,cohort 1,4,E13,0.0273,,,,
+CAIN4,cohort 1,4,F04,0.0275,,,,
+CAIN4,cohort 2,4,A11,,,,,
+CAIN4,cohort 2,4,B06,0.0084,,,,
+CAIN4,cohort 2,4,B10,,,,,NO PLANT
+CAIN4,cohort 2,4,D06,,,,,NO PLANT
+CAIN4,cohort 2,4,G07,,,,,
+CAIN4,cohort 2,4,G11,,,,,
+CAIN4,cohort 3,4,A13,0.006,,,,
+CAIN4,cohort 3,4,D10,,,,,NO PLANT
+CAIN4,cohort 3,4,D12,0.0159,,,,
+CAIN4,cohort 3,4,E05,,,,,NO PLANT
+CAIN4,cohort 3,4,F02,,,,,NO PLANT
+CAIN4,cohort 3,4,G13,,,,,NO PLANT
+CAIN4,cohort 4,4,A09,,,,,NO PLANT
+CAIN4,cohort 4,4,B04,,,,,NO PLANT
+CAIN4,cohort 4,4,C01,0.0196,,,,
+CAIN4,cohort 4,4,C03,0.0088,,,,
+CAIN4,cohort 4,4,C11,,,,,
+CAIN4,cohort 4,4,G01,,,,,NO PLANT
+CAIN4,cohort 5,4,A07,0.007,,,,
+CAIN4,cohort 5,4,D14,,,,,NO PLANT
+CAIN4,cohort 5,4,E11,,,,,NO PLANT
+CAIN4,cohort 5,4,F08,,,,,NO PLANT
+CAIN4,cohort 5,4,F10,,,,,NO PLANT
+CAIN4,cohort 5,4,G05,,,,,NO PLANT
+CAIN4,cohort 6,4,A03,0.0109,,,,
+CAIN4,cohort 6,4,B08,0.0239,,,,
+CAIN4,cohort 6,4,C05,0.0161,,,,
+CAIN4,cohort 6,4,F14,0.0136,,,,
+CAIN4,cohort 6,4,G03,0.0036,,,,
+CAIN4,cohort 6,4,G09,,,,,NO PLANT
+CAIN4,cohort 7,4,A01,0.0031,,,,
+CAIN4,cohort 7,4,B02,0.0053,,,,
+CAIN4,cohort 7,4,B12,,,,,NO PLANT
+CAIN4,cohort 7,4,D08,,,,,NO PLANT
+CAIN4,cohort 7,4,E01,,,,,NO PLANT
+CAIN4,cohort 7,4,E03,,,,,NO PLANT
+CAIN4,cohort 8,4,B14,0.0017,,,,
+CAIN4,cohort 8,4,C09,,,,,NO PLANT
+CAIN4,cohort 8,4,E07,,,,,NO PLANT
+CAIN4,cohort 8,4,E09,,,,,NO PLANT
+CAIN4,cohort 8,4,F06,,,,,NO PLANT
+CAIN4,cohort 8,4,F12,,,,,NO PLANT
+STTO_BH,blank,2,E01,,,,,
+STBR3,cohort 1,1,A13,0.029,,,,
+STBR3,cohort 1,1,D10,0.0118,,,,
+STBR3,cohort 1,1,E03,0.0158,,,,
+STBR3,cohort 1,1,F10,0.0073,,,,
+STBR3,cohort 1,1,F12,0.0045,,,,
+STBR3,cohort 1,1,G07,0.0503,,,,
+STBR3,cohort 2,1,B02,0.0039,,,,
+STBR3,cohort 2,1,B06,0.0064,,,,
+STBR3,cohort 2,1,C09,,,,,
+STBR3,cohort 2,1,E11,0.0165,,,,
+STBR3,cohort 2,1,E13,0.0033,,,,
+STBR3,cohort 2,1,G01,0.0031,,,,
+STBR3,cohort 3,1,A09,0.0151,,,,
+STBR3,cohort 3,1,A11,0.0094,,,,
+STBR3,cohort 3,1,D06,0.0296,,,,
+STBR3,cohort 3,1,E09,0.0172,,,,
+STBR3,cohort 3,1,F06,0.0048,,,,
+STBR3,cohort 3,1,G09,0.0171,,,,
+STBR3,cohort 4,1,A03,0.0048,,,,
+STBR3,cohort 4,1,B10,0.0092,,,,
+STBR3,cohort 4,1,B12,0.0044,,,,
+STBR3,cohort 4,1,B14,0.0009,,,,
+STBR3,cohort 4,1,C07,,,,,
+STBR3,cohort 4,1,D14,0.0251,,,,
+STBR3,cohort 5,1,A05,0.0032,,,,
+STBR3,cohort 5,1,B08,0.0181,,,,
+STBR3,cohort 5,1,C03,0.0084,,,,
+STBR3,cohort 5,1,C13,0.0091,,,,
+STBR3,cohort 5,1,F04,0.0077,,,,
+STBR3,cohort 5,1,G05,0.0066,,,,NO PLANT
+STBR3,cohort 6,1,B04,0.0016,,,,
+STBR3,cohort 6,1,C01,0.0019,,,,
+STBR3,cohort 6,1,C11,0.0016,,,,
+STBR3,cohort 6,1,E01,,,,,
+STBR3,cohort 6,1,G03,0.0081,,,,
+STBR3,cohort 6,1,G11,0.0033,,,,
+STBR3,cohort 7,1,A01,0.0006,,,,
+STBR3,cohort 7,1,D04,,,,,
+STBR3,cohort 7,1,D08,0.0021,,,,
+STBR3,cohort 7,1,F02,,,,,NO PLANT
+STBR3,cohort 7,1,F14,,,,,NO PLANT
+STBR3,cohort 7,1,G13,,,,,NO PLANT
+STBR3,cohort 8,1,A07,0.004,,,,
+STBR3,cohort 8,1,C05,0.0071,,,,
+STBR3,cohort 8,1,D02,0.0071,,,,
+STBR3,cohort 8,1,D12,0.0116,,,,
+STBR3,cohort 8,1,E05,0.0174,,,,
+STBR3,cohort 8,1,F08,0.0045,,,,
+STGL1,blank,2,E11,,,,,
+STBR3,cohort 1,2,A13,0.0042,,,,
+STBR3,cohort 1,2,B10,0.0067,,,,
+STBR3,cohort 1,2,B12,0.0546,,,,
+STBR3,cohort 1,2,B14,0.0301,,,,
+STBR3,cohort 1,2,D02,0.0245,,,,
+STBR3,cohort 1,2,F06,0.0068,,,,
+STBR3,cohort 2,2,A09,0.0022,,,,
+STBR3,cohort 2,2,D06,0.0031,,,,
+STBR3,cohort 2,2,D14,0.0019,,,,
+STBR3,cohort 2,2,F04,0.0085,,,,
+STBR3,cohort 2,2,G07,0.0026,,,,
+STBR3,cohort 2,2,G09,0.0113,,,,
+STBR3,cohort 3,2,A01,0.0144,,,,
+STBR3,cohort 3,2,A03,,,,,
+STBR3,cohort 3,2,D04,0.019,,,,
+STBR3,cohort 3,2,E01,0.0109,,,,
+STBR3,cohort 3,2,F08,0.0019,,,,
+STBR3,cohort 3,2,F12,0.0168,,,,
+STBR3,cohort 4,2,A11,0.0036,,,,
+STBR3,cohort 4,2,C01,0.0046,,,,
+STBR3,cohort 4,2,C05,0.0032,,,,
+STBR3,cohort 4,2,E13,0.0081,,,,
+STBR3,cohort 4,2,G03,0.0073,,,,
+STBR3,cohort 4,2,G05,0.0199,,,,
+STBR3,cohort 5,2,A07,0.0034,,,,
+STBR3,cohort 5,2,B08,0.0074,,,,
+STBR3,cohort 5,2,E05,0.0089,,,,
+STBR3,cohort 5,2,E09,0.0071,,,,
+STBR3,cohort 5,2,F02,0.006,,,,
+STBR3,cohort 5,2,G11,0.0049,,,,
+STBR3,cohort 6,2,B06,0.0042,,,,
+STBR3,cohort 6,2,C03,0.0022,,,,
+STBR3,cohort 6,2,C13,0.0066,,,,
+STBR3,cohort 6,2,D08,0.002,,,,
+STBR3,cohort 6,2,D10,,,,,
+STBR3,cohort 6,2,E11,0.0048,,,,
+STBR3,cohort 7,2,C07,0.0045,,,,
+STBR3,cohort 7,2,C09,0.0032,,,,
+STBR3,cohort 7,2,D12,0.0026,,,,
+STBR3,cohort 7,2,F10,,,,,NO PLANT
+STBR3,cohort 7,2,F14,,,,,NO PLANT
+STBR3,cohort 7,2,G01,,,,,NO PLANT
+STBR3,cohort 8,2,A05,0.0022,,,,
+STBR3,cohort 8,2,B02,0.0114,,,,
+STBR3,cohort 8,2,C11,0.0126,,,,
+STBR3,cohort 8,2,E03,0.008,,,,
+STBR3,cohort 8,2,E07,0.0059,,,,
+STBR3,cohort 8,2,G13,0.0061,,,,
+STDI,blank,2,G09,,,,,
+STBR3,cohort 1,3,A03,0.018,,,,
+STBR3,cohort 1,3,B04,0.029,,,,
+STBR3,cohort 1,3,C07,0.0094,,,,
+STBR3,cohort 1,3,D10,0.0137,,,,
+STBR3,cohort 1,3,E01,0.0084,,,,
+STBR3,cohort 1,3,G01,0.015,,,,
+STBR3,cohort 2,3,A01,0.0064,,,,
+STBR3,cohort 2,3,A07,0.004,,,,
+STBR3,cohort 2,3,C03,0.0133,,,,
+STBR3,cohort 2,3,D02,,,,,NO PLANT
+STBR3,cohort 2,3,E11,0.0077,,,,
+STBR3,cohort 2,3,G05,0.001,,,,
+STBR3,cohort 3,3,C09,0.0102,,,,
+STBR3,cohort 3,3,D06,0.0041,,,,
+STBR3,cohort 3,3,D08,0.0071,,,,
+STBR3,cohort 3,3,E03,0.0074,,,,
+STBR3,cohort 3,3,F14,,,,,NO PLANT
+STBR3,cohort 3,3,G09,,,,,NO PLANT
+STBR3,cohort 4,3,A05,0.0025,,,,
+STBR3,cohort 4,3,B02,0.0095,,,,
+STBR3,cohort 4,3,C01,,,,,NO PLANT
+STBR3,cohort 4,3,E07,0.0037,,,,
+STBR3,cohort 4,3,E13,0.0145,,,,
+STBR3,cohort 4,3,G03,0.0042,,,,
+STBR3,cohort 5,3,D12,0.0047,,,,
+STBR3,cohort 5,3,F06,0.029,,,,
+STBR3,cohort 5,3,F08,0.0499,,,,
+STBR3,cohort 5,3,F12,0.0269,,,,
+STBR3,cohort 5,3,G11,0.0127,,,,
+STBR3,cohort 5,3,G13,0.0118,,,,
+STBR3,cohort 6,3,B08,0.0025,,,,
+STBR3,cohort 6,3,B14,0.0059,,,,
+STBR3,cohort 6,3,C11,0.006,,,,
+STBR3,cohort 6,3,D04,,,,,
+STBR3,cohort 6,3,F02,0.0036,,,,
+STBR3,cohort 6,3,F04,0.0064,,,,
+STBR3,cohort 7,3,A09,0.0018,,,,
+STBR3,cohort 7,3,A13,0.0042,,,,
+STBR3,cohort 7,3,B06,0.0051,,,,
+STBR3,cohort 7,3,B10,,,,,NO PLANT
+STBR3,cohort 7,3,C05,,,,,NO PLANT
+STBR3,cohort 7,3,E05,,,,,NO PLANT
+STBR3,cohort 8,3,A11,0.0122,,,,
+STBR3,cohort 8,3,C13,0.0232,,,,
+STBR3,cohort 8,3,D14,0.0077,,,,
+STBR3,cohort 8,3,E09,0.0148,,,,
+STBR3,cohort 8,3,F10,0.0066,,,,
+STBR3,cohort 8,3,G07,0.0046,,,,
+CAIN4,blank,2,F06,,,,,
+STBR3,cohort 1,4,A11,0.0453,,,,
+STBR3,cohort 1,4,B04,0.0361,,,,
+STBR3,cohort 1,4,C01,0.0371,,,,
+STBR3,cohort 1,4,C07,0.0245,,,,
+STBR3,cohort 1,4,F04,0.0268,,,,
+STBR3,cohort 1,4,G01,0.0332,,,,
+STBR3,cohort 2,4,A03,0.0023,,,,
+STBR3,cohort 2,4,B06,,,,,NO PLANT
+STBR3,cohort 2,4,B14,0.0049,,,,
+STBR3,cohort 2,4,C09,0.0113,,,,
+STBR3,cohort 2,4,D04,,,,,
+STBR3,cohort 2,4,F08,0.005,,,,
+STBR3,cohort 3,4,B02,,,,,NO PLANT
+STBR3,cohort 3,4,C03,,,,,
+STBR3,cohort 3,4,C05,0.0024,,,,
+STBR3,cohort 3,4,D08,0.012,,,,
+STBR3,cohort 3,4,F02,0.001,,,,
+STBR3,cohort 3,4,F10,,,,,NO PLANT
+STBR3,cohort 4,4,A01,,,,,NO PLANT
+STBR3,cohort 4,4,D02,0.0075,,,,
+STBR3,cohort 4,4,D12,0.0014,,,,
+STBR3,cohort 4,4,E01,0.0064,,,,
+STBR3,cohort 4,4,E03,,,,,
+STBR3,cohort 4,4,F12,0.0047,,,,
+STBR3,cohort 5,4,D14,0.0026,,,,
+STBR3,cohort 5,4,E05,0.0053,,,,
+STBR3,cohort 5,4,E07,0.0111,,,,
+STBR3,cohort 5,4,E09,0.0412,,,,
+STBR3,cohort 5,4,G03,0.0027,,,,
+STBR3,cohort 5,4,G09,0.0082,,,,
+STBR3,cohort 6,4,A09,0.0022,,,,
+STBR3,cohort 6,4,A13,0.0022,,,,
+STBR3,cohort 6,4,D06,0.0018,,,,
+STBR3,cohort 6,4,E13,0.0053,,,,
+STBR3,cohort 6,4,G11,,,,,NO PLANT
+STBR3,cohort 6,4,G13,0.0009,,,,
+STBR3,cohort 7,4,A05,,,,,
+STBR3,cohort 7,4,B10,0.0019,,,,
+STBR3,cohort 7,4,B12,,,,,
+STBR3,cohort 7,4,F06,,,,,NO PLANT
+STBR3,cohort 7,4,G05,,,,,NO PLANT
+STBR3,cohort 7,4,G07,,,,,NO PLANT
+STBR3,cohort 8,4,A07,0.0122,,,,
+STBR3,cohort 8,4,C11,0.002,,,,
+STBR3,cohort 8,4,C13,0.0073,,,,
+STBR3,cohort 8,4,D10,,,,,
+STBR3,cohort 8,4,E11,,,,,
+STBR3,cohort 8,4,F14,0.0057,,,,
+STIN,blank,3,G03,,,,,
+STDI,cohort 1,1,A13,0.0417,,,,
+STDI,cohort 1,1,B04,0.0472,,,,
+STDI,cohort 1,1,D02,0.0988,,,,NO PLANT
+STDI,cohort 1,1,D04,0.0949,,,,
+STDI,cohort 1,1,E09,0.0462,,,,
+STDI,cohort 1,1,G05,0.0506,,,,
+STDI,cohort 2,1,C03,,,,,NO PLANT
+STDI,cohort 2,1,E03,0.0068,,,,
+STDI,cohort 2,1,E11,0.0068,,,,
+STDI,cohort 2,1,F10,0.0052,,,,
+STDI,cohort 2,1,G01,,,,,NO PLANT
+STDI,cohort 2,1,G09,0.0115,,,,
+STDI,cohort 3,1,B02,0.0147,,,,
+STDI,cohort 3,1,C01,0.0756,,,,
+STDI,cohort 3,1,C05,0.0142,,,,
+STDI,cohort 3,1,D14,,,,,NO PLANT
+STDI,cohort 3,1,F12,,,,,NO PLANT
+STDI,cohort 3,1,G07,,,,,NO PLANT
+STDI,cohort 4,1,A01,0.0022,,,,
+STDI,cohort 4,1,A05,0.0112,,,,
+STDI,cohort 4,1,A11,0.0422,,,,
+STDI,cohort 4,1,B10,0.0181,,,,
+STDI,cohort 4,1,D10,0.0316,,,,
+STDI,cohort 4,1,E13,,,,,NO PLANT
+STDI,cohort 5,1,A07,0.0083,,,,
+STDI,cohort 5,1,B06,0.0174,,,,
+STDI,cohort 5,1,E07,,,,,NO PLANT
+STDI,cohort 5,1,F06,,,,,NO PLANT
+STDI,cohort 5,1,F08,,,,,NO PLANT
+STDI,cohort 5,1,G03,,,,,NO PLANT
+STDI,cohort 6,1,A09,0.006,,,,
+STDI,cohort 6,1,B12,0.0084,,,,
+STDI,cohort 6,1,C07,,,,,NO PLANT
+STDI,cohort 6,1,C09,,,,,NO PLANT
+STDI,cohort 6,1,C11,,,,,NO PLANT
+STDI,cohort 6,1,F04,,,,,NO PLANT
+STDI,cohort 7,1,B08,0.0141,,,,
+STDI,cohort 7,1,C13,,,,,NO PLANT
+STDI,cohort 7,1,E01,,,,,NO PLANT
+STDI,cohort 7,1,E05,,,,,NO PLANT
+STDI,cohort 7,1,G11,,,,,NO PLANT
+STDI,cohort 7,1,G13,,,,,NO PLANT
+STDI,cohort 8,1,B14,0.0105,,,,
+STDI,cohort 8,1,D06,,,,,NO PLANT
+STDI,cohort 8,1,D08,,,,,NO PLANT
+STDI,cohort 8,1,D12,,,,,NO PLANT
+STDI,cohort 8,1,F02,,,,,NO PLANT
+STDI,cohort 8,1,F14,,,,,NO PLANT
+CAAN2,blank,3,D12,,,,,
+STDI,cohort 1,2,A01,0.0365,,,,
+STDI,cohort 1,2,A07,0.0833,,,,
+STDI,cohort 1,2,B02,0.1008,,,,
+STDI,cohort 1,2,B10,0.0064,0.0457,,,
+STDI,cohort 1,2,C11,0.0944,,,,
+STDI,cohort 1,2,D12,0.043,,,,
+STDI,cohort 2,2,A03,0.0175,,,,
+STDI,cohort 2,2,E05,,,,,NO PLANT
+STDI,cohort 2,2,F02,,,,,NO PLANT
+STDI,cohort 2,2,F12,0.0208,,,,
+STDI,cohort 2,2,G03,0.027,,,,
+STDI,cohort 2,2,G13,0.0052,,,,
+STDI,cohort 3,2,B04,0.0252,,,,
+STDI,cohort 3,2,C03,0.005,,,,
+STDI,cohort 3,2,E03,0.0032,,,,
+STDI,cohort 3,2,E13,,,,,NO PLANT
+STDI,cohort 3,2,F04,,,,,NO PLANT
+STDI,cohort 3,2,G07,,,,,NO PLANT
+STDI,cohort 4,2,B08,0.1603,,,,
+STDI,cohort 4,2,D02,0.0462,,,,
+STDI,cohort 4,2,D08,0.0055,,,,
+STDI,cohort 4,2,D10,,,,,NO PLANT
+STDI,cohort 4,2,D14,0.0201,,,,
+STDI,cohort 4,2,G11,0.0202,,,,
+STDI,cohort 5,2,A09,0.0104,,,,
+STDI,cohort 5,2,C01,,,,,NO PLANT
+STDI,cohort 5,2,E09,,,,,NO PLANT
+STDI,cohort 5,2,F08,,,,,NO PLANT
+STDI,cohort 5,2,F10,,,,,NO PLANT
+STDI,cohort 5,2,G05,,,,,NO PLANT
+STDI,cohort 6,2,A05,0.0122,,,,
+STDI,cohort 6,2,B12,0.0061,,,,
+STDI,cohort 6,2,B14,,,,,NO PLANT
+STDI,cohort 6,2,C05,,,,,NO PLANT
+STDI,cohort 6,2,C09,,,,,NO PLANT
+STDI,cohort 6,2,C13,,,,,NO PLANT
+STDI,cohort 7,2,A11,,,,,
+STDI,cohort 7,2,B06,,,,,NO PLANT
+STDI,cohort 7,2,D04,,,,,NO PLANT
+STDI,cohort 7,2,E07,,,,,NO PLANT
+STDI,cohort 7,2,E11,,,,,NO PLANT
+STDI,cohort 7,2,F06,,,,,NO PLANT
+STDI,cohort 8,2,A13,0.0026,,,,
+STDI,cohort 8,2,C07,,,,,NO PLANT
+STDI,cohort 8,2,D06,,,,,NO PLANT
+STDI,cohort 8,2,E01,,,,,NO PLANT
+STDI,cohort 8,2,F14,,,,,NO PLANT
+STDI,cohort 8,2,G01,,,,,NO PLANT
+STBR3,blank,3,B12,,,,,
+STDI,cohort 1,3,C09,0.0478,,,,
+STDI,cohort 1,3,C13,0.0445,,,,
+STDI,cohort 1,3,D08,0.0548,,,,
+STDI,cohort 1,3,D10,0.0883,,,,
+STDI,cohort 1,3,E05,0.0884,,,,
+STDI,cohort 1,3,F10,0.1541,,,,
+STDI,cohort 2,3,B04,0.0068,,,,
+STDI,cohort 2,3,C01,,,,,NO PLANT
+STDI,cohort 2,3,E09,0.0177,,,,
+STDI,cohort 2,3,F08,,,,,NO PLANT
+STDI,cohort 2,3,G05,0.0116,,,,
+STDI,cohort 2,3,G07,,,,,NO PLANT
+STDI,cohort 3,3,A01,,,,,
+STDI,cohort 3,3,A11,0.026,,,,
+STDI,cohort 3,3,B12,0.0146,,,,
+STDI,cohort 3,3,C07,0.0038,,,,
+STDI,cohort 3,3,D02,,,,,NO PLANT
+STDI,cohort 3,3,G11,,,,,NO PLANT
+STDI,cohort 4,3,A09,0.0157,,,,
+STDI,cohort 4,3,C05,,,,,NO PLANT
+STDI,cohort 4,3,E07,0.0362,,,,
+STDI,cohort 4,3,F04,0.0339,,,,
+STDI,cohort 4,3,G03,0.009,,,,
+STDI,cohort 4,3,G09,0.0209,,,,
+STDI,cohort 5,3,A13,0.0059,,,,
+STDI,cohort 5,3,B02,,,,,NO PLANT
+STDI,cohort 5,3,B06,,,,,NO PLANT
+STDI,cohort 5,3,D12,,,,,NO PLANT
+STDI,cohort 5,3,E11,,,,,NO PLANT
+STDI,cohort 5,3,F12,,,,,NO PLANT
+STDI,cohort 6,3,A03,0.0067,,,,
+STDI,cohort 6,3,A07,0.0102,,,,
+STDI,cohort 6,3,E13,,,,,NO PLANT
+STDI,cohort 6,3,F02,,,,,NO PLANT
+STDI,cohort 6,3,F06,,,,,NO PLANT
+STDI,cohort 6,3,G13,,,,,NO PLANT
+STDI,cohort 7,3,B08,,,,,NO PLANT
+STDI,cohort 7,3,B10,,,,,NO PLANT
+STDI,cohort 7,3,D06,,,,,NO PLANT
+STDI,cohort 7,3,D14,,,,,NO PLANT
+STDI,cohort 7,3,F14,,,,,NO PLANT
+STDI,cohort 7,3,G01,,,,,NO PLANT
+STDI,cohort 8,3,A05,0.0014,,,,
+STDI,cohort 8,3,B14,0.0026,,,,
+STDI,cohort 8,3,C03,,,,,NO PLANT
+STDI,cohort 8,3,D04,,,,,NO PLANT
+STDI,cohort 8,3,E01,,,,,NO PLANT
+STDI,cohort 8,3,E03,,,,,NO PLANT
+STDR2,blank,3,A07,,,,,
+STDI,cohort 1,4,B12,0.0771,,,,
+STDI,cohort 1,4,D02,0.0652,,,,
+STDI,cohort 1,4,D04,0.0968,,,,
+STDI,cohort 1,4,D12,0.0607,,,,
+STDI,cohort 1,4,G01,0.12,,,,
+STDI,cohort 1,4,G13,0.0444,,,,
+STDI,cohort 2,4,B04,0.0219,,,,NO PLANT
+STDI,cohort 2,4,B06,,,,,NO PLANT
+STDI,cohort 2,4,C09,0.0157,,,,
+STDI,cohort 2,4,E05,0.0018,,,,NO PLANT
+STDI,cohort 2,4,F06,0.0192,,,,
+STDI,cohort 2,4,F08,,,,,NO PLANT
+STDI,cohort 3,4,A03,,,,,NO PLANT
+STDI,cohort 3,4,A05,,,,,
+STDI,cohort 3,4,E03,,,,,NO PLANT
+STDI,cohort 3,4,F10,,,,,NO PLANT
+STDI,cohort 3,4,F14,0.0405,,,,
+STDI,cohort 3,4,G09,,,,,NO PLANT
+STDI,cohort 4,4,A01,0.007,,,,
+STDI,cohort 4,4,C01,0.0548,,,,
+STDI,cohort 4,4,C13,0.0105,,,,
+STDI,cohort 4,4,E13,,,,,
+STDI,cohort 4,4,F04,0.0012,0.0418,,,
+STDI,cohort 4,4,F12,0.0209,,,,
+STDI,cohort 5,4,B02,0.0069,,,,
+STDI,cohort 5,4,B10,,,,,NO PLANT
+STDI,cohort 5,4,B14,,,,,NO PLANT
+STDI,cohort 5,4,D14,,,,,NO PLANT
+STDI,cohort 5,4,E07,,,,,NO PLANT
+STDI,cohort 5,4,E09,,,,,NO PLANT
+STDI,cohort 6,4,A07,0.0087,,,,
+STDI,cohort 6,4,C03,0.0075,,,,
+STDI,cohort 6,4,C11,,,,,NO PLANT
+STDI,cohort 6,4,E11,,,,,NO PLANT
+STDI,cohort 6,4,G03,,,,,NO PLANT
+STDI,cohort 6,4,G05,,,,,NO PLANT
+STDI,cohort 7,4,A09,,,,,NO PLANT
+STDI,cohort 7,4,C05,,,,,NO PLANT
+STDI,cohort 7,4,D06,,,,,NO PLANT
+STDI,cohort 7,4,D08,,,,,NO PLANT
+STDI,cohort 7,4,D10,,,,,NO PLANT
+STDI,cohort 7,4,G07,,,,,NO PLANT
+STDI,cohort 8,4,A11,0.0036,,,,
+STDI,cohort 8,4,A13,0.009,,,,
+STDI,cohort 8,4,C07,,,,,NO PLANT
+STDI,cohort 8,4,E01,,,,,NO PLANT
+STDI,cohort 8,4,F02,,,,,NO PLANT
+STDI,cohort 8,4,G11,,,,,NO PLANT
+CAAN1,blank,3,C03,,,,,
+STDR2,cohort 1,1,B08,0.0187,,,,
+STDR2,cohort 1,1,B10,0.0231,,,,
+STDR2,cohort 1,1,C13,0.005,,,,
+STDR2,cohort 1,1,F06,0.0092,,,,
+STDR2,cohort 1,1,F10,0.0063,,,,
+STDR2,cohort 1,1,G09,0.0072,,,,
+STDR2,cohort 2,1,A07,0.0054,,,,
+STDR2,cohort 2,1,C01,0.0081,,,,
+STDR2,cohort 2,1,D02,0.0226,,,,
+STDR2,cohort 2,1,E07,0.0085,,,,
+STDR2,cohort 2,1,F04,0.0019,,,,
+STDR2,cohort 2,1,G13,0.0105,,,,
+STDR2,cohort 3,1,A03,0.0061,,,,
+STDR2,cohort 3,1,A05,0.009,,,,
+STDR2,cohort 3,1,A09,0.0026,,,,
+STDR2,cohort 3,1,B02,,,,,
+STDR2,cohort 3,1,E05,0.0027,,,,NO PLANT
+STDR2,cohort 3,1,G11,,,,,NO PLANT
+STDR2,cohort 4,1,A13,0.0013,,,,
+STDR2,cohort 4,1,B14,0.0104,,,,
+STDR2,cohort 4,1,C03,0.0162,,,,
+STDR2,cohort 4,1,C05,0.0129,,,,
+STDR2,cohort 4,1,D08,0.011,,,,
+STDR2,cohort 4,1,E11,0.0112,,,,
+STDR2,cohort 5,1,D06,0.0098,,,,
+STDR2,cohort 5,1,D10,0.0068,,,,
+STDR2,cohort 5,1,F02,0.0055,,,,
+STDR2,cohort 5,1,F08,0.0057,,,,
+STDR2,cohort 5,1,F12,0.0051,,,,
+STDR2,cohort 5,1,G03,0.003,,,,
+STDR2,cohort 6,1,A01,0.0073,,,,
+STDR2,cohort 6,1,A11,0.0079,,,,
+STDR2,cohort 6,1,E09,0.0088,,,,
+STDR2,cohort 6,1,F14,,,,,NO PLANT
+STDR2,cohort 6,1,G01,,,,,NO PLANT
+STDR2,cohort 6,1,G05,,,,,NO PLANT
+STDR2,cohort 7,1,B06,,,,,NO PLANT
+STDR2,cohort 7,1,C09,,,,,NO PLANT
+STDR2,cohort 7,1,E01,,,,,NO PLANT
+STDR2,cohort 7,1,E03,,,,,NO PLANT
+STDR2,cohort 7,1,E13,,,,,NO PLANT
+STDR2,cohort 7,1,G07,,,,,NO PLANT
+STDR2,cohort 8,1,B04,,,,,NO PLANT
+STDR2,cohort 8,1,B12,,,,,NO PLANT
+STDR2,cohort 8,1,C11,,,,,NO PLANT
+STDR2,cohort 8,1,D04,,,,,NO PLANT
+STDR2,cohort 8,1,D12,,,,,NO PLANT
+STDR2,cohort 8,1,D14,,,,,NO PLANT
+STTO_BH,blank,3,C05,,,,,
+STDR2,cohort 1,2,A09,,,,,
+STDR2,cohort 1,2,A11,0.0254,,,,
+STDR2,cohort 1,2,B02,,,,,
+STDR2,cohort 1,2,C01,0.0031,,,,
+STDR2,cohort 1,2,C13,0.0096,,,,
+STDR2,cohort 1,2,G13,0.0256,,,,
+STDR2,cohort 2,2,C05,0.0107,,,,
+STDR2,cohort 2,2,C07,0.0082,,,,
+STDR2,cohort 2,2,D02,0.008,,,,
+STDR2,cohort 2,2,E05,0.0075,,,,
+STDR2,cohort 2,2,E09,0.0068,,,,
+STDR2,cohort 2,2,F04,0.0083,,,,
+STDR2,cohort 3,2,B06,0.0047,,,,
+STDR2,cohort 3,2,B10,0.0067,,,,
+STDR2,cohort 3,2,D08,0.0026,,,,
+STDR2,cohort 3,2,G01,0.0058,,,,
+STDR2,cohort 3,2,G09,0.0021,,,,
+STDR2,cohort 3,2,G11,,,,,NO PLANT
+STDR2,cohort 4,2,A01,0.0188,,,,
+STDR2,cohort 4,2,A03,0.0296,,,,
+STDR2,cohort 4,2,D12,0.0101,,,,
+STDR2,cohort 4,2,D14,0.01,,,,
+STDR2,cohort 4,2,F02,0.0184,,,,
+STDR2,cohort 4,2,F10,0.021,,,,
+STDR2,cohort 5,2,A07,0.0162,,,,
+STDR2,cohort 5,2,E01,,,,,
+STDR2,cohort 5,2,E07,0.0072,0.0104,,,
+STDR2,cohort 5,2,F08,0.006,,,,
+STDR2,cohort 5,2,F12,0.0091,,,,
+STDR2,cohort 5,2,G05,,,,,NO PLANT
+STDR2,cohort 6,2,A13,0.006,,,,
+STDR2,cohort 6,2,C09,0.0098,,,,
+STDR2,cohort 6,2,C11,0.0095,,,,
+STDR2,cohort 6,2,D04,,,,,NO PLANT
+STDR2,cohort 6,2,E11,,,,,NO PLANT
+STDR2,cohort 6,2,F14,,,,,NO PLANT
+STDR2,cohort 7,2,A05,,,,,NO PLANT
+STDR2,cohort 7,2,B12,,,,,NO PLANT
+STDR2,cohort 7,2,B14,,,,,NO PLANT
+STDR2,cohort 7,2,D06,,,,,NO PLANT
+STDR2,cohort 7,2,D10,,,,,NO PLANT
+STDR2,cohort 7,2,E03,,,,,NO PLANT
+STDR2,cohort 8,2,B04,,,,,NO PLANT
+STDR2,cohort 8,2,B08,,,,,NO PLANT
+STDR2,cohort 8,2,C03,,,,,NO PLANT
+STDR2,cohort 8,2,E13,,,,,NO PLANT
+STDR2,cohort 8,2,G03,,,,,NO PLANT
+STDR2,cohort 8,2,G07,,,,,NO PLANT
+STTO_TM2,blank,3,E11,,,,,
+STDR2,cohort 1,3,A03,0.0067,,,,
+STDR2,cohort 1,3,A05,0.0109,,,,
+STDR2,cohort 1,3,A13,0.0135,,,,
+STDR2,cohort 1,3,B12,0.0075,,,,
+STDR2,cohort 1,3,C13,0.0065,,,,
+STDR2,cohort 1,3,G11,0.0068,,,,
+STDR2,cohort 2,3,B06,0.0093,,,,
+STDR2,cohort 2,3,B14,0.0048,,,,
+STDR2,cohort 2,3,F06,,,,,
+STDR2,cohort 2,3,G05,0.0124,,,,
+STDR2,cohort 2,3,G07,0.0082,,,,
+STDR2,cohort 2,3,G13,0.0067,,,,
+STDR2,cohort 3,3,A01,0.0021,,,,
+STDR2,cohort 3,3,C09,0.0053,,,,
+STDR2,cohort 3,3,C11,,,,,
+STDR2,cohort 3,3,D06,0.0121,,,,
+STDR2,cohort 3,3,E01,,,,,NO PLANT
+STDR2,cohort 3,3,F14,,,,,NO PLANT
+STDR2,cohort 4,3,B04,0.0095,,,,
+STDR2,cohort 4,3,D08,0.0097,,,,
+STDR2,cohort 4,3,D12,0.0029,,,,
+STDR2,cohort 4,3,D14,0.0067,,,,
+STDR2,cohort 4,3,E09,0.0194,,,,
+STDR2,cohort 4,3,E11,0.0214,,,,
+STDR2,cohort 5,3,C01,0.0089,,,,
+STDR2,cohort 5,3,C03,0.0093,,,,
+STDR2,cohort 5,3,D10,0.0119,,,,
+STDR2,cohort 5,3,E07,0.017,,,,
+STDR2,cohort 5,3,F02,,,,,NO PLANT
+STDR2,cohort 5,3,G09,0.0198,,,,
+STDR2,cohort 6,3,B02,,,,,NO PLANT
+STDR2,cohort 6,3,D02,0.0086,,,,
+STDR2,cohort 6,3,F04,0.0043,,,,
+STDR2,cohort 6,3,F08,,,,,NO PLANT
+STDR2,cohort 6,3,F12,,,,,NO PLANT
+STDR2,cohort 6,3,G01,,,,,NO PLANT
+STDR2,cohort 7,3,A09,,,,,NO PLANT
+STDR2,cohort 7,3,B08,,,,,NO PLANT
+STDR2,cohort 7,3,B10,,,,,NO PLANT
+STDR2,cohort 7,3,C05,,,,,NO PLANT
+STDR2,cohort 7,3,C07,,,,,NO PLANT
+STDR2,cohort 7,3,F10,,,,,NO PLANT
+STDR2,cohort 8,3,A11,,,,,NO PLANT
+STDR2,cohort 8,3,D04,,,,,NO PLANT
+STDR2,cohort 8,3,E03,,,,,NO PLANT
+STDR2,cohort 8,3,E05,,,,,NO PLANT
+STDR2,cohort 8,3,E13,,,,,NO PLANT
+STDR2,cohort 8,3,G03,,,,,NO PLANT
+STDI,blank,3,C11,,,,,
+STDR2,cohort 1,4,B02,0.0046,,,,
+STDR2,cohort 1,4,C03,0.006,,,,
+STDR2,cohort 1,4,C07,0.0087,,,,
+STDR2,cohort 1,4,E09,0.0205,,,,
+STDR2,cohort 1,4,F04,0.0042,,,,
+STDR2,cohort 1,4,F06,0.0081,,,,
+STDR2,cohort 2,4,B12,0.011,,,,
+STDR2,cohort 2,4,D04,0.0202,,,,
+STDR2,cohort 2,4,D08,0.0051,,,,
+STDR2,cohort 2,4,E13,0.0141,,,,
+STDR2,cohort 2,4,F10,0.0074,,,,
+STDR2,cohort 2,4,G09,0.0029,,,,
+STDR2,cohort 3,4,D02,0.0035,,,,
+STDR2,cohort 3,4,D14,0.0035,,,,
+STDR2,cohort 3,4,E07,0.0028,,,,
+STDR2,cohort 3,4,F02,,,,,NO PLANT
+STDR2,cohort 3,4,F08,,,,,NO PLANT
+STDR2,cohort 3,4,G11,0.0128,,,,
+STDR2,cohort 4,4,A05,0.019,,,,
+STDR2,cohort 4,4,G01,0.0184,,,,
+STDR2,cohort 4,4,G03,0.0076,,,,
+STDR2,cohort 4,4,G05,0.0055,,,,
+STDR2,cohort 4,4,G07,0.0093,,,,
+STDR2,cohort 4,4,G13,0.0076,,,,
+STDR2,cohort 5,4,B04,0.0059,,,,
+STDR2,cohort 5,4,C01,0.0114,,,,
+STDR2,cohort 5,4,C05,,,,,NO PLANT
+STDR2,cohort 5,4,C09,,,,,NO PLANT
+STDR2,cohort 5,4,C11,0.0071,,,,
+STDR2,cohort 5,4,D06,0.0155,,,,
+STDR2,cohort 6,4,A03,0.0115,,,,
+STDR2,cohort 6,4,B06,0.0031,,,,
+STDR2,cohort 6,4,C13,0.0071,,,,
+STDR2,cohort 6,4,D12,,,,,NO PLANT
+STDR2,cohort 6,4,E01,,,,,NO PLANT
+STDR2,cohort 6,4,F14,,,,,NO PLANT
+STDR2,cohort 7,4,A09,,,,,NO PLANT
+STDR2,cohort 7,4,A11,,,,,NO PLANT
+STDR2,cohort 7,4,A13,,,,,NO PLANT
+STDR2,cohort 7,4,B08,,,,,NO PLANT
+STDR2,cohort 7,4,E03,,,,,NO PLANT
+STDR2,cohort 7,4,F12,,,,,NO PLANT
+STDR2,cohort 8,4,A01,0.019,,,,
+STDR2,cohort 8,4,A07,,,,,NO PLANT
+STDR2,cohort 8,4,B10,,,,,NO PLANT
+STDR2,cohort 8,4,B14,,,,,NO PLANT
+STDR2,cohort 8,4,D10,,,,,NO PLANT
+STDR2,cohort 8,4,E11,,,,,NO PLANT
+CAAM,blank,3,E01,,,,,
+STGL1,cohort 1,1,A13,0.0053,,,,
+STGL1,cohort 1,1,B08,0.0032,,,,
+STGL1,cohort 1,1,B10,0.0113,,,,NO PLANT
+STGL1,cohort 1,1,D14,0.0055,,,,
+STGL1,cohort 1,1,E11,0.0044,,,,
+STGL1,cohort 1,1,G13,0.004,,,,
+STGL1,cohort 2,1,A09,0.0051,,,,
+STGL1,cohort 2,1,C01,,,,,NO PLANT
+STGL1,cohort 2,1,C07,0.0175,,,,
+STGL1,cohort 2,1,F08,,,,,NO PLANT
+STGL1,cohort 2,1,F12,0.0375,,,,
+STGL1,cohort 2,1,G03,0.0534,,,,
+STGL1,cohort 3,1,A11,0.0035,,,,
+STGL1,cohort 3,1,D02,0.0073,,,,
+STGL1,cohort 3,1,D08,0.0067,,,,
+STGL1,cohort 3,1,D12,0.0009,,,,
+STGL1,cohort 3,1,E13,,,,,NO PLANT
+STGL1,cohort 3,1,G05,,,,,NO PLANT
+STGL1,cohort 4,1,A01,0.01,,,,
+STGL1,cohort 4,1,A05,0.0275,,,,
+STGL1,cohort 4,1,B06,,,,,NO PLANT
+STGL1,cohort 4,1,C11,,,,,NO PLANT
+STGL1,cohort 4,1,D04,0.0055,,,,
+STGL1,cohort 4,1,F06,0.0103,,,,
+STGL1,cohort 5,1,B12,0.0118,,,,
+STGL1,cohort 5,1,C09,0.0096,,,,
+STGL1,cohort 5,1,C13,0.0152,,,,
+STGL1,cohort 5,1,D06,0.0111,,,,
+STGL1,cohort 5,1,D10,,,,,NO PLANT
+STGL1,cohort 5,1,F14,,,,,NO PLANT
+STGL1,cohort 6,1,A03,0.0072,,,,
+STGL1,cohort 6,1,E03,,,,,NO PLANT
+STGL1,cohort 6,1,E05,,,,,NO PLANT
+STGL1,cohort 6,1,E07,,,,,NO PLANT
+STGL1,cohort 6,1,E09,,,,,NO PLANT
+STGL1,cohort 6,1,G09,,,,,NO PLANT
+STGL1,cohort 7,1,B02,,,,,NO PLANT
+STGL1,cohort 7,1,B04,,,,,NO PLANT
+STGL1,cohort 7,1,C03,,,,,NO PLANT
+STGL1,cohort 7,1,F02,,,,,NO PLANT
+STGL1,cohort 7,1,F10,,,,,NO PLANT
+STGL1,cohort 7,1,G01,,,,,NO PLANT
+STGL1,cohort 8,1,A07,,,,,NO PLANT
+STGL1,cohort 8,1,B14,,,,,NO PLANT
+STGL1,cohort 8,1,C05,,,,,NO PLANT
+STGL1,cohort 8,1,E01,,,,,NO PLANT
+STGL1,cohort 8,1,F04,,,,,NO PLANT
+STGL1,cohort 8,1,G11,,,,,NO PLANT
+STGL1,blank,3,G01,,,,,
+STGL1,cohort 1,2,B04,0.0058,,,,
+STGL1,cohort 1,2,B14,0.0056,,,,
+STGL1,cohort 1,2,C05,0.0039,,,,
+STGL1,cohort 1,2,E13,0.0023,,,,
+STGL1,cohort 1,2,F10,0.0057,,,,
+STGL1,cohort 1,2,F12,0.0189,,,,
+STGL1,cohort 2,2,A07,0.0177,,,,
+STGL1,cohort 2,2,A09,,,,,NO PLANT
+STGL1,cohort 2,2,B10,0.0101,,,,
+STGL1,cohort 2,2,F04,0.0107,,,,
+STGL1,cohort 2,2,F14,,,,,NO PLANT
+STGL1,cohort 2,2,G07,0.0105,,,,
+STGL1,cohort 3,2,B12,,,,,
+STGL1,cohort 3,2,C01,0.005,,,,
+STGL1,cohort 3,2,C13,0.0024,,,,
+STGL1,cohort 3,2,D12,0.0636,,,,
+STGL1,cohort 3,2,E07,,,,,NO PLANT
+STGL1,cohort 3,2,G13,,,,,NO PLANT
+STGL1,cohort 4,2,B02,,,,,NO PLANT
+STGL1,cohort 4,2,B06,,,,,NO PLANT
+STGL1,cohort 4,2,C09,0.0149,,,,
+STGL1,cohort 4,2,D02,0.0101,,,,
+STGL1,cohort 4,2,D04,0.0155,,,,
+STGL1,cohort 4,2,F06,0.0164,,,,
+STGL1,cohort 5,2,A05,0.0099,,,,
+STGL1,cohort 5,2,A11,0.0052,,,,
+STGL1,cohort 5,2,D06,0.0037,,,,
+STGL1,cohort 5,2,E03,,,,,NO PLANT
+STGL1,cohort 5,2,E09,,,,,NO PLANT
+STGL1,cohort 5,2,G05,0.0108,,,,
+STGL1,cohort 6,2,A01,0.0115,,,,
+STGL1,cohort 6,2,A03,,,,,NO PLANT
+STGL1,cohort 6,2,C03,,,,,NO PLANT
+STGL1,cohort 6,2,F02,,,,,NO PLANT
+STGL1,cohort 6,2,F08,,,,,NO PLANT
+STGL1,cohort 6,2,G03,,,,,NO PLANT
+STGL1,cohort 7,2,A13,,,,,NO PLANT
+STGL1,cohort 7,2,B08,,,,,NO PLANT
+STGL1,cohort 7,2,C07,,,,,NO PLANT
+STGL1,cohort 7,2,C11,,,,,NO PLANT
+STGL1,cohort 7,2,E05,,,,,NO PLANT
+STGL1,cohort 7,2,G09,,,,,NO PLANT
+STGL1,cohort 8,2,D08,,,,,NO PLANT
+STGL1,cohort 8,2,D10,,,,,NO PLANT
+STGL1,cohort 8,2,D14,,,,,NO PLANT
+STGL1,cohort 8,2,E01,,,,,NO PLANT
+STGL1,cohort 8,2,G01,,,,,NO PLANT
+STGL1,cohort 8,2,G11,,,,,NO PLANT
+STPO,blank,3,G07,,,,,
+STGL1,cohort 1,3,A01,0.0098,,,,
+STGL1,cohort 1,3,D02,,,,,
+STGL1,cohort 1,3,E11,0.0491,,,,
+STGL1,cohort 1,3,F14,0.0139,,,,
+STGL1,cohort 1,3,G03,,,,,
+STGL1,cohort 1,3,G11,0.0118,,,,
+STGL1,cohort 2,3,B04,0.0062,,,,
+STGL1,cohort 2,3,C07,0.0224,,,,
+STGL1,cohort 2,3,E03,0.0179,,,,
+STGL1,cohort 2,3,F06,0.0095,,,,
+STGL1,cohort 2,3,F10,0.0123,,,,
+STGL1,cohort 2,3,G09,0.0161,,,,
+STGL1,cohort 3,3,A03,,,,,NO PLANT
+STGL1,cohort 3,3,A07,0.0039,,,,
+STGL1,cohort 3,3,A11,0.0009,,,,
+STGL1,cohort 3,3,B12,,,,,
+STGL1,cohort 3,3,D08,,,,,NO PLANT
+STGL1,cohort 3,3,E09,,,,,NO PLANT
+STGL1,cohort 4,3,A05,,,,,NO PLANT
+STGL1,cohort 4,3,C13,0.0057,,,,
+STGL1,cohort 4,3,D12,0.0188,,,,
+STGL1,cohort 4,3,E07,,,,,NO PLANT
+STGL1,cohort 4,3,F04,0.0126,,,,
+STGL1,cohort 4,3,F12,0.0119,,,,
+STGL1,cohort 5,3,B06,0.0065,,,,
+STGL1,cohort 5,3,B08,0.0133,,,,
+STGL1,cohort 5,3,D04,0.0238,,,,
+STGL1,cohort 5,3,D14,,,,,NO PLANT
+STGL1,cohort 5,3,G05,,,,,NO PLANT
+STGL1,cohort 5,3,G07,,,,,NO PLANT
+STGL1,cohort 6,3,B14,0.0077,,,,
+STGL1,cohort 6,3,C03,,,,,NO PLANT
+STGL1,cohort 6,3,D06,,,,,NO PLANT
+STGL1,cohort 6,3,E05,,,,,NO PLANT
+STGL1,cohort 6,3,F02,,,,,NO PLANT
+STGL1,cohort 6,3,F08,,,,,NO PLANT
+STGL1,cohort 7,3,A09,,,,,NO PLANT
+STGL1,cohort 7,3,B10,,,,,NO PLANT
+STGL1,cohort 7,3,C11,,,,,NO PLANT
+STGL1,cohort 7,3,D10,,,,,NO PLANT
+STGL1,cohort 7,3,E01,,,,,NO PLANT
+STGL1,cohort 7,3,G13,,,,,NO PLANT
+STGL1,cohort 8,3,A13,,,,,NO PLANT
+STGL1,cohort 8,3,B02,,,,,NO PLANT
+STGL1,cohort 8,3,C01,,,,,NO PLANT
+STGL1,cohort 8,3,C05,,,,,NO PLANT
+STGL1,cohort 8,3,C09,,,,,NO PLANT
+STGL1,cohort 8,3,E13,,,,,NO PLANT
+CAIN4,blank,3,G13,,,,,
+STGL1,cohort 1,4,A01,0.0008,,,,
+STGL1,cohort 1,4,D12,,,,,
+STGL1,cohort 1,4,E09,,,,,
+STGL1,cohort 1,4,F12,,,,,
+STGL1,cohort 1,4,G05,0.0139,,,,
+STGL1,cohort 1,4,G13,,,,,
+STGL1,cohort 2,4,A05,0.0095,,,,
+STGL1,cohort 2,4,C03,0.0138,,,,
+STGL1,cohort 2,4,D08,,,,,NO PLANT
+STGL1,cohort 2,4,E11,,,,,
+STGL1,cohort 2,4,F04,0.0097,,,,
+STGL1,cohort 2,4,G09,0.006,,,,
+STGL1,cohort 3,4,B02,0.0167,,,,
+STGL1,cohort 3,4,B04,0.0026,,,,
+STGL1,cohort 3,4,C01,0.0081,,,,
+STGL1,cohort 3,4,C13,0.0306,0.0143,,,
+STGL1,cohort 3,4,E01,,,,,NO PLANT
+STGL1,cohort 3,4,E05,,,,,NO PLANT
+STGL1,cohort 4,4,A13,0.0181,0.0127,,,
+STGL1,cohort 4,4,B08,,,,,NO PLANT
+STGL1,cohort 4,4,B12,0.016,,,,
+STGL1,cohort 4,4,E07,0.0121,,,,
+STGL1,cohort 4,4,F14,0.0069,,,,
+STGL1,cohort 4,4,G11,,,,,NO PLANT
+STGL1,cohort 5,4,B14,,,,,
+STGL1,cohort 5,4,C09,0.0141,,,,
+STGL1,cohort 5,4,D04,,,,,NO PLANT
+STGL1,cohort 5,4,D10,,,,,NO PLANT
+STGL1,cohort 5,4,D14,,,,,NO PLANT
+STGL1,cohort 5,4,G01,0.0114,,,,
+STGL1,cohort 6,4,A03,,,,,NO PLANT
+STGL1,cohort 6,4,A11,0.0062,,,,
+STGL1,cohort 6,4,D06,,,,,NO PLANT
+STGL1,cohort 6,4,E03,,,,,NO PLANT
+STGL1,cohort 6,4,F10,,,,,NO PLANT
+STGL1,cohort 6,4,G07,,,,,NO PLANT
+STGL1,cohort 7,4,A07,,,,,NO PLANT
+STGL1,cohort 7,4,B06,,,,,NO PLANT
+STGL1,cohort 7,4,C07,,,,,NO PLANT
+STGL1,cohort 7,4,D02,,,,,NO PLANT
+STGL1,cohort 7,4,E13,,,,,NO PLANT
+STGL1,cohort 7,4,F02,,,,,NO PLANT
+STGL1,cohort 8,4,A09,,,,,NO PLANT
+STGL1,cohort 8,4,B10,,,,,NO PLANT
+STGL1,cohort 8,4,C11,,,,,NO PLANT
+STGL1,cohort 8,4,F06,,,,,NO PLANT
+STGL1,cohort 8,4,F08,,,,,NO PLANT
+STGL1,cohort 8,4,G03,,,,,NO PLANT
+CAIN3,blank,3,B08,,,,,
+STIN,cohort 1,1,A09,0.0102,,,,
+STIN,cohort 1,1,B06,0.0219,,,,
+STIN,cohort 1,1,B14,0.0179,,,,
+STIN,cohort 1,1,D10,0.0107,,,,
+STIN,cohort 1,1,D14,0.0106,,,,
+STIN,cohort 1,1,F04,0.0221,,,,
+STIN,cohort 2,1,D02,0.0299,,,,
+STIN,cohort 2,1,D08,0.0084,,,,
+STIN,cohort 2,1,F10,0.0152,,,,
+STIN,cohort 2,1,F14,0.015,,,,
+STIN,cohort 2,1,G03,0.0048,,,,
+STIN,cohort 2,1,G07,0.0092,,,,
+STIN,cohort 3,1,C03,0.0185,,,,
+STIN,cohort 3,1,C13,0.0082,,,,
+STIN,cohort 3,1,E05,,,,,No plant
+STIN,cohort 3,1,E11,0.0136,,,,
+STIN,cohort 3,1,F06,0.0173,,,,
+STIN,cohort 3,1,F12,0.0167,,,,
+STIN,cohort 4,1,A01,0.007,,,,
+STIN,cohort 4,1,B08,0.0116,,,,
+STIN,cohort 4,1,B12,0.0046,,,,
+STIN,cohort 4,1,C05,0.0057,,,,
+STIN,cohort 4,1,C07,0.0101,,,,
+STIN,cohort 4,1,G13,0.0179,,,,
+STIN,cohort 5,1,A13,0.0046,,,,
+STIN,cohort 5,1,B04,0.0529,,,,
+STIN,cohort 5,1,B10,0.0117,,,,
+STIN,cohort 5,1,E07,0.0066,,,,
+STIN,cohort 5,1,G05,0.006,,,,
+STIN,cohort 5,1,G11,0.0058,,,,
+STIN,cohort 6,1,A05,0.0002,,,,
+STIN,cohort 6,1,C01,0.0059,,,,
+STIN,cohort 6,1,C11,0.0049,,,,
+STIN,cohort 6,1,D06,0.0018,,,,
+STIN,cohort 6,1,E01,0.004,,,,
+STIN,cohort 6,1,F08,0.0074,,,,
+STIN,cohort 7,1,A03,0.005,,,,
+STIN,cohort 7,1,A11,0.007,,,,
+STIN,cohort 7,1,B02,0.0049,,,,
+STIN,cohort 7,1,D04,0.0029,,,,
+STIN,cohort 7,1,F02,0.0043,,,,
+STIN,cohort 7,1,G09,0.0024,,,,NO PLANT
+STIN,cohort 8,1,A07,0.0066,,,,
+STIN,cohort 8,1,C09,0.0068,,,,
+STIN,cohort 8,1,E03,0.0145,,,,
+STIN,cohort 8,1,E09,0.0014,,,,
+STIN,cohort 8,1,E13,0.0052,,,,
+STIN,cohort 8,1,G01,0.0055,,,,
+CACO1,blank,3,B12,,,,,
+STIN,cohort 1,2,A07,0.0049,,,,
+STIN,cohort 1,2,B06,0.009,,,,
+STIN,cohort 1,2,C01,0.0516,,,,
+STIN,cohort 1,2,C11,0.0169,,,,
+STIN,cohort 1,2,E07,0.0119,,,,
+STIN,cohort 1,2,F06,0.0129,,,,
+STIN,cohort 2,2,C13,0.007,,,,
+STIN,cohort 2,2,D04,,,,,
+STIN,cohort 2,2,F02,0.0091,,,,
+STIN,cohort 2,2,F08,0.0154,,,,
+STIN,cohort 2,2,G03,0.0094,,,,
+STIN,cohort 2,2,G09,0.0143,,,,
+STIN,cohort 3,2,A03,0.01,,,,
+STIN,cohort 3,2,B08,0.0087,,,,
+STIN,cohort 3,2,B14,0.0165,,,,
+STIN,cohort 3,2,C03,0.0154,,,,
+STIN,cohort 3,2,F14,0.0082,,,,
+STIN,cohort 3,2,G05,0.0168,,,,
+STIN,cohort 4,2,A05,0.0061,,,,
+STIN,cohort 4,2,C07,0.0128,,,,
+STIN,cohort 4,2,D12,0.012,,,,
+STIN,cohort 4,2,E01,0.0193,,,,
+STIN,cohort 4,2,E03,0.0108,0.0104,,,
+STIN,cohort 4,2,E11,0.0081,,,,
+STIN,cohort 5,2,A09,0.0084,,,,
+STIN,cohort 5,2,A11,0.0024,,,,
+STIN,cohort 5,2,A13,0.0073,,,,
+STIN,cohort 5,2,E13,0.0067,,,,
+STIN,cohort 5,2,G07,0.007,,,,
+STIN,cohort 5,2,G11,0.0137,,,,
+STIN,cohort 6,2,B02,0.0046,,,,
+STIN,cohort 6,2,D14,0.0076,,,,
+STIN,cohort 6,2,F04,0.0037,,,,
+STIN,cohort 6,2,F10,0.0039,,,,
+STIN,cohort 6,2,F12,0.0009,,,,
+STIN,cohort 6,2,G13,0.0028,,,,
+STIN,cohort 7,2,C05,,,,,
+STIN,cohort 7,2,C09,0.0025,,,,
+STIN,cohort 7,2,D02,0.0088,,,,
+STIN,cohort 7,2,D06,0.0062,,,,
+STIN,cohort 7,2,D08,0.0058,,,,
+STIN,cohort 7,2,E09,,,,,NO PLANT
+STIN,cohort 8,2,A01,0.0029,,,,
+STIN,cohort 8,2,B04,0.0041,,,,
+STIN,cohort 8,2,B12,0.0039,,,,
+STIN,cohort 8,2,D10,0.0028,,,,
+STIN,cohort 8,2,E05,0.0017,,,,
+STIN,cohort 8,2,G01,0.0041,,,,
+STTO_BH,blank,4,F06,,,,,
+STIN,cohort 1,3,A05,0.0244,,,,
+STIN,cohort 1,3,A11,0.0058,,,,
+STIN,cohort 1,3,C03,0.0225,,,,
+STIN,cohort 1,3,D04,0.0184,,,,
+STIN,cohort 1,3,D12,0.0363,,,,
+STIN,cohort 1,3,E07,0.02,,,,
+STIN,cohort 2,3,A03,0.0111,,,,
+STIN,cohort 2,3,A13,0.0106,,,,
+STIN,cohort 2,3,B08,0.0118,,,,
+STIN,cohort 2,3,D10,0.0147,,,,
+STIN,cohort 2,3,G07,0.0113,,,,
+STIN,cohort 2,3,G11,,,,,
+STIN,cohort 3,3,B06,,,,,NO PLANT
+STIN,cohort 3,3,D02,0.0088,,,,
+STIN,cohort 3,3,E01,0.0074,,,,
+STIN,cohort 3,3,E09,0.0165,,,,
+STIN,cohort 3,3,F02,0.0127,,,,
+STIN,cohort 3,3,G09,0.0121,,,,
+STIN,cohort 4,3,B14,0.0034,,,,
+STIN,cohort 4,3,C09,0.0094,,,,
+STIN,cohort 4,3,C13,0.0098,,,,
+STIN,cohort 4,3,F12,0.0147,,,,
+STIN,cohort 4,3,G05,0.0061,,,,
+STIN,cohort 4,3,G13,0.0133,,,,
+STIN,cohort 5,3,D06,0.0065,,,,
+STIN,cohort 5,3,E13,0.0066,,,,
+STIN,cohort 5,3,F04,0.0034,,,,
+STIN,cohort 5,3,F06,0.0113,,,,
+STIN,cohort 5,3,F08,0.012,,,,
+STIN,cohort 5,3,F10,0.0071,,,,
+STIN,cohort 6,3,A01,0.0096,,,,
+STIN,cohort 6,3,A07,0.0067,,,,
+STIN,cohort 6,3,B02,0.0066,,,,
+STIN,cohort 6,3,C01,0.0093,,,,
+STIN,cohort 6,3,C11,0.0036,,,,
+STIN,cohort 6,3,E05,0.0039,,,,
+STIN,cohort 7,3,B04,0.0041,,,,
+STIN,cohort 7,3,B12,0.0018,,,,
+STIN,cohort 7,3,C05,0.0024,,,,
+STIN,cohort 7,3,D14,0.0038,,,,
+STIN,cohort 7,3,E03,0.0033,,,,
+STIN,cohort 7,3,G01,,,,,NO PLANT
+STIN,cohort 8,3,A09,0.005,,,,
+STIN,cohort 8,3,B10,0.0097,,,,
+STIN,cohort 8,3,C07,0.0032,,,,
+STIN,cohort 8,3,D08,0.0073,,,,
+STIN,cohort 8,3,E11,0.0026,,,,
+STIN,cohort 8,3,F14,0.0022,,,,
+STBR3,blank,4,B08,,,,,
+STIN,cohort 1,4,B10,0.0481,,,,
+STIN,cohort 1,4,B12,0.0179,,,,
+STIN,cohort 1,4,C03,0.032,,,,
+STIN,cohort 1,4,E07,0.0165,,,,
+STIN,cohort 1,4,F04,0.0165,,,,
+STIN,cohort 1,4,F08,0.0091,,,,
+STIN,cohort 2,4,D10,0.0157,,,,
+STIN,cohort 2,4,E01,0.0121,,,,
+STIN,cohort 2,4,E05,0.0096,,,,
+STIN,cohort 2,4,F12,0.0136,,,,
+STIN,cohort 2,4,G11,0.0125,,,,
+STIN,cohort 2,4,G13,0.0117,,,,
+STIN,cohort 3,4,A05,0.0112,,,,
+STIN,cohort 3,4,C01,0.0132,,,,
+STIN,cohort 3,4,D02,0.0135,,,,
+STIN,cohort 3,4,D04,0.0143,,,,
+STIN,cohort 3,4,G05,0.0213,,,,
+STIN,cohort 3,4,G09,,,,,
+STIN,cohort 4,4,A03,0.0116,,,,
+STIN,cohort 4,4,B02,0.0093,,,,
+STIN,cohort 4,4,C07,0.0105,,,,
+STIN,cohort 4,4,D06,0.012,,,,
+STIN,cohort 4,4,F10,0.0098,,,,
+STIN,cohort 4,4,F14,0.0194,,,,
+STIN,cohort 5,4,A01,0.0076,,,,
+STIN,cohort 5,4,B04,0.0067,0.0071,,,
+STIN,cohort 5,4,B08,0.0119,,,,
+STIN,cohort 5,4,B14,0.0062,0.0041,,,
+STIN,cohort 5,4,C13,0.0062,,,,
+STIN,cohort 5,4,G03,0.0071,,,,
+STIN,cohort 6,4,A11,0.008,,,,NO PLANT
+STIN,cohort 6,4,B06,,,,,
+STIN,cohort 6,4,C05,0.0065,,,,
+STIN,cohort 6,4,C09,0.0065,,,,
+STIN,cohort 6,4,E03,0.0097,,,,
+STIN,cohort 6,4,G01,0.0101,,,,
+STIN,cohort 7,4,A09,0.0092,,,,
+STIN,cohort 7,4,A13,0.0045,,,,
+STIN,cohort 7,4,D08,,,,,
+STIN,cohort 7,4,E09,0.0022,,,,
+STIN,cohort 7,4,E13,0.0018,,,,
+STIN,cohort 7,4,F06,,,,,NO PLANT
+STIN,cohort 8,4,C11,0.004,,,,
+STIN,cohort 8,4,D12,0.0014,,,,
+STIN,cohort 8,4,D14,0.0045,,,,
+STIN,cohort 8,4,E11,0.0041,,,,
+STIN,cohort 8,4,F02,0.0029,,,,
+STIN,cohort 8,4,G07,0.0115,,,,
+STPO,blank,4,B06,,,,,
+STPO,cohort 1,1,A07,0.0666,,,,
+STPO,cohort 1,1,B04,0.0083,,,,
+STPO,cohort 1,1,E09,0.0284,,,,
+STPO,cohort 1,1,F02,0.0178,,,,
+STPO,cohort 1,1,F06,0.0057,,,,
+STPO,cohort 1,1,G03,0.0114,,,,
+STPO,cohort 2,1,A09,0.0188,,,,
+STPO,cohort 2,1,C07,0.0139,,,,
+STPO,cohort 2,1,C11,0.0106,,,,
+STPO,cohort 2,1,F12,0.012,,,,
+STPO,cohort 2,1,G05,,,,,
+STPO,cohort 2,1,G07,0.0077,,,,
+STPO,cohort 3,1,B14,0.0306,,,,
+STPO,cohort 3,1,C03,0.0171,,,,
+STPO,cohort 3,1,C09,0.0327,,,,
+STPO,cohort 3,1,E03,0.0152,,,,
+STPO,cohort 3,1,F04,,,,,
+STPO,cohort 3,1,G09,0.043,,,,
+STPO,cohort 4,1,A11,0.0058,,,,
+STPO,cohort 4,1,B12,0.006,,,,
+STPO,cohort 4,1,C05,,,,,NO PLANT
+STPO,cohort 4,1,C13,,,,,NO PLANT
+STPO,cohort 4,1,D10,,,,,NO PLANT
+STPO,cohort 4,1,E07,,,,,NO PLANT
+STPO,cohort 5,1,A01,0.0091,,,,
+STPO,cohort 5,1,A13,0.0224,,,,
+STPO,cohort 5,1,B02,0.0031,,,,
+STPO,cohort 5,1,D04,0.0015,,,,
+STPO,cohort 5,1,E11,,,,,NO PLANT
+STPO,cohort 5,1,G01,,,,,NO PLANT
+STPO,cohort 6,1,A03,0.0076,,,,
+STPO,cohort 6,1,D06,0.0079,,,,
+STPO,cohort 6,1,D08,0.0113,,,,
+STPO,cohort 6,1,E05,0.004,,,,
+STPO,cohort 6,1,E13,0.0043,,,,
+STPO,cohort 6,1,G11,0.0093,,,,
+STPO,cohort 7,1,A05,,,,,NO PLANT
+STPO,cohort 7,1,D02,,,,,
+STPO,cohort 7,1,D12,0.0017,,,,
+STPO,cohort 7,1,E01,,,,,NO PLANT
+STPO,cohort 7,1,F08,,,,,NO PLANT
+STPO,cohort 7,1,F14,,,,,NO PLANT
+STPO,cohort 8,1,B08,0.0091,,,,
+STPO,cohort 8,1,B10,0.0105,,,,
+STPO,cohort 8,1,C01,0.0245,,,,
+STPO,cohort 8,1,D14,0.0094,,,,
+STPO,cohort 8,1,F10,,,,,NO PLANT
+STPO,cohort 8,1,G13,,,,,NO PLANT
+CACO1,blank,4,B12,,,,,
+STPO,cohort 1,2,B04,,,,,
+STPO,cohort 1,2,B06,0.0197,,,,
+STPO,cohort 1,2,B08,0.0203,,,,
+STPO,cohort 1,2,B10,0.0125,,,,
+STPO,cohort 1,2,E13,,,,,
+STPO,cohort 1,2,G09,0.0106,,,,
+STPO,cohort 2,2,A09,0.015,,,,
+STPO,cohort 2,2,A11,0.0229,,,,
+STPO,cohort 2,2,B02,,,,,
+STPO,cohort 2,2,E05,0.0274,,,,
+STPO,cohort 2,2,F04,0.0186,,,,
+STPO,cohort 2,2,G05,0.0117,,,,
+STPO,cohort 3,2,A03,0.0075,,,,
+STPO,cohort 3,2,D08,0.0207,,,,
+STPO,cohort 3,2,E01,0.0231,,,,
+STPO,cohort 3,2,E11,0.0586,,,,
+STPO,cohort 3,2,F06,0.0056,,,,
+STPO,cohort 3,2,F14,,,,,NO PLANT
+STPO,cohort 4,2,A13,,,,,NO PLANT
+STPO,cohort 4,2,C05,,,,,NO PLANT
+STPO,cohort 4,2,C07,0.0044,,,,
+STPO,cohort 4,2,D04,0.0109,,,,
+STPO,cohort 4,2,D06,,,,,
+STPO,cohort 4,2,E03,,,,,NO PLANT
+STPO,cohort 5,2,A01,0.0102,,,,
+STPO,cohort 5,2,A07,0.0042,,,,
+STPO,cohort 5,2,C13,0.0114,,,,
+STPO,cohort 5,2,F08,0.0044,,,,
+STPO,cohort 5,2,F10,,,,,NO PLANT
+STPO,cohort 5,2,G13,,,,,NO PLANT
+STPO,cohort 6,2,C03,0.0094,,,,
+STPO,cohort 6,2,C09,0.0039,,,,
+STPO,cohort 6,2,C11,0.0068,,,,
+STPO,cohort 6,2,D02,0.0032,,,,
+STPO,cohort 6,2,E07,0.0058,,,,
+STPO,cohort 6,2,E09,,,,,
+STPO,cohort 7,2,D10,0.0018,,,,
+STPO,cohort 7,2,D12,,,,,
+STPO,cohort 7,2,D14,,,,,
+STPO,cohort 7,2,F12,,,,,NO PLANT
+STPO,cohort 7,2,G01,,,,,NO PLANT
+STPO,cohort 7,2,G07,,,,,NO PLANT
+STPO,cohort 8,2,A05,,,,,
+STPO,cohort 8,2,B12,0.0045,,,,
+STPO,cohort 8,2,B14,0.0127,,,,
+STPO,cohort 8,2,F02,0.0095,,,,
+STPO,cohort 8,2,G03,,,,,NO PLANT
+STPO,cohort 8,2,G11,,,,,NO PLANT
+CAAM,blank,4,A13,,,,,
+STPO,cohort 1,3,A05,0.0178,,,,
+STPO,cohort 1,3,A07,0.0166,,,,
+STPO,cohort 1,3,D12,0.0062,,,,
+STPO,cohort 1,3,E07,0.0275,,,,
+STPO,cohort 1,3,F02,0.0136,,,,
+STPO,cohort 1,3,F06,0.0111,,,,
+STPO,cohort 2,3,A11,0.0161,,,,
+STPO,cohort 2,3,B04,0.0213,,,,
+STPO,cohort 2,3,B06,0.075,,,,
+STPO,cohort 2,3,B10,0.0194,,,,
+STPO,cohort 2,3,B14,0.0062,,,,
+STPO,cohort 2,3,E09,0.0059,,,,
+STPO,cohort 3,3,B02,0.0117,,,,
+STPO,cohort 3,3,C09,0.0078,,,,
+STPO,cohort 3,3,D14,0.0172,,,,
+STPO,cohort 3,3,E03,0.0487,,,,
+STPO,cohort 3,3,E13,0.0369,,,,
+STPO,cohort 3,3,G09,0,,,,
+STPO,cohort 4,3,A09,0.003,,,,
+STPO,cohort 4,3,B12,0.0035,,,,
+STPO,cohort 4,3,D02,0.0028,,,,
+STPO,cohort 4,3,E01,,,,,NO PLANT
+STPO,cohort 4,3,G01,,,,,NO PLANT
+STPO,cohort 4,3,G03,,,,,NO PLANT
+STPO,cohort 5,3,A01,0.0068,,,,
+STPO,cohort 5,3,A03,0.006,,,,
+STPO,cohort 5,3,E05,0.0022,,,,NO PLANT
+STPO,cohort 5,3,F04,0.0067,,,,
+STPO,cohort 5,3,G05,,,,,NO PLANT
+STPO,cohort 5,3,G11,,,,,NO PLANT
+STPO,cohort 6,3,B08,0.0017,,,,
+STPO,cohort 6,3,C07,0.0037,,,,
+STPO,cohort 6,3,D04,0.0067,,,,
+STPO,cohort 6,3,D10,0.0037,,,,
+STPO,cohort 6,3,F10,0.0111,,,,NO PLANT
+STPO,cohort 6,3,F14,0.0064,,,,
+STPO,cohort 7,3,C03,,,,,
+STPO,cohort 7,3,C05,0.0039,,,,
+STPO,cohort 7,3,C11,,,,,NO PLANT
+STPO,cohort 7,3,C13,,,,,NO PLANT
+STPO,cohort 7,3,E11,,,,,NO PLANT
+STPO,cohort 7,3,F08,,,,,NO PLANT
+STPO,cohort 8,3,A13,0.0129,,,,
+STPO,cohort 8,3,C01,0.0032,,,,
+STPO,cohort 8,3,D06,0.0061,,,,
+STPO,cohort 8,3,D08,0.0079,,,,
+STPO,cohort 8,3,F12,,,,,
+STPO,cohort 8,3,G13,,,,,NO PLANT
+CAIN3,blank,4,F10,,,,,
+STPO,cohort 1,4,A01,0.0243,,,,
+STPO,cohort 1,4,A07,0.0277,,,,
+STPO,cohort 1,4,B12,0.01,,,,
+STPO,cohort 1,4,E03,0.0159,,,,
+STPO,cohort 1,4,F10,0.0077,,,,
+STPO,cohort 1,4,G11,0.0094,,,,
+STPO,cohort 2,4,C09,0.0156,,,,
+STPO,cohort 2,4,C11,0.0103,,,,
+STPO,cohort 2,4,D10,0.0029,,,,
+STPO,cohort 2,4,E01,0.0051,,,,
+STPO,cohort 2,4,E05,0.0102,,,,
+STPO,cohort 2,4,E09,0.0117,,,,
+STPO,cohort 3,4,B08,,,,,NO PLANT
+STPO,cohort 3,4,B14,0.0048,,,,
+STPO,cohort 3,4,C05,0.0079,,,,
+STPO,cohort 3,4,D08,0.0259,,,,
+STPO,cohort 3,4,F04,0.0208,,,,
+STPO,cohort 3,4,G05,0.0626,,,,
+STPO,cohort 4,4,A05,,,,,NO PLANT
+STPO,cohort 4,4,A13,,,,,NO PLANT
+STPO,cohort 4,4,D04,0.0006,,,,
+STPO,cohort 4,4,E07,0.0022,,,,
+STPO,cohort 4,4,F02,0.0063,,,,
+STPO,cohort 4,4,G03,0.0077,,,,
+STPO,cohort 5,4,B10,0.0064,,,,
+STPO,cohort 5,4,C13,0.0107,,,,
+STPO,cohort 5,4,D12,,,,,NO PLANT
+STPO,cohort 5,4,F08,,,,,NO PLANT
+STPO,cohort 5,4,G09,,,,,NO PLANT
+STPO,cohort 5,4,G13,,,,,NO PLANT
+STPO,cohort 6,4,A03,0.0009,,,,
+STPO,cohort 6,4,C01,0.003,,,,
+STPO,cohort 6,4,D14,0.0026,,,,
+STPO,cohort 6,4,E11,,,,,
+STPO,cohort 6,4,F14,0.0065,,,,
+STPO,cohort 6,4,G07,0.0055,,,,
+STPO,cohort 7,4,B02,0.0043,,,,
+STPO,cohort 7,4,C03,,,,,
+STPO,cohort 7,4,C07,,,,,NO PLANT
+STPO,cohort 7,4,D02,,,,,NO PLANT
+STPO,cohort 7,4,D06,,,,,NO PLANT
+STPO,cohort 7,4,G01,,,,,NO PLANT
+STPO,cohort 8,4,A09,0.0086,,,,
+STPO,cohort 8,4,A11,0.0085,,,,
+STPO,cohort 8,4,B04,0.0098,,,,
+STPO,cohort 8,4,E13,,,,,
+STPO,cohort 8,4,F06,0.0021,,,,
+STPO,cohort 8,4,F12,,,,,NO PLANT
+STGL1,blank,4,C05,,,,,
+STTO_BH,cohort 1,1,A05,0.0378,,,0.056,
+STTO_BH,cohort 1,1,A07,0.0239,,,0.0124,
+STTO_BH,cohort 1,1,C07,0.0147,,,0.0103,
+STTO_BH,cohort 1,1,C13,0.0273,,,0.0205,
+STTO_BH,cohort 1,1,D04,0.0321,,,0.023,
+STTO_BH,cohort 1,1,G05,0.011,,,0.0149,
+STTO_BH,cohort 2,1,A03,,,,,NO PLANT
+STTO_BH,cohort 2,1,A09,0.0081,,,0.005,
+STTO_BH,cohort 2,1,B12,,,,,NO PLANT
+STTO_BH,cohort 2,1,E05,,,,,NO PLANT
+STTO_BH,cohort 2,1,F14,,,,,NO PLANT
+STTO_BH,cohort 2,1,G09,,,,,NO PLANT
+STTO_BH,cohort 3,1,A01,0.0469,,,0.0385,
+STTO_BH,cohort 3,1,B04,0.0116,,,0.0083,
+STTO_BH,cohort 3,1,D12,0.017,,,0.0123,
+STTO_BH,cohort 3,1,F04,,,,,NO PLANT
+STTO_BH,cohort 3,1,F10,,,,,NO PLANT
+STTO_BH,cohort 3,1,G11,,,,,NO PLANT
+STTO_BH,cohort 4,1,B02,0.021,,,0.0146,
+STTO_BH,cohort 4,1,C11,0.0216,,,0.0198,
+STTO_BH,cohort 4,1,D02,0.0161,,,0.0045,
+STTO_BH,cohort 4,1,F06,,,,,NO PLANT
+STTO_BH,cohort 4,1,G07,,,,,NO PLANT
+STTO_BH,cohort 4,1,G13,,,,,NO PLANT
+STTO_BH,cohort 5,1,A11,,,,,NO PLANT
+STTO_BH,cohort 5,1,B08,0.0072,,,0.0143,
+STTO_BH,cohort 5,1,B10,0.0153,,,0.0055,
+STTO_BH,cohort 5,1,C03,,,,,NO PLANT
+STTO_BH,cohort 5,1,E09,0.0135,,,0.0068,
+STTO_BH,cohort 5,1,E11,,,,,NO PLANT
+STTO_BH,cohort 6,1,B14,0.0085,,,0.0066,
+STTO_BH,cohort 6,1,D06,0.0054,,,0.0016,
+STTO_BH,cohort 6,1,E07,,,,,NO PLANT
+STTO_BH,cohort 6,1,E13,,,,,NO PLANT
+STTO_BH,cohort 6,1,F08,,,,,NO PLANT
+STTO_BH,cohort 6,1,G03,,,,,NO PLANT
+STTO_BH,cohort 7,1,A13,0.0042,,,0.0053,
+STTO_BH,cohort 7,1,B06,0.0047,,,0.0027,
+STTO_BH,cohort 7,1,C01,,,,,NO PLANT
+STTO_BH,cohort 7,1,C09,,,,,NO PLANT
+STTO_BH,cohort 7,1,D14,,,,,NO PLANT
+STTO_BH,cohort 7,1,E03,,,,,NO PLANT
+STTO_BH,cohort 8,1,C05,,,,,NO PLANT
+STTO_BH,cohort 8,1,D08,,,,,NO PLANT
+STTO_BH,cohort 8,1,D10,,,,,NO PLANT
+STTO_BH,cohort 8,1,F02,,,,,NO PLANT
+STTO_BH,cohort 8,1,F12,,,,,NO PLANT
+STTO_BH,cohort 8,1,G01,,,,,NO PLANT
+STIN,blank,4,A07,,,,,
+STTO_BH,cohort 1,2,B10,0.0158,,,0.0193,
+STTO_BH,cohort 1,2,D12,0.0532,,,0.0604,
+STTO_BH,cohort 1,2,E09,0.0372,,,0.0242,
+STTO_BH,cohort 1,2,F04,0.0391,,,0.0115,
+STTO_BH,cohort 1,2,G01,0.0703,,,0.0698,
+STTO_BH,cohort 1,2,G13,0.0219,,,0.0207,
+STTO_BH,cohort 2,2,A11,,,,,NO PLANT
+STTO_BH,cohort 2,2,D06,,,,,NO PLANT
+STTO_BH,cohort 2,2,D10,,,,,NO PLANT
+STTO_BH,cohort 2,2,E03,0.0068,,,0.0018,
+STTO_BH,cohort 2,2,F02,,,,,NO PLANT
+STTO_BH,cohort 2,2,F06,,,,,NO PLANT
+STTO_BH,cohort 3,2,A05,0.0285,,,0.0141,
+STTO_BH,cohort 3,2,A09,0.009,,,0.006,
+STTO_BH,cohort 3,2,C01,,,,,NO PLANT
+STTO_BH,cohort 3,2,D14,0.0037,,,0.0029,
+STTO_BH,cohort 3,2,E05,,,,,NO PLANT
+STTO_BH,cohort 3,2,E07,,,,,NO PLANT
+STTO_BH,cohort 4,2,A01,0.0322,,,0.0181,
+STTO_BH,cohort 4,2,A03,0.0093,,,0.0106,
+STTO_BH,cohort 4,2,B02,,,,,
+STTO_BH,cohort 4,2,B08,0.008,,,0.0035,
+STTO_BH,cohort 4,2,G03,,,,,NO PLANT
+STTO_BH,cohort 4,2,G07,,,,,NO PLANT
+STTO_BH,cohort 5,2,B04,0.0148,,,0.0246,
+STTO_BH,cohort 5,2,B12,0.0089,,,0.0065,
+STTO_BH,cohort 5,2,C09,,,,,NO PLANT
+STTO_BH,cohort 5,2,E11,0.0166,,,0.0087,
+STTO_BH,cohort 5,2,F10,,,,,NO PLANT
+STTO_BH,cohort 5,2,F12,,,,,NO PLANT
+STTO_BH,cohort 6,2,C05,0.0099,,,0.005,
+STTO_BH,cohort 6,2,C13,0.0053,,,0.0069,
+STTO_BH,cohort 6,2,D02,,,,,NO PLANT
+STTO_BH,cohort 6,2,D08,,,,,NO PLANT
+STTO_BH,cohort 6,2,F14,,,,,NO PLANT
+STTO_BH,cohort 6,2,G05,,,,,NO PLANT
+STTO_BH,cohort 7,2,A13,,,,,
+STTO_BH,cohort 7,2,B14,,,,,
+STTO_BH,cohort 7,2,C07,,,,,NO PLANT
+STTO_BH,cohort 7,2,C11,,,,,NO PLANT
+STTO_BH,cohort 7,2,E13,,,,,NO PLANT
+STTO_BH,cohort 7,2,G09,,,,,NO PLANT
+STTO_BH,cohort 8,2,A07,,,,,NO PLANT
+STTO_BH,cohort 8,2,B06,,,,,NO PLANT
+STTO_BH,cohort 8,2,C03,,,,,NO PLANT
+STTO_BH,cohort 8,2,D04,,,,,NO PLANT
+STTO_BH,cohort 8,2,F08,,,,,NO PLANT
+STTO_BH,cohort 8,2,G11,,,,,NO PLANT
+CAAN1,blank,4,B08,,,,,
+STTO_BH,cohort 1,3,A01,0.0454,,,0.0227,
+STTO_BH,cohort 1,3,A05,0.0202,,,0.0125,
+STTO_BH,cohort 1,3,B14,0.0202,,,0.0174,
+STTO_BH,cohort 1,3,C03,0.1085,,,0.0327,
+STTO_BH,cohort 1,3,C11,0.0187,,,0.0105,
+STTO_BH,cohort 1,3,E13,0.0382,,,0.024,
+STTO_BH,cohort 2,3,A03,,,,,NO PLANT
+STTO_BH,cohort 2,3,B08,,,,,NO PLANT
+STTO_BH,cohort 2,3,D10,,,,,NO PLANT
+STTO_BH,cohort 2,3,E03,,,,,NO PLANT
+STTO_BH,cohort 2,3,F10,,,,,NO PLANT
+STTO_BH,cohort 2,3,G01,,,,,NO PLANT
+STTO_BH,cohort 3,3,B10,0.0272,,,0.0241,
+STTO_BH,cohort 3,3,D06,0.0162,,,0.0334,
+STTO_BH,cohort 3,3,D14,,,,,NO PLANT
+STTO_BH,cohort 3,3,F04,,,,,NO PLANT
+STTO_BH,cohort 3,3,F08,,,,,NO PLANT
+STTO_BH,cohort 3,3,F12,,,,,NO PLANT
+STTO_BH,cohort 4,3,A11,0.0111,,,,
+STTO_BH,cohort 4,3,B06,0.0166,,,0.0166,
+STTO_BH,cohort 4,3,D12,0.0292,,,0.0307,
+STTO_BH,cohort 4,3,E11,0.016,,,0.0128,
+STTO_BH,cohort 4,3,G03,,,,,NO PLANT
+STTO_BH,cohort 4,3,G09,,,,,NO PLANT
+STTO_BH,cohort 5,3,A09,0.0064,,,0.003,
+STTO_BH,cohort 5,3,A13,0.0095,,,0.0039,
+STTO_BH,cohort 5,3,B02,0.0115,,,0.02,
+STTO_BH,cohort 5,3,C01,,,,,NO PLANT
+STTO_BH,cohort 5,3,C07,,,,,NO PLANT
+STTO_BH,cohort 5,3,G13,,,,,NO PLANT
+STTO_BH,cohort 6,3,D04,0.0072,,,0.0028,
+STTO_BH,cohort 6,3,D08,0.0085,,,0.0027,
+STTO_BH,cohort 6,3,E09,,,,,NO PLANT
+STTO_BH,cohort 6,3,F14,,,,,NO PLANT
+STTO_BH,cohort 6,3,G05,,,,,NO PLANT
+STTO_BH,cohort 6,3,G11,,,,,NO PLANT
+STTO_BH,cohort 7,3,A07,0.0056,,,0.0055,
+STTO_BH,cohort 7,3,B12,,,,0,
+STTO_BH,cohort 7,3,C13,,,,,NO PLANT
+STTO_BH,cohort 7,3,E05,,,,,NO PLANT
+STTO_BH,cohort 7,3,F02,,,,,NO PLANT
+STTO_BH,cohort 7,3,G07,,,,,NO PLANT
+STTO_BH,cohort 8,3,B04,,,,,NO PLANT
+STTO_BH,cohort 8,3,C09,,,,,NO PLANT
+STTO_BH,cohort 8,3,D02,,,,,NO PLANT
+STTO_BH,cohort 8,3,E01,,,,,NO PLANT
+STTO_BH,cohort 8,3,E07,,,,,NO PLANT
+STTO_BH,cohort 8,3,F06,,,,,NO PLANT
+CAAN2,blank,4,F06,,,,,
+STTO_BH,cohort 1,4,A05,0.0414,0.0099,,0.0602,
+STTO_BH,cohort 1,4,A13,0.0177,,,0.0183,
+STTO_BH,cohort 1,4,B10,0.0417,,,0.0246,
+STTO_BH,cohort 1,4,D14,0.0247,,,0.0346,
+STTO_BH,cohort 1,4,F02,0.028,,,0.0148,
+STTO_BH,cohort 1,4,G13,0.0213,,,0.0186,
+STTO_BH,cohort 2,4,A01,,,,,NO PLANT
+STTO_BH,cohort 2,4,A03,,,,,NO PLANT
+STTO_BH,cohort 2,4,C01,,,,,NO PLANT
+STTO_BH,cohort 2,4,E13,,,,,NO PLANT
+STTO_BH,cohort 2,4,F12,,,,,NO PLANT
+STTO_BH,cohort 2,4,G07,,,,,NO PLANT
+STTO_BH,cohort 3,4,B02,0.0152,,,0.0095,
+STTO_BH,cohort 3,4,B14,0.0111,,,0.0145,
+STTO_BH,cohort 3,4,C11,,,,,NO PLANT
+STTO_BH,cohort 3,4,E01,,,,,NO PLANT
+STTO_BH,cohort 3,4,F08,,,,,NO PLANT
+STTO_BH,cohort 3,4,G01,,,,,NO PLANT
+STTO_BH,cohort 4,4,B06,0.0515,,,0.0196,
+STTO_BH,cohort 4,4,B12,0.0142,,,0.0081,
+STTO_BH,cohort 4,4,C03,0.0068,,,0.0053,
+STTO_BH,cohort 4,4,D08,0.0117,,,0.0032,NO PLANT
+STTO_BH,cohort 4,4,D12,,,,,NO PLANT
+STTO_BH,cohort 4,4,E03,,,,,NO PLANT
+STTO_BH,cohort 5,4,C13,0.0086,,,0.0055,
+STTO_BH,cohort 5,4,D02,,,,,NO PLANT
+STTO_BH,cohort 5,4,E07,0.0091,,,0.0071,
+STTO_BH,cohort 5,4,E09,,,,,NO PLANT
+STTO_BH,cohort 5,4,G09,,,,,NO PLANT
+STTO_BH,cohort 5,4,G11,,,,,NO PLANT
+STTO_BH,cohort 6,4,A09,0.0032,,,0.0012,
+STTO_BH,cohort 6,4,C05,0.0089,,,0.0062,
+STTO_BH,cohort 6,4,E11,0.0032,,,0.0034,
+STTO_BH,cohort 6,4,F10,,,,,NO PLANT
+STTO_BH,cohort 6,4,F14,,,,,NO PLANT
+STTO_BH,cohort 6,4,G05,,,,,NO PLANT
+STTO_BH,cohort 7,4,A07,0.0026,,,0.0012,
+STTO_BH,cohort 7,4,C07,,,,,NO PLANT
+STTO_BH,cohort 7,4,D04,,,,,NO PLANT
+STTO_BH,cohort 7,4,D06,,,,,NO PLANT
+STTO_BH,cohort 7,4,F04,,,,,NO PLANT
+STTO_BH,cohort 7,4,G03,,,,,NO PLANT
+STTO_BH,cohort 8,4,A11,0.0052,,,0.0008,
+STTO_BH,cohort 8,4,B04,,,,,NO PLANT
+STTO_BH,cohort 8,4,B08,,,,,
+STTO_BH,cohort 8,4,C09,,,,,NO PLANT
+STTO_BH,cohort 8,4,D10,,,,,NO PLANT
+STTO_BH,cohort 8,4,E05,,,,,NO PLANT
+STDR2,blank,4,E05,,,,,
+STTO_TM2,cohort 1,1,A09,,,,,NO PLANT
+STTO_TM2,cohort 1,1,A11,0.0292,,,,
+STTO_TM2,cohort 1,1,A13,0.0378,,,,
+STTO_TM2,cohort 1,1,B08,0.0099,,,,
+STTO_TM2,cohort 1,1,B14,,,,,NO PLANT
+STTO_TM2,cohort 1,1,G05,0.0238,,,,
+STTO_TM2,cohort 2,1,A03,.,,,,NO PLANT
+STTO_TM2,cohort 2,1,C01,0.0233,,,,
+STTO_TM2,cohort 2,1,D04,0.0361,,,,
+STTO_TM2,cohort 2,1,D12,0.0166,,,,
+STTO_TM2,cohort 2,1,E01,0.0099,,,,
+STTO_TM2,cohort 2,1,G01,,,,,NO PLANT
+STTO_TM2,cohort 3,1,D06,0.0166,,,,
+STTO_TM2,cohort 3,1,D14,0.0022,,,,
+STTO_TM2,cohort 3,1,E11,,,,,NO PLANT
+STTO_TM2,cohort 3,1,E13,,,,,NO PLANT
+STTO_TM2,cohort 3,1,F06,,,,,NO PLANT
+STTO_TM2,cohort 3,1,F10,,,,,NO PLANT
+STTO_TM2,cohort 4,1,B02,0.0222,,,,
+STTO_TM2,cohort 4,1,B10,0.022,,,,
+STTO_TM2,cohort 4,1,B12,0.0061,,,,
+STTO_TM2,cohort 4,1,C09,0.3422,,,,
+STTO_TM2,cohort 4,1,C11,,,,,NO PLANT
+STTO_TM2,cohort 4,1,C13,,,,,NO PLANT
+STTO_TM2,cohort 5,1,A07,,,,,
+STTO_TM2,cohort 5,1,B04,0.0084,,,,
+STTO_TM2,cohort 5,1,B06,,,,,NO PLANT
+STTO_TM2,cohort 5,1,D10,,,,,NO PLANT
+STTO_TM2,cohort 5,1,F04,,,,,NO PLANT
+STTO_TM2,cohort 5,1,F14,,,,,NO PLANT
+STTO_TM2,cohort 6,1,C03,0.0025,,,,
+STTO_TM2,cohort 6,1,C05,,,,,NO PLANT
+STTO_TM2,cohort 6,1,C07,,,,,NO PLANT
+STTO_TM2,cohort 6,1,D02,,,,,NO PLANT
+STTO_TM2,cohort 6,1,E05,,,,,NO PLANT
+STTO_TM2,cohort 6,1,F08,,,,,NO PLANT
+STTO_TM2,cohort 7,1,A01,0.0118,,,,
+STTO_TM2,cohort 7,1,F02,,,,,
+STTO_TM2,cohort 7,1,F12,,,,,NO PLANT
+STTO_TM2,cohort 7,1,G03,,,,,NO PLANT
+STTO_TM2,cohort 7,1,G07,,,,,NO PLANT
+STTO_TM2,cohort 7,1,G13,,,,,NO PLANT
+STTO_TM2,cohort 8,1,A05,0.0027,,,,
+STTO_TM2,cohort 8,1,D08,,,,,NO PLANT
+STTO_TM2,cohort 8,1,E03,,,,,NO PLANT
+STTO_TM2,cohort 8,1,E09,,,,,NO PLANT
+STTO_TM2,cohort 8,1,G09,,,,,NO PLANT
+STTO_TM2,cohort 8,1,G11,,,,,NO PLANT
+CAIN4,blank,4,C13,,,,,
+STTO_TM2,cohort 1,2,A07,0.0242,,,,
+STTO_TM2,cohort 1,2,B08,0.0157,,,,
+STTO_TM2,cohort 1,2,B14,,,,,NO PLANT
+STTO_TM2,cohort 1,2,C03,,,,,NO PLANT
+STTO_TM2,cohort 1,2,F04,0.0129,,,,
+STTO_TM2,cohort 1,2,G07,0.0113,,,,
+STTO_TM2,cohort 2,2,A03,0.0091,,,,
+STTO_TM2,cohort 2,2,C13,0.0111,,,,
+STTO_TM2,cohort 2,2,D08,,,,,NO PLANT
+STTO_TM2,cohort 2,2,E09,0.0152,,,,
+STTO_TM2,cohort 2,2,F12,0.0054,,,,
+STTO_TM2,cohort 2,2,G03,,,,,NO PLANT
+STTO_TM2,cohort 3,2,B12,0.0181,,,,
+STTO_TM2,cohort 3,2,C11,0.0027,,,,
+STTO_TM2,cohort 3,2,D04,,,,,NO PLANT
+STTO_TM2,cohort 3,2,E03,,,,,NO PLANT
+STTO_TM2,cohort 3,2,F14,,,,,NO PLANT
+STTO_TM2,cohort 3,2,G13,,,,,NO PLANT
+STTO_TM2,cohort 4,2,B06,0.0176,,,,
+STTO_TM2,cohort 4,2,D06,0.0129,,,,
+STTO_TM2,cohort 4,2,D10,0.0221,,,,
+STTO_TM2,cohort 4,2,E05,0.0182,,,,
+STTO_TM2,cohort 4,2,E11,,,,,NO PLANT
+STTO_TM2,cohort 4,2,G09,,,,,NO PLANT
+STTO_TM2,cohort 5,2,B10,0.008,,,,
+STTO_TM2,cohort 5,2,C05,0.0052,,,,
+STTO_TM2,cohort 5,2,C09,,,,,NO PLANT
+STTO_TM2,cohort 5,2,F08,,,,,NO PLANT
+STTO_TM2,cohort 5,2,F10,,,,,NO PLANT
+STTO_TM2,cohort 5,2,G11,,,,,NO PLANT
+STTO_TM2,cohort 6,2,A05,0.0049,,,,
+STTO_TM2,cohort 6,2,B04,0.0118,,,,
+STTO_TM2,cohort 6,2,E01,,,,,NO PLANT
+STTO_TM2,cohort 6,2,E07,,,,,NO PLANT
+STTO_TM2,cohort 6,2,F06,,,,,NO PLANT
+STTO_TM2,cohort 6,2,G05,,,,,NO PLANT
+STTO_TM2,cohort 7,2,A09,0.0024,,,,
+STTO_TM2,cohort 7,2,B02,,,,,NO PLANT
+STTO_TM2,cohort 7,2,C01,,,,,NO PLANT
+STTO_TM2,cohort 7,2,C07,,,,,NO PLANT
+STTO_TM2,cohort 7,2,D02,,,,,NO PLANT
+STTO_TM2,cohort 7,2,D12,,,,,NO PLANT
+STTO_TM2,cohort 8,2,A01,0.0123,,,,
+STTO_TM2,cohort 8,2,A11,,,,,NO PLANT
+STTO_TM2,cohort 8,2,D14,,,,,NO PLANT
+STTO_TM2,cohort 8,2,E13,,,,,NO PLANT
+STTO_TM2,cohort 8,2,F02,,,,,NO PLANT
+STTO_TM2,cohort 8,2,G01,,,,,NO PLANT
+STTO_TM2,blank,4,E09,,,,,
+STTO_TM2,cohort 1,3,A05,,,,,NO PLANT
+STTO_TM2,cohort 1,3,B08,0.023,,,,
+STTO_TM2,cohort 1,3,B14,0.034,,,,
+STTO_TM2,cohort 1,3,C11,0.0335,,,,
+STTO_TM2,cohort 1,3,F02,,,,,NO PLANT
+STTO_TM2,cohort 1,3,F10,,,,,NO PLANT
+STTO_TM2,cohort 2,3,B10,,,,,NO PLANT
+STTO_TM2,cohort 2,3,D06,,,,,NO PLANT
+STTO_TM2,cohort 2,3,E05,0.0163,,,,
+STTO_TM2,cohort 2,3,E09,0.0123,,,,
+STTO_TM2,cohort 2,3,G05,0.0167,,,,
+STTO_TM2,cohort 2,3,G09,0.0138,,,,
+STTO_TM2,cohort 3,3,B02,0.0131,,,,
+STTO_TM2,cohort 3,3,E01,,,,,
+STTO_TM2,cohort 3,3,E07,,,,,NO PLANT
+STTO_TM2,cohort 3,3,F04,,,,,NO PLANT
+STTO_TM2,cohort 3,3,G07,,,,,NO PLANT
+STTO_TM2,cohort 3,3,G13,,,,,NO PLANT
+STTO_TM2,cohort 4,3,A03,0.0297,,,,
+STTO_TM2,cohort 4,3,B12,0.0105,,,,
+STTO_TM2,cohort 4,3,C05,0.0191,,,,
+STTO_TM2,cohort 4,3,C09,0.0164,,,,
+STTO_TM2,cohort 4,3,F06,,,,,NO PLANT
+STTO_TM2,cohort 4,3,F14,,,,,NO PLANT
+STTO_TM2,cohort 5,3,A07,0.0108,,,,
+STTO_TM2,cohort 5,3,C13,,,,,NO PLANT
+STTO_TM2,cohort 5,3,D02,,,,,NO PLANT
+STTO_TM2,cohort 5,3,D14,,,,,NO PLANT
+STTO_TM2,cohort 5,3,F08,,,,,NO PLANT
+STTO_TM2,cohort 5,3,G01,,,,,NO PLANT
+STTO_TM2,cohort 6,3,A01,,,,,
+STTO_TM2,cohort 6,3,A09,0.0275,,,,
+STTO_TM2,cohort 6,3,B06,,,,,NO PLANT
+STTO_TM2,cohort 6,3,C03,,,,,NO PLANT
+STTO_TM2,cohort 6,3,C07,,,,,NO PLANT
+STTO_TM2,cohort 6,3,D04,,,,,NO PLANT
+STTO_TM2,cohort 7,3,A13,0.0074,,,,
+STTO_TM2,cohort 7,3,C01,,,,,NO PLANT
+STTO_TM2,cohort 7,3,D12,,,,,NO PLANT
+STTO_TM2,cohort 7,3,E03,,,,,NO PLANT
+STTO_TM2,cohort 7,3,E13,,,,,NO PLANT
+STTO_TM2,cohort 7,3,G11,,,,,NO PLANT
+STTO_TM2,cohort 8,3,A11,0.0178,,,,
+STTO_TM2,cohort 8,3,B04,0.0035,,,,
+STTO_TM2,cohort 8,3,D08,,,,,NO PLANT
+STTO_TM2,cohort 8,3,D10,,,,,NO PLANT
+STTO_TM2,cohort 8,3,F12,,,,,NO PLANT
+STTO_TM2,cohort 8,3,G03,,,,,NO PLANT
+STDI,blank,4,B08,,,,,
+STTO_TM2,cohort 1,4,A01,,,,,NO PLANT
+STTO_TM2,cohort 1,4,B04,0.0108,,,,
+STTO_TM2,cohort 1,4,D10,,,,,NO PLANT
+STTO_TM2,cohort 1,4,E03,,,,,NO PLANT
+STTO_TM2,cohort 1,4,E11,0.0106,,,,
+STTO_TM2,cohort 1,4,G11,0.0125,,,,
+STTO_TM2,cohort 2,4,A09,,,,,NO PLANT
+STTO_TM2,cohort 2,4,B10,,,,,NO PLANT
+STTO_TM2,cohort 2,4,B12,0.005,,,,
+STTO_TM2,cohort 2,4,D04,,,,,NO PLANT
+STTO_TM2,cohort 2,4,D08,0.0076,,,,
+STTO_TM2,cohort 2,4,F04,0.0163,,,,
+STTO_TM2,cohort 3,4,A11,0.0029,,,,
+STTO_TM2,cohort 3,4,B06,0.0029,,,,
+STTO_TM2,cohort 3,4,E01,,,,,NO PLANT
+STTO_TM2,cohort 3,4,G01,,,,,NO PLANT
+STTO_TM2,cohort 3,4,G07,,,,,NO PLANT
+STTO_TM2,cohort 3,4,G09,,,,,NO PLANT
+STTO_TM2,cohort 4,4,A03,0.0093,,,,
+STTO_TM2,cohort 4,4,A07,0.0122,,,,
+STTO_TM2,cohort 4,4,B14,0.0029,,,,
+STTO_TM2,cohort 4,4,D02,0.0088,,,,
+STTO_TM2,cohort 4,4,D12,0.0082,,,,
+STTO_TM2,cohort 4,4,F14,,,,,NO PLANT
+STTO_TM2,cohort 5,4,B08,0.0044,,,,
+STTO_TM2,cohort 5,4,C05,,,,,NO PLANT
+STTO_TM2,cohort 5,4,D06,,,,,NO PLANT
+STTO_TM2,cohort 5,4,E05,,,,,NO PLANT
+STTO_TM2,cohort 5,4,F02,,,,,NO PLANT
+STTO_TM2,cohort 5,4,F12,,,,,NO PLANT
+STTO_TM2,cohort 6,4,B02,0.0047,,,,
+STTO_TM2,cohort 6,4,C07,,,,,
+STTO_TM2,cohort 6,4,C11,0.0145,,,,
+STTO_TM2,cohort 6,4,C13,,,,,NO PLANT
+STTO_TM2,cohort 6,4,F08,,,,,NO PLANT
+STTO_TM2,cohort 6,4,F10,,,,,NO PLANT
+STTO_TM2,cohort 7,4,A13,0.0045,,,,
+STTO_TM2,cohort 7,4,C03,,,,,NO PLANT
+STTO_TM2,cohort 7,4,E07,,,,,NO PLANT
+STTO_TM2,cohort 7,4,E13,,,,,NO PLANT
+STTO_TM2,cohort 7,4,G03,,,,,NO PLANT
+STTO_TM2,cohort 7,4,G13,,,,,NO PLANT
+STTO_TM2,cohort 8,4,A05,0.0128,,,,
+STTO_TM2,cohort 8,4,C01,0.0022,,,,
+STTO_TM2,cohort 8,4,C09,,,,,NO PLANT
+STTO_TM2,cohort 8,4,D14,,,,,NO PLANT
+STTO_TM2,cohort 8,4,F06,,,,,NO PLANT
+STTO_TM2,cohort 8,4,G05,,,,,NO PLANT
+CAAN2,cohort 6,2,E04,0.0099,,,,Extra? Position/bench combo doesn't exists?
+STIN,cohort 7,1,A05,0.0023,,,,Extra? Position/bench combo doesn't exists?

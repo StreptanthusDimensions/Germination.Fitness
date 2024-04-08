@@ -1,0 +1,2745 @@
+﻿Bench,Block,Pop,Position,Cohort,Pheno Stage,Height (cm),Notes
+1,1,CAAN2,G11,blank,,,
+1,1,CAAN2,B02,cohort 1,FR,8.1,
+1,1,CAAN2,B04,cohort 1,X,,
+1,1,CAAN2,B10,cohort 1,X,,
+1,1,CAAN2,C05,cohort 1,FR,9.5,
+1,1,CAAN2,C07,cohort 1,B,3.2,
+1,1,CAAN2,E07,cohort 1,V,1.2,
+1,1,CAAN2,A09,cohort 2,,,
+1,1,CAAN2,B06,cohort 2,,,
+1,1,CAAN2,C03,cohort 2,,,
+1,1,CAAN2,D04,cohort 2,,,
+1,1,CAAN2,D12,cohort 2,,,
+1,1,CAAN2,G05,cohort 2,FR,9.3,
+1,1,CAAN2,A07,cohort 3,FR,5.1,
+1,1,CAAN2,A11,cohort 3,FR,5.7,
+1,1,CAAN2,B08,cohort 3,V,0.4,v small
+1,1,CAAN2,E05,cohort 3,,,
+1,1,CAAN2,E11,cohort 3,,,
+1,1,CAAN2,G03,cohort 3,,,
+1,1,CAAN2,A03,cohort 4,FL,14.9,
+1,1,CAAN2,C09,cohort 4,FR,10.7,
+1,1,CAAN2,C11,cohort 4,,,
+1,1,CAAN2,D10,cohort 4,FR,12,
+1,1,CAAN2,E01,cohort 4,,,
+1,1,CAAN2,E09,cohort 4,,,
+1,1,CAAN2,A13,cohort 5,V,1.4,
+1,1,CAAN2,B12,cohort 5,V,0.8,
+1,1,CAAN2,D14,cohort 5,B,9,
+1,1,CAAN2,E13,cohort 5,B,10.4,
+1,1,CAAN2,F14,cohort 5,V,0.7,
+1,1,CAAN2,G09,cohort 5,,,
+1,1,CAAN2,A01,cohort 6,V,0.5,
+1,1,CAAN2,B14,cohort 6,,,
+1,1,CAAN2,C01,cohort 6,,,
+1,1,CAAN2,D06,cohort 6,,,
+1,1,CAAN2,E03,cohort 6,,,
+1,1,CAAN2,F08,cohort 6,,,
+1,1,CAAN2,A05,cohort 7,,,not in yet
+1,1,CAAN2,D02,cohort 7,,,not in yet
+1,1,CAAN2,F02,cohort 7,,,not in yet
+1,1,CAAN2,F10,cohort 7,,,not in yet
+1,1,CAAN2,F12,cohort 7,,,not in yet
+1,1,CAAN2,G01,cohort 7,,,not in yet
+1,1,CAAN2,C13,cohort 8,,,not in yet
+1,1,CAAN2,D08,cohort 8,,,not in yet
+1,1,CAAN2,F04,cohort 8,,,not in yet
+1,1,CAAN2,F06,cohort 8,,,not in yet
+1,1,CAAN2,G07,cohort 8,,,not in yet
+1,1,CAAN2,G13,cohort 8,,,not in yet
+1,2,STIN,D12,blank,,,
+1,2,STIN,A09,cohort 1,X,,
+1,2,STIN,B06,cohort 1,FR,7.9,
+1,2,STIN,B14,cohort 1,X,,
+1,2,STIN,D10,cohort 1,FR,6,
+1,2,STIN,D14,cohort 1,X,,
+1,2,STIN,F04,cohort 1,FR,8,
+1,2,STIN,D02,cohort 2,FL,6.7,
+1,2,STIN,D08,cohort 2,B,5.1,
+1,2,STIN,F10,cohort 2,B,5,
+1,2,STIN,F14,cohort 2,FL,7.2,
+1,2,STIN,G03,cohort 2,FL,5.5,
+1,2,STIN,G07,cohort 2,FL,8,
+1,2,STIN,C03,cohort 3,FR,7,
+1,2,STIN,C13,cohort 3,B,2.8,
+1,2,STIN,E05,cohort 3,X,,
+1,2,STIN,E11,cohort 3,B,5.3,
+1,2,STIN,F06,cohort 3,FL,8.1,
+1,2,STIN,F12,cohort 3,B,3.5,
+1,2,STIN,A01,cohort 4,B,3.1,
+1,2,STIN,B08,cohort 4,B,8.5,
+1,2,STIN,B12,cohort 4,B,3.6,
+1,2,STIN,C05,cohort 4,V,2.1,
+1,2,STIN,C07,cohort 4,B,4.5,
+1,2,STIN,G13,cohort 4,V,4.5,
+1,2,STIN,A13,cohort 5,V,1.5,
+1,2,STIN,B04,cohort 5,V,2.5,
+1,2,STIN,B10,cohort 5,V,2.3,
+1,2,STIN,E07,cohort 5,V,2.2,
+1,2,STIN,G05,cohort 5,V,1.7,
+1,2,STIN,G11,cohort 5,V,2.5,
+1,2,STIN,A05,cohort 6,V,1.1,
+1,2,STIN,C01,cohort 6,V,1.3,
+1,2,STIN,C11,cohort 6,V,0.8,
+1,2,STIN,D06,cohort 6,V,1.1,
+1,2,STIN,E01,cohort 6,V,1.4,
+1,2,STIN,F08,cohort 6,V,1.5,
+1,2,STIN,A03,cohort 7,,,not in yet
+1,2,STIN,A11,cohort 7,,,not in yet
+1,2,STIN,B02,cohort 7,,,not in yet
+1,2,STIN,D04,cohort 7,,,not in yet
+1,2,STIN,F02,cohort 7,,,not in yet
+1,2,STIN,G09,cohort 7,,,not in yet
+1,2,STIN,A07,cohort 8,,,not in yet
+1,2,STIN,C09,cohort 8,,,not in yet
+1,2,STIN,E03,cohort 8,,,not in yet
+1,2,STIN,E09,cohort 8,,,not in yet
+1,2,STIN,E13,cohort 8,,,not in yet
+1,2,STIN,G01,cohort 8,,,not in yet
+1,3,STPO,B06,blank,,,
+1,3,STPO,A07,cohort 1,X,2.1,newly dead
+1,3,STPO,B04,cohort 1,V,4.1,
+1,3,STPO,E09,cohort 1,V,5.3,
+1,3,STPO,F02,cohort 1,V,1.1,
+1,3,STPO,F06,cohort 1,V,2.6,
+1,3,STPO,G03,cohort 1,V,3.1,
+1,3,STPO,A09,cohort 2,V,2,
+1,3,STPO,C07,cohort 2,V,2,
+1,3,STPO,C11,cohort 2,V,0.6,
+1,3,STPO,F12,cohort 2,V,4,
+1,3,STPO,G05,cohort 2,V,0.8,
+1,3,STPO,G07,cohort 2,V,1.4,
+1,3,STPO,B14,cohort 3,V,2.5,
+1,3,STPO,C03,cohort 3,V,2.9,
+1,3,STPO,C09,cohort 3,V,6.1,
+1,3,STPO,E03,cohort 3,V,3,
+1,3,STPO,F04,cohort 3,X,,
+1,3,STPO,G09,cohort 3,V,6.5,
+1,3,STPO,A11,cohort 4,V,1.4,
+1,3,STPO,B12,cohort 4,V,0.9,
+1,3,STPO,C05,cohort 4,,,
+1,3,STPO,C13,cohort 4,,,
+1,3,STPO,D10,cohort 4,,,
+1,3,STPO,E07,cohort 4,,,
+1,3,STPO,A01,cohort 5,V,0.4,
+1,3,STPO,A13,cohort 5,V,1.1,
+1,3,STPO,B02,cohort 5,V,0.4,
+1,3,STPO,D04,cohort 5,V,0.1,v small
+1,3,STPO,E11,cohort 5,,,
+1,3,STPO,G01,cohort 5,,,
+1,3,STPO,A03,cohort 6,V,0.6,
+1,3,STPO,D06,cohort 6,V,1,
+1,3,STPO,D08,cohort 6,V,0.7,
+1,3,STPO,E05,cohort 6,V,0.4,
+1,3,STPO,E13,cohort 6,V,0.5,
+1,3,STPO,G11,cohort 6,V,0.6,
+1,3,STPO,A05,cohort 7,,,not in yet
+1,3,STPO,D02,cohort 7,,,not in yet
+1,3,STPO,D12,cohort 7,,,not in yet
+1,3,STPO,E01,cohort 7,,,not in yet
+1,3,STPO,F08,cohort 7,,,not in yet
+1,3,STPO,F14,cohort 7,,,not in yet
+1,3,STPO,B08,cohort 8,,,not in yet
+1,3,STPO,B10,cohort 8,,,not in yet
+1,3,STPO,C01,cohort 8,,,not in yet
+1,3,STPO,D14,cohort 8,,,not in yet
+1,3,STPO,F10,cohort 8,,,not in yet
+1,3,STPO,G13,cohort 8,,,not in yet
+1,4,STGL1,G07,blank,,,
+1,4,STGL1,A13,cohort 1,V,1,
+1,4,STGL1,B08,cohort 1,V,0.7,
+1,4,STGL1,B10,cohort 1,V,2.4,
+1,4,STGL1,D14,cohort 1,V,1.9,
+1,4,STGL1,E11,cohort 1,V,1.5,
+1,4,STGL1,G13,cohort 1,V,1.7,
+1,4,STGL1,A09,cohort 2,V,0.6,
+1,4,STGL1,C01,cohort 2,,,
+1,4,STGL1,C07,cohort 2,V,3.2,
+1,4,STGL1,F08,cohort 2,,,
+1,4,STGL1,F12,cohort 2,V,0.6,
+1,4,STGL1,G03,cohort 2,V,2.5,
+1,4,STGL1,A11,cohort 3,V,1,
+1,4,STGL1,D02,cohort 3,V,1,
+1,4,STGL1,D08,cohort 3,V,1.2,
+1,4,STGL1,D12,cohort 3,V,1,
+1,4,STGL1,E13,cohort 3,,,
+1,4,STGL1,G05,cohort 3,,,
+1,4,STGL1,A01,cohort 4,V,1.5,
+1,4,STGL1,A05,cohort 4,V,1.5,
+1,4,STGL1,B06,cohort 4,,,
+1,4,STGL1,C11,cohort 4,,,
+1,4,STGL1,D04,cohort 4,V,1.1,
+1,4,STGL1,F06,cohort 4,V,0.5,
+1,4,STGL1,B12,cohort 5,V,1.1,
+1,4,STGL1,C09,cohort 5,V,1.5,
+1,4,STGL1,C13,cohort 5,V,1.3,
+1,4,STGL1,D06,cohort 5,V,1.8,
+1,4,STGL1,D10,cohort 5,,,
+1,4,STGL1,F14,cohort 5,,,
+1,4,STGL1,A03,cohort 6,V,1.6,
+1,4,STGL1,E03,cohort 6,,,
+1,4,STGL1,E05,cohort 6,,,
+1,4,STGL1,E07,cohort 6,,,
+1,4,STGL1,E09,cohort 6,,,
+1,4,STGL1,G09,cohort 6,,,
+1,4,STGL1,B02,cohort 7,,,not in yet
+1,4,STGL1,B04,cohort 7,,,not in yet
+1,4,STGL1,C03,cohort 7,,,not in yet
+1,4,STGL1,F02,cohort 7,,,not in yet
+1,4,STGL1,F10,cohort 7,,,not in yet
+1,4,STGL1,G01,cohort 7,,,not in yet
+1,4,STGL1,A07,cohort 8,,,not in yet
+1,4,STGL1,B14,cohort 8,,,not in yet
+1,4,STGL1,C05,cohort 8,,,not in yet
+1,4,STGL1,E01,cohort 8,,,not in yet
+1,4,STGL1,F04,cohort 8,,,not in yet
+1,4,STGL1,G11,cohort 8,,,not in yet
+1,5,STDR2,C07,blank,,,
+1,5,STDR2,B08,cohort 1,V,4.3,
+1,5,STDR2,B10,cohort 1,V,5.2,
+1,5,STDR2,C13,cohort 1,V,0.9,
+1,5,STDR2,F06,cohort 1,V,0.9,
+1,5,STDR2,F10,cohort 1,V,0.9,
+1,5,STDR2,G09,cohort 1,V,0.9,
+1,5,STDR2,A07,cohort 2,V,1.2,
+1,5,STDR2,C01,cohort 2,V,2,
+1,5,STDR2,D02,cohort 2,V,4.5,
+1,5,STDR2,E07,cohort 2,V,2.4,
+1,5,STDR2,F04,cohort 2,V,1.1,
+1,5,STDR2,G13,cohort 2,V,2.9,
+1,5,STDR2,A03,cohort 3,V,0.9,
+1,5,STDR2,A05,cohort 3,V,1.2,
+1,5,STDR2,A09,cohort 3,V,0.8,
+1,5,STDR2,B02,cohort 3,V,1,
+1,5,STDR2,E05,cohort 3,V,1.1,
+1,5,STDR2,G11,cohort 3,,,
+1,5,STDR2,A13,cohort 4,V,1.8,
+1,5,STDR2,B14,cohort 4,V,1.3,
+1,5,STDR2,C03,cohort 4,V,2.4,
+1,5,STDR2,C05,cohort 4,V,2,
+1,5,STDR2,D08,cohort 4,V,2.1,
+1,5,STDR2,E11,cohort 4,V,2.3,
+1,5,STDR2,D06,cohort 5,V,1.6,
+1,5,STDR2,D10,cohort 5,V,1.4,
+1,5,STDR2,F02,cohort 5,V,1,
+1,5,STDR2,F08,cohort 5,V,1.1,
+1,5,STDR2,F12,cohort 5,V,1.1,
+1,5,STDR2,G03,cohort 5,V,0.8,
+1,5,STDR2,A01,cohort 6,V,1.5,
+1,5,STDR2,A11,cohort 6,V,1.5,
+1,5,STDR2,E09,cohort 6,V,0.6,
+1,5,STDR2,F14,cohort 6,,,
+1,5,STDR2,G01,cohort 6,,,
+1,5,STDR2,G05,cohort 6,,,
+1,5,STDR2,B06,cohort 7,,,not in yet
+1,5,STDR2,C09,cohort 7,,,not in yet
+1,5,STDR2,E01,cohort 7,,,not in yet
+1,5,STDR2,E03,cohort 7,,,not in yet
+1,5,STDR2,E13,cohort 7,,,not in yet
+1,5,STDR2,G07,cohort 7,,,not in yet
+1,5,STDR2,B04,cohort 8,,,not in yet
+1,5,STDR2,B12,cohort 8,,,not in yet
+1,5,STDR2,C11,cohort 8,,,not in yet
+1,5,STDR2,D04,cohort 8,,,not in yet
+1,5,STDR2,D12,cohort 8,,,not in yet
+1,5,STDR2,D14,cohort 8,,,not in yet
+1,6,STTO_TM2,E07,blank,,,
+1,6,STTO_TM2,A09,cohort 1,,,
+1,6,STTO_TM2,A11,cohort 1,V,3.9,
+1,6,STTO_TM2,A13,cohort 1,V,4,
+1,6,STTO_TM2,B08,cohort 1,V,3,
+1,6,STTO_TM2,B14,cohort 1,,,
+1,6,STTO_TM2,G05,cohort 1,V,3.5,
+1,6,STTO_TM2,A03,cohort 2,,,
+1,6,STTO_TM2,C01,cohort 2,V,1.9,
+1,6,STTO_TM2,D04,cohort 2,V,2.2,
+1,6,STTO_TM2,D12,cohort 2,V,1.3,
+1,6,STTO_TM2,E01,cohort 2,V,1.4,
+1,6,STTO_TM2,G01,cohort 2,,,
+1,6,STTO_TM2,D06,cohort 3,V,2.9,
+1,6,STTO_TM2,D14,cohort 3,V,1.1,
+1,6,STTO_TM2,E11,cohort 3,,,
+1,6,STTO_TM2,E13,cohort 3,,,
+1,6,STTO_TM2,F06,cohort 3,,,
+1,6,STTO_TM2,F10,cohort 3,,,
+1,6,STTO_TM2,B02,cohort 4,V,3,
+1,6,STTO_TM2,B10,cohort 4,V,2.1,
+1,6,STTO_TM2,B12,cohort 4,V,1.7,
+1,6,STTO_TM2,C09,cohort 4,V,7.5,large!
+1,6,STTO_TM2,C11,cohort 4,,,
+1,6,STTO_TM2,C13,cohort 4,,,
+1,6,STTO_TM2,A07,cohort 5,X,,
+1,6,STTO_TM2,B04,cohort 5,V,1.3,
+1,6,STTO_TM2,B06,cohort 5,,,
+1,6,STTO_TM2,D10,cohort 5,,,
+1,6,STTO_TM2,F04,cohort 5,,,
+1,6,STTO_TM2,F14,cohort 5,,,
+1,6,STTO_TM2,C03,cohort 6,V,0.9,
+1,6,STTO_TM2,C05,cohort 6,V,0.5,
+1,6,STTO_TM2,C07,cohort 6,,,
+1,6,STTO_TM2,D02,cohort 6,,,
+1,6,STTO_TM2,E05,cohort 6,,,
+1,6,STTO_TM2,F08,cohort 6,,,
+1,6,STTO_TM2,A01,cohort 7,,,not in yet
+1,6,STTO_TM2,F02,cohort 7,,,not in yet
+1,6,STTO_TM2,F12,cohort 7,,,not in yet
+1,6,STTO_TM2,G03,cohort 7,,,not in yet
+1,6,STTO_TM2,G07,cohort 7,,,not in yet
+1,6,STTO_TM2,G13,cohort 7,,,not in yet
+1,6,STTO_TM2,A05,cohort 8,,,not in yet
+1,6,STTO_TM2,D08,cohort 8,,,not in yet
+1,6,STTO_TM2,E03,cohort 8,,,not in yet
+1,6,STTO_TM2,E09,cohort 8,,,not in yet
+1,6,STTO_TM2,G09,cohort 8,,,not in yet
+1,6,STTO_TM2,G11,cohort 8,,,not in yet
+1,7,CACO1,B14,blank,,,
+1,7,CACO1,A13,cohort 1,B,9.8,
+1,7,CACO1,B02,cohort 1,FR,10.5,
+1,7,CACO1,D14,cohort 1,B,5,
+1,7,CACO1,E09,cohort 1,FL,18.1,
+1,7,CACO1,G01,cohort 1,B,12,
+1,7,CACO1,G07,cohort 1,FR,23,
+1,7,CACO1,B06,cohort 2,B,8.7,
+1,7,CACO1,C13,cohort 2,,,
+1,7,CACO1,D04,cohort 2,,,
+1,7,CACO1,D12,cohort 2,B,8.8,
+1,7,CACO1,E01,cohort 2,,,
+1,7,CACO1,G03,cohort 2,FL,12.6,
+1,7,CACO1,B04,cohort 3,V,2.4,
+1,7,CACO1,C05,cohort 3,B,4.7,
+1,7,CACO1,C09,cohort 3,V,2,
+1,7,CACO1,D02,cohort 3,B,3.3,
+1,7,CACO1,F14,cohort 3,,,
+1,7,CACO1,G05,cohort 3,,,
+1,7,CACO1,A03,cohort 4,B,10.5,
+1,7,CACO1,A05,cohort 4,B,13,
+1,7,CACO1,D10,cohort 4,B,8.9,
+1,7,CACO1,F04,cohort 4,B,13.5,
+1,7,CACO1,F10,cohort 4,,,
+1,7,CACO1,G09,cohort 4,,,
+1,7,CACO1,A01,cohort 5,V,3.5,
+1,7,CACO1,A09,cohort 5,V,1.2,
+1,7,CACO1,A11,cohort 5,V,4.2,
+1,7,CACO1,C03,cohort 5,B,8.2,
+1,7,CACO1,C07,cohort 5,V,3.5,
+1,7,CACO1,F08,cohort 5,V,3.5,
+1,7,CACO1,C01,cohort 6,V,2,
+1,7,CACO1,E13,cohort 6,V,1.5,
+1,7,CACO1,F02,cohort 6,V,2.3,
+1,7,CACO1,F12,cohort 6,V,1.6,
+1,7,CACO1,G11,cohort 6,,,
+1,7,CACO1,G13,cohort 6,,,
+1,7,CACO1,B08,cohort 7,,,not in yet
+1,7,CACO1,B12,cohort 7,,,not in yet
+1,7,CACO1,C11,cohort 7,,,not in yet
+1,7,CACO1,D06,cohort 7,,,not in yet
+1,7,CACO1,E03,cohort 7,,,not in yet
+1,7,CACO1,E07,cohort 7,,,not in yet
+1,7,CACO1,A07,cohort 8,,,not in yet
+1,7,CACO1,B10,cohort 8,,,not in yet
+1,7,CACO1,D08,cohort 8,,,not in yet
+1,7,CACO1,E05,cohort 8,,,not in yet
+1,7,CACO1,E11,cohort 8,,,not in yet
+1,7,CACO1,F06,cohort 8,,,not in yet
+1,8,STBR3,E07,blank,,,
+1,8,STBR3,A13,cohort 1,V,4.5,
+1,8,STBR3,D10,cohort 1,V,2,
+1,8,STBR3,E03,cohort 1,V,3.2,
+1,8,STBR3,F10,cohort 1,X,,
+1,8,STBR3,F12,cohort 1,X,,
+1,8,STBR3,G07,cohort 1,V,6.6,
+1,8,STBR3,B02,cohort 2,V,2,
+1,8,STBR3,B06,cohort 2,V,1.2,
+1,8,STBR3,C09,cohort 2,X,,
+1,8,STBR3,E11,cohort 2,V,2,
+1,8,STBR3,E13,cohort 2,X,,
+1,8,STBR3,G01,cohort 2,V,0.9,
+1,8,STBR3,A09,cohort 3,V,2.5,
+1,8,STBR3,A11,cohort 3,V,2.5,
+1,8,STBR3,D06,cohort 3,V,3.5,
+1,8,STBR3,E09,cohort 3,V,3,
+1,8,STBR3,F06,cohort 3,V,2.2,
+1,8,STBR3,G09,cohort 3,V,2.2,
+1,8,STBR3,A03,cohort 4,V,2.5,
+1,8,STBR3,B10,cohort 4,V,2.5,
+1,8,STBR3,B12,cohort 4,X,,
+1,8,STBR3,B14,cohort 4,V,1.3,
+1,8,STBR3,C07,cohort 4,V,2.5,
+1,8,STBR3,D14,cohort 4,V,3.1,
+1,8,STBR3,A05,cohort 5,V,1.6,
+1,8,STBR3,B08,cohort 5,V,1.3,
+1,8,STBR3,C03,cohort 5,V,1.5,
+1,8,STBR3,C13,cohort 5,V,2,
+1,8,STBR3,F04,cohort 5,V,1.6,
+1,8,STBR3,G05,cohort 5,V,2,
+1,8,STBR3,B04,cohort 6,V,1.1,
+1,8,STBR3,C01,cohort 6,V,1.9,
+1,8,STBR3,C11,cohort 6,V,1.5,
+1,8,STBR3,E01,cohort 6,V,1.1,
+1,8,STBR3,G03,cohort 6,V,2.1,
+1,8,STBR3,G11,cohort 6,V,1.2,
+1,8,STBR3,A01,cohort 7,,,not in yet
+1,8,STBR3,D04,cohort 7,,,not in yet
+1,8,STBR3,D08,cohort 7,,,not in yet
+1,8,STBR3,F02,cohort 7,,,not in yet
+1,8,STBR3,F14,cohort 7,,,not in yet
+1,8,STBR3,G13,cohort 7,,,not in yet
+1,8,STBR3,A07,cohort 8,,,not in yet
+1,8,STBR3,C05,cohort 8,,,not in yet
+1,8,STBR3,D02,cohort 8,,,not in yet
+1,8,STBR3,D12,cohort 8,,,not in yet
+1,8,STBR3,E05,cohort 8,,,not in yet
+1,8,STBR3,F08,cohort 8,,,not in yet
+1,9,STDI,A03,blank,,,
+1,9,STDI,A13,cohort 1,X,,
+1,9,STDI,B04,cohort 1,V,12.5,
+1,9,STDI,D02,cohort 1,V,15,
+1,9,STDI,D04,cohort 1,V,24,
+1,9,STDI,E09,cohort 1,V,13.1,
+1,9,STDI,G05,cohort 1,V,15.4,
+1,9,STDI,C03,cohort 2,,,
+1,9,STDI,E03,cohort 2,V,5.1,
+1,9,STDI,E11,cohort 2,V,2,
+1,9,STDI,F10,cohort 2,V,4.8,
+1,9,STDI,G01,cohort 2,,,
+1,9,STDI,G09,cohort 2,V,5.9,
+1,9,STDI,B02,cohort 3,V,5.6,
+1,9,STDI,C01,cohort 3,V,13.1,
+1,9,STDI,C05,cohort 3,V,5,
+1,9,STDI,D14,cohort 3,,,
+1,9,STDI,F12,cohort 3,,,
+1,9,STDI,G07,cohort 3,,,
+1,9,STDI,A01,cohort 4,V,1.5,
+1,9,STDI,A05,cohort 4,V,1.2,
+1,9,STDI,A11,cohort 4,V,6.5,
+1,9,STDI,B10,cohort 4,V,5.4,
+1,9,STDI,D10,cohort 4,V,7,
+1,9,STDI,E13,cohort 4,,,
+1,9,STDI,A07,cohort 5,V,2.4,
+1,9,STDI,B06,cohort 5,V,2.3,
+1,9,STDI,E07,cohort 5,,,
+1,9,STDI,F06,cohort 5,,,
+1,9,STDI,F08,cohort 5,,,
+1,9,STDI,G03,cohort 5,,,
+1,9,STDI,A09,cohort 6,V,2.1,
+1,9,STDI,B12,cohort 6,V,0.9,
+1,9,STDI,C07,cohort 6,,,
+1,9,STDI,C09,cohort 6,,,
+1,9,STDI,C11,cohort 6,,,
+1,9,STDI,F04,cohort 6,,,
+1,9,STDI,B08,cohort 7,,,not in yet
+1,9,STDI,C13,cohort 7,,,not in yet
+1,9,STDI,E01,cohort 7,,,not in yet
+1,9,STDI,E05,cohort 7,,,not in yet
+1,9,STDI,G11,cohort 7,,,not in yet
+1,9,STDI,G13,cohort 7,,,not in yet
+1,9,STDI,B14,cohort 8,,,not in yet
+1,9,STDI,D06,cohort 8,,,not in yet
+1,9,STDI,D08,cohort 8,,,not in yet
+1,9,STDI,D12,cohort 8,,,not in yet
+1,9,STDI,F02,cohort 8,,,not in yet
+1,9,STDI,F14,cohort 8,,,not in yet
+1,10,STTO_BH,E01,blank,,,
+1,10,STTO_BH,A05,cohort 1,V,2.1,
+1,10,STTO_BH,A07,cohort 1,V,1.6,
+1,10,STTO_BH,C07,cohort 1,V,1.6,
+1,10,STTO_BH,C13,cohort 1,V,2,
+1,10,STTO_BH,D04,cohort 1,V,1,
+1,10,STTO_BH,G05,cohort 1,V,2.4,
+1,10,STTO_BH,A03,cohort 2,,,
+1,10,STTO_BH,A09,cohort 2,V,0.5,
+1,10,STTO_BH,B12,cohort 2,,,
+1,10,STTO_BH,E05,cohort 2,,,
+1,10,STTO_BH,F14,cohort 2,,,
+1,10,STTO_BH,G09,cohort 2,,,
+1,10,STTO_BH,A01,cohort 3,V,2,
+1,10,STTO_BH,B04,cohort 3,V,2,
+1,10,STTO_BH,D12,cohort 3,V,1.8,
+1,10,STTO_BH,F04,cohort 3,,,
+1,10,STTO_BH,F10,cohort 3,,,
+1,10,STTO_BH,G11,cohort 3,,,
+1,10,STTO_BH,B02,cohort 4,V,2.8,
+1,10,STTO_BH,C11,cohort 4,V,2.2,
+1,10,STTO_BH,D02,cohort 4,V,0.9,
+1,10,STTO_BH,F06,cohort 4,,,
+1,10,STTO_BH,G07,cohort 4,,,
+1,10,STTO_BH,G13,cohort 4,,,
+1,10,STTO_BH,A11,cohort 5,,,
+1,10,STTO_BH,B08,cohort 5,V,0.9,
+1,10,STTO_BH,B10,cohort 5,V,1.4,
+1,10,STTO_BH,C03,cohort 5,,,
+1,10,STTO_BH,E09,cohort 5,V,0.9,
+1,10,STTO_BH,E11,cohort 5,,,
+1,10,STTO_BH,B14,cohort 6,V,0.9,
+1,10,STTO_BH,D06,cohort 6,V,0.4,
+1,10,STTO_BH,E07,cohort 6,,,
+1,10,STTO_BH,E13,cohort 6,,,
+1,10,STTO_BH,F08,cohort 6,,,
+1,10,STTO_BH,G03,cohort 6,,,
+1,10,STTO_BH,A13,cohort 7,,,not in yet
+1,10,STTO_BH,B06,cohort 7,,,not in yet
+1,10,STTO_BH,C01,cohort 7,,,not in yet
+1,10,STTO_BH,C09,cohort 7,,,not in yet
+1,10,STTO_BH,D14,cohort 7,,,not in yet
+1,10,STTO_BH,E03,cohort 7,,,not in yet
+1,10,STTO_BH,C05,cohort 8,,,not in yet
+1,10,STTO_BH,D08,cohort 8,,,not in yet
+1,10,STTO_BH,D10,cohort 8,,,not in yet
+1,10,STTO_BH,F02,cohort 8,,,not in yet
+1,10,STTO_BH,F12,cohort 8,,,not in yet
+1,10,STTO_BH,G01,cohort 8,,,not in yet
+1,11,CAIN3,F06,blank,,,
+1,11,CAIN3,C03,cohort 1,X,,
+1,11,CAIN3,C09,cohort 1,X,,
+1,11,CAIN3,D08,cohort 1,FR,14.7,
+1,11,CAIN3,D14,cohort 1,X,,
+1,11,CAIN3,F04,cohort 1,X,,
+1,11,CAIN3,F12,cohort 1,V,3.7,
+1,11,CAIN3,A11,cohort 2,,,
+1,11,CAIN3,B10,cohort 2,FR,11.1,
+1,11,CAIN3,B14,cohort 2,X,,
+1,11,CAIN3,C11,cohort 2,B,8.5,
+1,11,CAIN3,E05,cohort 2,,,
+1,11,CAIN3,E09,cohort 2,B,15.5,
+1,11,CAIN3,B12,cohort 3,FL,17.2,
+1,11,CAIN3,C07,cohort 3,FL,18,
+1,11,CAIN3,D02,cohort 3,,,
+1,11,CAIN3,F14,cohort 3,,,
+1,11,CAIN3,G03,cohort 3,,,
+1,11,CAIN3,G11,cohort 3,,,
+1,11,CAIN3,A03,cohort 4,B,11.4,
+1,11,CAIN3,B06,cohort 4,B,10.5,
+1,11,CAIN3,D04,cohort 4,B,4.2,
+1,11,CAIN3,D12,cohort 4,B,5.5,
+1,11,CAIN3,E07,cohort 4,FL,13.5,
+1,11,CAIN3,E11,cohort 4,B,6.4,
+1,11,CAIN3,A05,cohort 5,B,3.2,
+1,11,CAIN3,C01,cohort 5,B,5.9,
+1,11,CAIN3,E03,cohort 5,V,2.3,
+1,11,CAIN3,E13,cohort 5,V,2.8,
+1,11,CAIN3,F02,cohort 5,,,
+1,11,CAIN3,G01,cohort 5,,,
+1,11,CAIN3,A07,cohort 6,V,2.1,
+1,11,CAIN3,A13,cohort 6,V,1.8,
+1,11,CAIN3,B02,cohort 6,V,1.1,
+1,11,CAIN3,C05,cohort 6,V,1.5,
+1,11,CAIN3,F08,cohort 6,V,2.4,
+1,11,CAIN3,G05,cohort 6,,,
+1,11,CAIN3,D06,cohort 7,,,not in yet
+1,11,CAIN3,D10,cohort 7,,,not in yet
+1,11,CAIN3,E01,cohort 7,,,not in yet
+1,11,CAIN3,G07,cohort 7,,,not in yet
+1,11,CAIN3,G09,cohort 7,,,not in yet
+1,11,CAIN3,G13,cohort 7,,,not in yet
+1,11,CAIN3,A01,cohort 8,,,not in yet
+1,11,CAIN3,A09,cohort 8,,,not in yet
+1,11,CAIN3,B04,cohort 8,,,not in yet
+1,11,CAIN3,B08,cohort 8,,,not in yet
+1,11,CAIN3,C13,cohort 8,,,not in yet
+1,11,CAIN3,F10,cohort 8,,,not in yet
+1,12,CAAM,D12,blank,,,
+1,12,CAAM,A03,cohort 1,X,,
+1,12,CAAM,A05,cohort 1,FR,14.5,
+1,12,CAAM,B12,cohort 1,FR,8.6,
+1,12,CAAM,E01,cohort 1,FL,16.1,
+1,12,CAAM,F04,cohort 1,FL,21,
+1,12,CAAM,F06,cohort 1,FR,18.8,
+1,12,CAAM,B02,cohort 2,FL,14.6,
+1,12,CAAM,D04,cohort 2,FL,15.6,
+1,12,CAAM,F08,cohort 2,B,12.2,
+1,12,CAAM,F14,cohort 2,B,16.2,
+1,12,CAAM,G03,cohort 2,FL,10.7,
+1,12,CAAM,G07,cohort 2,FL,10.2,
+1,12,CAAM,A11,cohort 3,B,6.2,
+1,12,CAAM,B08,cohort 3,FL,9.6,
+1,12,CAAM,C11,cohort 3,B,2.6,
+1,12,CAAM,D06,cohort 3,B,8.1,
+1,12,CAAM,D08,cohort 3,,,
+1,12,CAAM,D10,cohort 3,,,
+1,12,CAAM,A13,cohort 4,,,
+1,12,CAAM,B04,cohort 4,,,
+1,12,CAAM,C13,cohort 4,,,
+1,12,CAAM,E07,cohort 4,B,9.5,
+1,12,CAAM,E11,cohort 4,V,3.9,
+1,12,CAAM,G11,cohort 4,V,2.2,
+1,12,CAAM,A07,cohort 5,V,1.7,
+1,12,CAAM,A09,cohort 5,B,9.5,
+1,12,CAAM,C05,cohort 5,V,2.3,
+1,12,CAAM,C07,cohort 5,V,1.5,drying out
+1,12,CAAM,E09,cohort 5,B,12.2,
+1,12,CAAM,G09,cohort 5,V,2.9,
+1,12,CAAM,A01,cohort 6,V,1.1,
+1,12,CAAM,B10,cohort 6,V,0.9,
+1,12,CAAM,B14,cohort 6,V,1,
+1,12,CAAM,D02,cohort 6,,,
+1,12,CAAM,E05,cohort 6,,,
+1,12,CAAM,G05,cohort 6,,,
+1,12,CAAM,B06,cohort 7,,,not in yet
+1,12,CAAM,C03,cohort 7,,,not in yet
+1,12,CAAM,C09,cohort 7,,,not in yet
+1,12,CAAM,E03,cohort 7,,,not in yet
+1,12,CAAM,E13,cohort 7,,,not in yet
+1,12,CAAM,G01,cohort 7,,,not in yet
+1,12,CAAM,C01,cohort 8,,,not in yet
+1,12,CAAM,D14,cohort 8,,,not in yet
+1,12,CAAM,F02,cohort 8,,,not in yet
+1,12,CAAM,F10,cohort 8,,,not in yet
+1,12,CAAM,F12,cohort 8,,,not in yet
+1,12,CAAM,G13,cohort 8,,,not in yet
+1,13,CAIN4,F02,blank,,,
+1,13,CAIN4,A03,cohort 1,FR,21,
+1,13,CAIN4,A05,cohort 1,B,13.3,
+1,13,CAIN4,B12,cohort 1,FL,13.6,
+1,13,CAIN4,E05,cohort 1,B,4.2,
+1,13,CAIN4,E09,cohort 1,FL,11.9,
+1,13,CAIN4,E13,cohort 1,FR,20.9,
+1,13,CAIN4,A11,cohort 2,,,
+1,13,CAIN4,B14,cohort 2,,,
+1,13,CAIN4,D08,cohort 2,B,17.8,
+1,13,CAIN4,E03,cohort 2,B,3.6,
+1,13,CAIN4,F06,cohort 2,,,
+1,13,CAIN4,G07,cohort 2,B,17.6,
+1,13,CAIN4,A01,cohort 3,FL,15.6,
+1,13,CAIN4,B02,cohort 3,V,1,
+1,13,CAIN4,C03,cohort 3,B,9.3,
+1,13,CAIN4,G05,cohort 3,,,
+1,13,CAIN4,G09,cohort 3,,,
+1,13,CAIN4,G13,cohort 3,,,
+1,13,CAIN4,A13,cohort 4,,,
+1,13,CAIN4,C07,cohort 4,,,
+1,13,CAIN4,D02,cohort 4,,,
+1,13,CAIN4,D12,cohort 4,,,
+1,13,CAIN4,E01,cohort 4,,,
+1,13,CAIN4,G03,cohort 4,,,
+1,13,CAIN4,A09,cohort 5,B,7.1,
+1,13,CAIN4,B04,cohort 5,,,
+1,13,CAIN4,B06,cohort 5,,,
+1,13,CAIN4,C05,cohort 5,,,
+1,13,CAIN4,C13,cohort 5,V,3.7,
+1,13,CAIN4,G01,cohort 5,,,
+1,13,CAIN4,A07,cohort 6,V,1.4,
+1,13,CAIN4,B10,cohort 6,V,2,
+1,13,CAIN4,C11,cohort 6,V,1.3,
+1,13,CAIN4,D04,cohort 6,V,1.3,
+1,13,CAIN4,E11,cohort 6,,,
+1,13,CAIN4,F10,cohort 6,,,
+1,13,CAIN4,C01,cohort 7,,,not in yet
+1,13,CAIN4,C09,cohort 7,,,not in yet
+1,13,CAIN4,D10,cohort 7,,,not in yet
+1,13,CAIN4,F08,cohort 7,,,not in yet
+1,13,CAIN4,F14,cohort 7,,,not in yet
+1,13,CAIN4,G11,cohort 7,,,not in yet
+1,13,CAIN4,B08,cohort 8,,,not in yet
+1,13,CAIN4,D06,cohort 8,,,not in yet
+1,13,CAIN4,D14,cohort 8,,,not in yet
+1,13,CAIN4,E07,cohort 8,,,not in yet
+1,13,CAIN4,F04,cohort 8,,,not in yet
+1,13,CAIN4,F12,cohort 8,,,not in yet
+1,14,CAAN1,D14,blank,,,
+1,14,CAAN1,B12,cohort 1,B,2.2,
+1,14,CAAN1,C05,cohort 1,B,5.3,
+1,14,CAAN1,F02,cohort 1,FL,10.7,
+1,14,CAAN1,F10,cohort 1,FR,10.1,
+1,14,CAAN1,F12,cohort 1,B,4.5,
+1,14,CAAN1,G03,cohort 1,FR,9.9,
+1,14,CAAN1,A09,cohort 2,FR,11.6,
+1,14,CAAN1,B10,cohort 2,,,
+1,14,CAAN1,C01,cohort 2,,,
+1,14,CAAN1,C09,cohort 2,,,
+1,14,CAAN1,C11,cohort 2,FL,5,
+1,14,CAAN1,D06,cohort 2,,,
+1,14,CAAN1,A05,cohort 3,FR,8.8,
+1,14,CAAN1,B04,cohort 3,FL,5,
+1,14,CAAN1,C07,cohort 3,FL,8.5,
+1,14,CAAN1,E07,cohort 3,V,0.6,
+1,14,CAAN1,G01,cohort 3,,,
+1,14,CAAN1,G07,cohort 3,,,
+1,14,CAAN1,A07,cohort 4,FR,12.3,
+1,14,CAAN1,A13,cohort 4,FR,10.5,
+1,14,CAAN1,D02,cohort 4,FR,10.2,
+1,14,CAAN1,E13,cohort 4,FL,8.5,
+1,14,CAAN1,G09,cohort 4,FR,8.1,
+1,14,CAAN1,G13,cohort 4,FL,6,
+1,14,CAAN1,B06,cohort 5,V,0.5,
+1,14,CAAN1,C03,cohort 5,B,5.2,
+1,14,CAAN1,C13,cohort 5,V,0.9,
+1,14,CAAN1,D04,cohort 5,V,1.2,
+1,14,CAAN1,D12,cohort 5,V,2.2,
+1,14,CAAN1,F06,cohort 5,,,
+1,14,CAAN1,A01,cohort 6,V,0.5,
+1,14,CAAN1,B02,cohort 6,V,0.6,
+1,14,CAAN1,D08,cohort 6,V,0.4,
+1,14,CAAN1,E01,cohort 6,V,0.8,
+1,14,CAAN1,E05,cohort 6,,,
+1,14,CAAN1,E11,cohort 6,,,
+1,14,CAAN1,B08,cohort 7,,,not in yet
+1,14,CAAN1,B14,cohort 7,,,not in yet
+1,14,CAAN1,D10,cohort 7,,,not in yet
+1,14,CAAN1,F04,cohort 7,,,not in yet
+1,14,CAAN1,F14,cohort 7,,,not in yet
+1,14,CAAN1,G05,cohort 7,,,not in yet
+1,14,CAAN1,A03,cohort 8,,,not in yet
+1,14,CAAN1,A11,cohort 8,,,not in yet
+1,14,CAAN1,E03,cohort 8,,,not in yet
+1,14,CAAN1,E09,cohort 8,,,not in yet
+1,14,CAAN1,F08,cohort 8,,,not in yet
+1,14,CAAN1,G11,cohort 8,,,not in yet
+2,1,CACO1,C03,blank,,,
+2,1,CACO1,B02,cohort 1,FR,13.7,
+2,1,CACO1,B06,cohort 1,FR,16.3,
+2,1,CACO1,C05,cohort 1,B,9.1,
+2,1,CACO1,E03,cohort 1,FL,15.2,
+2,1,CACO1,F02,cohort 1,FR,18.1,
+2,1,CACO1,F10,cohort 1,X,,
+2,1,CACO1,B14,cohort 2,,,
+2,1,CACO1,C07,cohort 2,FL,13.7,
+2,1,CACO1,D06,cohort 2,,,
+2,1,CACO1,E07,cohort 2,,,
+2,1,CACO1,F14,cohort 2,,,
+2,1,CACO1,G07,cohort 2,B,7.9,
+2,1,CACO1,A09,cohort 3,V,3.1,
+2,1,CACO1,C09,cohort 3,V,2.3,
+2,1,CACO1,D04,cohort 3,B,12,
+2,1,CACO1,D12,cohort 3,B,7.4,
+2,1,CACO1,E01,cohort 3,,,
+2,1,CACO1,G03,cohort 3,,,
+2,1,CACO1,B08,cohort 4,FL,14,
+2,1,CACO1,E05,cohort 4,X,,
+2,1,CACO1,E11,cohort 4,B,8.1,
+2,1,CACO1,E13,cohort 4,B,8,
+2,1,CACO1,F08,cohort 4,B,7.7,
+2,1,CACO1,G05,cohort 4,,,
+2,1,CACO1,A03,cohort 5,V,3.7,
+2,1,CACO1,A05,cohort 5,V,2.6,
+2,1,CACO1,A07,cohort 5,V,4,
+2,1,CACO1,B04,cohort 5,V,3.2,
+2,1,CACO1,C11,cohort 5,B,6.6,
+2,1,CACO1,G01,cohort 5,V,3,
+2,1,CACO1,A01,cohort 6,V,1.3,
+2,1,CACO1,C01,cohort 6,V,1.9,
+2,1,CACO1,E09,cohort 6,V,1.3,
+2,1,CACO1,F12,cohort 6,V,1.8,
+2,1,CACO1,G09,cohort 6,,,
+2,1,CACO1,G13,cohort 6,,,
+2,1,CACO1,A11,cohort 7,,,not in yet
+2,1,CACO1,B10,cohort 7,,,not in yet
+2,1,CACO1,B12,cohort 7,,,not in yet
+2,1,CACO1,D10,cohort 7,,,not in yet
+2,1,CACO1,D14,cohort 7,,,not in yet
+2,1,CACO1,F06,cohort 7,,,not in yet
+2,1,CACO1,A13,cohort 8,,,not in yet
+2,1,CACO1,C13,cohort 8,,,not in yet
+2,1,CACO1,D02,cohort 8,,,not in yet
+2,1,CACO1,D08,cohort 8,,,not in yet
+2,1,CACO1,F04,cohort 8,,,not in yet
+2,1,CACO1,G11,cohort 8,,,not in yet
+2,2,STDR2,F06,blank,,,
+2,2,STDR2,A09,cohort 1,V,1,
+2,2,STDR2,A11,cohort 1,B,8.6,
+2,2,STDR2,B02,cohort 1,V,0.7,
+2,2,STDR2,C01,cohort 1,V,0.4,
+2,2,STDR2,C13,cohort 1,V,1.1,
+2,2,STDR2,G13,cohort 1,B,6.1,
+2,2,STDR2,C05,cohort 2,V,2.1,
+2,2,STDR2,C07,cohort 2,V,1.8,
+2,2,STDR2,D02,cohort 2,V,1.8,
+2,2,STDR2,E05,cohort 2,V,1.7,
+2,2,STDR2,E09,cohort 2,V,0.9,
+2,2,STDR2,F04,cohort 2,V,1.7,
+2,2,STDR2,B06,cohort 3,V,1,
+2,2,STDR2,B10,cohort 3,V,1.4,
+2,2,STDR2,D08,cohort 3,V,0.6,
+2,2,STDR2,G01,cohort 3,V,1.6,
+2,2,STDR2,G09,cohort 3,V,1.1,
+2,2,STDR2,G11,cohort 3,,,
+2,2,STDR2,A01,cohort 4,V,1.7,
+2,2,STDR2,A03,cohort 4,V,2.2,
+2,2,STDR2,D12,cohort 4,V,1.7,
+2,2,STDR2,D14,cohort 4,V,1.6,
+2,2,STDR2,F02,cohort 4,V,3.3,
+2,2,STDR2,F10,cohort 4,V,3.1,
+2,2,STDR2,A07,cohort 5,V,1.7,
+2,2,STDR2,E01,cohort 5,V,1.5,
+2,2,STDR2,E07,cohort 5,V,1.9,
+2,2,STDR2,F08,cohort 5,V,0.9,
+2,2,STDR2,F12,cohort 5,V,1.5,
+2,2,STDR2,G05,cohort 5,,,
+2,2,STDR2,A13,cohort 6,V,1.1,
+2,2,STDR2,C09,cohort 6,V,0.8,
+2,2,STDR2,C11,cohort 6,V,1.4,
+2,2,STDR2,D04,cohort 6,,,
+2,2,STDR2,E11,cohort 6,,,
+2,2,STDR2,F14,cohort 6,,,
+2,2,STDR2,A05,cohort 7,,,not in yet
+2,2,STDR2,B12,cohort 7,,,not in yet
+2,2,STDR2,B14,cohort 7,,,not in yet
+2,2,STDR2,D06,cohort 7,,,not in yet
+2,2,STDR2,D10,cohort 7,,,not in yet
+2,2,STDR2,E03,cohort 7,,,not in yet
+2,2,STDR2,B04,cohort 8,,,not in yet
+2,2,STDR2,B08,cohort 8,,,not in yet
+2,2,STDR2,C03,cohort 8,,,not in yet
+2,2,STDR2,E13,cohort 8,,,not in yet
+2,2,STDR2,G03,cohort 8,,,not in yet
+2,2,STDR2,G07,cohort 8,,,not in yet
+2,3,CAIN3,A09,blank,,,
+2,3,CAIN3,A03,cohort 1,X,,
+2,3,CAIN3,B14,cohort 1,X,,
+2,3,CAIN3,D06,cohort 1,B,12.1,
+2,3,CAIN3,D10,cohort 1,FR,24,
+2,3,CAIN3,E09,cohort 1,B,3.8,
+2,3,CAIN3,G05,cohort 1,B,12.9,
+2,3,CAIN3,A07,cohort 2,B,9.3,
+2,3,CAIN3,B08,cohort 2,X,,
+2,3,CAIN3,D08,cohort 2,,,
+2,3,CAIN3,E01,cohort 2,,,
+2,3,CAIN3,F04,cohort 2,B,7.8,
+2,3,CAIN3,F10,cohort 2,,,
+2,3,CAIN3,A13,cohort 3,X,,
+2,3,CAIN3,C11,cohort 3,,,
+2,3,CAIN3,F06,cohort 3,FL,12.4,
+2,3,CAIN3,F08,cohort 3,,,
+2,3,CAIN3,G03,cohort 3,,,
+2,3,CAIN3,G11,cohort 3,,,
+2,3,CAIN3,B06,cohort 4,B,4.4,
+2,3,CAIN3,C01,cohort 4,V,1.5,
+2,3,CAIN3,C07,cohort 4,X,,
+2,3,CAIN3,D02,cohort 4,V,4,
+2,3,CAIN3,D04,cohort 4,X,,
+2,3,CAIN3,E13,cohort 4,V,1.6,
+2,3,CAIN3,B02,cohort 5,V,4.7,
+2,3,CAIN3,C09,cohort 5,V,3.6,
+2,3,CAIN3,D12,cohort 5,V,1.7,
+2,3,CAIN3,D14,cohort 5,V,2.4,
+2,3,CAIN3,G07,cohort 5,,,
+2,3,CAIN3,G09,cohort 5,,,
+2,3,CAIN3,A01,cohort 6,V,1.5,
+2,3,CAIN3,A05,cohort 6,V,2,
+2,3,CAIN3,A11,cohort 6,V,1.4,
+2,3,CAIN3,E11,cohort 6,V,2.4,
+2,3,CAIN3,F14,cohort 6,V,2.3,
+2,3,CAIN3,G13,cohort 6,,,
+2,3,CAIN3,B12,cohort 7,,,not in yet
+2,3,CAIN3,C13,cohort 7,,,not in yet
+2,3,CAIN3,E07,cohort 7,,,not in yet
+2,3,CAIN3,F02,cohort 7,,,not in yet
+2,3,CAIN3,F12,cohort 7,,,not in yet
+2,3,CAIN3,G01,cohort 7,,,not in yet
+2,3,CAIN3,B04,cohort 8,,,not in yet
+2,3,CAIN3,B10,cohort 8,,,not in yet
+2,3,CAIN3,C03,cohort 8,,,not in yet
+2,3,CAIN3,C05,cohort 8,,,not in yet
+2,3,CAIN3,E03,cohort 8,,,not in yet
+2,3,CAIN3,E05,cohort 8,,,not in yet
+2,4,STIN,B10,blank,,,
+2,4,STIN,A07,cohort 1,X,,
+2,4,STIN,B06,cohort 1,FR,7.5,
+2,4,STIN,C01,cohort 1,FR,8.9,
+2,4,STIN,C11,cohort 1,FR,7,
+2,4,STIN,E07,cohort 1,FR,8.1,
+2,4,STIN,F06,cohort 1,FR,7.8,
+2,4,STIN,C13,cohort 2,FL,7.1,
+2,4,STIN,D04,cohort 2,FL,9.5,
+2,4,STIN,F02,cohort 2,FL,6.1,
+2,4,STIN,F08,cohort 2,FL,7.8,
+2,4,STIN,G03,cohort 2,FL,7.8,
+2,4,STIN,G09,cohort 2,FL,6.1,
+2,4,STIN,A03,cohort 3,B,5.5,
+2,4,STIN,B08,cohort 3,FL,8.9,
+2,4,STIN,B14,cohort 3,FL,6.8,
+2,4,STIN,C03,cohort 3,B,6.6,
+2,4,STIN,F14,cohort 3,FL,8.4,
+2,4,STIN,G05,cohort 3,B,6.9,
+2,4,STIN,A05,cohort 4,V,3.7,
+2,4,STIN,C07,cohort 4,V,4.1,
+2,4,STIN,D12,cohort 4,V,3.6,
+2,4,STIN,E01,cohort 4,B,4.6,
+2,4,STIN,E03,cohort 4,B,7.1,
+2,4,STIN,E11,cohort 4,V,2.6,
+2,4,STIN,A09,cohort 5,B,5.9,
+2,4,STIN,A11,cohort 5,X,,
+2,4,STIN,A13,cohort 5,V,1.8,
+2,4,STIN,E13,cohort 5,V,1.6,
+2,4,STIN,G07,cohort 5,V,2.7,
+2,4,STIN,G11,cohort 5,V,1.5,
+2,4,STIN,B02,cohort 6,V,0.6,
+2,4,STIN,D14,cohort 6,V,1.1,
+2,4,STIN,F04,cohort 6,V,0.8,
+2,4,STIN,F10,cohort 6,V,0.6,
+2,4,STIN,F12,cohort 6,V,1.1,
+2,4,STIN,G13,cohort 6,V,1,
+2,4,STIN,C05,cohort 7,,,not in yet
+2,4,STIN,C09,cohort 7,,,not in yet
+2,4,STIN,D02,cohort 7,,,not in yet
+2,4,STIN,D06,cohort 7,,,not in yet
+2,4,STIN,D08,cohort 7,,,not in yet
+2,4,STIN,E09,cohort 7,,,not in yet
+2,4,STIN,A01,cohort 8,,,not in yet
+2,4,STIN,B04,cohort 8,,,not in yet
+2,4,STIN,B12,cohort 8,,,not in yet
+2,4,STIN,D10,cohort 8,,,not in yet
+2,4,STIN,E05,cohort 8,,,not in yet
+2,4,STIN,G01,cohort 8,,,not in yet
+2,5,STBR3,B04,blank,,,
+2,5,STBR3,A13,cohort 1,X,,
+2,5,STBR3,B10,cohort 1,V,2.6,
+2,5,STBR3,B12,cohort 1,V,5.3,
+2,5,STBR3,B14,cohort 1,V,4.1,
+2,5,STBR3,D02,cohort 1,V,3.4,
+2,5,STBR3,F06,cohort 1,V,2.6,
+2,5,STBR3,A09,cohort 2,X,,
+2,5,STBR3,D06,cohort 2,V,1.3,
+2,5,STBR3,D14,cohort 2,V,1.4,
+2,5,STBR3,F04,cohort 2,V,1.9,
+2,5,STBR3,G07,cohort 2,X,,
+2,5,STBR3,G09,cohort 2,V,3.6,
+2,5,STBR3,A01,cohort 3,V,2.9,
+2,5,STBR3,A03,cohort 3,X,,
+2,5,STBR3,D04,cohort 3,V,3.2,
+2,5,STBR3,E01,cohort 3,V,2,
+2,5,STBR3,F08,cohort 3,V,0.7,
+2,5,STBR3,F12,cohort 3,V,3.6,
+2,5,STBR3,A11,cohort 4,V,2.1,
+2,5,STBR3,C01,cohort 4,V,1.2,
+2,5,STBR3,C05,cohort 4,V,1.9,
+2,5,STBR3,E13,cohort 4,V,2.8,
+2,5,STBR3,G03,cohort 4,V,2.1,
+2,5,STBR3,G05,cohort 4,V,3.1,
+2,5,STBR3,A07,cohort 5,V,1.8,
+2,5,STBR3,B08,cohort 5,V,1.7,
+2,5,STBR3,E05,cohort 5,V,2.6,"two plants present, measured the one closest to the tag (leftmost)"
+2,5,STBR3,E09,cohort 5,V,1.4,
+2,5,STBR3,F02,cohort 5,,,
+2,5,STBR3,G11,cohort 5,V,2.6,
+2,5,STBR3,B06,cohort 6,V,1.2,
+2,5,STBR3,C03,cohort 6,V,1.1,
+2,5,STBR3,C13,cohort 6,V,1.4,
+2,5,STBR3,D08,cohort 6,V,1,
+2,5,STBR3,D10,cohort 6,V,1.4,
+2,5,STBR3,E11,cohort 6,V,1.5,
+2,5,STBR3,C07,cohort 7,,,not in yet
+2,5,STBR3,C09,cohort 7,,,not in yet
+2,5,STBR3,D12,cohort 7,,,not in yet
+2,5,STBR3,F10,cohort 7,,,not in yet
+2,5,STBR3,F14,cohort 7,,,not in yet
+2,5,STBR3,G01,cohort 7,,,not in yet
+2,5,STBR3,A05,cohort 8,,,not in yet
+2,5,STBR3,B02,cohort 8,,,not in yet
+2,5,STBR3,C11,cohort 8,,,not in yet
+2,5,STBR3,E03,cohort 8,,,not in yet
+2,5,STBR3,E07,cohort 8,,,not in yet
+2,5,STBR3,G13,cohort 8,,,not in yet
+2,6,CAAN2,E01,blank,,,
+2,6,CAAN2,A05,cohort 1,FR,20,
+2,6,CAAN2,B12,cohort 1,V,0.3,
+2,6,CAAN2,E07,cohort 1,FR,14.6,
+2,6,CAAN2,F02,cohort 1,V,2.2,
+2,6,CAAN2,F10,cohort 1,FR,10.1,
+2,6,CAAN2,G13,cohort 1,FL,7.8,
+2,6,CAAN2,B06,cohort 2,B,3.7,
+2,6,CAAN2,C03,cohort 2,,,
+2,6,CAAN2,C07,cohort 2,,,
+2,6,CAAN2,D02,cohort 2,,,
+2,6,CAAN2,D10,cohort 2,,,
+2,6,CAAN2,D14,cohort 2,,,
+2,6,CAAN2,A01,cohort 3,B,4.9,
+2,6,CAAN2,B10,cohort 3,V,0.2,
+2,6,CAAN2,D12,cohort 3,,,
+2,6,CAAN2,E03,cohort 3,,,
+2,6,CAAN2,F08,cohort 3,,,
+2,6,CAAN2,G07,cohort 3,,,
+2,6,CAAN2,A07,cohort 4,FL,12.7,
+2,6,CAAN2,B14,cohort 4,,,
+2,6,CAAN2,E13,cohort 4,,,
+2,6,CAAN2,F12,cohort 4,,,
+2,6,CAAN2,F14,cohort 4,,,
+2,6,CAAN2,G09,cohort 4,X,,
+2,6,CAAN2,A09,cohort 5,V,1.7,
+2,6,CAAN2,A11,cohort 5,,,
+2,6,CAAN2,B02,cohort 5,,,
+2,6,CAAN2,D04,cohort 5,,,
+2,6,CAAN2,E11,cohort 5,FL,9.7,
+2,6,CAAN2,G05,cohort 5,FL,11.2,
+2,6,CAAN2,B04,cohort 6,V,1.1,
+2,6,CAAN2,C01,cohort 6,,,
+2,6,CAAN2,C13,cohort 6,,,
+2,6,CAAN2,E05,cohort 6,,,
+2,6,CAAN2,E09,cohort 6,,,
+2,6,CAAN2,F04,cohort 6,,,
+2,6,CAAN2,A03,cohort 7,,,not in yet
+2,6,CAAN2,A13,cohort 7,,,not in yet
+2,6,CAAN2,B08,cohort 7,,,not in yet
+2,6,CAAN2,C05,cohort 7,,,not in yet
+2,6,CAAN2,C11,cohort 7,,,not in yet
+2,6,CAAN2,D08,cohort 7,,,not in yet
+2,6,CAAN2,C09,cohort 8,,,not in yet
+2,6,CAAN2,D06,cohort 8,,,not in yet
+2,6,CAAN2,F06,cohort 8,,,not in yet
+2,6,CAAN2,G01,cohort 8,,,not in yet
+2,6,CAAN2,G03,cohort 8,,,not in yet
+2,6,CAAN2,G11,cohort 8,,,not in yet
+2,7,STPO,C01,blank,,,
+2,7,STPO,B04,cohort 1,X,,
+2,7,STPO,B06,cohort 1,V,6.8,
+2,7,STPO,B08,cohort 1,V,8.9,
+2,7,STPO,B10,cohort 1,V,3.1,
+2,7,STPO,E13,cohort 1,X,,
+2,7,STPO,G09,cohort 1,V,2.6,
+2,7,STPO,A09,cohort 2,V,4.1,
+2,7,STPO,A11,cohort 2,V,3.8,
+2,7,STPO,B02,cohort 2,V,0.8,
+2,7,STPO,E05,cohort 2,V,3.6,
+2,7,STPO,F04,cohort 2,V,2.6,
+2,7,STPO,G05,cohort 2,V,0.6,
+2,7,STPO,A03,cohort 3,V,1.1,
+2,7,STPO,D08,cohort 3,V,4.2,
+2,7,STPO,E01,cohort 3,V,3.9,
+2,7,STPO,E11,cohort 3,V,6.2,
+2,7,STPO,F06,cohort 3,V,1.2,
+2,7,STPO,F14,cohort 3,X,,
+2,7,STPO,A13,cohort 4,,,
+2,7,STPO,C05,cohort 4,,,
+2,7,STPO,C07,cohort 4,V,0.6,
+2,7,STPO,D04,cohort 4,V,1.1,
+2,7,STPO,D06,cohort 4,V,0.4,
+2,7,STPO,E03,cohort 4,,,
+2,7,STPO,A01,cohort 5,V,1.6,
+2,7,STPO,A07,cohort 5,V,0.7,
+2,7,STPO,C13,cohort 5,V,1.8,
+2,7,STPO,F08,cohort 5,V,0.9,
+2,7,STPO,F10,cohort 5,,,
+2,7,STPO,G13,cohort 5,,,
+2,7,STPO,C03,cohort 6,V,0.4,
+2,7,STPO,C09,cohort 6,V,0.5,
+2,7,STPO,C11,cohort 6,V,0.3,
+2,7,STPO,D02,cohort 6,V,0.7,
+2,7,STPO,E07,cohort 6,V,0.8,
+2,7,STPO,E09,cohort 6,V,0.6,
+2,7,STPO,D10,cohort 7,,,not in yet
+2,7,STPO,D12,cohort 7,,,not in yet
+2,7,STPO,D14,cohort 7,,,not in yet
+2,7,STPO,F12,cohort 7,,,not in yet
+2,7,STPO,G01,cohort 7,,,not in yet
+2,7,STPO,G07,cohort 7,,,not in yet
+2,7,STPO,A05,cohort 8,,,not in yet
+2,7,STPO,B12,cohort 8,,,not in yet
+2,7,STPO,B14,cohort 8,,,not in yet
+2,7,STPO,F02,cohort 8,,,not in yet
+2,7,STPO,G03,cohort 8,,,not in yet
+2,7,STPO,G11,cohort 8,,,not in yet
+2,8,CAAM,E07,blank,,,
+2,8,CAAM,A03,cohort 1,FL,13.9,
+2,8,CAAM,A07,cohort 1,FL,20.6,
+2,8,CAAM,B02,cohort 1,FL,22.6,
+2,8,CAAM,C07,cohort 1,FL,17.4,dried
+2,8,CAAM,C11,cohort 1,FR,17.7,
+2,8,CAAM,D08,cohort 1,FR,14.3,
+2,8,CAAM,A13,cohort 2,V,2.3,
+2,8,CAAM,B04,cohort 2,B,8.7,
+2,8,CAAM,C03,cohort 2,FL,13.5,
+2,8,CAAM,D14,cohort 2,FL,10.8,
+2,8,CAAM,F10,cohort 2,X,,
+2,8,CAAM,G07,cohort 2,FR,10.7,
+2,8,CAAM,A01,cohort 3,V,1.1,
+2,8,CAAM,A05,cohort 3,B,6.6,
+2,8,CAAM,B10,cohort 3,B,7.3,
+2,8,CAAM,D04,cohort 3,B,4.6,
+2,8,CAAM,G01,cohort 3,,,
+2,8,CAAM,G09,cohort 3,,,
+2,8,CAAM,B06,cohort 4,V,1.8,
+2,8,CAAM,C01,cohort 4,V,1.2,
+2,8,CAAM,D06,cohort 4,B,5.6,
+2,8,CAAM,E05,cohort 4,V,4.4,
+2,8,CAAM,E09,cohort 4,,,
+2,8,CAAM,G13,cohort 4,,,
+2,8,CAAM,C09,cohort 5,V,1.4,
+2,8,CAAM,D02,cohort 5,V,6.9,
+2,8,CAAM,D10,cohort 5,V,1.7,
+2,8,CAAM,F12,cohort 5,V,1.1,
+2,8,CAAM,G03,cohort 5,V,0.8,
+2,8,CAAM,G05,cohort 5,B,10,
+2,8,CAAM,A11,cohort 6,V,1.2,
+2,8,CAAM,B14,cohort 6,V,0.8,
+2,8,CAAM,E03,cohort 6,V,1.1,
+2,8,CAAM,E11,cohort 6,,,
+2,8,CAAM,F04,cohort 6,V,1.1,
+2,8,CAAM,G11,cohort 6,,,
+2,8,CAAM,A09,cohort 7,,,not in yet
+2,8,CAAM,B08,cohort 7,,,not in yet
+2,8,CAAM,C13,cohort 7,,,not in yet
+2,8,CAAM,E13,cohort 7,,,not in yet
+2,8,CAAM,F06,cohort 7,,,not in yet
+2,8,CAAM,F08,cohort 7,,,not in yet
+2,8,CAAM,B12,cohort 8,,,not in yet
+2,8,CAAM,C05,cohort 8,,,not in yet
+2,8,CAAM,D12,cohort 8,,,not in yet
+2,8,CAAM,E01,cohort 8,,,not in yet
+2,8,CAAM,F02,cohort 8,,,not in yet
+2,8,CAAM,F14,cohort 8,,,not in yet
+2,9,CAAN1,G11,blank,,,
+2,9,CAAN1,A01,cohort 1,FR,13.3,
+2,9,CAAN1,C01,cohort 1,V,1.2,
+2,9,CAAN1,C09,cohort 1,V,2.7,
+2,9,CAAN1,D02,cohort 1,FL,4.3,
+2,9,CAAN1,E09,cohort 1,FR,19.1,
+2,9,CAAN1,G09,cohort 1,FR,16.7,
+2,9,CAAN1,C05,cohort 2,FR,6.4,
+2,9,CAAN1,C07,cohort 2,,,
+2,9,CAAN1,D06,cohort 2,,,
+2,9,CAAN1,D10,cohort 2,,,
+2,9,CAAN1,E03,cohort 2,B,5.7,
+2,9,CAAN1,F06,cohort 2,B,4.1,
+2,9,CAAN1,B02,cohort 3,FR,13.1,
+2,9,CAAN1,E13,cohort 3,B,3.4,
+2,9,CAAN1,F02,cohort 3,FL,5.8,
+2,9,CAAN1,F10,cohort 3,FR,12,
+2,9,CAAN1,G03,cohort 3,,,
+2,9,CAAN1,G07,cohort 3,,,
+2,9,CAAN1,A03,cohort 4,FR,10.1,
+2,9,CAAN1,A11,cohort 4,FR,15.1,
+2,9,CAAN1,B06,cohort 4,FR,14,
+2,9,CAAN1,B08,cohort 4,FR,10.7,
+2,9,CAAN1,D08,cohort 4,B,5.2,
+2,9,CAAN1,G13,cohort 4,FR,14.8,
+2,9,CAAN1,B12,cohort 5,FL,10.3,
+2,9,CAAN1,B14,cohort 5,V,2.1,
+2,9,CAAN1,C11,cohort 5,V,1.7,
+2,9,CAAN1,D14,cohort 5,V,1.4,
+2,9,CAAN1,E11,cohort 5,,,
+2,9,CAAN1,F08,cohort 5,,,
+2,9,CAAN1,A05,cohort 6,V,0.4,
+2,9,CAAN1,A07,cohort 6,V,0.6,
+2,9,CAAN1,C03,cohort 6,,,
+2,9,CAAN1,D12,cohort 6,V,1.5,
+2,9,CAAN1,E05,cohort 6,,,
+2,9,CAAN1,G05,cohort 6,,,
+2,9,CAAN1,A09,cohort 7,,,not in yet
+2,9,CAAN1,A13,cohort 7,,,not in yet
+2,9,CAAN1,B10,cohort 7,,,not in yet
+2,9,CAAN1,D04,cohort 7,,,not in yet
+2,9,CAAN1,E01,cohort 7,,,not in yet
+2,9,CAAN1,F04,cohort 7,,,not in yet
+2,9,CAAN1,B04,cohort 8,,,not in yet
+2,9,CAAN1,C13,cohort 8,,,not in yet
+2,9,CAAN1,E07,cohort 8,,,not in yet
+2,9,CAAN1,F12,cohort 8,,,not in yet
+2,9,CAAN1,F14,cohort 8,,,not in yet
+2,9,CAAN1,G01,cohort 8,,,not in yet
+2,10,STTO_TM2,A13,blank,,,
+2,10,STTO_TM2,A07,cohort 1,V,4,
+2,10,STTO_TM2,B08,cohort 1,V,2.9,
+2,10,STTO_TM2,B14,cohort 1,,,
+2,10,STTO_TM2,C03,cohort 1,,,
+2,10,STTO_TM2,F04,cohort 1,V,2.6,
+2,10,STTO_TM2,G07,cohort 1,V,2.7,
+2,10,STTO_TM2,A03,cohort 2,V,1.8,
+2,10,STTO_TM2,C13,cohort 2,V,1.7,
+2,10,STTO_TM2,D08,cohort 2,,,
+2,10,STTO_TM2,E09,cohort 2,V,2.1,
+2,10,STTO_TM2,F12,cohort 2,V,1.1,
+2,10,STTO_TM2,G03,cohort 2,,,
+2,10,STTO_TM2,B12,cohort 3,V,4.6,
+2,10,STTO_TM2,C11,cohort 3,V,0.9,
+2,10,STTO_TM2,D04,cohort 3,,,
+2,10,STTO_TM2,E03,cohort 3,,,
+2,10,STTO_TM2,F14,cohort 3,,,
+2,10,STTO_TM2,G13,cohort 3,,,
+2,10,STTO_TM2,B06,cohort 4,V,2.7,
+2,10,STTO_TM2,D06,cohort 4,V,2.7,
+2,10,STTO_TM2,D10,cohort 4,V,3,
+2,10,STTO_TM2,E05,cohort 4,V,1.6,
+2,10,STTO_TM2,E11,cohort 4,,,
+2,10,STTO_TM2,G09,cohort 4,,,
+2,10,STTO_TM2,B10,cohort 5,V,1.4,
+2,10,STTO_TM2,C05,cohort 5,V,1.2,
+2,10,STTO_TM2,C09,cohort 5,,,
+2,10,STTO_TM2,F08,cohort 5,,,
+2,10,STTO_TM2,F10,cohort 5,,,
+2,10,STTO_TM2,G11,cohort 5,,,
+2,10,STTO_TM2,A05,cohort 6,V,1.6,
+2,10,STTO_TM2,B04,cohort 6,V,1.9,
+2,10,STTO_TM2,E01,cohort 6,,,
+2,10,STTO_TM2,E07,cohort 6,,,
+2,10,STTO_TM2,F06,cohort 6,,,
+2,10,STTO_TM2,G05,cohort 6,,,
+2,10,STTO_TM2,A09,cohort 7,,,not in yet
+2,10,STTO_TM2,B02,cohort 7,,,not in yet
+2,10,STTO_TM2,C01,cohort 7,,,not in yet
+2,10,STTO_TM2,C07,cohort 7,,,not in yet
+2,10,STTO_TM2,D02,cohort 7,,,not in yet
+2,10,STTO_TM2,D12,cohort 7,,,not in yet
+2,10,STTO_TM2,A01,cohort 8,,,not in yet
+2,10,STTO_TM2,A11,cohort 8,,,not in yet
+2,10,STTO_TM2,D14,cohort 8,,,not in yet
+2,10,STTO_TM2,E13,cohort 8,,,not in yet
+2,10,STTO_TM2,F02,cohort 8,,,not in yet
+2,10,STTO_TM2,G01,cohort 8,,,not in yet
+2,11,STTO_BH,E01,blank,,,
+2,11,STTO_BH,B10,cohort 1,V,2.1,
+2,11,STTO_BH,D12,cohort 1,V,2.9,
+2,11,STTO_BH,E09,cohort 1,V,3.1,
+2,11,STTO_BH,F04,cohort 1,V,1.7,
+2,11,STTO_BH,G01,cohort 1,V,1.9,
+2,11,STTO_BH,G13,cohort 1,V,1.8,
+2,11,STTO_BH,A11,cohort 2,,,
+2,11,STTO_BH,D06,cohort 2,,,
+2,11,STTO_BH,D10,cohort 2,,,
+2,11,STTO_BH,E03,cohort 2,V,0.8,
+2,11,STTO_BH,F02,cohort 2,,,
+2,11,STTO_BH,F06,cohort 2,,,
+2,11,STTO_BH,A05,cohort 3,V,2.4,
+2,11,STTO_BH,A09,cohort 3,V,1.3,
+2,11,STTO_BH,C01,cohort 3,,,
+2,11,STTO_BH,D14,cohort 3,V,0.2,
+2,11,STTO_BH,E05,cohort 3,,,
+2,11,STTO_BH,E07,cohort 3,,,
+2,11,STTO_BH,A01,cohort 4,V,1.8,
+2,11,STTO_BH,A03,cohort 4,V,1.7,
+2,11,STTO_BH,B02,cohort 4,X,,
+2,11,STTO_BH,B08,cohort 4,V,1.1,
+2,11,STTO_BH,G03,cohort 4,,,
+2,11,STTO_BH,G07,cohort 4,,,
+2,11,STTO_BH,B04,cohort 5,V,1.6,
+2,11,STTO_BH,B12,cohort 5,V,0.8,
+2,11,STTO_BH,C09,cohort 5,,,
+2,11,STTO_BH,E11,cohort 5,V,2.1,
+2,11,STTO_BH,F10,cohort 5,,,
+2,11,STTO_BH,F12,cohort 5,,,
+2,11,STTO_BH,C05,cohort 6,V,0.3,
+2,11,STTO_BH,C13,cohort 6,V,0.3,
+2,11,STTO_BH,D02,cohort 6,,,
+2,11,STTO_BH,D08,cohort 6,,,
+2,11,STTO_BH,F14,cohort 6,,,
+2,11,STTO_BH,G05,cohort 6,,,
+2,11,STTO_BH,A13,cohort 7,,,not in yet
+2,11,STTO_BH,B14,cohort 7,,,not in yet
+2,11,STTO_BH,C07,cohort 7,,,not in yet
+2,11,STTO_BH,C11,cohort 7,,,not in yet
+2,11,STTO_BH,E13,cohort 7,,,not in yet
+2,11,STTO_BH,G09,cohort 7,,,not in yet
+2,11,STTO_BH,A07,cohort 8,,,not in yet
+2,11,STTO_BH,B06,cohort 8,,,not in yet
+2,11,STTO_BH,C03,cohort 8,,,not in yet
+2,11,STTO_BH,D04,cohort 8,,,not in yet
+2,11,STTO_BH,F08,cohort 8,,,not in yet
+2,11,STTO_BH,G11,cohort 8,,,not in yet
+2,12,STGL1,E11,blank,,,
+2,12,STGL1,B04,cohort 1,V,0.9,
+2,12,STGL1,B14,cohort 1,V,2.3,
+2,12,STGL1,C05,cohort 1,V,0.3,
+2,12,STGL1,E13,cohort 1,V,0.6,
+2,12,STGL1,F10,cohort 1,V,1.2,
+2,12,STGL1,F12,cohort 1,V,3.4,
+2,12,STGL1,A07,cohort 2,V,1.4,
+2,12,STGL1,A09,cohort 2,,,
+2,12,STGL1,B10,cohort 2,V,1.2,
+2,12,STGL1,F04,cohort 2,V,1.1,
+2,12,STGL1,F14,cohort 2,,,
+2,12,STGL1,G07,cohort 2,V,0.6,
+2,12,STGL1,B12,cohort 3,V,0.2,
+2,12,STGL1,C01,cohort 3,V,1.1,
+2,12,STGL1,C13,cohort 3,V,0.7,
+2,12,STGL1,D12,cohort 3,V,0.9,
+2,12,STGL1,E07,cohort 3,,,
+2,12,STGL1,G13,cohort 3,,,
+2,12,STGL1,B02,cohort 4,,,
+2,12,STGL1,B06,cohort 4,,,
+2,12,STGL1,C09,cohort 4,V,1.2,
+2,12,STGL1,D02,cohort 4,V,0.8,
+2,12,STGL1,D04,cohort 4,V,2.6,
+2,12,STGL1,F06,cohort 4,V,1.1,
+2,12,STGL1,A05,cohort 5,V,1.2,
+2,12,STGL1,A11,cohort 5,V,1,
+2,12,STGL1,D06,cohort 5,V,1.2,
+2,12,STGL1,E03,cohort 5,,,
+2,12,STGL1,E09,cohort 5,,,
+2,12,STGL1,G05,cohort 5,V,1.6,
+2,12,STGL1,A01,cohort 6,V,2,
+2,12,STGL1,A03,cohort 6,,,
+2,12,STGL1,C03,cohort 6,,,
+2,12,STGL1,F02,cohort 6,,,
+2,12,STGL1,F08,cohort 6,,,
+2,12,STGL1,G03,cohort 6,,,
+2,12,STGL1,A13,cohort 7,,,not in yet
+2,12,STGL1,B08,cohort 7,,,not in yet
+2,12,STGL1,C07,cohort 7,,,not in yet
+2,12,STGL1,C11,cohort 7,,,not in yet
+2,12,STGL1,E05,cohort 7,,,not in yet
+2,12,STGL1,G09,cohort 7,,,not in yet
+2,12,STGL1,D08,cohort 8,,,not in yet
+2,12,STGL1,D10,cohort 8,,,not in yet
+2,12,STGL1,D14,cohort 8,,,not in yet
+2,12,STGL1,E01,cohort 8,,,not in yet
+2,12,STGL1,G01,cohort 8,,,not in yet
+2,12,STGL1,G11,cohort 8,,,not in yet
+2,13,STDI,G09,blank,,,
+2,13,STDI,A01,cohort 1,V,16.9,
+2,13,STDI,A07,cohort 1,B,22.4,
+2,13,STDI,B02,cohort 1,V,20.4,
+2,13,STDI,B10,cohort 1,V,13.9,
+2,13,STDI,C11,cohort 1,V,18,
+2,13,STDI,D12,cohort 1,V,18.5,
+2,13,STDI,A03,cohort 2,V,4,
+2,13,STDI,E05,cohort 2,,,
+2,13,STDI,F02,cohort 2,,,
+2,13,STDI,F12,cohort 2,V,8,
+2,13,STDI,G03,cohort 2,,,
+2,13,STDI,G13,cohort 2,V,2.8,
+2,13,STDI,B04,cohort 3,V,4.9,
+2,13,STDI,C03,cohort 3,V,1.1,
+2,13,STDI,E03,cohort 3,X,,
+2,13,STDI,E13,cohort 3,,,
+2,13,STDI,F04,cohort 3,,,
+2,13,STDI,G07,cohort 3,,,
+2,13,STDI,B08,cohort 4,V,11.1,
+2,13,STDI,D02,cohort 4,V,8.1,
+2,13,STDI,D08,cohort 4,V,0.6,
+2,13,STDI,D10,cohort 4,,,
+2,13,STDI,D14,cohort 4,V,5.4,
+2,13,STDI,G11,cohort 4,V,4.8,
+2,13,STDI,A09,cohort 5,V,2.4,
+2,13,STDI,C01,cohort 5,,,
+2,13,STDI,E09,cohort 5,,,
+2,13,STDI,F08,cohort 5,,,
+2,13,STDI,F10,cohort 5,,,
+2,13,STDI,G05,cohort 5,,,
+2,13,STDI,A05,cohort 6,V,2.3,
+2,13,STDI,B12,cohort 6,V,2.4,
+2,13,STDI,B14,cohort 6,,,
+2,13,STDI,C05,cohort 6,,,
+2,13,STDI,C09,cohort 6,,,
+2,13,STDI,C13,cohort 6,,,
+2,13,STDI,A11,cohort 7,,,not in yet
+2,13,STDI,B06,cohort 7,,,not in yet
+2,13,STDI,D04,cohort 7,,,not in yet
+2,13,STDI,E07,cohort 7,,,not in yet
+2,13,STDI,E11,cohort 7,,,not in yet
+2,13,STDI,F06,cohort 7,,,not in yet
+2,13,STDI,A13,cohort 8,,,not in yet
+2,13,STDI,C07,cohort 8,,,not in yet
+2,13,STDI,D06,cohort 8,,,not in yet
+2,13,STDI,E01,cohort 8,,,not in yet
+2,13,STDI,F14,cohort 8,,,not in yet
+2,13,STDI,G01,cohort 8,,,not in yet
+2,14,CAIN4,F06,blank,,,
+2,14,CAIN4,A01,cohort 1,X,,
+2,14,CAIN4,B02,cohort 1,X,,
+2,14,CAIN4,C05,cohort 1,V,22.4,
+2,14,CAIN4,C09,cohort 1,B,16.2,
+2,14,CAIN4,E01,cohort 1,X,,
+2,14,CAIN4,E07,cohort 1,V,12.8,
+2,14,CAIN4,B08,cohort 2,,,
+2,14,CAIN4,B10,cohort 2,X,,
+2,14,CAIN4,D04,cohort 2,,,
+2,14,CAIN4,D10,cohort 2,,,
+2,14,CAIN4,E11,cohort 2,X,,
+2,14,CAIN4,G01,cohort 2,V,1.5,
+2,14,CAIN4,A05,cohort 3,V,14.8,
+2,14,CAIN4,B04,cohort 3,B,10.3,
+2,14,CAIN4,D12,cohort 3,X,,
+2,14,CAIN4,F04,cohort 3,,,
+2,14,CAIN4,F08,cohort 3,,,
+2,14,CAIN4,F14,cohort 3,,,
+2,14,CAIN4,A07,cohort 4,,,
+2,14,CAIN4,C01,cohort 4,,,
+2,14,CAIN4,C11,cohort 4,,,
+2,14,CAIN4,D14,cohort 4,B,7.6,
+2,14,CAIN4,E05,cohort 4,X,,
+2,14,CAIN4,F10,cohort 4,B,8.7,
+2,14,CAIN4,A13,cohort 5,V,2.2,
+2,14,CAIN4,B14,cohort 5,,,
+2,14,CAIN4,E13,cohort 5,,,
+2,14,CAIN4,G03,cohort 5,B,8.4,
+2,14,CAIN4,G07,cohort 5,,,
+2,14,CAIN4,G13,cohort 5,,,
+2,14,CAIN4,A03,cohort 6,V,1.5,
+2,14,CAIN4,A11,cohort 6,V,2.6,
+2,14,CAIN4,C03,cohort 6,V,1.6,
+2,14,CAIN4,D06,cohort 6,V,2.3,
+2,14,CAIN4,F12,cohort 6,,,
+2,14,CAIN4,G11,cohort 6,,,
+2,14,CAIN4,B06,cohort 7,,,not in yet
+2,14,CAIN4,C07,cohort 7,,,not in yet
+2,14,CAIN4,D02,cohort 7,,,not in yet
+2,14,CAIN4,D08,cohort 7,,,not in yet
+2,14,CAIN4,G05,cohort 7,,,not in yet
+2,14,CAIN4,G09,cohort 7,,,not in yet
+2,14,CAIN4,A09,cohort 8,,,not in yet
+2,14,CAIN4,B12,cohort 8,,,not in yet
+2,14,CAIN4,C13,cohort 8,,,not in yet
+2,14,CAIN4,E03,cohort 8,,,not in yet
+2,14,CAIN4,E09,cohort 8,,,not in yet
+2,14,CAIN4,F02,cohort 8,,,not in yet
+3,1,STIN,G03,blank,,,
+3,1,STIN,A05,cohort 1,FR,7.2,
+3,1,STIN,A11,cohort 1,X,,
+3,1,STIN,C03,cohort 1,FR,7.7,
+3,1,STIN,D04,cohort 1,FR,7.1,
+3,1,STIN,D12,cohort 1,FR,8.3,
+3,1,STIN,E07,cohort 1,FR,8.4,
+3,1,STIN,A03,cohort 2,FL,3.8,
+3,1,STIN,A13,cohort 2,FL,5.8,
+3,1,STIN,B08,cohort 2,FL,7.6,
+3,1,STIN,D10,cohort 2,FL,7.1,
+3,1,STIN,G07,cohort 2,B,4,
+3,1,STIN,G11,cohort 2,FL,6.6,
+3,1,STIN,B06,cohort 3,X,,
+3,1,STIN,D02,cohort 3,B,5.5,
+3,1,STIN,E01,cohort 3,B,6.7,
+3,1,STIN,E09,cohort 3,B,6.2,
+3,1,STIN,F02,cohort 3,F,9.1,"says F, not FR or FL so not sure if in flower or fruit"
+3,1,STIN,G09,cohort 3,B,3.7,
+3,1,STIN,B14,cohort 4,B,3.4,
+3,1,STIN,C09,cohort 4,B,4.5,
+3,1,STIN,C13,cohort 4,V,2.1,
+3,1,STIN,F12,cohort 4,V,1,
+3,1,STIN,G05,cohort 4,B,5.1,
+3,1,STIN,G13,cohort 4,B,2.1,
+3,1,STIN,D06,cohort 5,V,1.1,
+3,1,STIN,E13,cohort 5,V,1.7,
+3,1,STIN,F04,cohort 5,V,1.1,
+3,1,STIN,F06,cohort 5,V,1,
+3,1,STIN,F08,cohort 5,V,1.3,
+3,1,STIN,F10,cohort 5,V,1.7,
+3,1,STIN,A01,cohort 6,V,0.9,
+3,1,STIN,A07,cohort 6,V,0.5,
+3,1,STIN,B02,cohort 6,V,0.5,
+3,1,STIN,C01,cohort 6,V,1,
+3,1,STIN,C11,cohort 6,V,1.1,
+3,1,STIN,E05,cohort 6,V,1.1,
+3,1,STIN,B04,cohort 7,,,not in yet
+3,1,STIN,B12,cohort 7,,,not in yet
+3,1,STIN,C05,cohort 7,,,not in yet
+3,1,STIN,D14,cohort 7,,,not in yet
+3,1,STIN,E03,cohort 7,,,not in yet
+3,1,STIN,G01,cohort 7,,,not in yet
+3,1,STIN,A09,cohort 8,,,not in yet
+3,1,STIN,B10,cohort 8,,,not in yet
+3,1,STIN,C07,cohort 8,,,not in yet
+3,1,STIN,D08,cohort 8,,,not in yet
+3,1,STIN,E11,cohort 8,,,not in yet
+3,1,STIN,F14,cohort 8,,,not in yet
+3,2,CAAN2,D12,blank,,,
+3,2,CAAN2,B04,cohort 1,FR,16.2,
+3,2,CAAN2,D04,cohort 1,FL,6.8,
+3,2,CAAN2,F08,cohort 1,FR,13.8,
+3,2,CAAN2,G01,cohort 1,FR,6.3,
+3,2,CAAN2,G07,cohort 1,X,,
+3,2,CAAN2,G09,cohort 1,FR,12.7,
+3,2,CAAN2,B12,cohort 2,,,
+3,2,CAAN2,C07,cohort 2,,,
+3,2,CAAN2,F10,cohort 2,,,
+3,2,CAAN2,F12,cohort 2,,,
+3,2,CAAN2,G03,cohort 2,,,
+3,2,CAAN2,G05,cohort 2,,,
+3,2,CAAN2,A01,cohort 3,B,1.2,
+3,2,CAAN2,A03,cohort 3,V,0.5,
+3,2,CAAN2,B10,cohort 3,,,
+3,2,CAAN2,E07,cohort 3,,,
+3,2,CAAN2,E11,cohort 3,,,
+3,2,CAAN2,F06,cohort 3,,,
+3,2,CAAN2,B08,cohort 4,B,4.2,
+3,2,CAAN2,B14,cohort 4,FL,7.7,
+3,2,CAAN2,C13,cohort 4,FL,13.2,
+3,2,CAAN2,D10,cohort 4,FL,8.8,
+3,2,CAAN2,E05,cohort 4,,,
+3,2,CAAN2,E13,cohort 4,,,
+3,2,CAAN2,A09,cohort 5,B,1.2,
+3,2,CAAN2,A13,cohort 5,B,4,
+3,2,CAAN2,C01,cohort 5,B,4.6,
+3,2,CAAN2,C03,cohort 5,,,
+3,2,CAAN2,D06,cohort 5,,,
+3,2,CAAN2,E03,cohort 5,,,
+3,2,CAAN2,A05,cohort 6,V,0.7,
+3,2,CAAN2,B06,cohort 6,V,0.9,
+3,2,CAAN2,C11,cohort 6,,,
+3,2,CAAN2,D08,cohort 6,,,
+3,2,CAAN2,F04,cohort 6,,,
+3,2,CAAN2,G13,cohort 6,,,
+3,2,CAAN2,A07,cohort 7,,,not in yet
+3,2,CAAN2,B02,cohort 7,,,not in yet
+3,2,CAAN2,C05,cohort 7,,,not in yet
+3,2,CAAN2,C09,cohort 7,,,not in yet
+3,2,CAAN2,E09,cohort 7,,,not in yet
+3,2,CAAN2,G11,cohort 7,,,not in yet
+3,2,CAAN2,A11,cohort 8,,,not in yet
+3,2,CAAN2,D02,cohort 8,,,not in yet
+3,2,CAAN2,D14,cohort 8,,,not in yet
+3,2,CAAN2,E01,cohort 8,,,not in yet
+3,2,CAAN2,F02,cohort 8,,,not in yet
+3,2,CAAN2,F14,cohort 8,,,not in yet
+3,3,STBR3,B12,blank,,,
+3,3,STBR3,A03,cohort 1,X,,
+3,3,STBR3,B04,cohort 1,V,3.6,
+3,3,STBR3,C07,cohort 1,X,,
+3,3,STBR3,D10,cohort 1,V,2.5,
+3,3,STBR3,E01,cohort 1,X,,
+3,3,STBR3,G01,cohort 1,X,,
+3,3,STBR3,A01,cohort 2,V,2.6,
+3,3,STBR3,A07,cohort 2,V,2.1,
+3,3,STBR3,C03,cohort 2,V,2.9,
+3,3,STBR3,D02,cohort 2,X,,
+3,3,STBR3,E11,cohort 2,V,2.7,
+3,3,STBR3,G05,cohort 2,X,,
+3,3,STBR3,C09,cohort 3,V,2.4,
+3,3,STBR3,D06,cohort 3,V,3,
+3,3,STBR3,D08,cohort 3,V,2.3,
+3,3,STBR3,E03,cohort 3,V,2.3,
+3,3,STBR3,F14,cohort 3,X,,
+3,3,STBR3,G09,cohort 3,X,,
+3,3,STBR3,A05,cohort 4,V,1.2,
+3,3,STBR3,B02,cohort 4,V,1.9,
+3,3,STBR3,C01,cohort 4,V,0.7,
+3,3,STBR3,E07,cohort 4,V,1.2,
+3,3,STBR3,E13,cohort 4,V,1.4,
+3,3,STBR3,G03,cohort 4,V,1.2,
+3,3,STBR3,D12,cohort 5,V,1.6,
+3,3,STBR3,F06,cohort 5,V,2.7,
+3,3,STBR3,F08,cohort 5,V,2,
+3,3,STBR3,F12,cohort 5,V,2.4,
+3,3,STBR3,G11,cohort 5,V,1.3,
+3,3,STBR3,G13,cohort 5,V,1.5,
+3,3,STBR3,B08,cohort 6,V,1.1,
+3,3,STBR3,B14,cohort 6,V,1.7,
+3,3,STBR3,C11,cohort 6,V,1.3,
+3,3,STBR3,D04,cohort 6,V,1,
+3,3,STBR3,F02,cohort 6,V,1.5,
+3,3,STBR3,F04,cohort 6,V,1.1,
+3,3,STBR3,A09,cohort 7,,,not in yet
+3,3,STBR3,A13,cohort 7,,,not in yet
+3,3,STBR3,B06,cohort 7,,,not in yet
+3,3,STBR3,B10,cohort 7,,,not in yet
+3,3,STBR3,C05,cohort 7,,,not in yet
+3,3,STBR3,E05,cohort 7,,,not in yet
+3,3,STBR3,A11,cohort 8,,,not in yet
+3,3,STBR3,C13,cohort 8,,,not in yet
+3,3,STBR3,D14,cohort 8,,,not in yet
+3,3,STBR3,E09,cohort 8,,,not in yet
+3,3,STBR3,F10,cohort 8,,,not in yet
+3,3,STBR3,G07,cohort 8,,,not in yet
+3,4,STDR2,A07,blank,,,
+3,4,STDR2,A03,cohort 1,V,1.1,
+3,4,STDR2,A05,cohort 1,V,1,
+3,4,STDR2,A13,cohort 1,V,3.8,
+3,4,STDR2,B12,cohort 1,V,2.3,
+3,4,STDR2,C13,cohort 1,V,1,
+3,4,STDR2,G11,cohort 1,V,2,
+3,4,STDR2,B06,cohort 2,V,2,
+3,4,STDR2,B14,cohort 2,V,1.5,
+3,4,STDR2,F06,cohort 2,V,1.3,
+3,4,STDR2,G05,cohort 2,V,0.6,
+3,4,STDR2,G07,cohort 2,V,1.7,
+3,4,STDR2,G13,cohort 2,V,1.2,
+3,4,STDR2,A01,cohort 3,V,0.8,
+3,4,STDR2,C09,cohort 3,V,1.2,
+3,4,STDR2,C11,cohort 3,V,0.6,
+3,4,STDR2,D06,cohort 3,V,2.6,
+3,4,STDR2,E01,cohort 3,,,
+3,4,STDR2,F14,cohort 3,,,
+3,4,STDR2,B04,cohort 4,V,1.4,
+3,4,STDR2,D08,cohort 4,V,1.3,
+3,4,STDR2,D12,cohort 4,V,0.8,
+3,4,STDR2,D14,cohort 4,V,1.6,
+3,4,STDR2,E09,cohort 4,V,2,
+3,4,STDR2,E11,cohort 4,V,1.9,
+3,4,STDR2,C01,cohort 5,V,1.2,
+3,4,STDR2,C03,cohort 5,V,2.3,
+3,4,STDR2,D10,cohort 5,V,1.3,
+3,4,STDR2,E07,cohort 5,V,1.6,
+3,4,STDR2,F02,cohort 5,,,
+3,4,STDR2,G09,cohort 5,V,1.9,
+3,4,STDR2,B02,cohort 6,X,,
+3,4,STDR2,D02,cohort 6,V,1.1,
+3,4,STDR2,F04,cohort 6,V,0.8,
+3,4,STDR2,F08,cohort 6,,,
+3,4,STDR2,F12,cohort 6,,,
+3,4,STDR2,G01,cohort 6,,,
+3,4,STDR2,A09,cohort 7,,,not in yet
+3,4,STDR2,B08,cohort 7,,,not in yet
+3,4,STDR2,B10,cohort 7,,,not in yet
+3,4,STDR2,C05,cohort 7,,,not in yet
+3,4,STDR2,C07,cohort 7,,,not in yet
+3,4,STDR2,F10,cohort 7,,,not in yet
+3,4,STDR2,A11,cohort 8,,,not in yet
+3,4,STDR2,D04,cohort 8,,,not in yet
+3,4,STDR2,E03,cohort 8,,,not in yet
+3,4,STDR2,E05,cohort 8,,,not in yet
+3,4,STDR2,E13,cohort 8,,,not in yet
+3,4,STDR2,G03,cohort 8,,,not in yet
+3,5,CAAN1,C03,blank,,,
+3,5,CAAN1,D04,cohort 1,FR,8.7,
+3,5,CAAN1,E01,cohort 1,FL,5.7,
+3,5,CAAN1,E05,cohort 1,FR,12.9,
+3,5,CAAN1,E09,cohort 1,FR,10.6,
+3,5,CAAN1,F04,cohort 1,FR,13.3,
+3,5,CAAN1,G03,cohort 1,FR,10.4,
+3,5,CAAN1,A11,cohort 2,V,1.2,
+3,5,CAAN1,D02,cohort 2,,,
+3,5,CAAN1,D08,cohort 2,,,
+3,5,CAAN1,D14,cohort 2,,,
+3,5,CAAN1,F06,cohort 2,FL,7.6,
+3,5,CAAN1,G13,cohort 2,FL,6.2,
+3,5,CAAN1,B04,cohort 3,,,
+3,5,CAAN1,C09,cohort 3,FL,4.5,
+3,5,CAAN1,D10,cohort 3,FR,13.3,
+3,5,CAAN1,E03,cohort 3,FR,10.7,
+3,5,CAAN1,G05,cohort 3,FR,13.1,
+3,5,CAAN1,G09,cohort 3,,,
+3,5,CAAN1,B02,cohort 4,FR,13.9,
+3,5,CAAN1,B12,cohort 4,FR,13.2,
+3,5,CAAN1,D12,cohort 4,FR,6.3,
+3,5,CAAN1,E07,cohort 4,FR,11.7,
+3,5,CAAN1,F08,cohort 4,FR,15.5,
+3,5,CAAN1,F10,cohort 4,FR,12.4,
+3,5,CAAN1,A13,cohort 5,B,13.5,
+3,5,CAAN1,B06,cohort 5,V,0.6,
+3,5,CAAN1,D06,cohort 5,V,1.6,
+3,5,CAAN1,F02,cohort 5,V,0.9,
+3,5,CAAN1,F12,cohort 5,,,
+3,5,CAAN1,F14,cohort 5,,,
+3,5,CAAN1,A03,cohort 6,V,0.7,
+3,5,CAAN1,A07,cohort 6,V,1.1,
+3,5,CAAN1,C07,cohort 6,V,0.6,
+3,5,CAAN1,C11,cohort 6,V,1.3,
+3,5,CAAN1,G07,cohort 6,,,
+3,5,CAAN1,G11,cohort 6,,,
+3,5,CAAN1,A01,cohort 7,,,not in yet
+3,5,CAAN1,B08,cohort 7,,,not in yet
+3,5,CAAN1,B10,cohort 7,,,not in yet
+3,5,CAAN1,C05,cohort 7,,,not in yet
+3,5,CAAN1,C13,cohort 7,,,not in yet
+3,5,CAAN1,G01,cohort 7,,,not in yet
+3,5,CAAN1,A05,cohort 8,,,not in yet
+3,5,CAAN1,A09,cohort 8,,,not in yet
+3,5,CAAN1,B14,cohort 8,,,not in yet
+3,5,CAAN1,C01,cohort 8,,,not in yet
+3,5,CAAN1,E11,cohort 8,,,not in yet
+3,5,CAAN1,E13,cohort 8,,,not in yet
+3,6,STTO_BH,C05,blank,,,
+3,6,STTO_BH,A01,cohort 1,V,2.2,
+3,6,STTO_BH,A05,cohort 1,V,2.1,
+3,6,STTO_BH,B14,cohort 1,V,2,
+3,6,STTO_BH,C03,cohort 1,V,2.7,
+3,6,STTO_BH,C11,cohort 1,V,1.9,
+3,6,STTO_BH,E13,cohort 1,V,2,
+3,6,STTO_BH,A03,cohort 2,,,
+3,6,STTO_BH,B08,cohort 2,,,
+3,6,STTO_BH,D10,cohort 2,,,
+3,6,STTO_BH,E03,cohort 2,,,
+3,6,STTO_BH,F10,cohort 2,,,
+3,6,STTO_BH,G01,cohort 2,,,
+3,6,STTO_BH,B10,cohort 3,V,2.4,
+3,6,STTO_BH,D06,cohort 3,V,2,
+3,6,STTO_BH,D14,cohort 3,,,
+3,6,STTO_BH,F04,cohort 3,,,
+3,6,STTO_BH,F08,cohort 3,,,
+3,6,STTO_BH,F12,cohort 3,,,
+3,6,STTO_BH,A11,cohort 4,V,0.5,
+3,6,STTO_BH,B06,cohort 4,V,1.7,
+3,6,STTO_BH,D12,cohort 4,V,2.7,
+3,6,STTO_BH,E11,cohort 4,V,1.6,
+3,6,STTO_BH,G03,cohort 4,,,
+3,6,STTO_BH,G09,cohort 4,,,
+3,6,STTO_BH,A09,cohort 5,V,1.4,
+3,6,STTO_BH,A13,cohort 5,V,1.1,
+3,6,STTO_BH,B02,cohort 5,V,1.1,
+3,6,STTO_BH,C01,cohort 5,,,
+3,6,STTO_BH,C07,cohort 5,,,
+3,6,STTO_BH,G13,cohort 5,,,
+3,6,STTO_BH,D04,cohort 6,V,0.6,
+3,6,STTO_BH,D08,cohort 6,,,
+3,6,STTO_BH,E09,cohort 6,,,
+3,6,STTO_BH,F14,cohort 6,,,
+3,6,STTO_BH,G05,cohort 6,,,
+3,6,STTO_BH,G11,cohort 6,,,
+3,6,STTO_BH,A07,cohort 7,,,not in yet
+3,6,STTO_BH,B12,cohort 7,,,not in yet
+3,6,STTO_BH,C13,cohort 7,,,not in yet
+3,6,STTO_BH,E05,cohort 7,,,not in yet
+3,6,STTO_BH,F02,cohort 7,,,not in yet
+3,6,STTO_BH,G07,cohort 7,,,not in yet
+3,6,STTO_BH,B04,cohort 8,,,not in yet
+3,6,STTO_BH,C09,cohort 8,,,not in yet
+3,6,STTO_BH,D02,cohort 8,,,not in yet
+3,6,STTO_BH,E01,cohort 8,,,not in yet
+3,6,STTO_BH,E07,cohort 8,,,not in yet
+3,6,STTO_BH,F06,cohort 8,,,not in yet
+3,7,STTO_TM2,E11,blank,,,
+3,7,STTO_TM2,A05,cohort 1,V,2.6,
+3,7,STTO_TM2,B08,cohort 1,V,4.5,
+3,7,STTO_TM2,B14,cohort 1,,,
+3,7,STTO_TM2,C11,cohort 1,,,
+3,7,STTO_TM2,F02,cohort 1,,,
+3,7,STTO_TM2,F10,cohort 1,,,
+3,7,STTO_TM2,B10,cohort 2,,,
+3,7,STTO_TM2,D06,cohort 2,,,
+3,7,STTO_TM2,E05,cohort 2,V,2.3,
+3,7,STTO_TM2,E09,cohort 2,V,1.2,
+3,7,STTO_TM2,G05,cohort 2,V,2.2,
+3,7,STTO_TM2,G09,cohort 2,V,2,
+3,7,STTO_TM2,B02,cohort 3,V,3.2,
+3,7,STTO_TM2,E01,cohort 3,V,0.4,
+3,7,STTO_TM2,E07,cohort 3,,,
+3,7,STTO_TM2,F04,cohort 3,,,
+3,7,STTO_TM2,G07,cohort 3,,,
+3,7,STTO_TM2,G13,cohort 3,,,
+3,7,STTO_TM2,A03,cohort 4,V,2.1,
+3,7,STTO_TM2,B12,cohort 4,V,1.7,
+3,7,STTO_TM2,C05,cohort 4,V,2.3,
+3,7,STTO_TM2,C09,cohort 4,V,1.9,
+3,7,STTO_TM2,F06,cohort 4,,,
+3,7,STTO_TM2,F14,cohort 4,,,
+3,7,STTO_TM2,A07,cohort 5,V,1.6,
+3,7,STTO_TM2,C13,cohort 5,X,,
+3,7,STTO_TM2,D02,cohort 5,,,
+3,7,STTO_TM2,D14,cohort 5,,,
+3,7,STTO_TM2,F08,cohort 5,,,
+3,7,STTO_TM2,G01,cohort 5,,,
+3,7,STTO_TM2,A01,cohort 6,V,1.5,
+3,7,STTO_TM2,A09,cohort 6,V,2.3,
+3,7,STTO_TM2,B06,cohort 6,,,
+3,7,STTO_TM2,C03,cohort 6,,,
+3,7,STTO_TM2,C07,cohort 6,,,
+3,7,STTO_TM2,D04,cohort 6,,,
+3,7,STTO_TM2,A13,cohort 7,,,not in yet
+3,7,STTO_TM2,C01,cohort 7,,,not in yet
+3,7,STTO_TM2,D12,cohort 7,,,not in yet
+3,7,STTO_TM2,E03,cohort 7,,,not in yet
+3,7,STTO_TM2,E13,cohort 7,,,not in yet
+3,7,STTO_TM2,G11,cohort 7,,,not in yet
+3,7,STTO_TM2,A11,cohort 8,,,not in yet
+3,7,STTO_TM2,B04,cohort 8,,,not in yet
+3,7,STTO_TM2,D08,cohort 8,,,not in yet
+3,7,STTO_TM2,D10,cohort 8,,,not in yet
+3,7,STTO_TM2,F12,cohort 8,,,not in yet
+3,7,STTO_TM2,G03,cohort 8,,,not in yet
+3,8,STDI,C11,blank,,,
+3,8,STDI,C09,cohort 1,V,21,
+3,8,STDI,C13,cohort 1,B,26.8,
+3,8,STDI,D08,cohort 1,V,16.1,
+3,8,STDI,D10,cohort 1,V,16.4,
+3,8,STDI,E05,cohort 1,V,16.9,
+3,8,STDI,F10,cohort 1,FL,39.1,
+3,8,STDI,B04,cohort 2,V,1.3,
+3,8,STDI,C01,cohort 2,X,,
+3,8,STDI,E09,cohort 2,V,11,
+3,8,STDI,F08,cohort 2,,,
+3,8,STDI,G05,cohort 2,V,4.4,
+3,8,STDI,G07,cohort 2,,,
+3,8,STDI,A01,cohort 3,,,
+3,8,STDI,A11,cohort 3,V,6.5,
+3,8,STDI,B12,cohort 3,V,6.4,
+3,8,STDI,C07,cohort 3,V,1,
+3,8,STDI,D02,cohort 3,V,1.7,
+3,8,STDI,G11,cohort 3,,,
+3,8,STDI,A09,cohort 4,V,3.4,
+3,8,STDI,C05,cohort 4,,,
+3,8,STDI,E07,cohort 4,V,8.7,
+3,8,STDI,F04,cohort 4,V,7,
+3,8,STDI,G03,cohort 4,V,3.5,
+3,8,STDI,G09,cohort 4,V,4.9,
+3,8,STDI,A13,cohort 5,V,2.2,
+3,8,STDI,B02,cohort 5,,,
+3,8,STDI,B06,cohort 5,,,
+3,8,STDI,D12,cohort 5,,,
+3,8,STDI,E11,cohort 5,,,
+3,8,STDI,F12,cohort 5,,,
+3,8,STDI,A03,cohort 6,V,1.9,
+3,8,STDI,A07,cohort 6,V,2.1,
+3,8,STDI,E13,cohort 6,,,
+3,8,STDI,F02,cohort 6,,,
+3,8,STDI,F06,cohort 6,,,
+3,8,STDI,G13,cohort 6,,,
+3,8,STDI,B08,cohort 7,,,not in yet
+3,8,STDI,B10,cohort 7,,,not in yet
+3,8,STDI,D06,cohort 7,,,not in yet
+3,8,STDI,D14,cohort 7,,,not in yet
+3,8,STDI,F14,cohort 7,,,not in yet
+3,8,STDI,G01,cohort 7,,,not in yet
+3,8,STDI,A05,cohort 8,,,not in yet
+3,8,STDI,B14,cohort 8,,,not in yet
+3,8,STDI,C03,cohort 8,,,not in yet
+3,8,STDI,D04,cohort 8,,,not in yet
+3,8,STDI,E01,cohort 8,,,not in yet
+3,8,STDI,E03,cohort 8,,,not in yet
+3,9,CAAM,E01,blank,,,
+3,9,CAAM,A01,cohort 1,FL,11.6,
+3,9,CAAM,A05,cohort 1,FR,17.5,
+3,9,CAAM,C05,cohort 1,FR,18.7,
+3,9,CAAM,D02,cohort 1,FR,14.9,
+3,9,CAAM,F10,cohort 1,X,,
+3,9,CAAM,G01,cohort 1,FR,18.9,
+3,9,CAAM,D10,cohort 2,B,11.8,
+3,9,CAAM,D12,cohort 2,FR,17.9,
+3,9,CAAM,D14,cohort 2,V,2.1,
+3,9,CAAM,E11,cohort 2,B,7.3,
+3,9,CAAM,F04,cohort 2,FR,14.2,
+3,9,CAAM,F14,cohort 2,FL,21.5,
+3,9,CAAM,A11,cohort 3,V,1.1,
+3,9,CAAM,B04,cohort 3,V,3,
+3,9,CAAM,B08,cohort 3,B,4.9,
+3,9,CAAM,C01,cohort 3,V,0.9,
+3,9,CAAM,D06,cohort 3,,,
+3,9,CAAM,G09,cohort 3,,,
+3,9,CAAM,A03,cohort 4,B,7.2,
+3,9,CAAM,A13,cohort 4,,,
+3,9,CAAM,B06,cohort 4,B,5.2,
+3,9,CAAM,B14,cohort 4,B,10,
+3,9,CAAM,C09,cohort 4,V,3.7,
+3,9,CAAM,G03,cohort 4,,,
+3,9,CAAM,B02,cohort 5,V,2.1,
+3,9,CAAM,C07,cohort 5,V,2.2,
+3,9,CAAM,E03,cohort 5,V,2.9,
+3,9,CAAM,E09,cohort 5,V,4.1,
+3,9,CAAM,E13,cohort 5,V,7.2,
+3,9,CAAM,F06,cohort 5,V,2.7,
+3,9,CAAM,C03,cohort 6,V,0.6,
+3,9,CAAM,C13,cohort 6,,,
+3,9,CAAM,F08,cohort 6,V,1,
+3,9,CAAM,F12,cohort 6,V,1.1,
+3,9,CAAM,G05,cohort 6,,,
+3,9,CAAM,G07,cohort 6,,,
+3,9,CAAM,A07,cohort 7,,,not in yet
+3,9,CAAM,B10,cohort 7,,,not in yet
+3,9,CAAM,B12,cohort 7,,,not in yet
+3,9,CAAM,C11,cohort 7,,,not in yet
+3,9,CAAM,D08,cohort 7,,,not in yet
+3,9,CAAM,E07,cohort 7,,,not in yet
+3,9,CAAM,A09,cohort 8,,,not in yet
+3,9,CAAM,D04,cohort 8,,,not in yet
+3,9,CAAM,E05,cohort 8,,,not in yet
+3,9,CAAM,F02,cohort 8,,,not in yet
+3,9,CAAM,G11,cohort 8,,,not in yet
+3,9,CAAM,G13,cohort 8,,,not in yet
+3,10,STGL1,G01,blank,,,
+3,10,STGL1,A01,cohort 1,V,1.4,
+3,10,STGL1,D02,cohort 1,V,1,
+3,10,STGL1,E11,cohort 1,V,7.9,
+3,10,STGL1,F14,cohort 1,V,1.7,
+3,10,STGL1,G03,cohort 1,V,0.6,
+3,10,STGL1,G11,cohort 1,V,2.8,
+3,10,STGL1,B04,cohort 2,V,1.9,
+3,10,STGL1,C07,cohort 2,V,2.3,
+3,10,STGL1,E03,cohort 2,V,2.9,
+3,10,STGL1,F06,cohort 2,V,2,
+3,10,STGL1,F10,cohort 2,V,2,
+3,10,STGL1,G09,cohort 2,V,1.7,
+3,10,STGL1,A03,cohort 3,X,,
+3,10,STGL1,A07,cohort 3,V,1.5,
+3,10,STGL1,A11,cohort 3,V,1.1,
+3,10,STGL1,B12,cohort 3,V,0.6,
+3,10,STGL1,D08,cohort 3,,,
+3,10,STGL1,E09,cohort 3,,,
+3,10,STGL1,A05,cohort 4,,,
+3,10,STGL1,C13,cohort 4,V,2.2,
+3,10,STGL1,D12,cohort 4,V,1,
+3,10,STGL1,E07,cohort 4,,,
+3,10,STGL1,F04,cohort 4,V,1.4,
+3,10,STGL1,F12,cohort 4,V,2.3,
+3,10,STGL1,B06,cohort 5,V,1,
+3,10,STGL1,B08,cohort 5,V,1.4,
+3,10,STGL1,D04,cohort 5,V,2.1,
+3,10,STGL1,D14,cohort 5,,,
+3,10,STGL1,G05,cohort 5,,,
+3,10,STGL1,G07,cohort 5,,,
+3,10,STGL1,B14,cohort 6,V,2.1,
+3,10,STGL1,C03,cohort 6,,,
+3,10,STGL1,D06,cohort 6,,,
+3,10,STGL1,E05,cohort 6,,,
+3,10,STGL1,F02,cohort 6,,,
+3,10,STGL1,F08,cohort 6,,,
+3,10,STGL1,A09,cohort 7,,,not in yet
+3,10,STGL1,B10,cohort 7,,,not in yet
+3,10,STGL1,C11,cohort 7,,,not in yet
+3,10,STGL1,D10,cohort 7,,,not in yet
+3,10,STGL1,E01,cohort 7,,,not in yet
+3,10,STGL1,G13,cohort 7,,,not in yet
+3,10,STGL1,A13,cohort 8,,,not in yet
+3,10,STGL1,B02,cohort 8,,,not in yet
+3,10,STGL1,C01,cohort 8,,,not in yet
+3,10,STGL1,C05,cohort 8,,,not in yet
+3,10,STGL1,C09,cohort 8,,,not in yet
+3,10,STGL1,E13,cohort 8,,,not in yet
+3,11,STPO,G07,blank,,,
+3,11,STPO,A05,cohort 1,V,3.8,
+3,11,STPO,A07,cohort 1,V,5.9,
+3,11,STPO,D12,cohort 1,V,4.5,
+3,11,STPO,E07,cohort 1,V,7.6,
+3,11,STPO,F02,cohort 1,V,3.7,
+3,11,STPO,F06,cohort 1,V,4.8,
+3,11,STPO,A11,cohort 2,V,6,
+3,11,STPO,B04,cohort 2,V,3,
+3,11,STPO,B06,cohort 2,X,,
+3,11,STPO,B10,cohort 2,V,2.5,
+3,11,STPO,B14,cohort 2,V,1,
+3,11,STPO,E09,cohort 2,V,1.5,
+3,11,STPO,B02,cohort 3,V,3.5,
+3,11,STPO,C09,cohort 3,V,1.1,
+3,11,STPO,D14,cohort 3,V,4.7,
+3,11,STPO,E03,cohort 3,V,9.8,
+3,11,STPO,E13,cohort 3,V,5.3,
+3,11,STPO,G09,cohort 3,V,2.6,
+3,11,STPO,A09,cohort 4,V,0.8,
+3,11,STPO,B12,cohort 4,V,0.7,
+3,11,STPO,D02,cohort 4,V,0.6,
+3,11,STPO,E01,cohort 4,,,
+3,11,STPO,G01,cohort 4,,,
+3,11,STPO,G03,cohort 4,,,
+3,11,STPO,A01,cohort 5,V,1.4,
+3,11,STPO,A03,cohort 5,V,0.9,
+3,11,STPO,E05,cohort 5,V,1.3,
+3,11,STPO,F04,cohort 5,V,0.7,
+3,11,STPO,G05,cohort 5,,,
+3,11,STPO,G11,cohort 5,,,
+3,11,STPO,B08,cohort 6,V,0.5,
+3,11,STPO,C07,cohort 6,V,0.7,
+3,11,STPO,D04,cohort 6,V,0.5,
+3,11,STPO,D10,cohort 6,V,0.7,
+3,11,STPO,F10,cohort 6,V,0.5,
+3,11,STPO,F14,cohort 6,V,1,
+3,11,STPO,C03,cohort 7,,,not in yet
+3,11,STPO,C05,cohort 7,,,not in yet
+3,11,STPO,C11,cohort 7,,,not in yet
+3,11,STPO,C13,cohort 7,,,not in yet
+3,11,STPO,E11,cohort 7,,,not in yet
+3,11,STPO,F08,cohort 7,,,not in yet
+3,11,STPO,A13,cohort 8,,,not in yet
+3,11,STPO,C01,cohort 8,,,not in yet
+3,11,STPO,D06,cohort 8,,,not in yet
+3,11,STPO,D08,cohort 8,,,not in yet
+3,11,STPO,F12,cohort 8,,,not in yet
+3,11,STPO,G13,cohort 8,,,not in yet
+3,12,CAIN4,G13,blank,,,
+3,12,CAIN4,D10,cohort 1,X,,
+3,12,CAIN4,D12,cohort 1,FL,13.2,
+3,12,CAIN4,E11,cohort 1,FR,21,
+3,12,CAIN4,F02,cohort 1,X,,
+3,12,CAIN4,G01,cohort 1,FL,11,
+3,12,CAIN4,G07,cohort 1,FL,14.6,
+3,12,CAIN4,A03,cohort 2,,,
+3,12,CAIN4,B08,cohort 2,,,
+3,12,CAIN4,C09,cohort 2,X,,
+3,12,CAIN4,F04,cohort 2,V,4.3,
+3,12,CAIN4,F12,cohort 2,,,
+3,12,CAIN4,G05,cohort 2,,,
+3,12,CAIN4,A01,cohort 3,FL,13.2,
+3,12,CAIN4,B04,cohort 3,B,18.2,
+3,12,CAIN4,B14,cohort 3,X,,
+3,12,CAIN4,C03,cohort 3,,,
+3,12,CAIN4,D08,cohort 3,,,
+3,12,CAIN4,F14,cohort 3,,,
+3,12,CAIN4,D02,cohort 4,,,
+3,12,CAIN4,E05,cohort 4,,,
+3,12,CAIN4,E07,cohort 4,,,
+3,12,CAIN4,F06,cohort 4,X,,
+3,12,CAIN4,F08,cohort 4,B,16.9,
+3,12,CAIN4,G11,cohort 4,V,4.2,
+3,12,CAIN4,A11,cohort 5,,,
+3,12,CAIN4,B06,cohort 5,,,
+3,12,CAIN4,C05,cohort 5,,,
+3,12,CAIN4,C11,cohort 5,,,
+3,12,CAIN4,C13,cohort 5,V,3.5,
+3,12,CAIN4,D14,cohort 5,,,
+3,12,CAIN4,A07,cohort 6,V,2.6,
+3,12,CAIN4,A13,cohort 6,V,0.7,
+3,12,CAIN4,C07,cohort 6,V,2.6,
+3,12,CAIN4,E03,cohort 6,V,2,
+3,12,CAIN4,E09,cohort 6,,,
+3,12,CAIN4,G03,cohort 6,,,
+3,12,CAIN4,A05,cohort 7,,,not in yet
+3,12,CAIN4,A09,cohort 7,,,not in yet
+3,12,CAIN4,B12,cohort 7,,,not in yet
+3,12,CAIN4,C01,cohort 7,,,not in yet
+3,12,CAIN4,E01,cohort 7,,,not in yet
+3,12,CAIN4,F10,cohort 7,,,not in yet
+3,12,CAIN4,B02,cohort 8,,,not in yet
+3,12,CAIN4,B10,cohort 8,,,not in yet
+3,12,CAIN4,D04,cohort 8,,,not in yet
+3,12,CAIN4,D06,cohort 8,,,not in yet
+3,12,CAIN4,E13,cohort 8,,,not in yet
+3,12,CAIN4,G09,cohort 8,,,not in yet
+3,13,CAIN3,B08,blank,,,
+3,13,CAIN3,A05,cohort 1,X,,
+3,13,CAIN3,B14,cohort 1,X,,
+3,13,CAIN3,C09,cohort 1,X,,
+3,13,CAIN3,E13,cohort 1,FR,23,
+3,13,CAIN3,G03,cohort 1,X,,
+3,13,CAIN3,G07,cohort 1,FR,18.1,
+3,13,CAIN3,E01,cohort 2,,,
+3,13,CAIN3,E03,cohort 2,,,
+3,13,CAIN3,F14,cohort 2,,,
+3,13,CAIN3,G01,cohort 2,FL,10.5,
+3,13,CAIN3,G09,cohort 2,,,
+3,13,CAIN3,G13,cohort 2,X,,
+3,13,CAIN3,A13,cohort 3,V,9.5,
+3,13,CAIN3,D02,cohort 3,FL,12.5,
+3,13,CAIN3,E05,cohort 3,,,
+3,13,CAIN3,E07,cohort 3,,,
+3,13,CAIN3,E09,cohort 3,,,
+3,13,CAIN3,G05,cohort 3,,,
+3,13,CAIN3,A11,cohort 4,X,,
+3,13,CAIN3,B06,cohort 4,V,1.6,
+3,13,CAIN3,C05,cohort 4,V,5.1,
+3,13,CAIN3,C11,cohort 4,B,13.1,
+3,13,CAIN3,D06,cohort 4,V,1.9,
+3,13,CAIN3,D14,cohort 4,X,,
+3,13,CAIN3,A07,cohort 5,V,3.9,
+3,13,CAIN3,A09,cohort 5,X,,
+3,13,CAIN3,B02,cohort 5,V,1.6,
+3,13,CAIN3,C07,cohort 5,V,2.6,
+3,13,CAIN3,F10,cohort 5,,,
+3,13,CAIN3,F12,cohort 5,,,
+3,13,CAIN3,C01,cohort 6,V,1.7,
+3,13,CAIN3,C03,cohort 6,V,2.1,
+3,13,CAIN3,D04,cohort 6,V,2.1,
+3,13,CAIN3,F02,cohort 6,V,1.9,
+3,13,CAIN3,F08,cohort 6,V,2.2,
+3,13,CAIN3,G11,cohort 6,V,2.4,
+3,13,CAIN3,A01,cohort 7,,,not in yet
+3,13,CAIN3,B04,cohort 7,,,not in yet
+3,13,CAIN3,B10,cohort 7,,,not in yet
+3,13,CAIN3,D10,cohort 7,,,not in yet
+3,13,CAIN3,D12,cohort 7,,,not in yet
+3,13,CAIN3,F06,cohort 7,,,not in yet
+3,13,CAIN3,A03,cohort 8,,,not in yet
+3,13,CAIN3,B12,cohort 8,,,not in yet
+3,13,CAIN3,C13,cohort 8,,,not in yet
+3,13,CAIN3,D08,cohort 8,,,not in yet
+3,13,CAIN3,E11,cohort 8,,,not in yet
+3,13,CAIN3,F04,cohort 8,,,not in yet
+3,14,CACO1,B12,blank,,,
+3,14,CACO1,B02,cohort 1,X,,
+3,14,CACO1,B04,cohort 1,V,4.1,
+3,14,CACO1,C09,cohort 1,FR,15.2,
+3,14,CACO1,E01,cohort 1,B,7,
+3,14,CACO1,F14,cohort 1,FR,21.3,
+3,14,CACO1,G01,cohort 1,B,6.5,
+3,14,CACO1,A01,cohort 2,V,2.2,
+3,14,CACO1,A05,cohort 2,,,
+3,14,CACO1,C05,cohort 2,X,,
+3,14,CACO1,D02,cohort 2,V,3.5,
+3,14,CACO1,D10,cohort 2,,,
+3,14,CACO1,E13,cohort 2,,,
+3,14,CACO1,A07,cohort 3,V,2.5,
+3,14,CACO1,A11,cohort 3,V,1.4,
+3,14,CACO1,B14,cohort 3,X,,
+3,14,CACO1,C03,cohort 3,B,7.6,
+3,14,CACO1,C13,cohort 3,,,
+3,14,CACO1,F12,cohort 3,,,
+3,14,CACO1,B08,cohort 4,V,3.1,
+3,14,CACO1,B10,cohort 4,V,5,
+3,14,CACO1,E07,cohort 4,B,7.1,
+3,14,CACO1,E09,cohort 4,B,6.6,
+3,14,CACO1,G03,cohort 4,B,6.6,
+3,14,CACO1,G13,cohort 4,,,
+3,14,CACO1,C11,cohort 5,V,3.4,
+3,14,CACO1,F02,cohort 5,V,2,
+3,14,CACO1,F04,cohort 5,V,1.6,
+3,14,CACO1,F08,cohort 5,V,4.5,
+3,14,CACO1,F10,cohort 5,V,2.2,
+3,14,CACO1,G11,cohort 5,V,3.2,
+3,14,CACO1,A13,cohort 6,V,0.7,
+3,14,CACO1,D04,cohort 6,V,1.9,
+3,14,CACO1,D12,cohort 6,V,0.6,
+3,14,CACO1,E05,cohort 6,V,1.6,
+3,14,CACO1,G07,cohort 6,V,1.5,
+3,14,CACO1,G09,cohort 6,,,
+3,14,CACO1,A09,cohort 7,,,not in yet
+3,14,CACO1,C01,cohort 7,,,not in yet
+3,14,CACO1,D08,cohort 7,,,not in yet
+3,14,CACO1,E11,cohort 7,,,not in yet
+3,14,CACO1,F06,cohort 7,,,not in yet
+3,14,CACO1,G05,cohort 7,,,not in yet
+3,14,CACO1,A03,cohort 8,,,not in yet
+3,14,CACO1,B06,cohort 8,,,not in yet
+3,14,CACO1,C07,cohort 8,,,not in yet
+3,14,CACO1,D06,cohort 8,,,not in yet
+3,14,CACO1,D14,cohort 8,,,not in yet
+3,14,CACO1,E03,cohort 8,,,not in yet
+4,1,STTO_BH,F06,blank,,,
+4,1,STTO_BH,A05,cohort 1,V,2.4,
+4,1,STTO_BH,A13,cohort 1,V,1.5,
+4,1,STTO_BH,B10,cohort 1,V,2.2,
+4,1,STTO_BH,D14,cohort 1,V,0.8,
+4,1,STTO_BH,F02,cohort 1,V,1.7,
+4,1,STTO_BH,G13,cohort 1,V,1.4,
+4,1,STTO_BH,A01,cohort 2,,,
+4,1,STTO_BH,A03,cohort 2,,,
+4,1,STTO_BH,C01,cohort 2,,,
+4,1,STTO_BH,E13,cohort 2,,,
+4,1,STTO_BH,F12,cohort 2,,,
+4,1,STTO_BH,G07,cohort 2,,,
+4,1,STTO_BH,B02,cohort 3,V,1.4,
+4,1,STTO_BH,B14,cohort 3,V,1.5,
+4,1,STTO_BH,C11,cohort 3,,,
+4,1,STTO_BH,E01,cohort 3,,,
+4,1,STTO_BH,F08,cohort 3,,,
+4,1,STTO_BH,G01,cohort 3,,,
+4,1,STTO_BH,B06,cohort 4,V,1.3,
+4,1,STTO_BH,B12,cohort 4,V,1,
+4,1,STTO_BH,C03,cohort 4,V,0.5,
+4,1,STTO_BH,D08,cohort 4,,,
+4,1,STTO_BH,D12,cohort 4,,,
+4,1,STTO_BH,E03,cohort 4,,,
+4,1,STTO_BH,C13,cohort 5,V,1.1,
+4,1,STTO_BH,D02,cohort 5,,,
+4,1,STTO_BH,E07,cohort 5,V,0.5,
+4,1,STTO_BH,E09,cohort 5,,,
+4,1,STTO_BH,G09,cohort 5,,,
+4,1,STTO_BH,G11,cohort 5,,,
+4,1,STTO_BH,A09,cohort 6,V,0.4,
+4,1,STTO_BH,C05,cohort 6,V,1,
+4,1,STTO_BH,E11,cohort 6,V,0.9,
+4,1,STTO_BH,F10,cohort 6,,,
+4,1,STTO_BH,F14,cohort 6,,,
+4,1,STTO_BH,G05,cohort 6,,,
+4,1,STTO_BH,A07,cohort 7,,,not in yet
+4,1,STTO_BH,C07,cohort 7,,,not in yet
+4,1,STTO_BH,D04,cohort 7,,,not in yet
+4,1,STTO_BH,D06,cohort 7,,,not in yet
+4,1,STTO_BH,F04,cohort 7,,,not in yet
+4,1,STTO_BH,G03,cohort 7,,,not in yet
+4,1,STTO_BH,A11,cohort 8,,,not in yet
+4,1,STTO_BH,B04,cohort 8,,,not in yet
+4,1,STTO_BH,B08,cohort 8,,,not in yet
+4,1,STTO_BH,C09,cohort 8,,,not in yet
+4,1,STTO_BH,D10,cohort 8,,,not in yet
+4,1,STTO_BH,E05,cohort 8,,,not in yet
+4,2,STBR3,B08,blank,,,
+4,2,STBR3,A11,cohort 1,V,5.1,
+4,2,STBR3,B04,cohort 1,V,3.9,
+4,2,STBR3,C01,cohort 1,V,5.6,
+4,2,STBR3,C07,cohort 1,V,3.3,
+4,2,STBR3,F04,cohort 1,V,3.5,
+4,2,STBR3,G01,cohort 1,V,4.8,
+4,2,STBR3,A03,cohort 2,V,1.4,
+4,2,STBR3,B06,cohort 2,X,,
+4,2,STBR3,B14,cohort 2,X,1,newly dead
+4,2,STBR3,C09,cohort 2,V,2.9,
+4,2,STBR3,D04,cohort 2,X,,
+4,2,STBR3,F08,cohort 2,V,1.5,
+4,2,STBR3,B02,cohort 3,X,,
+4,2,STBR3,C03,cohort 3,X,,
+4,2,STBR3,C05,cohort 3,V,2,
+4,2,STBR3,D08,cohort 3,V,3.5,
+4,2,STBR3,F02,cohort 3,X,,
+4,2,STBR3,F10,cohort 3,X,,
+4,2,STBR3,A01,cohort 4,X,0.7,newly dead
+4,2,STBR3,D02,cohort 4,V,3,
+4,2,STBR3,D12,cohort 4,X,,
+4,2,STBR3,E01,cohort 4,X,,
+4,2,STBR3,E03,cohort 4,V,2,
+4,2,STBR3,F12,cohort 4,V,1.2,
+4,2,STBR3,D14,cohort 5,V,1.1,
+4,2,STBR3,E05,cohort 5,V,1.6,
+4,2,STBR3,E07,cohort 5,V,1.5,
+4,2,STBR3,E09,cohort 5,V,1.6,
+4,2,STBR3,G03,cohort 5,V,1.3,
+4,2,STBR3,G09,cohort 5,V,1.6,
+4,2,STBR3,A09,cohort 6,V,1.3,
+4,2,STBR3,A13,cohort 6,V,0.5,
+4,2,STBR3,D06,cohort 6,V,1.5,
+4,2,STBR3,E13,cohort 6,V,1.9,
+4,2,STBR3,G11,cohort 6,X,,newly dead
+4,2,STBR3,G13,cohort 6,V,1.6,
+4,2,STBR3,A05,cohort 7,,,not in yet
+4,2,STBR3,B10,cohort 7,,,not in yet
+4,2,STBR3,B12,cohort 7,,,not in yet
+4,2,STBR3,F06,cohort 7,,,not in yet
+4,2,STBR3,G05,cohort 7,,,not in yet
+4,2,STBR3,G07,cohort 7,,,not in yet
+4,2,STBR3,A07,cohort 8,,,not in yet
+4,2,STBR3,C11,cohort 8,,,not in yet
+4,2,STBR3,C13,cohort 8,,,not in yet
+4,2,STBR3,D10,cohort 8,,,not in yet
+4,2,STBR3,E11,cohort 8,,,not in yet
+4,2,STBR3,F14,cohort 8,,,not in yet
+4,3,STPO,B06,blank,,,
+4,3,STPO,A01,cohort 1,V,3.2,
+4,3,STPO,A07,cohort 1,V,9.2,
+4,3,STPO,B12,cohort 1,V,2.4,
+4,3,STPO,E03,cohort 1,V,5.6,
+4,3,STPO,F10,cohort 1,V,3.3,
+4,3,STPO,G11,cohort 1,V,2.5,
+4,3,STPO,C09,cohort 2,V,1.5,
+4,3,STPO,C11,cohort 2,V,1,
+4,3,STPO,D10,cohort 2,V,0.5,
+4,3,STPO,E01,cohort 2,V,1.2,
+4,3,STPO,E05,cohort 2,V,1.2,
+4,3,STPO,E09,cohort 2,V,0.6,
+4,3,STPO,B08,cohort 3,X,,
+4,3,STPO,B14,cohort 3,X,,
+4,3,STPO,C05,cohort 3,V,2,
+4,3,STPO,D08,cohort 3,V,3.1,
+4,3,STPO,F04,cohort 3,V,1.2,
+4,3,STPO,G05,cohort 3,V,6.4,
+4,3,STPO,A05,cohort 4,,,
+4,3,STPO,A13,cohort 4,,,
+4,3,STPO,D04,cohort 4,V,0.6,
+4,3,STPO,E07,cohort 4,V,0.6,
+4,3,STPO,F02,cohort 4,V,1.5,
+4,3,STPO,G03,cohort 4,V,0.6,
+4,3,STPO,B10,cohort 5,V,1,
+4,3,STPO,C13,cohort 5,V,1,
+4,3,STPO,D12,cohort 5,,,
+4,3,STPO,F08,cohort 5,,,
+4,3,STPO,G09,cohort 5,,,
+4,3,STPO,G13,cohort 5,,,
+4,3,STPO,A03,cohort 6,V,0.5,
+4,3,STPO,C01,cohort 6,V,0.5,
+4,3,STPO,D14,cohort 6,V,0.5,
+4,3,STPO,E11,cohort 6,V,0.4,
+4,3,STPO,F14,cohort 6,V,0.5,
+4,3,STPO,G07,cohort 6,V,0.6,
+4,3,STPO,B02,cohort 7,,,not in yet
+4,3,STPO,C03,cohort 7,,,not in yet
+4,3,STPO,C07,cohort 7,,,not in yet
+4,3,STPO,D02,cohort 7,,,not in yet
+4,3,STPO,D06,cohort 7,,,not in yet
+4,3,STPO,G01,cohort 7,,,not in yet
+4,3,STPO,A09,cohort 8,,,not in yet
+4,3,STPO,A11,cohort 8,,,not in yet
+4,3,STPO,B04,cohort 8,,,not in yet
+4,3,STPO,E13,cohort 8,,,not in yet
+4,3,STPO,F06,cohort 8,,,not in yet
+4,3,STPO,F12,cohort 8,,,not in yet
+4,4,CACO1,B12,blank,,,
+4,4,CACO1,B02,cohort 1,B,9.2,
+4,4,CACO1,C05,cohort 1,X,,
+4,4,CACO1,D10,cohort 1,FL,14,
+4,4,CACO1,E11,cohort 1,FL,13,
+4,4,CACO1,F14,cohort 1,B,4.7,
+4,4,CACO1,G09,cohort 1,FR,15.3,
+4,4,CACO1,A11,cohort 2,FL,10,
+4,4,CACO1,B08,cohort 2,B,8.3,
+4,4,CACO1,D06,cohort 2,,,
+4,4,CACO1,D14,cohort 2,,,
+4,4,CACO1,F04,cohort 2,,,
+4,4,CACO1,F08,cohort 2,B,10.2,
+4,4,CACO1,A05,cohort 3,B,7.9,
+4,4,CACO1,B04,cohort 3,V,3.1,
+4,4,CACO1,C11,cohort 3,FL,15.6,
+4,4,CACO1,E05,cohort 3,,,
+4,4,CACO1,E07,cohort 3,,,
+4,4,CACO1,F02,cohort 3,,,
+4,4,CACO1,A07,cohort 4,V,2.1,on the verge of dying
+4,4,CACO1,B14,cohort 4,B,6.2,
+4,4,CACO1,D08,cohort 4,B,7.4,
+4,4,CACO1,E03,cohort 4,V,2.2,
+4,4,CACO1,E09,cohort 4,,,
+4,4,CACO1,F06,cohort 4,,,
+4,4,CACO1,A03,cohort 5,V,5.5,
+4,4,CACO1,B06,cohort 5,V,8.1,
+4,4,CACO1,B10,cohort 5,V,4,
+4,4,CACO1,C01,cohort 5,V,2.1,
+4,4,CACO1,C07,cohort 5,B,4.1,
+4,4,CACO1,G13,cohort 5,V,5,
+4,4,CACO1,A01,cohort 6,V,1.4,
+4,4,CACO1,A09,cohort 6,V,2.6,
+4,4,CACO1,C09,cohort 6,V,1.5,
+4,4,CACO1,C13,cohort 6,V,1,
+4,4,CACO1,D04,cohort 6,V,2.2,
+4,4,CACO1,D12,cohort 6,,,
+4,4,CACO1,A13,cohort 7,,,not in yet
+4,4,CACO1,F12,cohort 7,,,not in yet
+4,4,CACO1,G01,cohort 7,,,not in yet
+4,4,CACO1,G05,cohort 7,,,not in yet
+4,4,CACO1,G07,cohort 7,,,not in yet
+4,4,CACO1,G11,cohort 7,,,not in yet
+4,4,CACO1,C03,cohort 8,,,not in yet
+4,4,CACO1,D02,cohort 8,,,not in yet
+4,4,CACO1,E01,cohort 8,,,not in yet
+4,4,CACO1,E13,cohort 8,,,not in yet
+4,4,CACO1,F10,cohort 8,,,not in yet
+4,4,CACO1,G03,cohort 8,,,not in yet
+4,5,CAAM,A13,blank,,,
+4,5,CAAM,A07,cohort 1,FR,22,
+4,5,CAAM,B02,cohort 1,FR,17.6,
+4,5,CAAM,D06,cohort 1,FR,17.1,
+4,5,CAAM,E13,cohort 1,FR,11.2,
+4,5,CAAM,G03,cohort 1,FL,20.8,
+4,5,CAAM,G05,cohort 1,B,9.1,
+4,5,CAAM,A03,cohort 2,FR,17.6,
+4,5,CAAM,B12,cohort 2,FR,16.7,
+4,5,CAAM,C01,cohort 2,B,7,
+4,5,CAAM,D14,cohort 2,FR,14.9,
+4,5,CAAM,F04,cohort 2,FL,3,
+4,5,CAAM,F14,cohort 2,B,9.5,
+4,5,CAAM,A09,cohort 3,V,1,
+4,5,CAAM,B10,cohort 3,B,5.4,
+4,5,CAAM,D04,cohort 3,V,2,
+4,5,CAAM,E11,cohort 3,B,2.8,
+4,5,CAAM,F08,cohort 3,,,
+4,5,CAAM,G13,cohort 3,,,
+4,5,CAAM,B06,cohort 4,V,3.6,
+4,5,CAAM,C09,cohort 4,B,9,
+4,5,CAAM,C11,cohort 4,,,
+4,5,CAAM,D02,cohort 4,,,
+4,5,CAAM,E01,cohort 4,B,10.9,
+4,5,CAAM,F10,cohort 4,B,10.1,
+4,5,CAAM,A01,cohort 5,V,3.8,
+4,5,CAAM,B14,cohort 5,V,8.9,
+4,5,CAAM,C03,cohort 5,F,3.5,
+4,5,CAAM,D12,cohort 5,V,2.1,
+4,5,CAAM,E09,cohort 5,V,4.4,
+4,5,CAAM,F12,cohort 5,V,2.1,
+4,5,CAAM,B08,cohort 6,V,1.3,
+4,5,CAAM,C05,cohort 6,V,1.6,
+4,5,CAAM,C07,cohort 6,V,1.5,
+4,5,CAAM,D08,cohort 6,V,1,
+4,5,CAAM,D10,cohort 6,,,
+4,5,CAAM,G07,cohort 6,,,
+4,5,CAAM,A11,cohort 7,,,not in yet
+4,5,CAAM,B04,cohort 7,,,not in yet
+4,5,CAAM,C13,cohort 7,,,not in yet
+4,5,CAAM,F02,cohort 7,,,not in yet
+4,5,CAAM,F06,cohort 7,,,not in yet
+4,5,CAAM,G01,cohort 7,,,not in yet
+4,5,CAAM,A05,cohort 8,,,not in yet
+4,5,CAAM,E03,cohort 8,,,not in yet
+4,5,CAAM,E05,cohort 8,,,not in yet
+4,5,CAAM,E07,cohort 8,,,not in yet
+4,5,CAAM,G09,cohort 8,,,not in yet
+4,5,CAAM,G11,cohort 8,,,not in yet
+4,6,CAIN3,F10,blank,,,
+4,6,CAIN3,B08,cohort 1,FR,16.3,
+4,6,CAIN3,C07,cohort 1,FR,15.5,
+4,6,CAIN3,D06,cohort 1,FR,25.2,
+4,6,CAIN3,E01,cohort 1,FR,20,
+4,6,CAIN3,E09,cohort 1,V,5.1,
+4,6,CAIN3,G13,cohort 1,B,6,
+4,6,CAIN3,B02,cohort 2,X,,
+4,6,CAIN3,E11,cohort 2,FL,6.6,
+4,6,CAIN3,E13,cohort 2,V,2.9,
+4,6,CAIN3,F02,cohort 2,,,
+4,6,CAIN3,G01,cohort 2,FL,11,
+4,6,CAIN3,G03,cohort 2,B,10.4,
+4,6,CAIN3,B12,cohort 3,FR,18,
+4,6,CAIN3,C01,cohort 3,FL,19.2,
+4,6,CAIN3,D08,cohort 3,,,
+4,6,CAIN3,D10,cohort 3,,,
+4,6,CAIN3,E07,cohort 3,,,
+4,6,CAIN3,F08,cohort 3,,,
+4,6,CAIN3,A01,cohort 4,B,7.8,
+4,6,CAIN3,A11,cohort 4,X,,
+4,6,CAIN3,A13,cohort 4,V,3.1,
+4,6,CAIN3,C03,cohort 4,B,10,
+4,6,CAIN3,C09,cohort 4,B,7,
+4,6,CAIN3,F14,cohort 4,V,1.5,
+4,6,CAIN3,A05,cohort 5,B,8.8,
+4,6,CAIN3,B06,cohort 5,V,2.6,
+4,6,CAIN3,B14,cohort 5,,,
+4,6,CAIN3,D04,cohort 5,,,
+4,6,CAIN3,D12,cohort 5,,,
+4,6,CAIN3,G05,cohort 5,,,
+4,6,CAIN3,A03,cohort 6,V,2.3,
+4,6,CAIN3,B10,cohort 6,V,3.1,
+4,6,CAIN3,C11,cohort 6,V,3.5,
+4,6,CAIN3,F06,cohort 6,V,2.6,
+4,6,CAIN3,G09,cohort 6,V,3.6,
+4,6,CAIN3,G11,cohort 6,V,3,
+4,6,CAIN3,A09,cohort 7,,,not in yet
+4,6,CAIN3,B04,cohort 7,,,not in yet
+4,6,CAIN3,C05,cohort 7,,,not in yet
+4,6,CAIN3,C13,cohort 7,,,not in yet
+4,6,CAIN3,D14,cohort 7,,,not in yet
+4,6,CAIN3,G07,cohort 7,,,not in yet
+4,6,CAIN3,A07,cohort 8,,,not in yet
+4,6,CAIN3,D02,cohort 8,,,not in yet
+4,6,CAIN3,E03,cohort 8,,,not in yet
+4,6,CAIN3,E05,cohort 8,,,not in yet
+4,6,CAIN3,F04,cohort 8,,,not in yet
+4,6,CAIN3,F12,cohort 8,,,not in yet
+4,7,STGL1,C05,blank,,,
+4,7,STGL1,A01,cohort 1,X,,
+4,7,STGL1,D12,cohort 1,V,1.7,
+4,7,STGL1,E09,cohort 1,V,2.1,
+4,7,STGL1,F12,cohort 1,V,1.3,
+4,7,STGL1,G05,cohort 1,V,3.2,
+4,7,STGL1,G13,cohort 1,V,1.5,
+4,7,STGL1,A05,cohort 2,V,1.5,
+4,7,STGL1,C03,cohort 2,V,2.1,
+4,7,STGL1,D08,cohort 2,X,,
+4,7,STGL1,E11,cohort 2,V,4.1,
+4,7,STGL1,F04,cohort 2,V,2.3,
+4,7,STGL1,G09,cohort 2,V,1.6,
+4,7,STGL1,B02,cohort 3,V,1.3,
+4,7,STGL1,B04,cohort 3,V,1.1,
+4,7,STGL1,C01,cohort 3,V,1.2,
+4,7,STGL1,C13,cohort 3,V,1.4,
+4,7,STGL1,E01,cohort 3,,,
+4,7,STGL1,E05,cohort 3,,,
+4,7,STGL1,A13,cohort 4,V,2.9,
+4,7,STGL1,B08,cohort 4,,,
+4,7,STGL1,B12,cohort 4,V,2.4,
+4,7,STGL1,E07,cohort 4,V,2.5,
+4,7,STGL1,F14,cohort 4,V,1.6,
+4,7,STGL1,G11,cohort 4,V,3.8,
+4,7,STGL1,B14,cohort 5,V,1.6,
+4,7,STGL1,C09,cohort 5,V,1.1,
+4,7,STGL1,D04,cohort 5,,,
+4,7,STGL1,D10,cohort 5,,,
+4,7,STGL1,D14,cohort 5,,,
+4,7,STGL1,G01,cohort 5,V,1.8,
+4,7,STGL1,A03,cohort 6,,,
+4,7,STGL1,A11,cohort 6,V,3.5,
+4,7,STGL1,D06,cohort 6,,,
+4,7,STGL1,E03,cohort 6,,,
+4,7,STGL1,F10,cohort 6,,,
+4,7,STGL1,G07,cohort 6,,,
+4,7,STGL1,A07,cohort 7,,,not in yet
+4,7,STGL1,B06,cohort 7,,,not in yet
+4,7,STGL1,C07,cohort 7,,,not in yet
+4,7,STGL1,D02,cohort 7,,,not in yet
+4,7,STGL1,E13,cohort 7,,,not in yet
+4,7,STGL1,F02,cohort 7,,,not in yet
+4,7,STGL1,A09,cohort 8,,,not in yet
+4,7,STGL1,B10,cohort 8,,,not in yet
+4,7,STGL1,C11,cohort 8,,,not in yet
+4,7,STGL1,F06,cohort 8,,,not in yet
+4,7,STGL1,F08,cohort 8,,,not in yet
+4,7,STGL1,G03,cohort 8,,,not in yet
+4,8,STIN,A07,blank,,,
+4,8,STIN,B10,cohort 1,FR,12.4,
+4,8,STIN,B12,cohort 1,FR,10.5,
+4,8,STIN,C03,cohort 1,FR,13.5,
+4,8,STIN,E07,cohort 1,FR,8,
+4,8,STIN,F04,cohort 1,FR,9.9,
+4,8,STIN,F08,cohort 1,FR,7.1,
+4,8,STIN,D10,cohort 2,FR,9.1,
+4,8,STIN,E01,cohort 2,B,2.3,
+4,8,STIN,E05,cohort 2,FL,7.2,
+4,8,STIN,F12,cohort 2,B,5,
+4,8,STIN,G11,cohort 2,FL,4.1,
+4,8,STIN,G13,cohort 2,FL,7.4,
+4,8,STIN,A05,cohort 3,B,6.6,
+4,8,STIN,C01,cohort 3,B,2.8,
+4,8,STIN,D02,cohort 3,FL,7.5,
+4,8,STIN,D04,cohort 3,B,3,
+4,8,STIN,G05,cohort 3,B,7.6,
+4,8,STIN,G09,cohort 3,X,,
+4,8,STIN,A03,cohort 4,B,3.8,
+4,8,STIN,B02,cohort 4,B,4.2,
+4,8,STIN,C07,cohort 4,V,3.5,
+4,8,STIN,D06,cohort 4,B,5.1,
+4,8,STIN,F10,cohort 4,V,2.8,
+4,8,STIN,F14,cohort 4,B,4.6,
+4,8,STIN,A01,cohort 5,V,1.1,
+4,8,STIN,B04,cohort 5,V,2,
+4,8,STIN,B08,cohort 5,V,2.3,
+4,8,STIN,B14,cohort 5,V,2.1,
+4,8,STIN,C13,cohort 5,V,2,
+4,8,STIN,G03,cohort 5,B,4,
+4,8,STIN,A11,cohort 6,V,1.1,
+4,8,STIN,B06,cohort 6,V,2.2,
+4,8,STIN,C05,cohort 6,V,2,
+4,8,STIN,C09,cohort 6,V,1.5,
+4,8,STIN,E03,cohort 6,V,1.8,
+4,8,STIN,G01,cohort 6,V,1.3,
+4,8,STIN,A09,cohort 7,,,not in yet
+4,8,STIN,A13,cohort 7,,,not in yet
+4,8,STIN,D08,cohort 7,,,not in yet
+4,8,STIN,E09,cohort 7,,,not in yet
+4,8,STIN,E13,cohort 7,,,not in yet
+4,8,STIN,F06,cohort 7,,,not in yet
+4,8,STIN,C11,cohort 8,,,not in yet
+4,8,STIN,D12,cohort 8,,,not in yet
+4,8,STIN,D14,cohort 8,,,not in yet
+4,8,STIN,E11,cohort 8,,,not in yet
+4,8,STIN,F02,cohort 8,,,not in yet
+4,8,STIN,G07,cohort 8,,,not in yet
+4,9,CAAN1,B08,blank,,,
+4,9,CAAN1,A09,cohort 1,,,
+4,9,CAAN1,A11,cohort 1,FR,16.2,
+4,9,CAAN1,B14,cohort 1,FR,5.2,
+4,9,CAAN1,C07,cohort 1,V,1,
+4,9,CAAN1,D10,cohort 1,FR,8.6,
+4,9,CAAN1,E13,cohort 1,B,2.9,
+4,9,CAAN1,A13,cohort 2,,,
+4,9,CAAN1,B06,cohort 2,,,
+4,9,CAAN1,D02,cohort 2,FR,8,
+4,9,CAAN1,E07,cohort 2,B,4,
+4,9,CAAN1,E09,cohort 2,FL,9.8,
+4,9,CAAN1,G03,cohort 2,V,1.6,
+4,9,CAAN1,C03,cohort 3,FR,7.1,
+4,9,CAAN1,C05,cohort 3,B,4.5,
+4,9,CAAN1,D06,cohort 3,,,
+4,9,CAAN1,D08,cohort 3,V,0.9,
+4,9,CAAN1,E11,cohort 3,,,
+4,9,CAAN1,G09,cohort 3,FL,4.3,
+4,9,CAAN1,A01,cohort 4,FL,10.2,
+4,9,CAAN1,A05,cohort 4,FR,8,
+4,9,CAAN1,B10,cohort 4,FR,11,
+4,9,CAAN1,C11,cohort 4,FR,11,
+4,9,CAAN1,D12,cohort 4,FR,12.4,
+4,9,CAAN1,F04,cohort 4,FR,8.2,
+4,9,CAAN1,A03,cohort 5,FR,10.8,
+4,9,CAAN1,B12,cohort 5,V,1.1,
+4,9,CAAN1,C09,cohort 5,V,1.5,
+4,9,CAAN1,E03,cohort 5,FR,7,
+4,9,CAAN1,E05,cohort 5,,,
+4,9,CAAN1,F06,cohort 5,,,
+4,9,CAAN1,A07,cohort 6,V,1.5,
+4,9,CAAN1,B02,cohort 6,V,2.4,
+4,9,CAAN1,C01,cohort 6,V,1.5,
+4,9,CAAN1,D04,cohort 6,V,1.5,
+4,9,CAAN1,E01,cohort 6,V,1,
+4,9,CAAN1,G01,cohort 6,,,
+4,9,CAAN1,C13,cohort 7,,,not in yet
+4,9,CAAN1,D14,cohort 7,,,not in yet
+4,9,CAAN1,G05,cohort 7,,,not in yet
+4,9,CAAN1,G07,cohort 7,,,not in yet
+4,9,CAAN1,G11,cohort 7,,,not in yet
+4,9,CAAN1,G13,cohort 7,,,not in yet
+4,9,CAAN1,B04,cohort 8,,,not in yet
+4,9,CAAN1,F02,cohort 8,,,not in yet
+4,9,CAAN1,F08,cohort 8,,,not in yet
+4,9,CAAN1,F10,cohort 8,,,not in yet
+4,9,CAAN1,F12,cohort 8,,,not in yet
+4,9,CAAN1,F14,cohort 8,,,not in yet
+4,10,CAAN2,F06,blank,,,
+4,10,CAAN2,B08,cohort 1,FR,11.5,
+4,10,CAAN2,C09,cohort 1,FL,5.2,
+4,10,CAAN2,C11,cohort 1,FR,8.8,
+4,10,CAAN2,D10,cohort 1,FR,12,
+4,10,CAAN2,D12,cohort 1,FR,13.6,
+4,10,CAAN2,G13,cohort 1,V,2.1,
+4,10,CAAN2,A11,cohort 2,,,
+4,10,CAAN2,B02,cohort 2,,,
+4,10,CAAN2,D08,cohort 2,,,
+4,10,CAAN2,E05,cohort 2,,,
+4,10,CAAN2,G07,cohort 2,,,
+4,10,CAAN2,G11,cohort 2,,,
+4,10,CAAN2,A03,cohort 3,V,1.1,
+4,10,CAAN2,B06,cohort 3,B,4.4,
+4,10,CAAN2,B10,cohort 3,,,
+4,10,CAAN2,C03,cohort 3,,,
+4,10,CAAN2,D02,cohort 3,,,
+4,10,CAAN2,E13,cohort 3,,,
+4,10,CAAN2,B04,cohort 4,FR,7.9,
+4,10,CAAN2,C07,cohort 4,FL,9,
+4,10,CAAN2,F02,cohort 4,B,3.4,
+4,10,CAAN2,F12,cohort 4,,,
+4,10,CAAN2,G05,cohort 4,FL,9.1,
+4,10,CAAN2,G09,cohort 4,,,
+4,10,CAAN2,C13,cohort 5,V,2,
+4,10,CAAN2,D04,cohort 5,V,0.9,
+4,10,CAAN2,E09,cohort 5,FR,11.6,
+4,10,CAAN2,F04,cohort 5,,,
+4,10,CAAN2,F08,cohort 5,,,
+4,10,CAAN2,G01,cohort 5,B,7.9,
+4,10,CAAN2,A01,cohort 6,V,1.4,
+4,10,CAAN2,A09,cohort 6,,,
+4,10,CAAN2,A13,cohort 6,,,
+4,10,CAAN2,B12,cohort 6,,,
+4,10,CAAN2,D06,cohort 6,,,
+4,10,CAAN2,F14,cohort 6,,,
+4,10,CAAN2,A05,cohort 7,,,not in yet
+4,10,CAAN2,B14,cohort 7,,,not in yet
+4,10,CAAN2,C01,cohort 7,,,not in yet
+4,10,CAAN2,C05,cohort 7,,,not in yet
+4,10,CAAN2,E11,cohort 7,,,not in yet
+4,10,CAAN2,F10,cohort 7,,,not in yet
+4,10,CAAN2,A07,cohort 8,,,not in yet
+4,10,CAAN2,D14,cohort 8,,,not in yet
+4,10,CAAN2,E01,cohort 8,,,not in yet
+4,10,CAAN2,E03,cohort 8,,,not in yet
+4,10,CAAN2,E07,cohort 8,,,not in yet
+4,10,CAAN2,G03,cohort 8,,,not in yet
+4,11,STDR2,E05,blank,,,
+4,11,STDR2,B02,cohort 1,V,1.5,
+4,11,STDR2,C03,cohort 1,V,2,
+4,11,STDR2,C07,cohort 1,V,1.4,
+4,11,STDR2,E09,cohort 1,V,2,
+4,11,STDR2,F04,cohort 1,V,1.5,
+4,11,STDR2,F06,cohort 1,V,1.6,
+4,11,STDR2,B12,cohort 2,V,2.6,
+4,11,STDR2,D04,cohort 2,V,2.8,
+4,11,STDR2,D08,cohort 2,V,2,
+4,11,STDR2,E13,cohort 2,V,3.2,
+4,11,STDR2,F10,cohort 2,V,2,
+4,11,STDR2,G09,cohort 2,V,1.5,
+4,11,STDR2,D02,cohort 3,V,1.2,
+4,11,STDR2,D14,cohort 3,X,,
+4,11,STDR2,E07,cohort 3,V,1,
+4,11,STDR2,F02,cohort 3,,,
+4,11,STDR2,F08,cohort 3,,,
+4,11,STDR2,G11,cohort 3,V,2.5,
+4,11,STDR2,A05,cohort 4,V,2.5,
+4,11,STDR2,G01,cohort 4,V,2.5,
+4,11,STDR2,G03,cohort 4,V,2,
+4,11,STDR2,G05,cohort 4,V,2,
+4,11,STDR2,G07,cohort 4,V,2,
+4,11,STDR2,G13,cohort 4,,,
+4,11,STDR2,B04,cohort 5,V,1.9,
+4,11,STDR2,C01,cohort 5,V,1.1,
+4,11,STDR2,C05,cohort 5,,,
+4,11,STDR2,C09,cohort 5,,,
+4,11,STDR2,C11,cohort 5,V,1.5,
+4,11,STDR2,D06,cohort 5,V,1.8,
+4,11,STDR2,A03,cohort 6,V,2,
+4,11,STDR2,B06,cohort 6,V,1.5,
+4,11,STDR2,C13,cohort 6,V,2,
+4,11,STDR2,D12,cohort 6,,,
+4,11,STDR2,E01,cohort 6,,,
+4,11,STDR2,F14,cohort 6,,,
+4,11,STDR2,A09,cohort 7,,,not in yet
+4,11,STDR2,A11,cohort 7,,,not in yet
+4,11,STDR2,A13,cohort 7,,,not in yet
+4,11,STDR2,B08,cohort 7,,,not in yet
+4,11,STDR2,E03,cohort 7,,,not in yet
+4,11,STDR2,F12,cohort 7,,,not in yet
+4,11,STDR2,A01,cohort 8,,,not in yet
+4,11,STDR2,A07,cohort 8,,,not in yet
+4,11,STDR2,B10,cohort 8,,,not in yet
+4,11,STDR2,B14,cohort 8,,,not in yet
+4,11,STDR2,D10,cohort 8,,,not in yet
+4,11,STDR2,E11,cohort 8,,,not in yet
+4,12,CAIN4,C13,blank,,,
+4,12,CAIN4,A05,cohort 1,X,,
+4,12,CAIN4,C07,cohort 1,FR,14,
+4,12,CAIN4,D02,cohort 1,,,
+4,12,CAIN4,D04,cohort 1,X,,
+4,12,CAIN4,E13,cohort 1,V,9,
+4,12,CAIN4,F04,cohort 1,FR,15.1,
+4,12,CAIN4,A11,cohort 2,V,1,
+4,12,CAIN4,B06,cohort 2,FL,12,
+4,12,CAIN4,B10,cohort 2,,,
+4,12,CAIN4,D06,cohort 2,,,
+4,12,CAIN4,G07,cohort 2,,,
+4,12,CAIN4,G11,cohort 2,X,,
+4,12,CAIN4,A13,cohort 3,V,4,
+4,12,CAIN4,D10,cohort 3,,,
+4,12,CAIN4,D12,cohort 3,F,12.7,
+4,12,CAIN4,E05,cohort 3,,,
+4,12,CAIN4,F02,cohort 3,,,
+4,12,CAIN4,G13,cohort 3,,,
+4,12,CAIN4,A09,cohort 4,,,
+4,12,CAIN4,B04,cohort 4,,,
+4,12,CAIN4,C01,cohort 4,B,13.2,
+4,12,CAIN4,C03,cohort 4,B,4,
+4,12,CAIN4,C11,cohort 4,X,,
+4,12,CAIN4,G01,cohort 4,,,
+4,12,CAIN4,A07,cohort 5,V,1.4,
+4,12,CAIN4,D14,cohort 5,,,
+4,12,CAIN4,E11,cohort 5,,,
+4,12,CAIN4,F08,cohort 5,,,
+4,12,CAIN4,F10,cohort 5,,,
+4,12,CAIN4,G05,cohort 5,,,
+4,12,CAIN4,A03,cohort 6,V,1,
+4,12,CAIN4,B08,cohort 6,V,1.5,
+4,12,CAIN4,C05,cohort 6,V,2.2,
+4,12,CAIN4,F14,cohort 6,V,3.2,
+4,12,CAIN4,G03,cohort 6,V,0.5,
+4,12,CAIN4,G09,cohort 6,,,
+4,12,CAIN4,A01,cohort 7,,,not in yet
+4,12,CAIN4,B02,cohort 7,,,not in yet
+4,12,CAIN4,B12,cohort 7,,,not in yet
+4,12,CAIN4,D08,cohort 7,,,not in yet
+4,12,CAIN4,E01,cohort 7,,,not in yet
+4,12,CAIN4,E03,cohort 7,,,not in yet
+4,12,CAIN4,B14,cohort 8,,,not in yet
+4,12,CAIN4,C09,cohort 8,,,not in yet
+4,12,CAIN4,E07,cohort 8,,,not in yet
+4,12,CAIN4,E09,cohort 8,,,not in yet
+4,12,CAIN4,F06,cohort 8,,,not in yet
+4,12,CAIN4,F12,cohort 8,,,not in yet
+4,13,STTO_TM2,E09,blank,,,
+4,13,STTO_TM2,A01,cohort 1,,,
+4,13,STTO_TM2,B04,cohort 1,V,2.5,
+4,13,STTO_TM2,D10,cohort 1,,,
+4,13,STTO_TM2,E03,cohort 1,,,
+4,13,STTO_TM2,E11,cohort 1,V,3.1,
+4,13,STTO_TM2,G11,cohort 1,V,3.1,
+4,13,STTO_TM2,A09,cohort 2,,,
+4,13,STTO_TM2,B10,cohort 2,,,
+4,13,STTO_TM2,B12,cohort 2,V,2,
+4,13,STTO_TM2,D04,cohort 2,,,
+4,13,STTO_TM2,D08,cohort 2,V,2.1,
+4,13,STTO_TM2,F04,cohort 2,V,2,
+4,13,STTO_TM2,A11,cohort 3,V,2.5,
+4,13,STTO_TM2,B06,cohort 3,V,0.7,
+4,13,STTO_TM2,E01,cohort 3,,,
+4,13,STTO_TM2,G01,cohort 3,,,
+4,13,STTO_TM2,G07,cohort 3,,,
+4,13,STTO_TM2,G09,cohort 3,,,
+4,13,STTO_TM2,A03,cohort 4,V,2,
+4,13,STTO_TM2,A07,cohort 4,V,2.5,
+4,13,STTO_TM2,B14,cohort 4,V,1.7,
+4,13,STTO_TM2,D02,cohort 4,V,1.6,
+4,13,STTO_TM2,D12,cohort 4,V,2,
+4,13,STTO_TM2,F14,cohort 4,,,
+4,13,STTO_TM2,B08,cohort 5,,,
+4,13,STTO_TM2,C05,cohort 5,,,
+4,13,STTO_TM2,D06,cohort 5,,,
+4,13,STTO_TM2,E05,cohort 5,,,
+4,13,STTO_TM2,F02,cohort 5,,,
+4,13,STTO_TM2,F12,cohort 5,,,
+4,13,STTO_TM2,B02,cohort 6,V,2,
+4,13,STTO_TM2,C07,cohort 6,V,1.3,
+4,13,STTO_TM2,C11,cohort 6,V,1.6,
+4,13,STTO_TM2,C13,cohort 6,,,
+4,13,STTO_TM2,F08,cohort 6,,,
+4,13,STTO_TM2,F10,cohort 6,,,
+4,13,STTO_TM2,A13,cohort 7,,,not in yet
+4,13,STTO_TM2,C03,cohort 7,,,not in yet
+4,13,STTO_TM2,E07,cohort 7,,,not in yet
+4,13,STTO_TM2,E13,cohort 7,,,not in yet
+4,13,STTO_TM2,G03,cohort 7,,,not in yet
+4,13,STTO_TM2,G13,cohort 7,,,not in yet
+4,13,STTO_TM2,A05,cohort 8,,,not in yet
+4,13,STTO_TM2,C01,cohort 8,,,not in yet
+4,13,STTO_TM2,C09,cohort 8,,,not in yet
+4,13,STTO_TM2,D14,cohort 8,,,not in yet
+4,13,STTO_TM2,F06,cohort 8,,,not in yet
+4,13,STTO_TM2,G05,cohort 8,,,not in yet
+4,14,STDI,B08,blank,,,
+4,14,STDI,B12,cohort 1,V,21,
+4,14,STDI,D02,cohort 1,V,23,
+4,14,STDI,D04,cohort 1,V,20.1,
+4,14,STDI,D12,cohort 1,V,21,
+4,14,STDI,G01,cohort 1,V,29.5,
+4,14,STDI,G13,cohort 1,V,13.2,
+4,14,STDI,B04,cohort 2,V,6.9,
+4,14,STDI,B06,cohort 2,,,
+4,14,STDI,C09,cohort 2,V,7.6,
+4,14,STDI,E05,cohort 2,V,1,
+4,14,STDI,F06,cohort 2,V,10.1,
+4,14,STDI,F08,cohort 2,,,
+4,14,STDI,A03,cohort 3,V,2.4,
+4,14,STDI,A05,cohort 3,V,0.4,
+4,14,STDI,E03,cohort 3,,,
+4,14,STDI,F10,cohort 3,,,
+4,14,STDI,F14,cohort 3,V,8.6,
+4,14,STDI,G09,cohort 3,,,
+4,14,STDI,A01,cohort 4,V,2.5,
+4,14,STDI,C01,cohort 4,V,9,
+4,14,STDI,C13,cohort 4,V,1.5,
+4,14,STDI,E13,cohort 4,,,
+4,14,STDI,F04,cohort 4,V,7.9,
+4,14,STDI,F12,cohort 4,V,7.9,
+4,14,STDI,B02,cohort 5,V,2.3,
+4,14,STDI,B10,cohort 5,,,
+4,14,STDI,B14,cohort 5,,,
+4,14,STDI,D14,cohort 5,,,
+4,14,STDI,E07,cohort 5,,,
+4,14,STDI,E09,cohort 5,,,
+4,14,STDI,A07,cohort 6,V,3.2,
+4,14,STDI,C03,cohort 6,V,2.2,
+4,14,STDI,C11,cohort 6,,,
+4,14,STDI,E11,cohort 6,,,
+4,14,STDI,G03,cohort 6,,,
+4,14,STDI,G05,cohort 6,,,
+4,14,STDI,A09,cohort 7,,,not in yet
+4,14,STDI,C05,cohort 7,,,not in yet
+4,14,STDI,D06,cohort 7,,,not in yet
+4,14,STDI,D08,cohort 7,,,not in yet
+4,14,STDI,D10,cohort 7,,,not in yet
+4,14,STDI,G07,cohort 7,,,not in yet
+4,14,STDI,A11,cohort 8,,,not in yet
+4,14,STDI,A13,cohort 8,,,not in yet
+4,14,STDI,C07,cohort 8,,,not in yet
+4,14,STDI,E01,cohort 8,,,not in yet
+4,14,STDI,F02,cohort 8,,,not in yet
+4,14,STDI,G11,cohort 8,,,not in yet
