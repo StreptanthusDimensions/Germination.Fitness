@@ -338,3 +338,8 @@ proportions.fig
 
 
 
+
+
+#### Table S1 Sample Sizes ####
+
+table(final.data$Pop, final.data$Cohort)
