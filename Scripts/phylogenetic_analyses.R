@@ -9,6 +9,9 @@ library(phytools)
 library(RColorBrewer)
 library(ggnewscale)
 library(caper)
+library(tidyverse)
+library(ggpubr)
+library(ggrepel)
 
 remotes::install_github("clauswilke/colorblindr")
 library(colorblindr)
@@ -362,6 +365,47 @@ setwd("/Users/sjworthy/Documents/GitHub/GermPhenoFitness")
 
 all.slopes=read.csv("Germination.Fitness/Results/all.slopes.csv")
 
+# Get PC1
+
+setwd("~/Library/CloudStorage/Box-Box/StreptanthusDimensions/HerbariumStudy/merged_data")
+
+locs = read.csv("georeferencing_clean.csv")
+climate = read.csv("all_herbarium_climate.csv") %>%
+  mutate(type = "herbarium")
+
+climsummaries = climate %>% 
+  filter(clim_year > 1990) %>% 
+  filter(clim_year < 2016) %>% 
+  group_by(specimen,type) %>% 
+  dplyr::summarize(Cwd = mean(cwd), PPT_CV = (sd(ppt_mm)/mean(ppt_mm)),PPT = mean(ppt_mm), 
+                   Tmin_SD=sd(tmin), Tmax_SD=sd(tmax),Tmin = mean(tmin), Tmax = mean(tmax)) %>%
+  left_join(., locs) %>%
+  dplyr::rename(id = specimen)
+# data is summarized over years 1991-2016
+
+climsummaries.2 = climsummaries %>%
+  group_by(folder) %>%
+  dplyr::summarize(Cwd = mean(Cwd), PPT_CV = mean(PPT_CV),PPT = mean(PPT), 
+                   Tmin_SD=sd(Tmin_SD), Tmax_SD=sd(Tmax_SD),Tmin = mean(Tmin), Tmax = mean(Tmax))
+
+# subset herbarium data by each species
+climsummaries.3 = subset(climsummaries.2, climsummaries.2$folder %in% c("c_anceps","c_coulteri","c_inflatus",
+                                                                        "s_breweri","s_diversifolius",
+                                                                        "s_drepanoides","s_glandulosus",
+                                                                        "s_insignis","s_polygaloides",
+                                                                        "s_tortuosus"))
+
+# PC of herbarium data
+all.data.4pc.year = climsummaries.3 %>%
+  ungroup() %>%
+  dplyr:: select(Cwd,PPT,PPT_CV,Tmin,Tmax,Tmax_SD,Tmin_SD)
+
+all.data.pc.year = prcomp(all.data.4pc.year, scale  = TRUE, center = TRUE)
+all.data.pc.year
+biplot(all.data.pc.year)
+all.data.year.pc.dat = data.frame(all.data.pc.year$x)
+all.data.year.2 = cbind(climsummaries.3, all.data.year.pc.dat)
+
 all.data.year.2$folder = c("CAAN","CACO1","CAIN","STBR3","STDI","STDR2","STGL1","STIN","STPO","STTO_TM2")
 colnames(all.data.year.2)[1] = "Pop"
 all.data.year.final = left_join(all.slopes,all.data.year.2, by = "Pop")
@@ -390,13 +434,13 @@ all.data.year.final$Pop.2 = c("CAIN","CACO","CAAN","STGL","STIN","STPO","STDI",
 all.data.year.final$pred.days2bud.pc1 = predict(days2bud.pc1.pgls)
 
 #define annotations to axis labels for PCA axes
-text_x_low = textGrob("Hot & dry", gp=gpar(fontsize = 12,col="gray35"))
-text_x_high = textGrob("Cool & wet", gp=gpar(fontsize = 12,col="gray35"))
+text_x_low = text_grob("Hot & dry", size = 12,col="gray35")
+text_x_high = text_grob("Cool & wet", size = 12,col="gray35")
 
 days2bud.pc1.pgls.plot= ggplot(all.data.year.final, aes(y = days.2.bud, x = PC1, label = Pop.2))+
   geom_line(aes(y = pred.days2bud.pc1))+
-  geom_point()+
-  geom_label_repel()+
+  geom_point(size = 4)+
+  geom_label_repel(size = 5)+
   theme_classic(base_size=22)+
   labs(y = "Time to First Bud (days)")+
   annotation_custom(text_x_high,xmin=3.8,xmax= 4,ymin =-1.07,ymax = -1.07) +
@@ -404,18 +448,19 @@ days2bud.pc1.pgls.plot= ggplot(all.data.year.final, aes(y = days.2.bud, x = PC1,
   coord_cartesian( clip="off") #this keeps it from clipping off the stuff outside the plot
 days2bud.pc1.pgls.plot
 
+setwd("/Users/sjworthy/Documents/GitHub/")
 #ggsave("Germination.Fitness/Results/days2bud.pc1.pgls.pdf", height = 7, width = 7)
 
 all.data.year.final$pred.flwprob.pc1 = predict(flwprob.pc1.pgls)
 
 #define annotations to axis labels for PCA axes
-text_x_low = textGrob("Hot & dry", gp=gpar(fontsize = 12,col="gray35"))
-text_x_high = textGrob("Cool & wet", gp=gpar(fontsize = 12,col="gray35"))
+text_x_low = text_grob("Hot & dry", size = 12,col="gray35")
+text_x_high = text_grob("Cool & wet", size = 12,col="gray35")
 
 # no line because not significant
 pflwr.pc1.pgls.plot= ggplot(all.data.year.final, aes(y = pflwr, x = PC1, label = Pop.2))+
-  geom_point()+
-  geom_label_repel()+
+  geom_point(size = 4)+
+  geom_label_repel(size = 5)+
   theme_classic(base_size=22)+
   labs(y = "Probability of Flowering")+
   annotation_custom(text_x_high,xmin=3.8,xmax= 4,ymin =-0.04,ymax = -0.04) +
@@ -428,14 +473,14 @@ pflwr.pc1.pgls.plot
 all.data.year.final$pred.seed.num.pc1 = predict(seed.num.pc1.pgls)
 
 #define annotations to axis labels for PCA axes
-text_x_low = textGrob("Hot & dry", gp=gpar(fontsize = 12,col="gray35"))
-text_x_high = textGrob("Cool & wet", gp=gpar(fontsize = 12,col="gray35"))
+text_x_low = text_grob("Hot & dry", size = 12,col="gray35")
+text_x_high = text_grob("Cool & wet", size = 12,col="gray35")
 
 # no line because not significant
 seed.num.pc1.pgls.plot= ggplot(all.data.year.final, aes(y = seed_num_nb, x = PC1, label = Pop.2))+
   geom_line(aes(y = pred.seed.num.pc1))+
-  geom_point()+
-  geom_label_repel()+
+  geom_point(size=4)+
+  geom_label_repel(size=5)+
   theme_classic(base_size=22)+
   labs(y = "Number of Seeds")+
   annotation_custom(text_x_high,xmin=3.8,xmax= 4,ymin =-0.033,ymax = -0.033) +
@@ -448,12 +493,12 @@ seed.num.pc1.pgls.plot
 all.data.year.final$pred.year1fit.pc1 = predict(fit.pc1.pgls)
 
 #define annotations to axis labels for PCA axes
-text_x_low = textGrob("Hot & dry", gp=gpar(fontsize = 12,col="gray35"))
-text_x_high = textGrob("Cool & wet", gp=gpar(fontsize = 12,col="gray35"))
+text_x_low = text_grob("Hot & dry", size = 12,col="gray35")
+text_x_high = text_grob("Cool & wet", size = 12,col="gray35")
 
 year1fit.pc1.pgls.plot= ggplot(all.data.year.final, aes(y = year1fit, x = PC1, label = Pop.2))+
-  geom_point()+
-  geom_label_repel()+
+  geom_point(size=4)+
+  geom_label_repel(size=5)+
   theme_classic(base_size=22)+
   labs(y = "Year 1 fitness\n (p(flower)*seed number)")+
   annotation_custom(text_x_high,xmin=3.8,xmax= 4,ymin =-0.03,ymax = -0.03) +
@@ -462,5 +507,8 @@ year1fit.pc1.pgls.plot= ggplot(all.data.year.final, aes(y = year1fit, x = PC1, l
 year1fit.pc1.pgls.plot
 
 #ggsave("Germination.Fitness/Results/yr1fit.pc1.pgls.pdf", height = 7, width = 7)
+
+Figure6 = plot_grid(days2bud.pc1.pgls.plot,pflwr.pc1.pgls.plot,seed.num.pc1.pgls.plot,
+                    year1fit.pc1.pgls.plot, nrow = 2, ncol = 2, labels = c("A.","B.","C.","D."))
 
 
