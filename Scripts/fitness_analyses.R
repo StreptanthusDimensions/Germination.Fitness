@@ -104,7 +104,7 @@ pflwr.dat=emmip(pflwr_sep1, Species~transplant.daySept1, at=mylist, CIs=TRUE, pl
   mutate(sigreg = if_else(Species %in% c("CAAN", "CAIN", "STBR", 
                                          "STDR", "STPO", "STTO"), 
                           "Significant", "Nonsignificant"))%>%
-  mutate(phy_order = fct_relevel(Species, "STDR", "STBR", "STTO", "STDI", "STPO", "STIN", 
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
                                  "STGL", "CAAN", "CACO", "CAIN")) 
 
 flwrprop = fitdat %>%
@@ -117,7 +117,7 @@ flwrprop = fitdat %>%
   mutate(sigreg = if_else(Species %in% c("CAAN", "CAIN", "STBR", 
                                          "STDR", "STPO", "STTO"), 
                           "Significant", "Nonsignificant")) %>%
-  mutate(phy_order = fct_relevel(Species, "STDR", "STBR", "STTO", "STDI", "STPO", "STIN", 
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
                                  "STGL", "CAAN", "CACO", "CAIN"))
 
 # plot removing lines for nonsignificant values
@@ -165,7 +165,7 @@ mylist <- list(transplant.daySept1= seq(min(fitdat$transplant.daySept1, na.rm=T)
 sizebud.dat= emmip(sizebud_glob_sep1,Species~transplant.daySept1,at=mylist, CIs=TRUE, plotit = FALSE, type = "response", nesting = F) %>%
   mutate(sigreg = if_else(Species %in% c("STBR", "STDI", "STIN", "STPO"), 
                           "Significant", "Nonsignificant")) %>%
-  mutate(phy_order = fct_relevel(Species, "STDR", "STBR", "STTO", "STDI", "STPO", "STIN", 
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
                                  "STGL", "CAAN", "CACO", "CAIN")) 
 
 # subset predictions so don't plot line beyond observed data
@@ -177,7 +177,7 @@ sizebud.dat = sizebud.dat %>%
   mutate(yvar = na_if(yvar,0))
 
 size.all = buddat %>%
-  mutate(phy_order = fct_relevel(Species, "STDR", "STBR", "STTO", "STDI", "STPO", "STIN", 
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
                                  "STGL", "CAAN", "CACO", "CAIN"))
 
 # plot removing lines for nonsignificant values
@@ -230,8 +230,8 @@ seednb_emtrends
 
 flwrdat3 = flwrdat2 %>%
   mutate(sigreg = if_else(Species %in% c("STDR", "STPO", "STGL", "STTO"), "Nonignificant", "Significant"))%>%
-  mutate(phy_order = fct_relevel(Species, "STDR", "STBR", "STTO", "STDI", "STPO", "STIN", 
-                                 "STGL", "CAAN", "CACO", "CAIN")) 
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
+                                 "STGL", "CAAN", "CACO", "CAIN"))  
 # new data to predict from
 mylist <- list(transplant.daySept1= seq(min(fitdat$transplant.daySept1, na.rm=T),
                                         max(fitdat$transplant.daySept1, na.rm=T)+2, by=10), 
@@ -240,7 +240,7 @@ mylist <- list(transplant.daySept1= seq(min(fitdat$transplant.daySept1, na.rm=T)
 # predictions from model
 seedcount.dat=emmip(seed_nb_glob_sep1,Species~transplant.daySept1,at=mylist, CIs=TRUE, plotit = FALSE, type = "response") %>% # I think response will back transform from logit
   mutate(sigreg = if_else(Species %in% c("STDR", "STPO", "STGL", "STTO"), "Nonignificant", "Significant"))%>%
-  mutate(phy_order = fct_relevel(Species, "STDR", "STBR", "STTO", "STDI", "STPO", "STIN", 
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
                                  "STGL", "CAAN", "CACO", "CAIN")) 
 
 # removing predictions so line doesn't go beyond observed data
@@ -292,8 +292,8 @@ seedmass_emtrends
 
 flwrdat3 = flwrdat2 %>%
   mutate(sigreg = if_else(Species %in% c("CAAN", "CACO", "STDI", "STIN"), "Significant", "Nonsignificant"))%>%
-  mutate(phy_order = fct_relevel(Species, "STDR", "STBR", "STTO", "STDI", "STPO", "STIN", 
-                                 "STGL", "CAAN", "CACO", "CAIN")) 
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
+                                 "STGL", "CAAN", "CACO", "CAIN"))  
 
 # new data to predict from
 mylist <- list(transplant.daySept1= seq(min(fitdat$transplant.daySept1, na.rm=T),
@@ -310,7 +310,7 @@ seedmass.dat = seedmass.dat%>%
   mutate(yvar = if_else(Species == "CAIN" & transplant.daySept1 >148 , 0, yvar)) %>%
   mutate(yvar = if_else(Species == "STPO" & transplant.daySept1 >148 , 0, yvar)) %>%
   mutate(yvar = na_if(yvar,0))%>%
-  mutate(phy_order = fct_relevel(Species, "STDR", "STBR", "STTO", "STDI", "STPO", "STIN", 
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
                                  "STGL", "CAAN", "CACO", "CAIN")) 
 
 # plot removing lines for nonsignificant values
@@ -359,13 +359,13 @@ year1_emtrends
 
 fitdat3 = fitdat2 %>%
   mutate(sigreg = if_else(Species %in% c("STDR", "STGL", "STPO"), "Nonsignificant", "Significant"))%>%
-  mutate(phy_order = fct_relevel(Species, "STDR", "STBR", "STTO", "STDI", "STPO", "STIN", 
-                                 "STGL", "CAAN", "CACO", "CAIN")) 
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
+                                 "STGL", "CAAN", "CACO", "CAIN"))  
 
 # make predictions
 year1.dat=emmip(year1_nb_glob_sep1,Species~transplant.daySept1,at=mylist, CIs=TRUE, plotit = FALSE, type = "response") %>% # I think response will back transform from logit
   mutate(sigreg = if_else(Species %in% c("STDR", "STGL", "STPO"), "Nonsignificant", "Significant"))%>%
-  mutate(phy_order = fct_relevel(Species, "STDR", "STBR", "STTO", "STDI", "STPO", "STIN", 
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
                                  "STGL", "CAAN", "CACO", "CAIN")) 
 
 # plot removing lines for nonsignificant values
@@ -387,13 +387,5 @@ year1.plot.2 = year1.plot +
   facet_wrap(~phy_order)
 year1.plot.2
 
-# ggsave("./Germination.Fitness/Results/year1fitness.allpoints.pdf", height = 10, width = 12)
-
-
-
-
-
-
-
-
+#ggsave("./Germination.Fitness/Results/year1fitness.allpoints.pdf", height = 10, width = 12)
 

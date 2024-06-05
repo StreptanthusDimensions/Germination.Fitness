@@ -229,7 +229,16 @@ climate.plots.legend = plot_grid(stdr.climate,stbr.climate,stto.climate.legend,s
                                  stpo.climate,stin.climate,stgl.climate,caan.climate,
                                  caco.climate,cain.climate)
 
+climate.plots = plot_grid(stto.climate,stdi.climate,stpo.climate,stdr.climate,
+                          stbr.climate,stin.climate,stgl.climate,caan.climate,
+                          caco.climate,cain.climate)
+climate.plots.legend = plot_grid(stto.climate.legend,stdi.climate,stpo.climate,stdr.climate,
+                                 stbr.climate,stin.climate,stgl.climate,caan.climate,
+                                 caco.climate,cain.climate)
+
 setwd("/Users/sjworthy/Documents/GitHub/GermPhenoFitness")
 
 #ggsave("Germination.Fitness/Results/climate.plots.no.legend.pdf", height = 10, width = 12)
+#ggsave("Germination.Fitness/Results/climate.plots.legend.pdf", height = 10, width = 12)
+
 

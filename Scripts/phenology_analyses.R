@@ -49,8 +49,8 @@ final.data.4 = final.data.3 %>%
   mutate(Species = dplyr::recode(Species, "CAAN" = "CAAN", "CAIN" = "CAIN", "CACO1" = "CACO", 
                                  "STTO_TM2" = "STTO", "STDR2" = "STDR", "STPO1" = "STPO", "STBR3" = "STBR", 
                                  "STDI" = "STDI", "STGL1" = "STGL", "STIN" = "STIN")) %>%
-  mutate(phy_order = fct_relevel(Species, "STDR", "STBR", "STTO", "STDI", "STPO", "STIN", 
-                                 "STGL", "CAAN", "CACO", "CAIN"))
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
+                                 "STGL", "CAAN", "CACO", "CAIN")) 
 
 # make bench and pop factors
 final.data.4$bench.factor = as.factor(final.data.4$Bench)
@@ -91,8 +91,8 @@ mylist <- list(transplantjul.std=unique(final.data.5$transplantjul.std),
 bud.dat=emmip(days.2.bud.model.pop,phy_order~transplantjul.std,at=mylist, CIs=TRUE, plotit = FALSE)
 
 bud.dat.2 = bud.dat %>%
-  mutate(phy_order = fct_relevel(phy_order, "STDR", "STBR", "STTO", "STDI", "STPO", "STIN", 
-                                 "STGL", "CAAN", "CACO", "CAIN"))
+  mutate(phy_order = fct_relevel(phy_order, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
+                                 "STGL", "CAAN", "CACO", "CAIN")) 
 
 # remove predicted values where no data actually occurs
 
@@ -114,14 +114,7 @@ days.2.bud.plot.2 = days.2.bud.plot +
   facet_wrap(.~phy_order)
 days.2.bud.plot.2
 
-#ggsave("Germination.Fitness/Results/bud.day2pheno.plot.all.pts.jpg", height = 10, width = 12)
-
-
-
-
-
-
-
+#ggsave("Germination.Fitness/Results/bud.day2pheno.plot.all.pts.pdf", height = 10, width = 12)
 
 
 #### Calculating first bud date ####
@@ -160,8 +153,8 @@ final.data.4 = final.data.3 %>%
   mutate(Species = dplyr::recode(Species, "CAAN" = "CAAN", "CAIN" = "CAIN", "CACO1" = "CACO", 
                                  "STTO_TM2" = "STTO", "STDR2" = "STDR", "STPO1" = "STPO", "STBR3" = "STBR", 
                                  "STDI" = "STDI", "STGL1" = "STGL", "STIN" = "STIN")) %>%
-  mutate(phy_order = fct_relevel(Species, "STDR", "STBR", "STTO", "STDI", "STPO", "STIN", 
-                                 "STGL", "CAAN", "CACO", "CAIN"))
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
+                                 "STGL", "CAAN", "CACO", "CAIN")) 
 
 # make bench and pop factors
 final.data.4$bench.factor = as.factor(final.data.4$Bench)
@@ -202,8 +195,8 @@ mylist <- list(transplantjul.std=unique(final.data.5$transplantjul.std),
 bud.dat=emmip(bud.sept1.model.pop,phy_order~transplantjul.std,at=mylist, CIs=TRUE, plotit = FALSE)
 
 bud.dat.2 = bud.dat %>%
-  mutate(phy_order = fct_relevel(phy_order, "STDR", "STBR", "STTO", "STDI", "STPO", "STIN", 
-                                 "STGL", "CAAN", "CACO", "CAIN"))
+  mutate(phy_order = fct_relevel(phy_order, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
+                                 "STGL", "CAAN", "CACO", "CAIN")) 
 
 # remove predicted values where no data actually occurs
 bud.dat.2[c(60,70,80),c(3,6,7)] = NA # Remove STTO, remove all STTO b/c not significant
@@ -264,8 +257,8 @@ final.data.4 = final.data.3 %>%
   mutate(Species = dplyr::recode(Species, "CAAN" = "CAAN", "CAIN" = "CAIN", "CACO1" = "CACO", 
                                  "STTO_TM2" = "STTO", "STDR2" = "STDR", "STPO1" = "STPO", "STBR3" = "STBR", 
                                  "STDI" = "STDI", "STGL1" = "STGL", "STIN" = "STIN")) %>%
-  mutate(phy_order = fct_relevel(Species, "STDR", "STBR", "STTO", "STDI", "STPO", "STIN", 
-                                 "STGL", "CAAN", "CACO", "CAIN"))
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
+                                 "STGL", "CAAN", "CACO", "CAIN")) 
 
 # get total number of each species in each cohort
 total.numb = final.data.4 %>%
@@ -321,7 +314,7 @@ total.numb.3$flower.proportion = total.numb.3$flowered/total.numb.3$n
 proportions = read.csv("./Germination.Fitness/Results/proportions.long.csv")
 
 proportions = proportions %>%
-  mutate(phy_order = fct_relevel(phy_order, "STDR", "STBR", "STTO", "STDI", "STPO", "STIN", 
+  mutate(phy_order = fct_relevel(phy_order, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
                                  "STGL", "CAAN", "CACO", "CAIN"),
          Cohort = fct_relevel(Cohort, "7-Oct","28-Oct","18-Nov","9-Dec","30-Dec","27-Jan","24-Feb","24-Mar"))
 
@@ -330,14 +323,12 @@ proportions.fig=ggplot(proportions, aes(fill=factor(Status,levels = c("Flowered"
   geom_bar(position=position_stack(reverse = TRUE), stat="identity")+
   theme_classic(base_size = 15)+scale_fill_manual(values = c("black","gray48","gray90"))+
   facet_wrap(~phy_order)+
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1), legend.position = "none")+
   labs(x="Cohort", y="Proportions")
 proportions.fig
 
-# ggsave("Germination.Fitness/Results/proportions.pdf", height = 10, width = 12)
-
-
-
+#ggsave("Germination.Fitness/Results/proportions.legend.pdf", height = 10, width = 12)
+#ggsave("Germination.Fitness/Results/proportions.pdf", height = 10, width = 12)
 
 
 #### Table S1 Sample Sizes ####
