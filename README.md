@@ -1,4 +1,4 @@
-### Repository for the paper "*Phenological acceleration is insufficient to buffer fitness impacts of delayed rainy season onset across a clade of wildflowers*"
+### Repository for the paper "*Accelerated phenology fails to buffer fitness loss from delayed rain onset in a clade of wildflowers*"
 
 ### The files
 
