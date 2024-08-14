@@ -102,18 +102,19 @@ phylosig(phylo, fitness.slopes$year1fit, method = "K", test = TRUE, se = fitness
 # K = 0.682429, p = 0.9997
 phylosig(phylo, fitness.slopes$seed_mass, method = "K", se = fitness.slopes$seed_mass.se,test = TRUE, nsim=1000)
 # K = 0.771932, p = 0.442
+phylosig(phylo, fitness.slopes$pflwr.weighted, method = "K", test = TRUE, se = fitness.slopes$pflwr.weighted.se,nsim=1000)
+# K = 0.950963, p = 0.905
 
 # phylogenetic signal of slopes for combinations of populations
 
-# still need to do pflwr
 phylosig(phylo, fitness.slopes$pflwr.CAAN1.CAIN3, method = "K", test = TRUE, se = fitness.slopes$pflwr.CAAN1.CAIN3.se, nsim=1000)
-# K = 1.14555, p = 0.195
+# K = 0.937076, p = 0.877
 phylosig(phylo, fitness.slopes$pflwr.CAAN1.CAIN4, method = "K", test = TRUE, se = fitness.slopes$pflwr.CAAN1.CAIN4.se, nsim=1000)
-# K = 1.16093, p = 0.144
+# K = 0.935965, p = 0.870
 phylosig(phylo, fitness.slopes$pflwr.CAAN2.CAIN3, method = "K", test = TRUE, se = fitness.slopes$pflwr.CAAN2.CAIN3.se, nsim=1000)
-# K = 1.16645, p = 0.150
+# K = 0.952129, p = 0.943
 phylosig(phylo, fitness.slopes$pflwr.CAAN2.CAIN4, method = "K", test = TRUE, se = fitness.slopes$pflwr.CAAN2.CAIN4.se, nsim=1000)
-# K = 1.18198, p = 0.125
+# K = 0.951017, p = 0.920
 
 phylosig(phylo, fitness.slopes$seed_num_nb.CAAN1.CAIN3, method = "K", test = TRUE, se = fitness.slopes$seed_num_nb.CAAN1.CAIN3.se,nsim=1000)
 # K = 1.0327, p = 0.799
@@ -363,24 +364,27 @@ summary(d2bud.seed.num.pgls.pop) # not-significant, p = 0.07
 d2bud.seed.num.pgls.pop = pgls(days.2.bud.CAAN2.CAIN4~seed_num_nb.CAAN2.CAIN4, data=comp.data.1)
 summary(d2bud.seed.num.pgls.pop) # not-significant, p = 0.10
 
-# d2bud and pflwr Still need to do
+# d2bud and pflwr
 
 d2bud.pflwr.pgls = pgls(days.2.bud~pflwr, data=comp.data.1)
 summary(d2bud.pflwr.pgls) # not significant p = 0.78
 
+d2bud.pflwr.weighted.pgls = pgls(days.2.bud~pflwr.weighted, data=comp.data.1)
+summary(d2bud.pflwr.weighted.pgls) # not significant p = 0.75
+
 # population sensitivity
 
 d2bud.pflwr.pgls.pop = pgls(days.2.bud.CAAN1.CAIN3~pflwr.CAAN1.CAIN3, data=comp.data.1)
-summary(d2bud.pflwr.pgls.pop) # not-significant, p = 0.06
+summary(d2bud.pflwr.pgls.pop) # not-significant, p = 0.74
 
 d2bud.pflwr.pgls.pop = pgls(days.2.bud.CAAN1.CAIN4~pflwr.CAAN1.CAIN4, data=comp.data.1)
-summary(d2bud.pflwr.pgls.pop) # not-significant, p = 0.09
+summary(d2bud.pflwr.pgls.pop) # not-significant, p = 0.77
 
 d2bud.pflwr.pgls.pop = pgls(days.2.bud.CAAN2.CAIN3~pflwr.CAAN2.CAIN3, data=comp.data.1)
-summary(d2bud.pflwr.pgls.pop) # not-significant, p = 0.07
+summary(d2bud.pflwr.pgls.pop) # not-significant, p = 0.72
 
 d2bud.pflwr.pgls.pop = pgls(days.2.bud.CAAN2.CAIN4~pflwr.CAAN2.CAIN4, data=comp.data.1)
-summary(d2bud.pflwr.pgls.pop) # not-significant, p = 0.10
+summary(d2bud.pflwr.pgls.pop) # not-significant, p = 0.75
 
 # d2bud and yr1fit 
 
@@ -401,7 +405,7 @@ summary(d2bud.yr1fit.pgls.pop) # not-significant, p = 0.44
 d2bud.yr1fit.pgls.pop = pgls(days.2.bud.CAAN2.CAIN4~year1fit.CAAN2.CAIN4, data=comp.data.1)
 summary(d2bud.yr1fit.pgls.pop) # not-significant, p = 0.61
 
-#### Figure S9 ####
+#### Figure S10 ####
 
 d2bud.seed.num.pgls.plot= ggplot(all.slopes, aes(y = days.2.bud, x = seed_num_nb))+
   geom_point(size=2)+
@@ -474,7 +478,6 @@ summary(pheno.slopes.seed.num.pgls.pop) # not-significant, p = 0.41
 pheno.slopes.seed.num.pgls.pop = pgls(seed_num_nb.CAAN2.CAIN4~pheno.slopes.CAAN2.CAIN4, data=comp.data)
 summary(pheno.slopes.seed.num.pgls.pop) # not-significant, p = 0.77
 
-
 # year1fit and pheno slopes
 
 pheno.slopes.year1fit.pgls = pgls(year1fit~pheno.slopes, data=comp.data)
@@ -494,7 +497,7 @@ summary(pheno.slopes.year1fit.pgls.pop) # not-significant, p = 0.93
 pheno.slopes.year1fit.pgls.pop = pgls(year1fit.CAAN2.CAIN4~pheno.slopes.CAAN2.CAIN4, data=comp.data)
 summary(pheno.slopes.year1fit.pgls.pop) # not-significant, p = 0.50
 
-#### Figure S10 ####
+#### Figure S9 ####
 
 # no line b/c not significant
 pheno.slopes.seed.num.pgls.plot= ggplot(all.slopes, aes(y = seed_num_nb, x = pheno.slopes))+
@@ -513,11 +516,7 @@ pheno.slopes.year1fit.pgls.plot
 
 #ggsave("Germination.Fitness/Results/yr1fit.pheno.slopes.pgls.pdf", height = 7, width = 7)
 
-
-
 #### PGLS to relate phenology and fitness slopes to climate ####
-
-setwd("/Users/sjworthy/Documents/GitHub/GermPhenoFitness")
 
 all.phylo <- read.tree("./Germination.Fitness/Raw.Data/tree_pruned.new")
 
@@ -602,25 +601,28 @@ summary(days2bud.pc1.pgls.pop) # significant R2 = 0.67
 days2bud.pc1.pgls.pop = pgls(days.2.bud.CAAN2.CAIN4~PC1, data=comp.data)
 summary(days2bud.pc1.pgls.pop) # significant R2 = 0.68
 
-# pflwr~PC1 not done
+# pflwr~PC1
 
 flwprob.pc1.pgls = pgls(pflwr~PC1, data=comp.data)
 summary(flwprob.pc1.pgls) # not significant
 # PC1 is associated with all variables except temp_SD
 
+flwprob.pc1.pgls.weighted = pgls(pflwr.weighted~PC1, data=comp.data)
+summary(flwprob.pc1.pgls.weighted) # not significant
+
 # population sensitivity
 
 flwprob.pc1.pgls.pop = pgls(pflwr.CAAN1.CAIN3~PC1, data=comp.data)
-summary(flwprob.pc1.pgls.pop) # significant R2 = 0.65
+summary(flwprob.pc1.pgls.pop) # not significant
 
 flwprob.pc1.pgls.pop = pgls(pflwr.CAAN1.CAIN4~PC1, data=comp.data)
-summary(flwprob.pc1.pgls.pop) # significant R2 = 0.66
+summary(flwprob.pc1.pgls.pop) # not significant
 
 flwprob.pc1.pgls.pop = pgls(pflwr.CAAN2.CAIN3~PC1, data=comp.data)
-summary(flwprob.pc1.pgls.pop) # significant R2 = 0.67
+summary(flwprob.pc1.pgls.pop) # not significant
 
 flwprob.pc1.pgls.pop = pgls(pflwr.CAAN2.CAIN4~PC1, data=comp.data)
-summary(flwprob.pc1.pgls.pop) # significant R2 = 0.68
+summary(flwprob.pc1.pgls.pop) # not significant
 
 # seed_num~PC1
 

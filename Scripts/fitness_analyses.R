@@ -84,7 +84,7 @@ transplantdates = c("7-Oct", "28-Oct", "18-Nov", "09-Dec", "30-Dec", "27-Jan", "
 # predictors are exactly the same as phenology models
 
 pflwr_sep1 = glm(flowered ~ transplant.daySept1*Species + transplant.height.cm + Bench + Pop, 
-                 family = binomial(link = "logit"), data=fitdat)
+                 family = binomial(link = "logit"), data=droplevels(fitdat))
 summary(pflwr_sep1)
 
 # test for significant of fixed effects
@@ -94,7 +94,173 @@ anova(pflwr_sep1, test = "Chisq") # bench and pop not significant
 pflwr_emtrends = emtrends(pflwr_sep1, pairwise ~ Species, var = "transplant.daySept1")
 pflwr_emtrends
 
-#write.csv(pflwr_emtrends$emtrends, file = "./Germination.Fitness/Results/prob.flower.emtrends.csv")
+# write.csv(pflwr_emtrends$emtrends, file = "./Germination.Fitness/Results/prob.flower.emtrends.csv")
+
+#### Model of probability of flowering with weights ####
+# create data frame that has successes (flowered) and total numbers of individuals on each bench, in each cohort, for each pop
+
+n.cohort = fitdat %>%
+  group_by(Pop,Bench,transplant.daySept1) %>%
+  count()
+
+n.flowered = fitdat %>%
+  filter(flowered == 1) %>%
+  group_by(Pop,Bench,transplant.daySept1,flowered) %>%
+  count()
+
+colnames(n.flowered)[5] = "Yes.Flower"
+
+no.flowered = fitdat %>%
+  filter(flowered == 0) %>%
+  group_by(Pop,Bench,transplant.daySept1,flowered) %>%
+  count()
+
+colnames(no.flowered)[4] = "no.flowered"
+colnames(no.flowered)[5] = "No.Flower"
+
+all.data = full_join(n.flowered,no.flowered)
+all.data$total.n = rowSums(all.data[,c("Yes.Flower", "No.Flower")], na.rm=TRUE)
+
+# change NA is Yes.Flower to 0
+
+all.data$Yes.Flower[is.na(all.data$Yes.Flower)] = 0
+
+all.data$seed.source = if_else(all.data$Pop %in% c("CAAN1","CACO1","STBR3","STDI","STDR2","STIN"), "SH", "Field")
+
+all.data = all.data %>%
+  mutate(Species = dplyr::recode(Pop, "CAAN1" = "CAAN", "CAAN2" = "CAAN","CAIN3" = "CAIN", "CAIN4" = "CAIN","CACO1" = "CACO", 
+                                 "STTO_TM2" = "STTO", "STDR2" = "STDR", "STPO1" = "STPO", "STBR3" = "STBR", 
+                                 "STDI1" = "STDI", "STGL1" = "STGL", "STIN1" = "STIN")) %>%
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
+                                 "STGL", "CAAN", "CACO", "CAIN"))
+
+# generalized linear model with binomial error and logit link
+# can't include transplant height as a predictor since now data is successes/failures
+
+y=cbind(all.data$Yes.Flower, (all.data$total.n-all.data$Yes.Flower))
+
+pflwr_sep1_weighted = glm(y ~ transplant.daySept1*Species + Bench + Pop, 
+                 family = binomial(link = "logit"), data=droplevels(all.data))
+summary(pflwr_sep1_weighted)
+
+# test for significant of fixed effects
+anova(pflwr_sep1_weighted, test = "Chisq") # bench and pop not significant
+
+# estimates species-specific slopes
+pflwr_weighted_emtrends = emtrends(pflwr_sep1_weighted, pairwise ~ Species, var = "transplant.daySept1")
+pflwr_weighted_emtrends
+
+# write.csv(pflwr_weighted_emtrends$emtrends, file = "./Germination.Fitness/Results/prob.flower.weighted.emtrends.csv")
+
+#### Model of probability of flowering with weights with seed source ####
+
+# generalized linear model with binomial error and logit link
+# can't include transplant height as a predictor since now data is successes/failures
+
+y=cbind(all.data$Yes.Flower, (all.data$total.n-all.data$Yes.Flower))
+
+pflwr_sep1_weighted.ss = glm(y ~ transplant.daySept1*Species + Bench + seed.source, 
+                          family = binomial(link = "logit"), data=all.data)
+summary(pflwr_sep1_weighted.ss)
+
+# test for significant of fixed effects
+anova(pflwr_sep1_weighted.ss, test = "Chisq") # bench and pop not significant
+
+# estimates species-specific slopes
+pflwr_weighted_emtrends.ss = emtrends(pflwr_sep1_weighted.ss, pairwise ~ Species, var = "transplant.daySept1")
+pflwr_weighted_emtrends.ss
+
+#### Model of probability of flowering with weights with seed source with CAAN1 and CAIN3 ####
+
+all.data.sub = all.data %>%
+  filter(!Pop %in% c("CAAN2","CAIN4"))
+
+# generalized linear model with binomial error and logit link
+# can't include transplant height as a predictor since now data is successes/failures
+
+y=cbind(all.data.sub$Yes.Flower, (all.data.sub$total.n-all.data.sub$Yes.Flower))
+
+pflwr_sep1_weighted.nopop.ss = glm(y ~ transplant.daySept1*Species + Bench + seed.source, 
+                             family = binomial(link = "logit"), data=all.data.sub)
+summary(pflwr_sep1_weighted.nopop.ss)
+
+# test for significant of fixed effects
+anova(pflwr_sep1_weighted.nopop.ss, test = "Chisq") # bench and pop not significant
+
+# estimates species-specific slopes
+pflwr_weighted_emtrends.nopop.ss = emtrends(pflwr_sep1_weighted.nopop.ss, pairwise ~ Species, var = "transplant.daySept1")
+pflwr_weighted_emtrends.nopop.ss
+
+#write.csv(pflwr_weighted_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/prob.flower.weighted.emtrends.CAAN1.CAIN3.csv")
+
+#### Model of probability of flowering with weights with seed source with CAAN1 and CAIN4 ####
+
+all.data.sub = all.data %>%
+  filter(!Pop %in% c("CAAN2","CAIN3"))
+
+# generalized linear model with binomial error and logit link
+# can't include transplant height as a predictor since now data is successes/failures
+
+y=cbind(all.data.sub$Yes.Flower, (all.data.sub$total.n-all.data.sub$Yes.Flower))
+
+pflwr_sep1_weighted.nopop.ss = glm(y ~ transplant.daySept1*Species + Bench + seed.source, 
+                                   family = binomial(link = "logit"), data=all.data.sub)
+summary(pflwr_sep1_weighted.nopop.ss)
+
+# test for significant of fixed effects
+anova(pflwr_sep1_weighted.nopop.ss, test = "Chisq") # bench and pop not significant
+
+# estimates species-specific slopes
+pflwr_weighted_emtrends.nopop.ss = emtrends(pflwr_sep1_weighted.nopop.ss, pairwise ~ Species, var = "transplant.daySept1")
+pflwr_weighted_emtrends.nopop.ss
+
+# write.csv(pflwr_weighted_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/prob.flower.weighted.emtrends.CAAN1.CAIN4.csv")
+
+#### Model of probability of flowering with weights with seed source with CAAN2 and CAIN3 ####
+
+all.data.sub = all.data %>%
+  filter(!Pop %in% c("CAAN1","CAIN4"))
+
+# generalized linear model with binomial error and logit link
+# can't include transplant height as a predictor since now data is successes/failures
+
+y=cbind(all.data.sub$Yes.Flower, (all.data.sub$total.n-all.data.sub$Yes.Flower))
+
+pflwr_sep1_weighted.nopop.ss = glm(y ~ transplant.daySept1*Species + Bench + seed.source, 
+                                   family = binomial(link = "logit"), data=all.data.sub)
+summary(pflwr_sep1_weighted.nopop.ss)
+
+# test for significant of fixed effects
+anova(pflwr_sep1_weighted.nopop.ss, test = "Chisq") # bench and pop not significant
+
+# estimates species-specific slopes
+pflwr_weighted_emtrends.nopop.ss = emtrends(pflwr_sep1_weighted.nopop.ss, pairwise ~ Species, var = "transplant.daySept1")
+pflwr_weighted_emtrends.nopop.ss
+
+# write.csv(pflwr_weighted_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/prob.flower.weighted.emtrends.CAAN2.CAIN3.csv")
+
+#### Model of probability of flowering with weights with seed source with CAAN2 and CAIN4 ####
+
+all.data.sub = all.data %>%
+  filter(!Pop %in% c("CAAN1","CAIN3"))
+
+# generalized linear model with binomial error and logit link
+# can't include transplant height as a predictor since now data is successes/failures
+
+y=cbind(all.data.sub$Yes.Flower, (all.data.sub$total.n-all.data.sub$Yes.Flower))
+
+pflwr_sep1_weighted.nopop.ss = glm(y ~ transplant.daySept1*Species + Bench + seed.source, 
+                                   family = binomial(link = "logit"), data=all.data.sub)
+summary(pflwr_sep1_weighted.nopop.ss)
+
+# test for significant of fixed effects
+anova(pflwr_sep1_weighted.nopop.ss, test = "Chisq") # bench and pop not significant
+
+# estimates species-specific slopes
+pflwr_weighted_emtrends.nopop.ss = emtrends(pflwr_sep1_weighted.nopop.ss, pairwise ~ Species, var = "transplant.daySept1")
+pflwr_weighted_emtrends.nopop.ss
+
+# write.csv(pflwr_weighted_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/prob.flower.weighted.emtrends.CAAN2.CAIN4.csv")
 
 #### Figure 2 ####
 # new data to predict 
