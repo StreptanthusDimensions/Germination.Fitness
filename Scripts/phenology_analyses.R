@@ -10,7 +10,7 @@ library(tidyverse)
 library(lubridate)
 library(emmeans)
 
-#### Calculating days to first bud ####
+#### Calculating days to first bud, flower, fruit ####
 # code includes calculation of days to first flower and fruit, but these are correlated with days to first bud
 
 final.data=read.csv("./Germination.Fitness/Formatted.Data/final.data.csv")
@@ -56,8 +56,27 @@ final.data.4 = final.data.3 %>%
 final.data.4$bench.factor = as.factor(final.data.4$Bench)
 final.data.4$pop_factor = as.factor(final.data.4$Pop)
 
+# add seed source column to data frame and make a factor
+
+final.data.4$seed.source = if_else(final.data.4$Pop %in% c("CAAN1","CACO1","STBR3","STDI","STDR2","STIN"), "SH", "Field")
+final.data.4$seed.source = as.factor(final.data.4$seed.source)
+
 # get columns we need for models
-final.data.5 = final.data.4[,c(1:5,18,50:56)]
+final.data.5 = final.data.4[,c(1:5,18,50:57)]
+
+#### Correlation among phenophases ####
+
+cor.test(final.data.5$day2bud,final.data.5$day2flower)
+# r = 0.98, p < 2.2e-16
+cor.test(final.data.5$day2bud,final.data.5$day2fruit)
+# r = 0.96, p < 2.2e-16
+cor.test(final.data.5$day2flower,final.data.5$day2fruit)
+# r = 0.97, p < 2.2e-16
+
+# sample sizes
+# days2bud = 1008
+# days2flower = 922
+# days2fruit = 778
 
 #### Model of days to first bud ####
 # linear model
@@ -80,6 +99,134 @@ anova(days.2.bud.model.pop)
 
 #write.csv(days.2.bud.model.pop.emm$emtrends, file="./Germination.Fitness/Results/days.2.bud.pheno.emtrends.csv")
 #write.csv(days.2.bud.model.pop.emm$contrasts, file="./Germination.Fitness/Results/days.2.bud.pheno.contrasts.csv")
+
+#### Model of days to first bud with seed source ####
+# linear model
+# standardized transplant date (cohort date as continuous from Sept. 1)
+# phy_order (species as factor)
+# bench and pop included as fixed effects because only 4 benches and 2 pops, less than required for random effects
+# seed source included as fixed effect during revision, 2 levels Screenhouse (SH) and Field
+
+days.2.bud.model.ss = lm(day2bud~transplantjul.std*phy_order + transplant.height.cm + bench.factor + pop_factor + seed.source, data=droplevels(final.data.5))
+# won't generate estimates because pop_factor and seed.source confounded for all species except CAAN
+
+# estimate slope of relationship for each species
+days.2.bud.model.ss.emm=emtrends(days.2.bud.model.ss, pairwise~phy_order, var="transplantjul.std")
+# won't generate estimates because pop_factor and seed.source confounded for all species except CAAN
+
+# visualize slopes
+emmip(days.2.bud.model.ss, phy_order ~ transplantjul.std, cov.reduce = range)
+
+# evaluate significance of fixed effects in model
+anova(days.2.bud.model.ss)
+
+#### Model of days to first bud with seed source with CAAN1 and CAIN3 ####
+
+# data subset to only include CAAN1 and CAIN3 populations
+
+final.data.sub = final.data.5 %>%
+  filter(!Pop %in% c("CAAN2","CAIN4"))
+
+# linear model
+# standardized transplant date (cohort date as continuous from Sept. 1)
+# phy_order (species as factor)
+# bench included as fixed effects because only 4 benches, less than required for random effects
+# seed source included as fixed effect during revision, 2 levels Screenhouse (SH) and Field
+
+days.2.bud.model.nopop.ss = lm(day2bud~transplantjul.std*phy_order + transplant.height.cm + bench.factor + seed.source, data=droplevels(final.data.sub))
+# seed source still confounded with phy_order
+
+# estimate slope of relationship for each species
+days.2.bud.model.nopop.ss.emm=emtrends(days.2.bud.model.nopop.ss, pairwise~phy_order, var="transplantjul.std")
+
+# visualize slopes
+emmip(days.2.bud.model.nopop.ss, phy_order ~ transplantjul.std, cov.reduce = range)
+
+# evaluate significance of fixed effects in model
+anova(days.2.bud.model.nopop.ss)
+
+#write.csv(days.2.bud.model.nopop.ss.emm$emtrends, file="./Germination.Fitness/Results/Pop.Sensitivity/days.2.bud.pheno.emtrends.CAAN1.CAIN3.csv")
+
+#### Model of days to first bud with seed source with CAAN1 and CAIN4 ####
+
+# data subset to only include CAAN1 and CAIN4 populations
+
+final.data.sub = final.data.5 %>%
+  filter(!Pop %in% c("CAAN2","CAIN3"))
+
+# linear model
+# standardized transplant date (cohort date as continuous from Sept. 1)
+# phy_order (species as factor)
+# bench included as fixed effects because only 4 benches, less than required for random effects
+# seed source included as fixed effect during revision, 2 levels Screenhouse (SH) and Field
+
+days.2.bud.model.nopop.ss = lm(day2bud~transplantjul.std*phy_order + transplant.height.cm + bench.factor + seed.source, data=droplevels(final.data.sub))
+# seed source still confounded with phy_order
+
+# estimate slope of relationship for each species
+days.2.bud.model.nopop.ss.emm=emtrends(days.2.bud.model.nopop.ss, pairwise~phy_order, var="transplantjul.std")
+
+# visualize slopes
+emmip(days.2.bud.model.nopop.ss, phy_order ~ transplantjul.std, cov.reduce = range)
+
+# evaluate significance of fixed effects in model
+anova(days.2.bud.model.nopop.ss)
+
+#write.csv(days.2.bud.model.nopop.ss.emm$emtrends, file="./Germination.Fitness/Results/Pop.Sensitivity/days.2.bud.pheno.emtrends.CAAN1.CAIN4.csv")
+
+#### Model of days to first bud with seed source with CAAN2 and CAIN3 ####
+
+# data subset to only include CAAN2 and CAIN3 populations
+
+final.data.sub = final.data.5 %>%
+  filter(!Pop %in% c("CAAN1","CAIN4"))
+
+# linear model
+# standardized transplant date (cohort date as continuous from Sept. 1)
+# phy_order (species as factor)
+# bench included as fixed effects because only 4 benches, less than required for random effects
+# seed source included as fixed effect during revision, 2 levels Screenhouse (SH) and Field
+
+days.2.bud.model.nopop.ss = lm(day2bud~transplantjul.std*phy_order + transplant.height.cm + bench.factor + seed.source, data=droplevels(final.data.sub))
+# seed source still confounded with phy_order
+
+# estimate slope of relationship for each species
+days.2.bud.model.nopop.ss.emm=emtrends(days.2.bud.model.nopop.ss, pairwise~phy_order, var="transplantjul.std")
+
+# visualize slopes
+emmip(days.2.bud.model.nopop.ss, phy_order ~ transplantjul.std, cov.reduce = range)
+
+# evaluate significance of fixed effects in model
+anova(days.2.bud.model.nopop.ss)
+
+#write.csv(days.2.bud.model.nopop.ss.emm$emtrends, file="./Germination.Fitness/Results/Pop.Sensitivity/days.2.bud.pheno.emtrends.CAAN2.CAIN3.csv")
+
+#### Model of days to first bud with seed source with CAAN2 and CAIN4 ####
+
+# data subset to only include CAAN2 and CAIN4 populations
+
+final.data.sub = final.data.5 %>%
+  filter(!Pop %in% c("CAAN1","CAIN3"))
+
+# linear model
+# standardized transplant date (cohort date as continuous from Sept. 1)
+# phy_order (species as factor)
+# bench included as fixed effects because only 4 benches, less than required for random effects
+# seed source included as fixed effect during revision, 2 levels Screenhouse (SH) and Field
+
+days.2.bud.model.nopop.ss = lm(day2bud~transplantjul.std*phy_order + transplant.height.cm + bench.factor + seed.source, data=droplevels(final.data.sub))
+# seed source still confounded with phy_order
+
+# estimate slope of relationship for each species
+days.2.bud.model.nopop.ss.emm=emtrends(days.2.bud.model.nopop.ss, pairwise~phy_order, var="transplantjul.std")
+
+# visualize slopes
+emmip(days.2.bud.model.nopop.ss, phy_order ~ transplantjul.std, cov.reduce = range)
+
+# evaluate significance of fixed effects in model
+anova(days.2.bud.model.nopop.ss)
+
+# write.csv(days.2.bud.model.nopop.ss.emm$emtrends, file="./Germination.Fitness/Results/Pop.Sensitivity/days.2.bud.pheno.emtrends.CAAN2.CAIN4.csv")
 
 #### Figure 1 ####
 
@@ -117,7 +264,136 @@ days.2.bud.plot.2
 #ggsave("Germination.Fitness/Results/bud.day2pheno.plot.all.pts.pdf", height = 10, width = 12)
 
 
-#### Calculating first bud date ####
+#### Model of days to first flower ####
+# linear model
+# standardized transplant date (cohort date as continuous from Sept. 1)
+# phy_order (species as factor)
+# bench and pop included as fixed effects because only 4 benches and 2 pops, less than required for random effects
+
+days.2.flower.model.pop = lm(day2flower~transplantjul.std*phy_order + transplant.height.cm + bench.factor + pop_factor, data=droplevels(final.data.5))
+
+# estimate slope of relationship for each species
+days.2.flower.model.pop.emm=emtrends(days.2.flower.model.pop, pairwise~phy_order, var="transplantjul.std")
+# All slopes significant
+
+# visualize slopes
+emmip(days.2.flower.model.pop, phy_order ~ transplantjul.std, cov.reduce = range)
+
+# evaluate significance of fixed effects in model
+anova(days.2.flower.model.pop)
+# bench not significant
+# pop significant
+
+# write.csv(days.2.flower.model.pop.emm$emtrends, file="./Germination.Fitness/Results/Flower/days.2.flower.pheno.emtrends.csv")
+
+#### Model of days to first flower with seed source with CAAN1 and CAIN3 ####
+# data subset to only include CAAN1 and CAIN3 populations
+
+final.data.sub = final.data.5 %>%
+  filter(!Pop %in% c("CAAN2","CAIN4"))
+
+# linear model
+# standardized transplant date (cohort date as continuous from Sept. 1)
+# phy_order (species as factor)
+# bench included as fixed effects because only 4 benches, less than required for random effects
+# seed source included as fixed effect during revision, 2 levels Screenhouse (SH) and Field
+
+days.2.flower.model.nopop.ss = lm(day2flower~transplantjul.std*phy_order + transplant.height.cm + bench.factor + seed.source, data=droplevels(final.data.sub))
+# seed source still confounded with phy_order
+
+# estimate slope of relationship for each species
+days.2.flower.model.nopop.ss.emm=emtrends(days.2.flower.model.nopop.ss, pairwise~phy_order, var="transplantjul.std")
+
+# visualize slopes
+emmip(days.2.flower.model.nopop.ss, phy_order ~ transplantjul.std, cov.reduce = range)
+
+# evaluate significance of fixed effects in model
+anova(days.2.flower.model.nopop.ss)
+
+#write.csv(days.2.flower.model.nopop.ss.emm$emtrends, file="./Germination.Fitness/Results/Flower/days.2.flower.pheno.emtrends.CAAN1.CAIN3.csv")
+
+#### Model of days to first flower with seed source with CAAN1 and CAIN4 ####
+# data subset to only include CAAN1 and CAIN4 populations
+
+final.data.sub = final.data.5 %>%
+  filter(!Pop %in% c("CAAN2","CAIN3"))
+
+# linear model
+# standardized transplant date (cohort date as continuous from Sept. 1)
+# phy_order (species as factor)
+# bench included as fixed effects because only 4 benches, less than required for random effects
+# seed source included as fixed effect during revision, 2 levels Screenhouse (SH) and Field
+
+days.2.flower.model.nopop.ss = lm(day2flower~transplantjul.std*phy_order + transplant.height.cm + bench.factor + seed.source, data=droplevels(final.data.sub))
+# seed source still confounded with phy_order
+
+# estimate slope of relationship for each species
+days.2.flower.model.nopop.ss.emm=emtrends(days.2.flower.model.nopop.ss, pairwise~phy_order, var="transplantjul.std")
+
+# visualize slopes
+emmip(days.2.flower.model.nopop.ss, phy_order ~ transplantjul.std, cov.reduce = range)
+
+# evaluate significance of fixed effects in model
+anova(days.2.flower.model.nopop.ss)
+
+# write.csv(days.2.flower.model.nopop.ss.emm$emtrends, file="./Germination.Fitness/Results/Flower/days.2.flower.pheno.emtrends.CAAN1.CAIN4.csv")
+
+#### Model of days to first flower with seed source with CAAN2 and CAIN3 ####
+
+# data subset to only include CAAN2 and CAIN3 populations
+
+final.data.sub = final.data.5 %>%
+  filter(!Pop %in% c("CAAN1","CAIN4"))
+
+# linear model
+# standardized transplant date (cohort date as continuous from Sept. 1)
+# phy_order (species as factor)
+# bench included as fixed effects because only 4 benches, less than required for random effects
+# seed source included as fixed effect during revision, 2 levels Screenhouse (SH) and Field
+
+days.2.flower.model.nopop.ss = lm(day2flower~transplantjul.std*phy_order + transplant.height.cm + bench.factor + seed.source, data=droplevels(final.data.sub))
+# seed source still confounded with phy_order
+
+# estimate slope of relationship for each species
+days.2.flower.model.nopop.ss.emm=emtrends(days.2.flower.model.nopop.ss, pairwise~phy_order, var="transplantjul.std")
+
+# visualize slopes
+emmip(days.2.flower.model.nopop.ss, phy_order ~ transplantjul.std, cov.reduce = range)
+
+# evaluate significance of fixed effects in model
+anova(days.2.flower.model.nopop.ss)
+
+
+#write.csv(days.2.flower.model.nopop.ss.emm$emtrends, file="./Germination.Fitness/Results/Flower/days.2.flower.pheno.emtrends.CAAN2.CAIN3.csv")
+
+#### Model of days to first flower with seed source with CAAN2 and CAIN4 ####
+
+# data subset to only include CAAN2 and CAIN4 populations
+
+final.data.sub = final.data.5 %>%
+  filter(!Pop %in% c("CAAN1","CAIN3"))
+
+# linear model
+# standardized transplant date (cohort date as continuous from Sept. 1)
+# phy_order (species as factor)
+# bench included as fixed effects because only 4 benches, less than required for random effects
+# seed source included as fixed effect during revision, 2 levels Screenhouse (SH) and Field
+
+days.2.flower.model.nopop.ss = lm(day2flower~transplantjul.std*phy_order + transplant.height.cm + bench.factor + seed.source, data=droplevels(final.data.sub))
+# seed source still confounded with phy_order
+
+# estimate slope of relationship for each species
+days.2.flower.model.nopop.ss.emm=emtrends(days.2.flower.model.nopop.ss, pairwise~phy_order, var="transplantjul.std")
+
+# visualize slopes
+emmip(days.2.flower.model.nopop.ss, phy_order ~ transplantjul.std, cov.reduce = range)
+
+# evaluate significance of fixed effects in model
+anova(days.2.flower.model.nopop.ss)
+
+#write.csv(days.2.flower.model.nopop.ss.emm$emtrends, file="./Germination.Fitness/Results/Flower/days.2.flower.pheno.emtrends.CAAN2.CAIN4.csv")
+
+#### Calculating first bud, flower, fruit date ####
 # days since Sept. 1 to first bud to standardize among cohorts
 # when in the season the first bud occurs
 
@@ -160,8 +436,27 @@ final.data.4 = final.data.3 %>%
 final.data.4$bench.factor = as.factor(final.data.4$Bench)
 final.data.4$pop_factor = as.factor(final.data.4$Pop)
 
+# add seed source column to data frame and make a factor
+
+final.data.4$seed.source = if_else(final.data.4$Pop %in% c("CAAN1","CACO1","STBR3","STDI","STDR2","STIN"), "SH", "Field")
+final.data.4$seed.source = as.factor(final.data.4$seed.source)
+
 # get columns we need
-final.data.5 = final.data.4[,c(1:5,18,49:51,53:56)]
+final.data.5 = final.data.4[,c(1:5,18,49:51,53:57)]
+
+#### Correlation among phenophases ####
+
+cor.test(final.data.5$budjul.std,final.data.5$flowerjul.std)
+# r = 0.97, p < 2.2e-16
+cor.test(final.data.5$budjul.std,final.data.5$fruitjul.std)
+# r = 0.93, p < 2.2e-16
+cor.test(final.data.5$flowerjul.std,final.data.5$fruitjul.std)
+# r = 0.95, p < 2.2e-16
+
+# sample sizes
+# budjul.std = 1008
+# flowerjul.std = 922
+# fruitjul.std = 778
 
 #### Model of first bud date ####
 # linear model
@@ -184,6 +479,123 @@ anova(bud.sept1.model.pop)
 
 #write.csv(bud.sept1.model.pop.emm$emtrends, file="./Germination.Fitness/Results/bud.sept1.pheno.emtrends.csv")
 #write.csv(bud.sept1.model.pop.emm$contrasts, file="./Germination.Fitness/Results/bud.sept1.pheno.contrasts.csv")
+
+#### Model of first bud date with seed source with CAAN1 and CAIN3 ####
+
+# data subset to only include CAAN1 and CAIN3 populations
+
+final.data.sub = final.data.5 %>%
+  filter(!Pop %in% c("CAAN2","CAIN4"))
+
+# linear model
+# standardized transplant date (cohort date as continuous from Sept. 1)
+# phy_order (species as factor)
+# bench included as fixed effects because only 4 benches, less than required for random effects
+# seed source included as fixed effect during revision, 2 levels Screenhouse (SH) and Field
+
+bud.sept1.model.nopop.ss = lm(budjul.std~transplantjul.std*phy_order + transplant.height.cm + bench.factor + seed.source, data=droplevels(final.data.sub))
+# seed source confounded with phy_order
+
+# estimate slope of relationship for each species
+bud.sept1.model.nopop.ss.emm=emtrends(bud.sept1.model.nopop.ss, pairwise~phy_order, var="transplantjul.std")
+# All slopes significant, except for STTO
+
+# visualize slopes
+emmip(bud.sept1.model.nopop.ss, phy_order ~ transplantjul.std, cov.reduce = range)
+
+# evaluate significance of fixed effects in model
+anova(bud.sept1.model.nopop.ss)
+# bench and pop not sig
+
+#write.csv(bud.sept1.model.nopop.ss.emm$emtrends, file="./Germination.Fitness/Results/Pop.Sensitivity/bud.sept1.pheno.emtrends.CAAN1.CAIN3.csv")
+
+#### Model of first bud date with seed source with CAAN1 and CAIN4 ####
+
+# data subset to only include CAAN1 and CAIN4 populations
+
+final.data.sub = final.data.5 %>%
+  filter(!Pop %in% c("CAAN2","CAIN3"))
+
+# linear model
+# standardized transplant date (cohort date as continuous from Sept. 1)
+# phy_order (species as factor)
+# bench included as fixed effects because only 4 benches, less than required for random effects
+# seed source included as fixed effect during revision, 2 levels Screenhouse (SH) and Field
+
+bud.sept1.model.nopop.ss = lm(budjul.std~transplantjul.std*phy_order + transplant.height.cm + bench.factor + seed.source, data=droplevels(final.data.sub))
+# seed source confounded with phy_order
+
+# estimate slope of relationship for each species
+bud.sept1.model.nopop.ss.emm=emtrends(bud.sept1.model.nopop.ss, pairwise~phy_order, var="transplantjul.std")
+# All slopes significant, except for STTO
+
+# visualize slopes
+emmip(bud.sept1.model.nopop.ss, phy_order ~ transplantjul.std, cov.reduce = range)
+
+# evaluate significance of fixed effects in model
+anova(bud.sept1.model.nopop.ss)
+# bench and pop not sig
+
+#write.csv(bud.sept1.model.nopop.ss.emm$emtrends, file="./Germination.Fitness/Results/Pop.Sensitivity/bud.sept1.pheno.emtrends.CAAN1.CAIN4.csv")
+
+#### Model of first bud date with seed source with CAAN2 and CAIN3 ####
+
+# data subset to only include CAAN2 and CAIN3 populations
+
+final.data.sub = final.data.5 %>%
+  filter(!Pop %in% c("CAAN1","CAIN4"))
+
+# linear model
+# standardized transplant date (cohort date as continuous from Sept. 1)
+# phy_order (species as factor)
+# bench included as fixed effects because only 4 benches, less than required for random effects
+# seed source included as fixed effect during revision, 2 levels Screenhouse (SH) and Field
+
+bud.sept1.model.nopop.ss = lm(budjul.std~transplantjul.std*phy_order + transplant.height.cm + bench.factor + seed.source, data=droplevels(final.data.sub))
+# seed source confounded with phy_order
+
+# estimate slope of relationship for each species
+bud.sept1.model.nopop.ss.emm=emtrends(bud.sept1.model.nopop.ss, pairwise~phy_order, var="transplantjul.std")
+# All slopes significant, except for STTO
+
+# visualize slopes
+emmip(bud.sept1.model.nopop.ss, phy_order ~ transplantjul.std, cov.reduce = range)
+
+# evaluate significance of fixed effects in model
+anova(bud.sept1.model.nopop.ss)
+# bench and pop not sig
+
+#write.csv(bud.sept1.model.nopop.ss.emm$emtrends, file="./Germination.Fitness/Results/Pop.Sensitivity/bud.sept1.pheno.emtrends.CAAN2.CAIN3.csv")
+
+
+#### Model of first bud date with seed source with CAAN2 and CAIN4 ####
+
+# data subset to only include CAAN2 and CAIN4 populations
+
+final.data.sub = final.data.5 %>%
+  filter(!Pop %in% c("CAAN1","CAIN3"))
+
+# linear model
+# standardized transplant date (cohort date as continuous from Sept. 1)
+# phy_order (species as factor)
+# bench included as fixed effects because only 4 benches, less than required for random effects
+# seed source included as fixed effect during revision, 2 levels Screenhouse (SH) and Field
+
+bud.sept1.model.nopop.ss = lm(budjul.std~transplantjul.std*phy_order + transplant.height.cm + bench.factor + seed.source, data=droplevels(final.data.sub))
+# seed source confounded with phy_order
+
+# estimate slope of relationship for each species
+bud.sept1.model.nopop.ss.emm=emtrends(bud.sept1.model.nopop.ss, pairwise~phy_order, var="transplantjul.std")
+# All slopes significant, except for STTO
+
+# visualize slopes
+emmip(bud.sept1.model.nopop.ss, phy_order ~ transplantjul.std, cov.reduce = range)
+
+# evaluate significance of fixed effects in model
+anova(bud.sept1.model.nopop.ss)
+# bench and pop not sig
+
+# write.csv(bud.sept1.model.nopop.ss.emm$emtrends, file="./Germination.Fitness/Results/Pop.Sensitivity/bud.sept1.pheno.emtrends.CAAN2.CAIN4.csv")
 
 #### Figure S3 ####
 
@@ -221,6 +633,139 @@ bud_daySep1.plot.2
 
 #ggsave("Germination.Fitness/Results/bud.date.sept1.pheno.plot.all.pts.pdf", height = 10, width = 12)
 
+
+#### Model of first flower date ####
+# linear model
+# standardized transplant date (cohort date as continuous from Sept. 1)
+# phy_order (species as factor)
+# bench and pop included as fixed effects because only 4 benches and 2 pops, less than required for random effects
+
+flower.sept1.model.pop = lm(flowerjul.std~transplantjul.std*phy_order + transplant.height.cm + bench.factor + pop_factor, data=droplevels(final.data.5))
+
+# estimate slope of relationship for each species
+flower.sept1.model.pop.emm=emtrends(flower.sept1.model.pop, pairwise~phy_order, var="transplantjul.std")
+# All slopes significant, except for STTO
+
+# visualize slopes
+emmip(flower.sept1.model.pop, phy_order ~ transplantjul.std, cov.reduce = range)
+
+# evaluate significance of fixed effects in model
+anova(flower.sept1.model.pop)
+# bench and pop not sig
+
+# write.csv(flower.sept1.model.pop.emm$emtrends, file="./Germination.Fitness/Results/Flower/flower.sept1.pheno.emtrends.csv")
+
+#### Model of first flower date with seed source with CAAN1 and CAIN3 ####
+# data subset to only include CAAN1 and CAIN3 populations
+
+final.data.sub = final.data.5 %>%
+  filter(!Pop %in% c("CAAN2","CAIN4"))
+
+# linear model
+# standardized transplant date (cohort date as continuous from Sept. 1)
+# phy_order (species as factor)
+# bench included as fixed effects because only 4 benches, less than required for random effects
+# seed source included as fixed effect during revision, 2 levels Screenhouse (SH) and Field
+
+flower.sept1.model.nopop.ss = lm(flowerjul.std~transplantjul.std*phy_order + transplant.height.cm + bench.factor + seed.source, data=droplevels(final.data.sub))
+# seed source confounded with phy_order
+
+# estimate slope of relationship for each species
+flower.sept1.model.nopop.ss.emm=emtrends(flower.sept1.model.nopop.ss, pairwise~phy_order, var="transplantjul.std")
+# All slopes significant, except for STTO
+
+# visualize slopes
+emmip(flower.sept1.model.nopop.ss, phy_order ~ transplantjul.std, cov.reduce = range)
+
+# evaluate significance of fixed effects in model
+anova(flower.sept1.model.nopop.ss)
+# bench and pop not sig
+
+# write.csv(flower.sept1.model.nopop.ss.emm$emtrends, file="./Germination.Fitness/Results/Flower/flower.sept1.pheno.emtrends.CAAN1.CAIN3.csv")
+
+#### Model of first flower date with seed source with CAAN1 and CAIN4 ####
+# data subset to only include CAAN1 and CAIN4 populations
+
+final.data.sub = final.data.5 %>%
+  filter(!Pop %in% c("CAAN2","CAIN3"))
+
+# linear model
+# standardized transplant date (cohort date as continuous from Sept. 1)
+# phy_order (species as factor)
+# bench included as fixed effects because only 4 benches, less than required for random effects
+# seed source included as fixed effect during revision, 2 levels Screenhouse (SH) and Field
+
+flower.sept1.model.nopop.ss = lm(flowerjul.std~transplantjul.std*phy_order + transplant.height.cm + bench.factor + seed.source, data=droplevels(final.data.sub))
+# seed source confounded with phy_order
+
+# estimate slope of relationship for each species
+flower.sept1.model.nopop.ss.emm=emtrends(flower.sept1.model.nopop.ss, pairwise~phy_order, var="transplantjul.std")
+# All slopes significant, except for STTO
+
+# visualize slopes
+emmip(flower.sept1.model.nopop.ss, phy_order ~ transplantjul.std, cov.reduce = range)
+
+# evaluate significance of fixed effects in model
+anova(flower.sept1.model.nopop.ss)
+# bench and pop not sig
+
+#write.csv(flower.sept1.model.nopop.ss.emm$emtrends, file="./Germination.Fitness/Results/Flower/flower.sept1.pheno.emtrends.CAAN1.CAIN4.csv")
+
+#### Model of first flower date with seed source with CAAN2 and CAIN3 ####
+# data subset to only include CAAN2 and CAIN3 populations
+
+final.data.sub = final.data.5 %>%
+  filter(!Pop %in% c("CAAN1","CAIN4"))
+
+# linear model
+# standardized transplant date (cohort date as continuous from Sept. 1)
+# phy_order (species as factor)
+# bench included as fixed effects because only 4 benches, less than required for random effects
+# seed source included as fixed effect during revision, 2 levels Screenhouse (SH) and Field
+
+flower.sept1.model.nopop.ss = lm(flowerjul.std~transplantjul.std*phy_order + transplant.height.cm + bench.factor + seed.source, data=droplevels(final.data.sub))
+# seed source confounded with phy_order
+
+# estimate slope of relationship for each species
+flower.sept1.model.nopop.ss.emm=emtrends(flower.sept1.model.nopop.ss, pairwise~phy_order, var="transplantjul.std")
+# All slopes significant, except for STTO
+
+# visualize slopes
+emmip(flower.sept1.model.nopop.ss, phy_order ~ transplantjul.std, cov.reduce = range)
+
+# evaluate significance of fixed effects in model
+anova(flower.sept1.model.nopop.ss)
+# bench and pop not sig
+
+#write.csv(flower.sept1.model.nopop.ss.emm$emtrends, file="./Germination.Fitness/Results/Flower/flower.sept1.pheno.emtrends.CAAN2.CAIN3.csv")
+
+#### Model of first flower date with seed source with CAAN2 and CAIN4 ####
+# data subset to only include CAAN2 and CAIN4 populations
+
+final.data.sub = final.data.5 %>%
+  filter(!Pop %in% c("CAAN1","CAIN3"))
+
+# linear model
+# standardized transplant date (cohort date as continuous from Sept. 1)
+# phy_order (species as factor)
+# bench included as fixed effects because only 4 benches, less than required for random effects
+# seed source included as fixed effect during revision, 2 levels Screenhouse (SH) and Field
+
+flower.sept1.model.nopop.ss = lm(flowerjul.std~transplantjul.std*phy_order + transplant.height.cm + bench.factor + seed.source, data=droplevels(final.data.sub))
+# seed source confounded with phy_order
+
+# estimate slope of relationship for each species
+flower.sept1.model.nopop.ss.emm=emtrends(flower.sept1.model.nopop.ss, pairwise~phy_order, var="transplantjul.std")
+# All slopes significant, except for STTO
+
+# visualize slopes
+emmip(flower.sept1.model.nopop.ss, phy_order ~ transplantjul.std, cov.reduce = range)
+
+# evaluate significance of fixed effects in model
+anova(flower.sept1.model.nopop.ss)
+# bench and pop not sig
+
+# write.csv(flower.sept1.model.nopop.ss.emm$emtrends, file="./Germination.Fitness/Results/Flower/flower.sept1.pheno.emtrends.CAAN2.CAIN4.csv")
 
 #### Calculate dead, Flowering, non-flowering proportions ####
 # Proportions of individuals of each species in each cohort that fall into 
@@ -334,3 +879,4 @@ proportions.fig
 #### Table S1 Sample Sizes ####
 
 table(final.data$Pop, final.data$Cohort)
+
