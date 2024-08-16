@@ -859,6 +859,9 @@ grViz(stpo.day2bud) %>%
   export_svg %>% charToRaw %>% rsvg_png("STPO.sem.day2bud.png")
 
 #### STTO ####
+stto.cohort.new = stto.cohort.new %>%
+filter(long.seed.counts < 100)
+
 stto.cohort.full.mediation = psem(
   lm(day2bud ~ transplantjul.std + transplant.height.cm, data = stto.cohort.new),
   glm.nb(long.seed.counts ~ day2bud + transplant.height.cm, 
@@ -878,8 +881,7 @@ stto.cohort.sem.new = psem(
 
 # compare the models
 anova(stto.cohort.full.mediation,stto.cohort.sem.new)
-# model with direct path is better fit
-# partial mediation
+# no difference in model fit
 
 summary(stto.cohort.sem.new)
 fisherC(stto.cohort.sem.new)
@@ -913,20 +915,17 @@ stto.day2bud =
   rec3 [label = 'Seed Count']
   rec4 [label = 'Transplant Height']
   
-  rec1 -> rec2 [label = '-0.84'] [style = 'dashed'] [penwidth = 6]
-  rec2 -> rec3 [label = '  -1.40'] [style = 'dashed'] [penwidth = 6]
-  rec1 -> rec3 [label = '-0.99'] [style = 'dashed'] [penwidth = 3]
-  rec4 -> rec2 [label = '0.08'] [color = 'gray']
-  rec4 -> rec3 [label = '  -0.03'] [style = 'dashed'] [color = 'gray']
+  rec1 -> rec2 [label = '-1.01'] [style = 'dashed'] [penwidth = 6]
+  rec2 -> rec3 [label = '  -0.85'] [style = 'dashed'] [penwidth = 1]
+  rec1 -> rec3 [label = '-0.67'] [style = 'dashed'] [color = 'gray']
+  rec4 -> rec2 [label = '1.46'] [color = 'gray']
+  rec4 -> rec3 [label = ' 0.17'] [color = 'gray']
   }"
 
 grViz(stto.day2bud) %>%
-  export_svg %>% charToRaw %>% rsvg_pdf("STTO.sem.day2bud.pdf")
+  export_svg %>% charToRaw %>% rsvg_pdf("STTO.sem.day2bud.revised.pdf")
 grViz(stto.day2bud) %>%
-  export_svg %>% charToRaw %>% rsvg_png("STTO.sem.day2bud.png")
-
-
-
+  export_svg %>% charToRaw %>% rsvg_png("STTO.sem.day2bud.revised.png")
 
 #### Subset data for each species for days 2 flower ####
 

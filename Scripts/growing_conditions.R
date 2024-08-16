@@ -249,18 +249,18 @@ long.conditions$cohort.date = c("07-Oct","28-Oct","18-Nov","09-Dec",
 Figure_S2A = ggplot(long.conditions, aes(x = fct_inorder(cohort.date))) +
   geom_point(aes(y=Chill_portions, color = "Chill Portions"), size = 3) +
   geom_line(aes(y=Chill_portions, group = 1, color = "Chill Portions"), linewidth = 1.5)+
-  geom_point(aes(y = PTU/1000, color = "Photothermal Units"), size = 3) + # divide to get the same range as chill data
-  geom_line(aes(y= PTU/1000, group = 1,color = "Photothermal Units"), linewidth = 1.5)+
+  geom_point(aes(y = PTU/1000, color = "Modified Photothermal Units"), size = 3) + # divide to get the same range as chill data
+  geom_line(aes(y= PTU/1000, group = 1,color = "Modified Photothermal Units"), linewidth = 1.5)+
   scale_y_continuous(
-    name = "Chill Portion",
-    sec.axis = sec_axis(~.*1000, name = "Photothermal Units"))+
+    name = "Accumulated Chilling (Chill Portions)",
+    sec.axis = sec_axis(~.*1000, name = "Accumulated Modified Photothermal Units"))+
   theme_classic(base_size = 22)+
   labs(x = "Cohort", color = "")+
   scale_color_manual(values = c("black","gray70"))+
   theme(legend.position = "top")
 Figure_S2A
 
-#ggsave("./Germination.Fitness/Results/Figure_S2A.pdf", height = 6, width = 12)
+ggsave("./Germination.Fitness/Results/Figure_S2A.pdf", height = 6, width = 12)
 
 all_daylengths=cbind(JDay=1:365, sapply(daylength(latitude = 38.5, JDay = 1:365),
                                         cbind))

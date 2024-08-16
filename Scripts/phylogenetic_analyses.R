@@ -12,6 +12,7 @@ library(caper)
 library(tidyverse)
 library(ggpubr)
 library(ggrepel)
+library(cowplot)
 
 remotes::install_github("clauswilke/colorblindr")
 library(colorblindr)
@@ -47,6 +48,12 @@ phylosig(phylo, model.slopes$days.2.bud, method = "K", test = TRUE, se = model.s
 # K = 1.18966, p = 0.136
 phylosig(phylo, model.slopes$sept.1.bud, method = "K", test = TRUE, se = model.slopes$sept.1.bud.se,nsim=1000)
 # K = 1.18966, p = 0.151
+
+# revised slopes
+phylosig(phylo, model.slopes$days.2.bud.final, method = "K", test = TRUE, se = model.slopes$days.2.bud.final.se, nsim=1000)
+# K = 1.18857, p = 0.143
+phylosig(phylo, model.slopes$sept.1.bud.final, method = "K", test = TRUE, se = model.slopes$sept.1.bud.final.se,nsim=1000)
+# K = 1.18857, p = 0.149
 
 # days.2.flower and sept.1.flower are direct opposites of each other, difference in p is due to randomization
 
@@ -104,6 +111,17 @@ phylosig(phylo, fitness.slopes$seed_mass, method = "K", se = fitness.slopes$seed
 # K = 0.771932, p = 0.442
 phylosig(phylo, fitness.slopes$pflwr.weighted, method = "K", test = TRUE, se = fitness.slopes$pflwr.weighted.se,nsim=1000)
 # K = 0.950963, p = 0.905
+
+# revised slopes
+
+phylosig(phylo, fitness.slopes$pflwr.final, method = "K", test = TRUE, se = fitness.slopes$pflwr.final.se,nsim=1000)
+# K = 0.951959, p = 0.896
+phylosig(phylo, fitness.slopes$seed_num_nb.final, method = "K", test = TRUE, se = fitness.slopes$seed_num_nb.final.se,nsim=1000)
+# K = 1.06552, p = 0.863
+phylosig(phylo, fitness.slopes$year1fit.final, method = "K", test = TRUE, se = fitness.slopes$year1fit.final.se,nsim=1000)
+# K = 0.681723, p = 0.998
+phylosig(phylo, fitness.slopes$seed_mass.final, method = "K", se = fitness.slopes$seed_mass.final.se,test = TRUE, nsim=1000)
+# K = 0.773631, p = 0.42
 
 # phylogenetic signal of slopes for combinations of populations
 
@@ -227,6 +245,90 @@ phylo_plot.3
 
 #ggsave("./Germination.Fitness/Results/color.gray.T2B.Seed.slopes.ontree.pc1.pdf", height = 10, width = 12)
 
+#### Figure 5 Revised #####
+
+all.phylo <- ggtree::read.tree("./Germination.Fitness/Raw.Data/tree_pruned.new")
+
+sp.list=c("Caulanthus_anceps","Caulanthus_coulteri","Caulanthus_inflatus",
+          "Streptanthus_breweri","Streptanthus_diversifolius","Streptanthus_drepanoides",
+          "Streptanthus_glandulosus","Streptanthus_insignis","Streptanthus_polygaloides",
+          "Streptanthus_tortuosus")
+
+# prune phylogeny to only includes our species
+phylo=keep.tip(all.phylo, sp.list)
+
+phylo$tip.label = c("Caulanthus inflatus","Caulanthus coulteri","Caulanthus anceps",
+                    "Streptanthus glandulosus","Streptanthus insignis","Streptanthus polygaloides",
+                    "Streptanthus diversifolius","Streptanthus tortuosus","Streptanthus breweri",
+                    "Streptanthus drepanoides")
+
+ggplot(phylo) + geom_tree() + theme_tree()
+
+tree = ggtree(phylo, size =1)
+tree
+
+# read in slopes
+all.slopes=read.csv("Germination.Fitness/Results/all.slopes.csv")
+
+all.slopes$sp = c("Caulanthus inflatus","Caulanthus coulteri","Caulanthus anceps",
+                    "Streptanthus glandulosus","Streptanthus insignis","Streptanthus polygaloides",
+                    "Streptanthus diversifolius","Streptanthus tortuosus","Streptanthus breweri",
+                    "Streptanthus drepanoides")
+
+# climate pc1
+all.slopes$PC1 = c(-3.4434154,-1.6218771,-1.6381408,0.2230000,-0.9859651,1.3163704,0.1026840,4.1567596,0.7433119,1.1472724)
+
+# add tip labels
+lb = phylo$tip.label
+tips = data.frame(label = lb, Species = paste(all.slopes$sp))
+
+tree.2 = tree %<+% tips +
+  geom_tiplab(aes(label = Species),as_ylab = TRUE)
+tree.2
+
+# get slopes we are interested in 
+
+main.ms.slopes.fig = all.slopes[,c(33,41)] %>%
+  dplyr::rename(T2B = days.2.bud.final)%>%
+  dplyr::rename(Seeds = seed_num_nb.final)
+row.names(main.ms.slopes.fig)=all.slopes$sp
+
+# each slope separate
+
+T2B = data.frame(main.ms.slopes.fig$T2B)
+row.names(T2B) = all.slopes$sp
+colnames(T2B) = "Time to First Bud"
+
+Seeds = data.frame(main.ms.slopes.fig$Seeds)
+row.names(Seeds) = all.slopes$sp
+colnames(Seeds) = "Number of Seeds"
+
+p = gheatmap(tree.2, T2B, width = 0.5,legend_title = "Time to First Bud",
+             colnames_position = "top")+
+  scale_fill_viridis_c(option="A", name="Time to First Bud")
+
+p2 = p + new_scale_fill()
+
+p3 = gheatmap(p2, Seeds, legend_title = "Number of Seeds", offset = 0.0008, width = 0.5,
+              colnames_position = "top")+
+  scale_fill_viridis_c(option="A", name="Number of Seeds")
+
+p4 = p3 + theme(text = element_text (size = 22), legend.title = element_text(size = 14),
+                legend.text = element_text(size = 14)) 
+
+p5 = p4 %<+% all.slopes + geom_tippoint(aes(color = PC1), size = 10)
+p5
+
+# ggsave("./Germination.Fitness/Results/color.T2B.Seed.slopes.ontree.pc1.final.pdf", height = 10, width = 12)
+
+phylo_plot.2 = edit_colors(p5, desaturate) # https://ggplot2-book.org/scales-colour
+phylo_plot.3 = ggdraw(phylo_plot.2)
+phylo_plot.3
+
+# figure with colored pc1 was manually merged with figure of gray saturated heat map
+
+# ggsave("./Germination.Fitness/Results/color.gray.T2B.Seed.slopes.ontree.pc1.final.pdf", height = 10, width = 12)
+
 #### Figure S8 ####
 
 all.phylo <- ggtree::read.tree("./Germination.Fitness/Raw.Data/tree_pruned.new")
@@ -327,6 +429,106 @@ phylo_plot.3.supp
 
 
 
+#### Figure S8 Revised ####
+
+all.phylo <- ggtree::read.tree("./Germination.Fitness/Raw.Data/tree_pruned.new")
+
+sp.list=c("Caulanthus_anceps","Caulanthus_coulteri","Caulanthus_inflatus",
+          "Streptanthus_breweri","Streptanthus_diversifolius","Streptanthus_drepanoides",
+          "Streptanthus_glandulosus","Streptanthus_insignis","Streptanthus_polygaloides",
+          "Streptanthus_tortuosus")
+
+# prune phylogeny to only includes our species
+phylo=keep.tip(all.phylo, sp.list)
+
+phylo$tip.label = c("Caulanthus inflatus","Caulanthus coulteri","Caulanthus anceps",
+                    "Streptanthus glandulosus","Streptanthus insignis","Streptanthus polygaloides",
+                    "Streptanthus diversifolius","Streptanthus tortuosus","Streptanthus breweri",
+                    "Streptanthus drepanoides")
+
+ggplot(phylo) + geom_tree() + theme_tree()
+
+tree = ggtree(phylo, size =1)
+tree
+
+# read in slopes
+all.slopes=read.csv("Germination.Fitness/Results/all.slopes.csv")
+
+all.slopes$sp = c("Caulanthus inflatus","Caulanthus coulteri","Caulanthus anceps",
+                    "Streptanthus glandulosus","Streptanthus insignis","Streptanthus polygaloides",
+                    "Streptanthus diversifolius","Streptanthus tortuosus","Streptanthus breweri",
+                    "Streptanthus drepanoides")
+
+# add tip labels
+lb = phylo$tip.label
+tips = data.frame(label = lb, Species = paste(all.slopes$sp))
+
+tree.2 = tree %<+% tips +
+  geom_tiplab(aes(label = Species),as_ylab = TRUE)
+tree.2
+
+# get slopes we are interested in 
+
+supp.ms.slopes.fig = all.slopes[,c(35,37,45,43)] %>%
+  dplyr::rename(FBD = sept.1.bud.final)%>%
+  dplyr::rename(Pflwr = pflwr.final)%>%
+  dplyr::rename(SeedMass = seed_mass.final)%>%
+  dplyr::rename(yr1fit = year1fit.final)
+
+row.names(supp.ms.slopes.fig)=all.slopes$sp
+
+# each slope separate
+
+FBD = data.frame(supp.ms.slopes.fig$FBD)
+row.names(FBD) = all.slopes$sp
+colnames(FBD) = "First Bud Date"
+
+Pflwr = data.frame(supp.ms.slopes.fig$Pflwr)
+row.names(Pflwr) = all.slopes$sp
+colnames(Pflwr) = "Prob. of Flowering"
+
+SeedMass = data.frame(supp.ms.slopes.fig$SeedMass)
+row.names(SeedMass) = all.slopes$sp
+colnames(SeedMass) = "Total Seed Mass"
+
+Year1fit = data.frame(supp.ms.slopes.fig$yr1fit)
+row.names(Year1fit) = all.slopes$sp
+colnames(Year1fit) = "Year 1 Fitness"
+
+p.supp = gheatmap(tree.2, FBD, width = 0.5,legend_title = "First Bud Date",
+                  colnames_position = "top")+
+  scale_fill_viridis_c(option="A", name="First Bud Date")
+
+p2.supp = p.supp + new_scale_fill()
+
+p3.supp = gheatmap(p2.supp, Pflwr, legend_title = "Prob. of Flowering", offset = 0.0008, width = 0.5,
+                   colnames_position = "bottom")+
+  scale_fill_viridis_c(option="A", name="Prob. of Flowering")
+
+p4.supp = p3.supp + new_scale_fill()
+
+p5.supp = gheatmap(p4.supp, SeedMass, legend_title = "Total Seed Mass", offset = 0.0016, width = 0.5,
+                   colnames_position = "top")+
+  scale_fill_viridis_c(option="A", name="Total Seed Mass")
+
+p6.supp = p5.supp + new_scale_fill()
+
+p7.supp = gheatmap(p6.supp, Year1fit, legend_title = "Year 1 Fitness", offset = 0.0024, width = 0.5,
+                   colnames_position = "bottom")+
+  scale_fill_viridis_c(option="A", name="Year 1 Fitness")
+
+p8.supp = p7.supp + theme(text = element_text (size = 22), legend.title = element_text(size = 12),
+                          legend.text = element_text(size = 12)) 
+p8.supp
+
+phylo_plot.2.supp = edit_colors(p8.supp, desaturate) # https://ggplot2-book.org/scales-colour
+phylo_plot.3.supp = ggdraw(phylo_plot.2.supp)
+phylo_plot.3.supp
+
+ggsave("./Germination.Fitness/Results/color.gray.supp.slopes.ontree.final.pdf", height = 10, width = 12)
+
+
+
 #### PGLS to relate phenology and fitness slopes ####
 # read in tree
 all.phylo <- read.tree("./Germination.Fitness/Raw.Data/tree_pruned.new")
@@ -350,6 +552,11 @@ comp.data.1<-comparative.data(phylo, all.slopes, names.col="sp", vcv.dim=2, warn
 d2bud.seed.num.pgls = pgls(days.2.bud~seed_num_nb, data=comp.data.1)
 summary(d2bud.seed.num.pgls) # not-significant, p = 0.07
 
+# revised slopes
+
+d2bud.seed.num.pgls.final = pgls(days.2.bud.final~seed_num_nb.final, data=comp.data.1)
+summary(d2bud.seed.num.pgls.final) # not-significant, p = 0.07
+
 # population sensitivity
 
 d2bud.seed.num.pgls.pop = pgls(days.2.bud.CAAN1.CAIN3~seed_num_nb.CAAN1.CAIN3, data=comp.data.1)
@@ -372,6 +579,11 @@ summary(d2bud.pflwr.pgls) # not significant p = 0.78
 d2bud.pflwr.weighted.pgls = pgls(days.2.bud~pflwr.weighted, data=comp.data.1)
 summary(d2bud.pflwr.weighted.pgls) # not significant p = 0.75
 
+# revised slopes
+
+d2bud.pflwr.pgls.final = pgls(days.2.bud.final~pflwr.final, data=comp.data.1)
+summary(d2bud.pflwr.pgls.final) # not significant p = 0.78
+
 # population sensitivity
 
 d2bud.pflwr.pgls.pop = pgls(days.2.bud.CAAN1.CAIN3~pflwr.CAAN1.CAIN3, data=comp.data.1)
@@ -390,6 +602,11 @@ summary(d2bud.pflwr.pgls.pop) # not-significant, p = 0.75
 
 d2bud.yr1fit.pgls = pgls(days.2.bud~year1fit, data=comp.data.1)
 summary(d2bud.yr1fit.pgls) # not significant p = 0.49
+
+# revised slopes
+
+d2bud.yr1fit.pgls.final = pgls(days.2.bud.final~year1fit.final, data=comp.data.1)
+summary(d2bud.yr1fit.pgls.final) # not significant p = 0.50
 
 # population sensitivity
 
@@ -430,6 +647,32 @@ d2bud.yr1fit.pgls.plot= ggplot(all.slopes, aes(y = days.2.bud, x = year1fit))+
 d2bud.yr1fit.pgls.plot
 #ggsave("Germination.Fitness/Results/days2bud.yr1fit.pgls.pdf", height = 7, width = 7)
 
+#### Figure S10 Revised ####
+
+d2bud.seed.num.pgls.plot= ggplot(all.slopes, aes(y = days.2.bud.final, x = seed_num_nb.final))+
+  geom_point(size=4)+
+  theme_classic(base_size=22)+
+  labs(y = "Time to First Bud (days)",x = "Number of Seeds")
+d2bud.seed.num.pgls.plot
+
+#ggsave("Germination.Fitness/Results/days2bud.seed.num.pgls.final.pdf", height = 7, width = 7)
+
+d2bud.pflwr.pgls.plot= ggplot(all.slopes, aes(y = pflwr.final, x = year1fit.final))+
+  geom_point(size=4)+
+  theme_classic(base_size=22)+
+  labs(y = "Time to First Bud (days)",x = "Probability of Flowering")
+d2bud.pflwr.pgls.plot
+
+#ggsave("Germination.Fitness/Results/days2bud.pflwr.pgls.final.pdf", height = 7, width = 7)
+
+d2bud.yr1fit.pgls.plot= ggplot(all.slopes, aes(y = days.2.bud.final, x = year1fit.final))+
+  geom_point(size=4)+
+  theme_classic(base_size=22)+
+  labs(y = "Time to First Bud (days)",x = "Year 1 fitness")
+d2bud.yr1fit.pgls.plot
+
+#ggsave("Germination.Fitness/Results/days2bud.yr1fit.pgls.final.pdf", height = 7, width = 7)
+
 #### PGLS to relate germination slopes to fitness slopes ####
 # Germination timing slopes come from Worthy et al. 2023 bioRxiv
 
@@ -464,6 +707,10 @@ comp.data<-comparative.data(phylo, all.slopes, names.col="sp", vcv.dim=2, warn.d
 pheno.slopes.seed.num.pgls = pgls(seed_num_nb~pheno.slopes, data=comp.data)
 summary(pheno.slopes.seed.num.pgls) # not-significant, p = 0.50
 
+# revised slopes
+pheno.slopes.seed.num.pgls.final = pgls(seed_num_nb.final~pheno.slopes, data=comp.data)
+summary(pheno.slopes.seed.num.pgls.final) # not-significant, p = 0.51
+
 # population sensitivity
 
 pheno.slopes.seed.num.pgls.pop = pgls(seed_num_nb.CAAN1.CAIN3~pheno.slopes.CAAN1.CAIN3, data=comp.data)
@@ -482,6 +729,11 @@ summary(pheno.slopes.seed.num.pgls.pop) # not-significant, p = 0.77
 
 pheno.slopes.year1fit.pgls = pgls(year1fit~pheno.slopes, data=comp.data)
 summary(pheno.slopes.year1fit.pgls) # not-significant, p = 0.71
+
+# revised slopes
+
+pheno.slopes.year1fit.pgls.final = pgls(year1fit.final~pheno.slopes, data=comp.data)
+summary(pheno.slopes.year1fit.pgls.final) # not-significant, p = 0.70
 
 # population sensitivity
 
@@ -515,6 +767,25 @@ pheno.slopes.year1fit.pgls.plot= ggplot(all.slopes, aes(y = year1fit, x = pheno.
 pheno.slopes.year1fit.pgls.plot
 
 #ggsave("Germination.Fitness/Results/yr1fit.pheno.slopes.pgls.pdf", height = 7, width = 7)
+
+#### Figure S9 Revised ####
+
+# no line b/c not significant
+pheno.slopes.seed.num.pgls.plot= ggplot(all.slopes, aes(y = seed_num_nb.final, x = pheno.slopes))+
+  geom_point(size=4)+
+  theme_classic(base_size=22)+
+  labs(y = "Number of Seeds", x = "Germination Specialization")
+pheno.slopes.seed.num.pgls.plot
+
+#ggsave("Germination.Fitness/Results/seed.num.pheno.slopes.pgls.final.pdf", height = 7, width = 7)
+
+pheno.slopes.year1fit.pgls.plot= ggplot(all.slopes, aes(y = year1fit.final, x = pheno.slopes))+
+  geom_point(size = 4)+
+  theme_classic(base_size=22)+
+  labs(y = "Year 1 fitness\n (p(flower)*seed number)", x = "Germination Specialization")
+pheno.slopes.year1fit.pgls.plot
+
+#ggsave("Germination.Fitness/Results/yr1fit.pheno.slopes.pgls.final.pdf", height = 7, width = 7)
 
 #### PGLS to relate phenology and fitness slopes to climate ####
 
@@ -587,6 +858,12 @@ days2bud.pc1.pgls = pgls(days.2.bud~PC1, data=comp.data)
 summary(days2bud.pc1.pgls) # significant R2 = 0.63
 # PC1 is associated with all variables except temp_SD
 
+# revised slopes
+
+days2bud.pc1.pgls.final = pgls(days.2.bud.final~PC1, data=comp.data)
+summary(days2bud.pc1.pgls.final) # significant R2 = 0.67
+# PC1 is associated with all variables except temp_SD
+
 # population sensitivity
 
 days2bud.pc1.pgls.pop = pgls(days.2.bud.CAAN1.CAIN3~PC1, data=comp.data)
@@ -605,6 +882,12 @@ summary(days2bud.pc1.pgls.pop) # significant R2 = 0.68
 
 flwprob.pc1.pgls = pgls(pflwr~PC1, data=comp.data)
 summary(flwprob.pc1.pgls) # not significant
+# PC1 is associated with all variables except temp_SD
+
+# revised slope
+
+flwprob.pc1.pgls.final = pgls(pflwr.final~PC1, data=comp.data)
+summary(flwprob.pc1.pgls.final) # not significant
 # PC1 is associated with all variables except temp_SD
 
 flwprob.pc1.pgls.weighted = pgls(pflwr.weighted~PC1, data=comp.data)
@@ -630,6 +913,12 @@ seed.num.pc1.pgls = pgls(seed_num_nb~PC1, data=comp.data)
 summary(seed.num.pc1.pgls) # significant p = 0.02
 # PC1 is associated with all variables except temp_SD
 
+# revised slopes
+
+seed.num.pc1.pgls.final = pgls(seed_num_nb.final~PC1, data=comp.data)
+summary(seed.num.pc1.pgls.final) # significant p = 0.02
+# PC1 is associated with all variables except temp_SD
+
 # population sensitivity
 
 seed.num.pc1.pgls.pop = pgls(seed_num_nb.CAAN1.CAIN3~PC1, data=comp.data)
@@ -647,6 +936,10 @@ summary(seed.num.pc1.pgls.pop) # not-significant, p = 0.05 R2 = 0.40
 # year1fit~PC1
 fit.pc1.pgls = pgls(year1fit~PC1, data=comp.data)
 summary(fit.pc1.pgls) # not significant
+
+# revised slopes
+fit.pc1.pgls.final = pgls(year1fit.final~PC1, data=comp.data)
+summary(fit.pc1.pgls.final) # not significant
 
 # population sensitivity
 
@@ -747,3 +1040,90 @@ Figure6 = plot_grid(days2bud.pc1.pgls.plot,pflwr.pc1.pgls.plot,seed.num.pc1.pgls
                     year1fit.pc1.pgls.plot, nrow = 2, ncol = 2, labels = c("A.","B.","C.","D."))
 
 
+
+#### Figure 6 Revised ####
+
+all.data.year.final$Pop.2 = c("CAIN","CACO","CAAN","STGL","STIN","STPO","STDI",
+                              "STTO","STBR","STDR")
+all.data.year.final$pred.days2bud.pc1 = predict(days2bud.pc1.pgls.final)
+
+#define annotations to axis labels for PCA axes
+text_x_low = text_grob("Hot & dry", size = 12,col="gray35")
+text_x_high = text_grob("Cool & wet", size = 12,col="gray35")
+
+days2bud.pc1.pgls.plot= ggplot(all.data.year.final, aes(y = days.2.bud.final, x = PC1, label = Pop.2))+
+  geom_line(aes(y = pred.days2bud.pc1))+
+  geom_point(size = 4)+
+  geom_label_repel(size = 5)+
+  theme_classic(base_size=22)+
+  labs(y = "Time to First Bud (days)")+
+  annotation_custom(text_x_high,xmin=3.8,xmax= 4,ymin =-1.07,ymax = -1.07) +
+  annotation_custom(text_x_low,xmin=-2.8,xmax=-3,ymin =-1.07,ymax = -1.07)+
+  coord_cartesian( clip="off") #this keeps it from clipping off the stuff outside the plot
+days2bud.pc1.pgls.plot
+
+setwd("/Users/sjworthy/Documents/GitHub/")
+ggsave("Germination.Fitness/Results/days2bud.pc1.pgls.final.pdf", height = 7, width = 7)
+
+all.data.year.final$pred.flwprob.pc1 = predict(flwprob.pc1.pgls.final)
+
+#define annotations to axis labels for PCA axes
+text_x_low = text_grob("Hot & dry", size = 12,col="gray35")
+text_x_high = text_grob("Cool & wet", size = 12,col="gray35")
+
+# no line because not significant
+pflwr.pc1.pgls.plot= ggplot(all.data.year.final, aes(y = pflwr.final, x = PC1, label = Pop.2))+
+  geom_point(size = 4)+
+  geom_label_repel(size = 5)+
+  theme_classic(base_size=22)+
+  labs(y = "Probability of Flowering")+
+  annotation_custom(text_x_high,xmin=3.8,xmax= 4,ymin =-0.04,ymax = -0.04) +
+  annotation_custom(text_x_low,xmin=-2.8,xmax=-3,ymin =-0.04,ymax = -0.04)+
+  coord_cartesian( clip="off") #this keeps it from clipping off the stuff outside the plot
+pflwr.pc1.pgls.plot
+
+#ggsave("Germination.Fitness/Results/pflwr.pc1.pgls.pdf", height = 7, width = 7)
+
+all.data.year.final$pred.seed.num.pc1 = predict(seed.num.pc1.pgls.final)
+
+#define annotations to axis labels for PCA axes
+text_x_low = text_grob("Hot & dry", size = 12,col="gray35")
+text_x_high = text_grob("Cool & wet", size = 12,col="gray35")
+
+# no line because not significant
+seed.num.pc1.pgls.plot= ggplot(all.data.year.final, aes(y = seed_num_nb.final, x = PC1, label = Pop.2))+
+  geom_line(aes(y = pred.seed.num.pc1))+
+  geom_point(size=4)+
+  geom_label_repel(size=5)+
+  theme_classic(base_size=22)+
+  labs(y = "Number of Seeds")+
+  annotation_custom(text_x_high,xmin=3.8,xmax= 4,ymin =-0.033,ymax = -0.033) +
+  annotation_custom(text_x_low,xmin=-2.8,xmax=-3,ymin =-0.033,ymax = -0.033)+
+  coord_cartesian( clip="off") #this keeps it from clipping off the stuff outside the plot
+seed.num.pc1.pgls.plot
+
+#ggsave("Germination.Fitness/Results/seed.num.pc1.pgls.pdf", height = 7, width = 7)
+
+all.data.year.final$pred.year1fit.pc1 = predict(fit.pc1.pgls.final)
+
+#define annotations to axis labels for PCA axes
+text_x_low = text_grob("Hot & dry", size = 12,col="gray35")
+text_x_high = text_grob("Cool & wet", size = 12,col="gray35")
+
+year1fit.pc1.pgls.plot= ggplot(all.data.year.final, aes(y = year1fit.final, x = PC1, label = Pop.2))+
+  geom_point(size=4)+
+  geom_label_repel(size=5)+
+  theme_classic(base_size=22)+
+  labs(y = "Year 1 fitness\n (p(flower)*seed number)")+
+  annotation_custom(text_x_high,xmin=3.8,xmax= 4,ymin =-0.03,ymax = -0.03) +
+  annotation_custom(text_x_low,xmin=-2.8,xmax=-3,ymin =-0.03,ymax = -0.03)+
+  coord_cartesian( clip="off") #this keeps it from clipping off the stuff outside the plot
+year1fit.pc1.pgls.plot
+
+#ggsave("Germination.Fitness/Results/yr1fit.pc1.pgls.pdf", height = 7, width = 7)
+
+Figure6 = plot_grid(days2bud.pc1.pgls.plot,pflwr.pc1.pgls.plot,seed.num.pc1.pgls.plot,
+                    year1fit.pc1.pgls.plot, nrow = 2, ncol = 2, labels = c("A","B","C","D"))
+Figure6
+
+#ggsave("Germination.Fitness/Results/Figure6.final.pdf", height = 10, width = 11)

@@ -152,25 +152,27 @@ pflwr_weighted_emtrends
 
 # write.csv(pflwr_weighted_emtrends$emtrends, file = "./Germination.Fitness/Results/prob.flower.weighted.emtrends.csv")
 
-#### Model of probability of flowering with weights with seed source ####
+#### Model of probability of flowering with weights final ####
 
 # generalized linear model with binomial error and logit link
 # can't include transplant height as a predictor since now data is successes/failures
 
 y=cbind(all.data$Yes.Flower, (all.data$total.n-all.data$Yes.Flower))
 
-pflwr_sep1_weighted.ss = glm(y ~ transplant.daySept1*Species + Bench + seed.source, 
+pflwr_sep1_weighted.final = glm(y ~ transplant.daySept1*Species + Bench, 
                           family = binomial(link = "logit"), data=all.data)
-summary(pflwr_sep1_weighted.ss)
+summary(pflwr_sep1_weighted.final)
 
 # test for significant of fixed effects
-anova(pflwr_sep1_weighted.ss, test = "Chisq") # bench and pop not significant
+anova(pflwr_sep1_weighted.final, test = "Chisq") # bench not significant
 
 # estimates species-specific slopes
-pflwr_weighted_emtrends.ss = emtrends(pflwr_sep1_weighted.ss, pairwise ~ Species, var = "transplant.daySept1")
-pflwr_weighted_emtrends.ss
+pflwr_weighted_emtrends.final = emtrends(pflwr_sep1_weighted.final, pairwise ~ Species, var = "transplant.daySept1")
+pflwr_weighted_emtrends.final
 
-#### Model of probability of flowering with weights with seed source with CAAN1 and CAIN3 ####
+# write.csv(pflwr_weighted_emtrends.final$emtrends, file = "./Germination.Fitness/Results/prob.flower.weighted.emtrends.final.csv")
+
+#### Model of probability of flowering with weights with CAAN1 and CAIN3 ####
 
 all.data.sub = all.data %>%
   filter(!Pop %in% c("CAAN2","CAIN4"))
@@ -180,7 +182,7 @@ all.data.sub = all.data %>%
 
 y=cbind(all.data.sub$Yes.Flower, (all.data.sub$total.n-all.data.sub$Yes.Flower))
 
-pflwr_sep1_weighted.nopop.ss = glm(y ~ transplant.daySept1*Species + Bench + seed.source, 
+pflwr_sep1_weighted.nopop.ss = glm(y ~ transplant.daySept1*Species + Bench, 
                              family = binomial(link = "logit"), data=all.data.sub)
 summary(pflwr_sep1_weighted.nopop.ss)
 
@@ -193,7 +195,7 @@ pflwr_weighted_emtrends.nopop.ss
 
 #write.csv(pflwr_weighted_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/prob.flower.weighted.emtrends.CAAN1.CAIN3.csv")
 
-#### Model of probability of flowering with weights with seed source with CAAN1 and CAIN4 ####
+#### Model of probability of flowering with weights with CAAN1 and CAIN4 ####
 
 all.data.sub = all.data %>%
   filter(!Pop %in% c("CAAN2","CAIN3"))
@@ -203,7 +205,7 @@ all.data.sub = all.data %>%
 
 y=cbind(all.data.sub$Yes.Flower, (all.data.sub$total.n-all.data.sub$Yes.Flower))
 
-pflwr_sep1_weighted.nopop.ss = glm(y ~ transplant.daySept1*Species + Bench + seed.source, 
+pflwr_sep1_weighted.nopop.ss = glm(y ~ transplant.daySept1*Species + Bench, 
                                    family = binomial(link = "logit"), data=all.data.sub)
 summary(pflwr_sep1_weighted.nopop.ss)
 
@@ -216,7 +218,7 @@ pflwr_weighted_emtrends.nopop.ss
 
 # write.csv(pflwr_weighted_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/prob.flower.weighted.emtrends.CAAN1.CAIN4.csv")
 
-#### Model of probability of flowering with weights with seed source with CAAN2 and CAIN3 ####
+#### Model of probability of flowering with weights with CAAN2 and CAIN3 ####
 
 all.data.sub = all.data %>%
   filter(!Pop %in% c("CAAN1","CAIN4"))
@@ -226,7 +228,7 @@ all.data.sub = all.data %>%
 
 y=cbind(all.data.sub$Yes.Flower, (all.data.sub$total.n-all.data.sub$Yes.Flower))
 
-pflwr_sep1_weighted.nopop.ss = glm(y ~ transplant.daySept1*Species + Bench + seed.source, 
+pflwr_sep1_weighted.nopop.ss = glm(y ~ transplant.daySept1*Species + Bench, 
                                    family = binomial(link = "logit"), data=all.data.sub)
 summary(pflwr_sep1_weighted.nopop.ss)
 
@@ -237,9 +239,9 @@ anova(pflwr_sep1_weighted.nopop.ss, test = "Chisq") # bench and pop not signific
 pflwr_weighted_emtrends.nopop.ss = emtrends(pflwr_sep1_weighted.nopop.ss, pairwise ~ Species, var = "transplant.daySept1")
 pflwr_weighted_emtrends.nopop.ss
 
-# write.csv(pflwr_weighted_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/prob.flower.weighted.emtrends.CAAN2.CAIN3.csv")
+write.csv(pflwr_weighted_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/prob.flower.weighted.emtrends.CAAN2.CAIN3.csv")
 
-#### Model of probability of flowering with weights with seed source with CAAN2 and CAIN4 ####
+#### Model of probability of flowering with weights with CAAN2 and CAIN4 ####
 
 all.data.sub = all.data %>%
   filter(!Pop %in% c("CAAN1","CAIN3"))
@@ -249,7 +251,7 @@ all.data.sub = all.data %>%
 
 y=cbind(all.data.sub$Yes.Flower, (all.data.sub$total.n-all.data.sub$Yes.Flower))
 
-pflwr_sep1_weighted.nopop.ss = glm(y ~ transplant.daySept1*Species + Bench + seed.source, 
+pflwr_sep1_weighted.nopop.ss = glm(y ~ transplant.daySept1*Species + Bench, 
                                    family = binomial(link = "logit"), data=all.data.sub)
 summary(pflwr_sep1_weighted.nopop.ss)
 
@@ -260,7 +262,7 @@ anova(pflwr_sep1_weighted.nopop.ss, test = "Chisq") # bench and pop not signific
 pflwr_weighted_emtrends.nopop.ss = emtrends(pflwr_sep1_weighted.nopop.ss, pairwise ~ Species, var = "transplant.daySept1")
 pflwr_weighted_emtrends.nopop.ss
 
-# write.csv(pflwr_weighted_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/prob.flower.weighted.emtrends.CAAN2.CAIN4.csv")
+#write.csv(pflwr_weighted_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/prob.flower.weighted.emtrends.CAAN2.CAIN4.csv")
 
 #### Figure 2 ####
 # new data to predict 
@@ -310,6 +312,56 @@ pflwr.plot.2
 
 #ggsave("./Germination.Fitness/Results/Prob.flower_byspecies_glm.all.pts.pdf", height = 10, width = 12)
 
+#### Figure 2 Revised ####
+# new data to predict 
+mylist <- list(transplant.daySept1= seq(min(fitdat$transplant.daySept1, na.rm=T),
+                                        max(fitdat$transplant.daySept1, na.rm=T)+2, by=10), 
+               Species=c("CAAN","CACO","CAIN","STBR", "STDI","STDR","STGL","STIN","STPO","STTO"))
+
+# make predictions from model
+pflwr.dat=emmip(pflwr_sep1_weighted.final, Species~transplant.daySept1, at=mylist, CIs=TRUE, plotit = FALSE, type = "response", nesting = F) %>%
+  mutate(sigreg = if_else(Species %in% c("CAAN", "CAIN", "STBR", 
+                                         "STDR", "STPO", "STTO"), 
+                          "Significant", "Nonsignificant"))%>%
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
+                                 "STGL", "CAAN", "CACO", "CAIN")) 
+
+flwrprop = fitdat %>%
+  group_by(cohort, Species, Bench, transplant.daySept1) %>%
+  summarize(totflwr = sum(flowered),
+            totplanted = sum(planted),
+            transplant.height.cm = mean(transplant.height.cm, na.rm=T)) %>%
+  mutate(yvar = totflwr/totplanted) %>%
+  mutate(logitpropflwr = car::logit(yvar, adjust = 0.025))%>%
+  mutate(sigreg = if_else(Species %in% c("CAAN", "CAIN", "STBR", 
+                                         "STDR", "STPO", "STTO"), 
+                          "Significant", "Nonsignificant")) %>%
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
+                                 "STGL", "CAAN", "CACO", "CAIN"))
+
+# plot removing lines for nonsignificant values
+pflwr.plot = ggplot(flwrprop, aes(x=transplant.daySept1,y=yvar)) +
+  geom_point(show.legend = FALSE, size = 2, alpha = 0.5)+
+  theme_classic(base_size=22) + theme(legend.position = "none")  +
+  labs(y="Flowering proportion",x="Cohort")+
+  scale_x_continuous(breaks = c(unique(fitdat$transplant.daySept1)),labels = transplantdates)+
+  theme(axis.text.x = element_text(angle = 90))+
+  facet_wrap(~phy_order)
+pflwr.plot
+
+# only plot line for significant individuals
+pflwr.dat.2 = subset(pflwr.dat, pflwr.dat$sigreg == "Significant")
+
+pflwr.plot.2 = pflwr.plot +
+  geom_line(data = pflwr.dat.2, aes(x = transplant.daySept1, y = yvar),
+            show.legend = FALSE, color = "gray40", lwd = 1)+
+  facet_wrap(~phy_order)
+pflwr.plot.2
+
+# Slight differences in lines on each plot
+
+# ggsave("./Germination.Fitness/Results/Prob.flower_byspecies_glm.all.pts.final.pdf", height = 10, width = 12)
+
 #### Model of size at first bud ####
 # filter for individuals that did bud
 buddat = fitdat %>%
@@ -318,7 +370,7 @@ summary(buddat)
 
 sizebud_glob_sep1 = lm(first.bud.height.cm ~transplant.daySept1*Species + transplant.height.cm + Bench + Pop, data=buddat)
 summary(sizebud_glob_sep1) 
-anova(sizebud_glob_sep1, test = "Chisq")
+anova(sizebud_glob_sep1)
 
 # estimating species-specific slopes
 sizebud_emtrends = emtrends(sizebud_glob_sep1, pairwise ~ Species, var = "transplant.daySept1") 
@@ -326,50 +378,63 @@ sizebud_emtrends
 
 # write.csv(sizebud_emtrends$emtrends, file = "./Germination.Fitness/Results/bud.size.emtrends.csv")
 
-#### Model of size at first bud with seed source with CAAN1 and CAIN3 ####
+#### Model of size at first bud final ####
+# filter for individuals that did bud
+buddat = fitdat %>%
+  filter(bud_yn == 1)
+summary(buddat)
+
+sizebud_glob_sep1.final = lm(first.bud.height.cm ~transplant.daySept1*Species + transplant.height.cm + Bench, data=buddat)
+summary(sizebud_glob_sep1.final) 
+anova(sizebud_glob_sep1.final)
+
+# estimating species-specific slopes
+sizebud_emtrends.final = emtrends(sizebud_glob_sep1.final, pairwise ~ Species, var = "transplant.daySept1") 
+sizebud_emtrends.final
+
+#write.csv(sizebud_emtrends.final$emtrends, file = "./Germination.Fitness/Results/bud.size.emtrends.final.csv")
+
+#### Model of size at first bud with CAAN1 and CAIN3 ####
 buddat.sub = fitdat %>%
   filter(bud_yn == 1) %>%
   filter(!Pop %in% c("CAAN2","CAIN4"))
 summary(buddat.sub)
 
-sizebud_glob_sep1.nopop.ss = lm(first.bud.height.cm ~ transplant.daySept1*Species + transplant.height.cm + Bench + seed.source, data=buddat.sub)
-# seed.source confounded with Species
+sizebud_glob_sep1.nopop.ss = lm(first.bud.height.cm ~ transplant.daySept1*Species + transplant.height.cm + Bench, data=buddat.sub)
 summary(sizebud_glob_sep1.nopop.ss) 
-anova(sizebud_glob_sep1.nopop.ss, test = "Chisq")
+anova(sizebud_glob_sep1.nopop.ss)
 
 # estimating species-specific slopes
 sizebud_emtrends.nopop.ss = emtrends(sizebud_glob_sep1.nopop.ss, pairwise ~ Species, var = "transplant.daySept1") 
 sizebud_emtrends.nopop.ss
 
-#write.csv(sizebud_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/bud.size.emtrends.CAAN1.CAIN3.csv")
+write.csv(sizebud_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/bud.size.emtrends.CAAN1.CAIN3.csv")
 
-#### Model of size at first bud with seed source with CAAN1 and CAIN4 ####
+#### Model of size at first bud with CAAN1 and CAIN4 ####
 buddat.sub = fitdat %>%
   filter(bud_yn == 1) %>%
   filter(!Pop %in% c("CAAN2","CAIN3"))
 summary(buddat.sub)
 
-sizebud_glob_sep1.nopop.ss = lm(first.bud.height.cm ~ transplant.daySept1*Species + transplant.height.cm + Bench + seed.source, data=buddat.sub)
-# seed.source confounded with Species
+sizebud_glob_sep1.nopop.ss = lm(first.bud.height.cm ~ transplant.daySept1*Species + transplant.height.cm + Bench, data=buddat.sub)
 summary(sizebud_glob_sep1.nopop.ss) 
-anova(sizebud_glob_sep1.nopop.ss, test = "Chisq")
+anova(sizebud_glob_sep1.nopop.ss)
 
 # estimating species-specific slopes
 sizebud_emtrends.nopop.ss = emtrends(sizebud_glob_sep1.nopop.ss, pairwise ~ Species, var = "transplant.daySept1") 
 sizebud_emtrends.nopop.ss
 
-#write.csv(sizebud_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/bud.size.emtrends.CAAN1.CAIN4.csv")
+write.csv(sizebud_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/bud.size.emtrends.CAAN1.CAIN4.csv")
 
-#### Model of size at first bud with seed source with CAAN2 and CAIN3 ####
+#### Model of size at first bud with CAAN2 and CAIN3 ####
 buddat.sub = fitdat %>%
   filter(bud_yn == 1) %>%
   filter(!Pop %in% c("CAAN1","CAIN4"))
 summary(buddat.sub)
 
-sizebud_glob_sep1.nopop.ss = lm(first.bud.height.cm ~ transplant.daySept1*Species + transplant.height.cm + Bench + seed.source, data=buddat.sub)
-# seed.source confounded with Species
+sizebud_glob_sep1.nopop.ss = lm(first.bud.height.cm ~ transplant.daySept1*Species + transplant.height.cm + Bench, data=buddat.sub)
 summary(sizebud_glob_sep1.nopop.ss) 
-anova(sizebud_glob_sep1.nopop.ss, test = "Chisq")
+anova(sizebud_glob_sep1.nopop.ss)
 
 # estimating species-specific slopes
 sizebud_emtrends.nopop.ss = emtrends(sizebud_glob_sep1.nopop.ss, pairwise ~ Species, var = "transplant.daySept1") 
@@ -377,22 +442,21 @@ sizebud_emtrends.nopop.ss
 
 #write.csv(sizebud_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/bud.size.emtrends.CAAN2.CAIN3.csv")
 
-#### Model of size at first bud with seed source with CAAN2 and CAIN4 ####
+#### Model of size at first bud with CAAN2 and CAIN4 ####
 buddat.sub = fitdat %>%
   filter(bud_yn == 1) %>%
   filter(!Pop %in% c("CAAN1","CAIN3"))
 summary(buddat.sub)
 
-sizebud_glob_sep1.nopop.ss = lm(first.bud.height.cm ~ transplant.daySept1*Species + transplant.height.cm + Bench + seed.source, data=buddat.sub)
-# seed.source confounded with Species
+sizebud_glob_sep1.nopop.ss = lm(first.bud.height.cm ~ transplant.daySept1*Species + transplant.height.cm + Bench, data=buddat.sub)
 summary(sizebud_glob_sep1.nopop.ss) 
-anova(sizebud_glob_sep1.nopop.ss, test = "Chisq")
+anova(sizebud_glob_sep1.nopop.ss)
 
 # estimating species-specific slopes
 sizebud_emtrends.nopop.ss = emtrends(sizebud_glob_sep1.nopop.ss, pairwise ~ Species, var = "transplant.daySept1") 
 sizebud_emtrends.nopop.ss
 
-#write.csv(sizebud_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/bud.size.emtrends.CAAN2.CAIN4.csv")
+write.csv(sizebud_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/bud.size.emtrends.CAAN2.CAIN4.csv")
 
 #### Model of size at first flower ####
 flwrdat = fitdat %>%
@@ -401,7 +465,7 @@ summary(flwrdat)
 
 sizeflwr_glob_sep1 = lm(first.flower.height.cm ~transplant.daySept1*Species + transplant.height.cm + Bench + Pop, data=flwrdat)
 summary(sizeflwr_glob_sep1) 
-anova(sizeflwr_glob_sep1, test = "Chisq")
+anova(sizeflwr_glob_sep1)
 
 # estimating species-specific slopes
 sizeflwr_emtrends = emtrends(sizeflwr_glob_sep1, pairwise ~ Species, var = "transplant.daySept1") 
@@ -409,47 +473,47 @@ sizeflwr_emtrends
 
 #write.csv(sizeflwr_emtrends$emtrends, file = "./Germination.Fitness/Results/Flower/flower.size.emtrends.csv")
 
-#### Model of size at first flower with seed source with CAAN1 and CAIN3 ####
+#### Model of size at first flower with CAAN1 and CAIN3 ####
 flwrdat.sub = fitdat %>%
   filter(flowered == 1) %>%
   filter(!Pop %in% c("CAAN2","CAIN4"))
 summary(flwrdat.sub)
 
-sizeflwr_glob_sep1.nopop.ss = lm(first.flower.height.cm ~ transplant.daySept1*Species + transplant.height.cm + Bench + seed.source, data=flwrdat.sub)
+sizeflwr_glob_sep1.nopop.ss = lm(first.flower.height.cm ~ transplant.daySept1*Species + transplant.height.cm + Bench, data=flwrdat.sub)
 summary(sizeflwr_glob_sep1.nopop.ss) 
-anova(sizeflwr_glob_sep1.nopop.ss, test = "Chisq")
+anova(sizeflwr_glob_sep1.nopop.ss)
 
 # estimating species-specific slopes
 sizeflwr_emtrends.nopop.ss = emtrends(sizeflwr_glob_sep1.nopop.ss, pairwise ~ Species, var = "transplant.daySept1") 
 sizeflwr_emtrends.nopop.ss
 
-# write.csv(sizeflwr_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Flower/flower.size.emtrends.CAAN1.CAIN3.csv")
+write.csv(sizeflwr_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Flower/flower.size.emtrends.CAAN1.CAIN3.csv")
 
-#### Model of size at first flower with seed source with CAAN1 and CAIN4 ####
+#### Model of size at first flower with CAAN1 and CAIN4 ####
 flwrdat.sub = fitdat %>%
   filter(flowered == 1) %>%
   filter(!Pop %in% c("CAAN2","CAIN3"))
 summary(flwrdat.sub)
 
-sizeflwr_glob_sep1.nopop.ss = lm(first.flower.height.cm ~ transplant.daySept1*Species + transplant.height.cm + Bench + seed.source, data=flwrdat.sub)
+sizeflwr_glob_sep1.nopop.ss = lm(first.flower.height.cm ~ transplant.daySept1*Species + transplant.height.cm + Bench, data=flwrdat.sub)
 summary(sizeflwr_glob_sep1.nopop.ss) 
-anova(sizeflwr_glob_sep1.nopop.ss, test = "Chisq")
+anova(sizeflwr_glob_sep1.nopop.ss)
 
 # estimating species-specific slopes
 sizeflwr_emtrends.nopop.ss = emtrends(sizeflwr_glob_sep1.nopop.ss, pairwise ~ Species, var = "transplant.daySept1") 
 sizeflwr_emtrends.nopop.ss
 
-#write.csv(sizeflwr_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Flower/flower.size.emtrends.CAAN1.CAIN4.csv")
+# write.csv(sizeflwr_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Flower/flower.size.emtrends.CAAN1.CAIN4.csv")
 
-#### Model of size at first flower with seed source with CAAN2 and CAIN3 ####
+#### Model of size at first flower with CAAN2 and CAIN3 ####
 flwrdat.sub = fitdat %>%
   filter(flowered == 1) %>%
   filter(!Pop %in% c("CAAN1","CAIN4"))
 summary(flwrdat.sub)
 
-sizeflwr_glob_sep1.nopop.ss = lm(first.flower.height.cm ~ transplant.daySept1*Species + transplant.height.cm + Bench + seed.source, data=flwrdat.sub)
+sizeflwr_glob_sep1.nopop.ss = lm(first.flower.height.cm ~ transplant.daySept1*Species + transplant.height.cm + Bench, data=flwrdat.sub)
 summary(sizeflwr_glob_sep1.nopop.ss) 
-anova(sizeflwr_glob_sep1.nopop.ss, test = "Chisq")
+anova(sizeflwr_glob_sep1.nopop.ss)
 
 # estimating species-specific slopes
 sizeflwr_emtrends.nopop.ss = emtrends(sizeflwr_glob_sep1.nopop.ss, pairwise ~ Species, var = "transplant.daySept1") 
@@ -457,15 +521,15 @@ sizeflwr_emtrends.nopop.ss
 
 # write.csv(sizeflwr_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Flower/flower.size.emtrends.CAAN2.CAIN3.csv")
 
-#### Model of size at first flower with seed source with CAAN2 and CAIN4 ####
+#### Model of size at first flower with CAAN2 and CAIN4 ####
 flwrdat.sub = fitdat %>%
   filter(flowered == 1) %>%
   filter(!Pop %in% c("CAAN1","CAIN3"))
 summary(flwrdat.sub)
 
-sizeflwr_glob_sep1.nopop.ss = lm(first.flower.height.cm ~ transplant.daySept1*Species + transplant.height.cm + Bench + seed.source, data=flwrdat.sub)
+sizeflwr_glob_sep1.nopop.ss = lm(first.flower.height.cm ~ transplant.daySept1*Species + transplant.height.cm + Bench, data=flwrdat.sub)
 summary(sizeflwr_glob_sep1.nopop.ss) 
-anova(sizeflwr_glob_sep1.nopop.ss, test = "Chisq")
+anova(sizeflwr_glob_sep1.nopop.ss)
 
 # estimating species-specific slopes
 sizeflwr_emtrends.nopop.ss = emtrends(sizeflwr_glob_sep1.nopop.ss, pairwise ~ Species, var = "transplant.daySept1") 
@@ -518,6 +582,52 @@ sizebud.plot.2
 
 #ggsave("./Germination.Fitness/Results/bud.size.all.pts.pdf", height = 10, width = 12)
 
+#### Figure S4 Revised ####
+mylist <- list(transplant.daySept1= seq(min(fitdat$transplant.daySept1, na.rm=T),
+                                        max(fitdat$transplant.daySept1, na.rm=T)+2, by=10), 
+               Species=c("CAAN","CACO","CAIN","STBR", "STDI","STDR","STGL","STIN","STPO","STTO"))
+
+sizebud.dat= emmip(sizebud_glob_sep1.final,Species~transplant.daySept1,at=mylist, CIs=TRUE, plotit = FALSE, type = "response", nesting = F) %>%
+  mutate(sigreg = if_else(Species %in% c("STBR", "STDI", "STIN", "STPO"), 
+                          "Significant", "Nonsignificant")) %>%
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
+                                 "STGL", "CAAN", "CACO", "CAIN")) 
+
+# subset predictions so don't plot line beyond observed data
+sizebud.dat = sizebud.dat %>%
+  #truncate lines to only cohorts that did have a bud
+  mutate(yvar = if_else(Species == "STTO" & transplant.daySept1 >176 , 0, yvar)) %>%
+  mutate(yvar = if_else(Species == "STGL" & transplant.daySept1 >186 , 0, yvar)) %>%
+  mutate(yvar = if_else(Species == "STPO" & transplant.daySept1 >186 , 0, yvar)) %>%
+  mutate(yvar = na_if(yvar,0))
+
+size.all = buddat %>%
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
+                                 "STGL", "CAAN", "CACO", "CAIN"))
+
+# plot removing lines for nonsignificant values
+sizebud.plot = ggplot(size.all, aes(x=transplant.daySept1,y=first.bud.height.cm)) +
+  geom_point(show.legend = FALSE, size = 2, alpha = 0.5)+
+  theme_classic(base_size=22) + theme(legend.position = "none")  +
+  labs(y="Size at budding\n height (cm)",x="Cohort")+
+  scale_x_continuous(breaks = c(unique(fitdat$transplant.daySept1)),labels = transplantdates)+
+  theme(axis.text.x = element_text(angle = 90))+
+  facet_wrap(~phy_order)
+sizebud.plot
+
+# only plot line for significant individuals
+sizebud.dat.2 = subset(sizebud.dat, sizebud.dat$sigreg == "Significant")
+
+sizebud.plot.2 = sizebud.plot +
+  geom_line(data = sizebud.dat.2, aes(x = transplant.daySept1, y = yvar),
+            show.legend = FALSE, color = "gray40", lwd = 1)+
+  facet_wrap(~phy_order)
+sizebud.plot.2
+
+# Same as original plot
+
+#ggsave("./Germination.Fitness/Results/bud.size.all.pts.final.pdf", height = 10, width = 12)
+
 #### Model of number of seeds ####
 
 flwrdat = fitdat %>%
@@ -543,7 +653,7 @@ seednb_emtrends
 
 # write.csv(seednb_emtrends$emtrends, file = "./Germination.Fitness/Results/seed_number.emtrends.csv")
 
-#### Model of number of seeds with seed source ####
+#### Model of number of seeds final ####
 flwrdat = fitdat %>%
   filter(flowered == 1)
 summary(flwrdat)
@@ -553,19 +663,21 @@ flwrdat2 = flwrdat %>%
   filter(long.seed.counts < 100)
 
 # negative binomial model
-seed_nb_glob_sep1 = glm.nb(long.seed.counts~transplant.daySept1*Species+ transplant.height.cm+ Bench + seed.source, 
+seed_nb_glob_sep1.final = glm.nb(long.seed.counts~transplant.daySept1*Species+ transplant.height.cm + Bench, 
                            data= droplevels(flwrdat2))
 
-summary(seed_nb_glob_sep1)
+summary(seed_nb_glob_sep1.final)
 
 # test significance of fixed effects
-anova(seed_nb_glob_sep1, test = "Chisq")
+anova(seed_nb_glob_sep1.final, test = "Chisq")
 
 # estimating speices-specific slopes
-seednb_emtrends= emtrends(seed_nb_glob_sep1,pairwise ~ Species, var = "transplant.daySept1") 
-seednb_emtrends
+seednb_emtrends.final = emtrends(seed_nb_glob_sep1.final,pairwise ~ Species, var = "transplant.daySept1") 
+seednb_emtrends.final
 
-#### Model of number of seeds with seed source with CAAN1 and CAIN3 ####
+#write.csv(seednb_emtrends.final$emtrends, file = "./Germination.Fitness/Results/seed_number.emtrends.final.csv")
+
+#### Model of number of seeds with CAAN1 and CAIN3 ####
 flwrdat.sub = fitdat %>%
   filter(flowered == 1) %>%
   filter(!Pop %in% c("CAAN2","CAIN4"))
@@ -576,7 +688,7 @@ flwrdat2 = flwrdat.sub %>%
   filter(long.seed.counts < 100)
 
 # negative binomial model
-seed_nb_glob_sep1.nopop.ss = glm.nb(long.seed.counts~transplant.daySept1*Species+ transplant.height.cm+ Bench + seed.source, 
+seed_nb_glob_sep1.nopop.ss = glm.nb(long.seed.counts~transplant.daySept1*Species+ transplant.height.cm+ Bench, 
                            data= droplevels(flwrdat2))
 
 summary(seed_nb_glob_sep1.nopop.ss)
@@ -590,7 +702,7 @@ seednb_emtrends.nopop.ss
 
 #write.csv(seednb_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/seed_number.emtrends.CAAN1.CAIN3.csv")
 
-#### Model of number of seeds with seed source with CAAN1 and CAIN4 ####
+#### Model of number of seeds with CAAN1 and CAIN4 ####
 flwrdat.sub = fitdat %>%
   filter(flowered == 1) %>%
   filter(!Pop %in% c("CAAN2","CAIN3"))
@@ -601,7 +713,7 @@ flwrdat2 = flwrdat.sub %>%
   filter(long.seed.counts < 100)
 
 # negative binomial model
-seed_nb_glob_sep1.nopop.ss = glm.nb(long.seed.counts~transplant.daySept1*Species+ transplant.height.cm+ Bench + seed.source, 
+seed_nb_glob_sep1.nopop.ss = glm.nb(long.seed.counts~transplant.daySept1*Species+ transplant.height.cm+ Bench, 
                                     data= droplevels(flwrdat2))
 
 summary(seed_nb_glob_sep1.nopop.ss)
@@ -615,7 +727,7 @@ seednb_emtrends.nopop.ss
 
 #write.csv(seednb_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/seed_number.emtrends.CAAN1.CAIN4.csv")
 
-#### Model of number of seeds with seed source with CAAN2 and CAIN3 ####
+#### Model of number of seeds with CAAN2 and CAIN3 ####
 flwrdat.sub = fitdat %>%
   filter(flowered == 1) %>%
   filter(!Pop %in% c("CAAN1","CAIN4"))
@@ -626,7 +738,7 @@ flwrdat2 = flwrdat.sub %>%
   filter(long.seed.counts < 100)
 
 # negative binomial model
-seed_nb_glob_sep1.nopop.ss = glm.nb(long.seed.counts~transplant.daySept1*Species+ transplant.height.cm+ Bench + seed.source, 
+seed_nb_glob_sep1.nopop.ss = glm.nb(long.seed.counts~transplant.daySept1*Species+ transplant.height.cm+ Bench, 
                                     data= droplevels(flwrdat2))
 
 summary(seed_nb_glob_sep1.nopop.ss)
@@ -638,9 +750,9 @@ anova(seed_nb_glob_sep1.nopop.ss, test = "Chisq")
 seednb_emtrends.nopop.ss= emtrends(seed_nb_glob_sep1.nopop.ss,pairwise ~ Species, var = "transplant.daySept1") 
 seednb_emtrends.nopop.ss
 
-#write.csv(seednb_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/seed_number.emtrends.CAAN2.CAIN3.csv")
+write.csv(seednb_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/seed_number.emtrends.CAAN2.CAIN3.csv")
 
-#### Model of number of seeds with seed source with CAAN2 and CAIN4 ####
+#### Model of number of seeds with CAAN2 and CAIN4 ####
 flwrdat.sub = fitdat %>%
   filter(flowered == 1) %>%
   filter(!Pop %in% c("CAAN1","CAIN3"))
@@ -651,7 +763,7 @@ flwrdat2 = flwrdat.sub %>%
   filter(long.seed.counts < 100)
 
 # negative binomial model
-seed_nb_glob_sep1.nopop.ss = glm.nb(long.seed.counts~transplant.daySept1*Species+ transplant.height.cm+ Bench + seed.source, 
+seed_nb_glob_sep1.nopop.ss = glm.nb(long.seed.counts~transplant.daySept1*Species+ transplant.height.cm+ Bench, 
                                     data= droplevels(flwrdat2))
 
 summary(seed_nb_glob_sep1.nopop.ss)
@@ -713,6 +825,56 @@ seedcount.plot.2
 
 #ggsave("./Germination.Fitness/Results/seed.number.all.pts.pdf", height = 10, width = 12)
 
+#### Figure 3 Revised ####
+
+flwrdat3 = flwrdat2 %>%
+  mutate(sigreg = if_else(Species %in% c("STDR", "STPO", "STGL", "STTO"), "Nonignificant", "Significant"))%>%
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
+                                 "STGL", "CAAN", "CACO", "CAIN"))  
+# new data to predict from
+mylist <- list(transplant.daySept1= seq(min(fitdat$transplant.daySept1, na.rm=T),
+                                        max(fitdat$transplant.daySept1, na.rm=T)+2, by=10), 
+               Species=c("CAAN","CACO","CAIN","STBR", "STDI","STDR","STGL","STIN","STPO","STTO"))
+
+# predictions from model
+seedcount.dat=emmip(seed_nb_glob_sep1.final,Species~transplant.daySept1,at=mylist, CIs=TRUE, plotit = FALSE, type = "response") %>% # I think response will back transform from logit
+  mutate(sigreg = if_else(Species %in% c("STDR", "STPO", "STGL", "STTO"), "Nonignificant", "Significant"))%>%
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
+                                 "STGL", "CAAN", "CACO", "CAIN")) 
+
+# removing predictions so line doesn't go beyond observed data
+seedcount.dat = seedcount.dat%>%
+  mutate(yvar = if_else(Species == "STTO" & transplant.daySept1 >120 , 0, yvar)) %>%
+  mutate(yvar = if_else(Species == "CAIN" & transplant.daySept1 >148 , 0, yvar)) %>%
+  mutate(yvar = if_else(Species == "STPO" & transplant.daySept1 >148 , 0, yvar)) %>%
+  mutate(yvar = na_if(yvar,0))
+
+# plot removing lines for nonsignificant values
+seedcount.plot = ggplot(flwrdat3, aes(x=transplant.daySept1,y=long.seed.counts)) +
+  geom_point(show.legend = FALSE, size = 2, alpha = 0.5)+
+  theme_classic(base_size=22) + theme(legend.position = "none")  +
+  labs(y="Number of seeds",x="Cohort")+
+  scale_x_continuous(breaks = c(unique(fitdat$transplant.daySept1)),labels = transplantdates)+
+  theme(axis.text.x = element_text(angle = 90))+
+  facet_wrap(~phy_order)
+seedcount.plot
+
+# only plot line for significant individuals
+seedcount.dat.2 = subset(seedcount.dat, seedcount.dat$sigreg == "Significant")
+
+# remove last STBR line since no data
+seedcount.dat.3 = seedcount.dat.2[c(1:99,101:105,107,108),]
+
+seedcount.plot.2 = seedcount.plot +
+  geom_line(data = seedcount.dat.3, aes(x = transplant.daySept1, y = yvar),
+            show.legend = FALSE, color = "gray40", lwd = 1)+
+  facet_wrap(~phy_order)
+seedcount.plot.2
+
+# Same plot as original
+
+#ggsave("./Germination.Fitness/Results/seed.number.all.pts.final.pdf", height = 10, width = 12)
+
 #### Model of total seed mass ####
 flwrdat = fitdat %>%
   filter(flowered == 1)
@@ -734,7 +896,7 @@ seedmass_emtrends
 
 # write.csv(seedmass_emtrends$emtrends, file = "./Germination.Fitness/Results/seed.mass.emtrends.csv")
 
-#### Model of total seed mass with seed source ####
+#### Model of total seed mass final ####
 
 flwrdat = fitdat %>%
   filter(flowered == 1)
@@ -744,17 +906,19 @@ summary(flwrdat)
 flwrdat2 = flwrdat %>%
   filter(long.seed.counts < 100)
 
-seedmass_glob_sep1 = lm(long.seed.weight.g~transplant.daySept1*Species + transplant.height.cm+ Bench + seed.source, data= droplevels(flwrdat2))
-summary(seedmass_glob_sep1)
+seedmass_glob_sep1.final = lm(long.seed.weight.g~transplant.daySept1*Species + transplant.height.cm+ Bench, data= droplevels(flwrdat2))
+summary(seedmass_glob_sep1.final)
 
 # testing significance of fixed effects
-anova(seedmass_glob_sep1, test = "Chisq")
+anova(seedmass_glob_sep1.final)
 
 # estimating species-specific slopes
-seedmass_emtrends = emtrends(seedmass_glob_sep1,pairwise ~ Species, var = "transplant.daySept1") 
-seedmass_emtrends
+seedmass_emtrends.final = emtrends(seedmass_glob_sep1.final,pairwise ~ Species, var = "transplant.daySept1") 
+seedmass_emtrends.final
 
-#### Model of total seed mass with seed source with CAAN1 and CAIN3 ####
+#write.csv(seedmass_emtrends.final$emtrends, file = "./Germination.Fitness/Results/seed.mass.emtrends.final.csv")
+
+#### Model of total seed mass with CAAN1 and CAIN3 ####
 
 flwrdat.sub = fitdat %>%
   filter(flowered == 1) %>%
@@ -765,19 +929,19 @@ summary(flwrdat.sub)
 flwrdat2 = flwrdat.sub %>%
   filter(long.seed.counts < 100)
 
-seedmass_glob_sep1.nopop.ss = lm(long.seed.weight.g~transplant.daySept1*Species + transplant.height.cm+ Bench + seed.source, data= droplevels(flwrdat2))
+seedmass_glob_sep1.nopop.ss = lm(long.seed.weight.g~transplant.daySept1*Species + transplant.height.cm+ Bench, data= droplevels(flwrdat2))
 summary(seedmass_glob_sep1.nopop.ss)
 
 # testing significance of fixed effects
-anova(seedmass_glob_sep1.nopop.ss, test = "Chisq")
+anova(seedmass_glob_sep1.nopop.ss)
 
 # estimating species-specific slopes
 seedmass_emtrends.nopop.ss = emtrends(seedmass_glob_sep1.nopop.ss,pairwise ~ Species, var = "transplant.daySept1") 
 seedmass_emtrends.nopop.ss
 
-#write.csv(seedmass_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/seed.mass.emtrends.CAAN1.CAIN3.csv")
+# write.csv(seedmass_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/seed.mass.emtrends.CAAN1.CAIN3.csv")
 
-#### Model of total seed mass with seed source with CAAN1 and CAIN4 ####
+#### Model of total seed mass with CAAN1 and CAIN4 ####
 flwrdat.sub = fitdat %>%
   filter(flowered == 1) %>%
   filter(!Pop %in% c("CAAN2","CAIN3"))
@@ -787,19 +951,19 @@ summary(flwrdat.sub)
 flwrdat2 = flwrdat.sub %>%
   filter(long.seed.counts < 100)
 
-seedmass_glob_sep1.nopop.ss = lm(long.seed.weight.g~transplant.daySept1*Species + transplant.height.cm+ Bench + seed.source, data= droplevels(flwrdat2))
+seedmass_glob_sep1.nopop.ss = lm(long.seed.weight.g~transplant.daySept1*Species + transplant.height.cm+ Bench, data= droplevels(flwrdat2))
 summary(seedmass_glob_sep1.nopop.ss)
 
 # testing significance of fixed effects
-anova(seedmass_glob_sep1.nopop.ss, test = "Chisq")
+anova(seedmass_glob_sep1.nopop.ss)
 
 # estimating species-specific slopes
 seedmass_emtrends.nopop.ss = emtrends(seedmass_glob_sep1.nopop.ss,pairwise ~ Species, var = "transplant.daySept1") 
 seedmass_emtrends.nopop.ss
 
-#write.csv(seedmass_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/seed.mass.emtrends.CAAN1.CAIN4.csv")
+write.csv(seedmass_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/seed.mass.emtrends.CAAN1.CAIN4.csv")
 
-#### Model of total seed mass with seed source with CAAN2 and CAIN3 ####
+#### Model of total seed mass with CAAN2 and CAIN3 ####
 flwrdat.sub = fitdat %>%
   filter(flowered == 1) %>%
   filter(!Pop %in% c("CAAN1","CAIN4"))
@@ -809,19 +973,19 @@ summary(flwrdat.sub)
 flwrdat2 = flwrdat.sub %>%
   filter(long.seed.counts < 100)
 
-seedmass_glob_sep1.nopop.ss = lm(long.seed.weight.g~transplant.daySept1*Species + transplant.height.cm+ Bench + seed.source, data= droplevels(flwrdat2))
+seedmass_glob_sep1.nopop.ss = lm(long.seed.weight.g~transplant.daySept1*Species + transplant.height.cm+ Bench, data= droplevels(flwrdat2))
 summary(seedmass_glob_sep1.nopop.ss)
 
 # testing significance of fixed effects
-anova(seedmass_glob_sep1.nopop.ss, test = "Chisq")
+anova(seedmass_glob_sep1.nopop.ss)
 
 # estimating species-specific slopes
 seedmass_emtrends.nopop.ss = emtrends(seedmass_glob_sep1.nopop.ss,pairwise ~ Species, var = "transplant.daySept1") 
 seedmass_emtrends.nopop.ss
 
-#write.csv(seedmass_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/seed.mass.emtrends.CAAN2.CAIN3.csv")
+# write.csv(seedmass_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/seed.mass.emtrends.CAAN2.CAIN3.csv")
 
-#### Model of total seed mass with seed source with CAAN2 and CAIN4 ####
+#### Model of total seed mass with CAAN2 and CAIN4 ####
 flwrdat.sub = fitdat %>%
   filter(flowered == 1) %>%
   filter(!Pop %in% c("CAAN1","CAIN3"))
@@ -831,7 +995,7 @@ summary(flwrdat.sub)
 flwrdat2 = flwrdat.sub %>%
   filter(long.seed.counts < 100)
 
-seedmass_glob_sep1.nopop.ss = lm(long.seed.weight.g~transplant.daySept1*Species + transplant.height.cm+ Bench + seed.source, data= droplevels(flwrdat2))
+seedmass_glob_sep1.nopop.ss = lm(long.seed.weight.g~transplant.daySept1*Species + transplant.height.cm+ Bench, data= droplevels(flwrdat2))
 summary(seedmass_glob_sep1.nopop.ss)
 
 # testing significance of fixed effects
@@ -889,6 +1053,54 @@ seedmass.plot.2
 
 #ggsave("./Germination.Fitness/Results/seed.mass.all.pts.pdf", height = 10, width = 12)
 
+#### Figure S6 Revised ####
+
+flwrdat3 = flwrdat2 %>%
+  mutate(sigreg = if_else(Species %in% c("CAAN", "CACO", "STDI", "STIN"), "Significant", "Nonsignificant"))%>%
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
+                                 "STGL", "CAAN", "CACO", "CAIN"))  
+
+# new data to predict from
+mylist <- list(transplant.daySept1= seq(min(fitdat$transplant.daySept1, na.rm=T),
+                                        max(fitdat$transplant.daySept1, na.rm=T)+2, by=10), 
+               Species=c("CAAN","CACO","CAIN","STBR", "STDI","STDR","STGL","STIN","STPO","STTO"))
+
+# make predictions from model
+seedmass.dat=emmip(seedmass_glob_sep1.final,Species~transplant.daySept1,at=mylist, CIs=TRUE, plotit = FALSE, type = "response") %>% # I think response will back transform from logit
+  mutate(sigreg = if_else(Species %in% c("CAAN","CACO", "STDI", "STIN"), "Significant", "Nonsignificant")) 
+
+# remove predictions that go beyond observed data
+seedmass.dat = seedmass.dat%>%
+  mutate(yvar = if_else(Species == "STTO" & transplant.daySept1 >120 , 0, yvar)) %>%
+  mutate(yvar = if_else(Species == "CAIN" & transplant.daySept1 >148 , 0, yvar)) %>%
+  mutate(yvar = if_else(Species == "STPO" & transplant.daySept1 >148 , 0, yvar)) %>%
+  mutate(yvar = na_if(yvar,0))%>%
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
+                                 "STGL", "CAAN", "CACO", "CAIN")) 
+
+# plot removing lines for nonsignificant values
+seedmass.plot = ggplot(flwrdat3, aes(x=transplant.daySept1,y=long.seed.weight.g)) +
+  geom_point(show.legend = FALSE, size = 2, alpha = 0.5)+
+  theme_classic(base_size=22) + theme(legend.position = "none")  +
+  labs(y="Seed mass (g)",x="Cohort")+
+  scale_x_continuous(breaks = c(unique(fitdat$transplant.daySept1)),labels = transplantdates)+
+  theme(axis.text.x = element_text(angle = 90))+
+  facet_wrap(~phy_order)
+seedmass.plot
+
+# only plot line for significant individuals
+seedmass.dat.2 = subset(seedmass.dat, seedmass.dat$sigreg == "Significant")
+
+seedmass.plot.2 = seedmass.plot +
+  geom_line(data = seedmass.dat.2, aes(x = transplant.daySept1, y = yvar),
+            show.legend = FALSE, color = "gray40", lwd = 1)+
+  facet_wrap(~phy_order)
+seedmass.plot.2
+
+# Same plot as original
+
+# ggsave("./Germination.Fitness/Results/seed.mass.all.pts.final.pdf", height = 10, width = 12)
+
 #### Model of first year fitness ####
 # calculate first year fitness
 fitdat = fitdat %>%
@@ -910,7 +1122,7 @@ year1_emtrends
 
 # write.csv(year1_emtrends$emtrends, file = "./Germination.Fitness/Results/year1fit.emtrends.csv")
 
-#### Model of first year fitness with seed source ####
+#### Model of first year fitness final ####
 # calculate first year fitness
 fitdat = fitdat %>%
   mutate(year1fit = flowered * long.seed.counts)
@@ -919,15 +1131,17 @@ fitdat = fitdat %>%
 fitdat2 = fitdat %>%
   filter(long.seed.counts < 100)
 
-year1_nb_glob_sep1 = glm.nb(year1fit~transplant.daySept1*Species + transplant.height.cm + Bench + seed.source, data= droplevels(fitdat2))
-summary(year1_nb_glob_sep1)
+year1_nb_glob_sep1.final = glm.nb(year1fit~transplant.daySept1*Species + transplant.height.cm + Bench, data= droplevels(fitdat2))
+summary(year1_nb_glob_sep1.final)
 
 # testing significance of fixed effects
-anova(year1_nb_glob_sep1, test = "Chisq")
+anova(year1_nb_glob_sep1.final, test = "Chisq")
 
 # estimating species-specific slopes
-year1_emtrends = emtrends(year1_nb_glob_sep1,pairwise ~ Species, var = "transplant.daySept1") 
-year1_emtrends
+year1_emtrends.final = emtrends(year1_nb_glob_sep1.final,pairwise ~ Species, var = "transplant.daySept1") 
+year1_emtrends.final
+
+#write.csv(year1_emtrends.final$emtrends, file = "./Germination.Fitness/Results/year1fit.emtrends.final.csv")
 
 #### Model of first year fitness with seed source with CAAN1 and CAIN3 ####
 # calculate first year fitness
@@ -939,7 +1153,7 @@ fitdat2 = fitdat %>%
   filter(long.seed.counts < 100) %>%
   filter(!Pop %in% c("CAAN2","CAIN4"))
 
-year1_nb_glob_sep1.nopop.ss = glm.nb(year1fit~transplant.daySept1*Species + transplant.height.cm + Bench + seed.source, data= droplevels(fitdat2))
+year1_nb_glob_sep1.nopop.ss = glm.nb(year1fit~transplant.daySept1*Species + transplant.height.cm + Bench, data= droplevels(fitdat2))
 summary(year1_nb_glob_sep1.nopop.ss)
 
 # testing significance of fixed effects
@@ -949,9 +1163,9 @@ anova(year1_nb_glob_sep1.nopop.ss, test = "Chisq")
 year1_emtrends.nopop.ss = emtrends(year1_nb_glob_sep1.nopop.ss,pairwise ~ Species, var = "transplant.daySept1") 
 year1_emtrends.nopop.ss
 
-write.csv(year1_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/year1fit.emtrends.CAAN1.CAIN3.csv")
+#write.csv(year1_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/year1fit.emtrends.CAAN1.CAIN3.csv")
 
-#### Model of first year fitness with seed source with CAAN1 and CAIN4 ####
+#### Model of first year fitness with CAAN1 and CAIN4 ####
 # calculate first year fitness
 fitdat = fitdat %>%
   mutate(year1fit = flowered * long.seed.counts)
@@ -961,7 +1175,7 @@ fitdat2 = fitdat %>%
   filter(long.seed.counts < 100) %>%
   filter(!Pop %in% c("CAAN2","CAIN3"))
 
-year1_nb_glob_sep1.nopop.ss = glm.nb(year1fit~transplant.daySept1*Species + transplant.height.cm + Bench + seed.source, data= droplevels(fitdat2))
+year1_nb_glob_sep1.nopop.ss = glm.nb(year1fit~transplant.daySept1*Species + transplant.height.cm + Bench, data= droplevels(fitdat2))
 summary(year1_nb_glob_sep1.nopop.ss)
 
 # testing significance of fixed effects
@@ -973,7 +1187,7 @@ year1_emtrends.nopop.ss
 
 #write.csv(year1_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/year1fit.emtrends.CAAN1.CAIN4.csv")
 
-#### Model of first year fitness with seed source with CAAN2 and CAIN3 ####
+#### Model of first year fitness with CAAN2 and CAIN3 ####
 # calculate first year fitness
 fitdat = fitdat %>%
   mutate(year1fit = flowered * long.seed.counts)
@@ -983,7 +1197,7 @@ fitdat2 = fitdat %>%
   filter(long.seed.counts < 100) %>%
   filter(!Pop %in% c("CAAN1","CAIN4"))
 
-year1_nb_glob_sep1.nopop.ss = glm.nb(year1fit~transplant.daySept1*Species + transplant.height.cm + Bench + seed.source, data= droplevels(fitdat2))
+year1_nb_glob_sep1.nopop.ss = glm.nb(year1fit~transplant.daySept1*Species + transplant.height.cm + Bench, data= droplevels(fitdat2))
 summary(year1_nb_glob_sep1.nopop.ss)
 
 # testing significance of fixed effects
@@ -993,9 +1207,9 @@ anova(year1_nb_glob_sep1.nopop.ss, test = "Chisq")
 year1_emtrends.nopop.ss = emtrends(year1_nb_glob_sep1.nopop.ss,pairwise ~ Species, var = "transplant.daySept1") 
 year1_emtrends.nopop.ss
 
-#write.csv(year1_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/year1fit.emtrends.CAAN2.CAIN3.csv")
+write.csv(year1_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/year1fit.emtrends.CAAN2.CAIN3.csv")
 
-#### Model of first year fitness with seed source with CAAN2 and CAIN4 ####
+#### Model of first year fitness with CAAN2 and CAIN4 ####
 # calculate first year fitness
 fitdat = fitdat %>%
   mutate(year1fit = flowered * long.seed.counts)
@@ -1005,7 +1219,7 @@ fitdat2 = fitdat %>%
   filter(long.seed.counts < 100) %>%
   filter(!Pop %in% c("CAAN1","CAIN3"))
 
-year1_nb_glob_sep1.nopop.ss = glm.nb(year1fit~transplant.daySept1*Species + transplant.height.cm + Bench + seed.source, data= droplevels(fitdat2))
+year1_nb_glob_sep1.nopop.ss = glm.nb(year1fit~transplant.daySept1*Species + transplant.height.cm + Bench, data= droplevels(fitdat2))
 summary(year1_nb_glob_sep1.nopop.ss)
 
 # testing significance of fixed effects
@@ -1050,4 +1264,41 @@ year1.plot.2 = year1.plot +
 year1.plot.2
 
 #ggsave("./Germination.Fitness/Results/year1fitness.allpoints.pdf", height = 10, width = 12)
+
+
+#### Figure S7 Revised ####
+
+fitdat3 = fitdat2 %>%
+  mutate(sigreg = if_else(Species %in% c("STDR", "STGL", "STPO"), "Nonsignificant", "Significant"))%>%
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
+                                 "STGL", "CAAN", "CACO", "CAIN"))  
+
+# make predictions
+year1.dat=emmip(year1_nb_glob_sep1.final,Species~transplant.daySept1,at=mylist, CIs=TRUE, plotit = FALSE, type = "response") %>% # I think response will back transform from logit
+  mutate(sigreg = if_else(Species %in% c("STDR", "STGL", "STPO"), "Nonsignificant", "Significant"))%>%
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
+                                 "STGL", "CAAN", "CACO", "CAIN")) 
+
+# plot removing lines for nonsignificant values
+year1.plot = ggplot(fitdat3, aes(x=transplant.daySept1,y=year1fit)) +
+  geom_point(show.legend = FALSE, size = 2, alpha = 0.5)+
+  theme_classic(base_size=22) + theme(legend.position = "none")  +
+  labs(y="Year 1 fitness\n (p(flower)*seed number)",x="Cohort")+
+  scale_x_continuous(breaks = c(unique(fitdat$transplant.daySept1)),labels = transplantdates)+
+  theme(axis.text.x = element_text(angle = 90))+
+  facet_wrap(~phy_order)
+year1.plot
+
+# only plot line for significant individuals
+year1.dat.2 = subset(year1.dat, year1.dat$sigreg == "Significant")
+
+year1.plot.2 = year1.plot +
+  geom_line(data = year1.dat.2, aes(x = transplant.daySept1, y = yvar),
+            show.legend = FALSE, color = "gray40", lwd = 1)+
+  facet_wrap(~phy_order)
+year1.plot.2
+
+# Same as original plot
+
+#ggsave("./Germination.Fitness/Results/year1fitness.allpoints.final.pdf", height = 10, width = 12)
 
