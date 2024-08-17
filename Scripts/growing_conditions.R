@@ -5,6 +5,7 @@
 library(chillR) # to get chilling units and growing degree hours
 library(lubridate)
 library(tidyverse)
+library(readxl)
 
 # approximate lat long of orchard park = 38.543267, -121.763047
 # lat in degrees = 38.5
@@ -287,4 +288,129 @@ Figure_S2B
 
 
 
+
+
+#### Temperature in Screenhouse ####
+
+hour.temps=read.csv("./Germination.Fitness/Formatted.Data/transplant.all.hourtemps.csv", row.names = 1)
+
+hour.temps$Tmean = (hour.temps$Tmax + hour.temps$Tmin)/2
+
+avg.temps = hour.temps %>%
+  group_by(JDay) %>%
+  summarize(mean.temp = mean(Tmean))
+
+mean(avg.temps$mean.temp) # 17.64527
+sd(avg.temps$mean.temp) # 6.12644
+
+# get historical and comtemporary temps for species from the field
+# do up to 2015 because 2016 only has up until month 9 (25 years of values)
+
+flint.data.mothly = read.csv("~/Library/CloudStorage/Box-Box/StreptanthusDimensions/FlintBCM/HTG_climate_data.csv") %>% 
+  filter(id %in% c("CAAN1","CAAN2","CACO1","CAIN3","CAIN4","STBR3", "STDI","STDR2",
+                   "STGL1","STIN","STPO1","STTO-TM2")) %>%
+  mutate(tmean=(tmin+tmax)/2) %>%
+  filter(clim_year != 2016) %>%
+  group_by(id, clim_year, clim_month) %>%
+  dplyr::summarize(Tmin = mean(tmin), Tmax = mean(tmax),Tmean=mean(tmean))
+
+# only keep months of experiment, October - June
+
+flint.data.monthly.sub = flint.data.mothly %>%
+  filter(!clim_month %in% c(7,8,9))
+
+# split into contemporary and historical, each 30 years of data
+
+# 1986 - 2015
+flint.data.contemporary = flint.data.monthly.sub %>%
+  filter(clim_year > 1985) %>%
+  group_by(id) %>%
+  dplyr::summarise(contemporary.tmean = mean(Tmean),
+                   contemporary.sd = sd(Tmean))
+
+flint.data.contemporary$lower.bound = flint.data.contemporary$contemporary.tmean - flint.data.contemporary$contemporary.sd
+flint.data.contemporary$upper.bound = flint.data.contemporary$contemporary.tmean + flint.data.contemporary$contemporary.sd
+
+# 1956 - 1985
+
+flint.data.historical = flint.data.monthly.sub %>%
+  filter(clim_year < 1986) %>%
+  filter(clim_year > 1955) %>%
+  group_by(id) %>%
+  dplyr::summarise(historical.tmean = mean(Tmean),
+                   historical.sd = sd(Tmean))
+
+flint.data.historical$lower.bound = flint.data.historical$historical.tmean - flint.data.historical$historical.sd
+flint.data.historical$upper.bound = flint.data.historical$historical.tmean + flint.data.historical$historical.sd
+
+
+
+
+#### End of Season Determination ####
+
+prism.data=read.csv("./Germination.Fitness/Formatted.Data/prism.data.1991_2020.csv",header=T) %>%
+  filter(!Name %in% c("CAAM","STTO_BH"))
+prism.data[,4]=prism.data$ppt..inches.*25.4
+colnames(prism.data)[4]="ppt.mm"
+
+# remove blank rows
+prism.data.2 = prism.data[rowSums(is.na(prism.data)) == 0,]
+
+# add month column
+prism.data.2$Month = rep(1:12,360)
+prism.data.2$Month = as.factor(prism.data.2$Month)
+
+ggplot(prism.data.2, aes(x = Month, y = ppt.mm, group = Month))+
+  geom_boxplot()+
+  facet_wrap(~Name)
+
+month.averg = prism.data.2 %>%
+  group_by(Name, Month) %>%
+  dplyr::summarise(mean = mean(ppt.mm))
+
+month.averg.all = month.averg %>%
+  ungroup() %>%
+  group_by(Month) %>%
+  dplyr::summarise(mean.2 = mean(mean))
+
+quantile(month.averg.all$mean.2)
+
+### Pollination ####
+
+caan1.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 CAAN1 Pollination Datasheet.xlsx", skip = 1)
+caan.totals = as.data.frame(unlist(apply(caan1.poll[,c(6:48)], 2, table)))
+# 5 out of 43 (12%) had only 2 pollinators, all others 3 or more
+caan2.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 CAAN2 Pollination Datasheet.xlsx", skip = 1)
+caan.totals = as.data.frame(unlist(apply(caan2.poll[,c(6:39)], 2, table)))
+# 5 out of 34 (15%) had only 2 pollinators, all others 3 or more
+caco.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 CACO Pollination Datasheet.xlsx", skip = 1)
+caco.totals = as.data.frame(unlist(apply(caco.poll[,c(6:40)], 2, table)))
+# 4 out of 35 (11%) had only 2 pollinators, all others 3 or more
+cain3.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 CAIN3 Pollination Datasheet.xlsx", skip = 1)
+cain3.totals = as.data.frame(unlist(apply(cain3.poll[,c(6:40)], 2, table)))
+# 8 out of 35 (23%) had only 2 pollinators, all others 3 or more
+cain4.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 CAIN4 Pollination Datasheet.xlsx", skip = 1)
+cain4.totals = as.data.frame(unlist(apply(cain4.poll[,c(6:43)], 2, table)))
+# 1 out of 38 (3%) had only 2 pollinators, all others 3 or more
+stbr.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 STBR3 Pollination Datasheet.xlsx", skip = 1)
+stbr.totals = as.data.frame(unlist(apply(stbr.poll[,c(6:31)], 2, table)))
+# 4 out of 26 (15%) had only 2 pollinators, all others 3 or more
+stdi.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 STDI Pollination Datasheet.xlsx", skip = 1)
+stdi.totals = as.data.frame(unlist(apply(stdi.poll[,c(6:43)], 2, table)))
+# 1 out of 38 (3%) had only 2 pollinators, all others 3 or more
+stdr.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 STDR2 Pollination Datasheet.xlsx", skip = 1)
+stdr.totals = as.data.frame(unlist(apply(stdr.poll[,c(6:35)], 2, table)))
+# 2 out of 30 (7%) had only 2 pollinators, all others 3 or more
+stgl.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 STGL1 Pollination Datasheet.xlsx", skip = 1)
+stgl.totals = as.data.frame(unlist(apply(stgl.poll[,c(6:36)], 2, table)))
+# 1 out of 31 (3%) had only 2 pollinators, all others 3 or more
+stin.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 STIN Pollination Datasheet.xlsx", skip = 1)
+stin.totals = as.data.frame(unlist(apply(stin.poll[,c(6:59)], 2, table)))
+# 0 out of 54 (0%) had only 2 pollinators, all others 3 or more
+stpo.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 STPO Pollination Datasheet.xlsx", skip = 1)
+stpo.totals = as.data.frame(unlist(apply(stpo.poll[,c(6:32)], 2, table)))
+# 1 out of 27 (4%) had only 2 pollinators, all others 3 or more
+stto.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 STTO-TM2 Pollination Datasheet.xlsx", skip = 1)
+stto.totals = as.data.frame(unlist(apply(stto.poll[,c(6:30)], 2, table)))
+# 3 out of 25 (12%) had only 2 pollinators, all others 3 or more
 
