@@ -344,8 +344,6 @@ flint.data.historical$lower.bound = flint.data.historical$historical.tmean - fli
 flint.data.historical$upper.bound = flint.data.historical$historical.tmean + flint.data.historical$historical.sd
 
 
-
-
 #### End of Season Determination ####
 
 prism.data=read.csv("./Germination.Fitness/Formatted.Data/prism.data.1991_2020.csv",header=T) %>%
@@ -362,6 +360,8 @@ prism.data.2$Month = as.factor(prism.data.2$Month)
 
 ggplot(prism.data.2, aes(x = Month, y = ppt.mm, group = Month))+
   geom_boxplot()+
+  theme_classic(base_size = 15)+
+  labs(y = "30-year (1991-2020) Average Precipitation (mm)") + 
   facet_wrap(~Name)
 
 month.averg = prism.data.2 %>%
