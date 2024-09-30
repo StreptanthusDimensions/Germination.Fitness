@@ -6,6 +6,7 @@ library(chillR) # to get chilling units and growing degree hours
 library(lubridate)
 library(tidyverse)
 library(readxl)
+library(weathermetrics)
 
 # approximate lat long of orchard park = 38.543267, -121.763047
 # lat in degrees = 38.5
@@ -250,11 +251,11 @@ long.conditions$cohort.date = c("07-Oct","28-Oct","18-Nov","09-Dec",
 Figure_S2A = ggplot(long.conditions, aes(x = fct_inorder(cohort.date))) +
   geom_point(aes(y=Chill_portions, color = "Chill Portions"), size = 3) +
   geom_line(aes(y=Chill_portions, group = 1, color = "Chill Portions"), linewidth = 1.5)+
-  geom_point(aes(y = PTU/1000, color = "Modified Photothermal Units"), size = 3) + # divide to get the same range as chill data
-  geom_line(aes(y= PTU/1000, group = 1,color = "Modified Photothermal Units"), linewidth = 1.5)+
+  geom_point(aes(y = PTU/1000, color = "Photothermal Units"), size = 3) + # divide to get the same range as chill data
+  geom_line(aes(y= PTU/1000, group = 1,color = "Photothermal Units"), linewidth = 1.5)+
   scale_y_continuous(
     name = "Accumulated Chilling (Chill Portions)",
-    sec.axis = sec_axis(~.*1000, name = "Accumulated Modified Photothermal Units"))+
+    sec.axis = sec_axis(~.*1000, name = "Accumulated Photothermal Units"))+
   theme_classic(base_size = 22)+
   labs(x = "Cohort", color = "")+
   scale_color_manual(values = c("black","gray70"))+
@@ -285,23 +286,7 @@ Figure_S2B
 
 #ggsave("Germination.Fitness/Results/Figure_S2B.pdf", height = 6, width = 12)
 
-
-
-
-
-
 #### Temperature in Screenhouse ####
-
-hour.temps=read.csv("./Germination.Fitness/Formatted.Data/transplant.all.hourtemps.csv", row.names = 1)
-
-hour.temps$Tmean = (hour.temps$Tmax + hour.temps$Tmin)/2
-
-avg.temps = hour.temps %>%
-  group_by(JDay) %>%
-  summarize(mean.temp = mean(Tmean))
-
-mean(avg.temps$mean.temp) # 17.64527
-sd(avg.temps$mean.temp) # 6.12644
 
 # get historical and comtemporary temps for species from the field
 # do up to 2015 because 2016 only has up until month 9 (25 years of values)
@@ -342,6 +327,26 @@ flint.data.historical = flint.data.monthly.sub %>%
 
 flint.data.historical$lower.bound = flint.data.historical$historical.tmean - flint.data.historical$historical.sd
 flint.data.historical$upper.bound = flint.data.historical$historical.tmean + flint.data.historical$historical.sd
+
+# Air temperature in the screenhouse from Davis weather station
+# weather.station.temp.csv is compiled from data in .txt files found in ./Germination.Fitness/Raw.Data/Davis.Climate
+# data downloaded from: https://atm.ucdavis.edu/weather/uc-davis-weather-climate-station
+
+weather.station.dat = read.csv("./Germination.Fitness/Formatted.Data/weather.station.temp.csv")
+weather.station.dat$Max.2m.C = fahrenheit.to.celsius(weather.station.dat$Max.2m, round = 2)
+weather.station.dat$Min.2m.C= fahrenheit.to.celsius(weather.station.dat$Min.2m, round = 2)
+weather.station.dat$Max.15m.C = fahrenheit.to.celsius(weather.station.dat$Max.15m, round = 2)
+weather.station.dat$Min.15m.C = fahrenheit.to.celsius(weather.station.dat$Min.15m, round = 2)
+
+weather.station.dat = weather.station.dat %>%
+  mutate(Mean.2m.C = (Max.2m.C+Min.2m.C)/2,
+         Mean.15m.C = (Max.15m.C+Min.15m.C)/2)
+
+station.average = weather.station.dat %>%
+  summarize(Average.2m = mean(Mean.2m.C, na.rm = TRUE),
+            SD.2m = sd(Mean.2m.C, na.rm = TRUE),
+            Average.15m = mean(Mean.15m.C, na.rm = TRUE),
+            SD.15m = sd(Mean.15m.C, na.rm = TRUE))
 
 
 #### End of Season Determination ####

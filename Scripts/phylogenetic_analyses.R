@@ -13,6 +13,7 @@ library(tidyverse)
 library(ggpubr)
 library(ggrepel)
 library(cowplot)
+library(car)
 
 remotes::install_github("clauswilke/colorblindr")
 library(colorblindr)
@@ -1127,3 +1128,44 @@ Figure6 = plot_grid(days2bud.pc1.pgls.plot,pflwr.pc1.pgls.plot,seed.num.pc1.pgls
 Figure6
 
 #ggsave("Germination.Fitness/Results/Figure6.final.pdf", height = 10, width = 11)
+
+#### Testing for differences in slopes between field and screenhouse species ####
+
+# read in slopes dataframe, also includes standard error of slopes
+all.slopes=read.csv("Germination.Fitness/Results/all.slopes.csv")
+
+# add column of designation
+all.slopes$local = c("field","SC","both","field","SC","field","SC",
+                       "field","SC","SC")
+# remove CAAN since one population is from the field and the other from SC
+
+all.slopes.2 = all.slopes[c(1:2,4:10),]
+
+
+# t.test to see if mean slope differs between groups
+
+t.test(days.2.bud.final~local, data = all.slopes.2) # p = 0.6479
+t.test(sept.1.bud.final~local, data = all.slopes.2) # p = 0.6479
+
+t.test(pflwr.final~local, data = all.slopes.2)  # p = 0.3418
+t.test(sizebud.final~local, data = all.slopes.2) # p = 0.2277
+t.test(seed_num_nb.final~local, data = all.slopes.2) # p = 0.1302
+t.test(year1fit.final~local, data = all.slopes.2) # p = 0.5513
+t.test(seed_mass.final~local, data = all.slopes.2) # p = 0.08
+
+# levenne's test to see if variance differs between groups
+
+leveneTest(days.2.bud.final~local, data = all.slopes.2) # p = 0.7036
+leveneTest(sept.1.bud.final~local, data = all.slopes.2) # p = 0.7036
+
+leveneTest(pflwr.final~local, data = all.slopes.2)  # p = 0.9089
+leveneTest(sizebud.final~local, data = all.slopes.2) # p = 0.7878
+leveneTest(seed_num_nb.final~local, data = all.slopes.2) # p = 0.3099
+leveneTest(year1fit.final~local, data = all.slopes.2) # p = 0.8160
+leveneTest(seed_mass.final~local, data = all.slopes.2) # p = 0.9379
+
+
+
+
+
+

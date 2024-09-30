@@ -1,0 +1,55 @@
+            Climatological data for DAVIS, California: FEB 2022
+
+     Air Temperature       Soil Temperature        Prcp  Evap      Wind
+----------------------------------------------------------------------------
+      2 m      15 m     10cm     20cm     50cm                  0.5m   2m
+Day  max min  max min  max min  max min  max min     totals   Passage  Dir
+----------------------------------------------------------------------------
+  1   64  42   63  44   51  47   50  48   52  50   0.00  0.17   -99    NE
+  2   60  46   59  47   49  46   50  47   52  50   0.00  0.35   -99    N
+  3   61  33   59  41   49  46   49  47   51  50   0.00  0.32   -99    NW
+  4   62  33   60  36   50  46   50  47   51  50   0.00  0.10   -99    CALM
+  5   66  36   67  39   50  45   49  47   51  50   0.00  0.04   -99    CALM
+  6   67  32   64  36   50  46   50  47   51  50   0.00  0.14   -99    CALM
+  7   70  36   69  39   51  45   50  47   51  50   0.00  0.05   -99    NW
+  8   71  35   70  40   51  46   50  48   51  50   0.00  0.09   -99    CALM
+  9   71  37   70  42   52  46   50  48   51  50   0.00  0.13   -99    N
+ 10   77  44   78  49   52  47   51  49   52  51   0.00  0.12   -99    E
+ 11   74  43   73  47   54  49   52  49   52  51   0.00  0.18   -99    CALM
+ 12   76  42   75  46   55  50   53  50   52  51   0.00  0.10   -99    CALM
+ 13   77  43   77  47   55  50   53  51   53  52   0.00  0.11   -99    N
+ 14   77  42   78  44   56  50   54  51   53  52   0.00  0.09   -99    S
+ 15   68  38   66  43   55  50   54  52   54  53   0.00  0.18   -99    NW
+ 16   63  47   61  49   53  50   53  51   54  53   0.00  0.29   -99    NW
+ 17   73  42   71  47   54  50   53  51   54  52   0.00  0.34   -99    N
+ 18   69  38   68  41   55  50   53  51   54  53   0.00  0.13   -99    N
+ 19   70  39   70  41   55  50   53  51   54  53   0.00  0.09   -99    N
+ 20   74  38   74  40   55  49   54  51   54  53   0.00  0.11   -99    SE
+ 21   66  41   64  44   55  50   54  51   54  53   0.00  0.08   -99    W
+ 22   61  33   60  38   55  50   54  51   54  53   0.00  0.19   -99    E
+ 23   57  35   54  36   53  48   53  51   54  53   0.01  0.09   -99    NW
+ 24   57  28   55  32   52  46   52  50   54  53   0.00  0.17   -99    NW
+ 25   60  33   59  35   52  46   51  48   53  52   0.00  0.16   -99    N
+ 26   62  31   61  32   52  46   51  48   53  52   0.00  0.07   -99    CALM
+ 27   63  40   60  40   51  47   51  49   53  52   0.00  0.13   -99    NW
+ 28   73  38   73  43   54  48   52  49   53  52   0.00  0.11   -99    N
+----------------------------------------------------------------------------
+High  77  47   78  49   56  50   54  52   54  53   0.01  0.35   -99
+Low   57  28   54  32   49  45   49  47   51  50   0.00  0.04   999
+Mean  67  38   66  41   53  48   52  49   53  52   0.00  0.15     0
+Total                                             0.01 4.13     0
+----------------------------------------------------------------------------
+GROWING DEGREE DAYS (BASE = 50 F) =  104.5
+HEATING DEGREE DAYS (BASE = 65 F) =  343
+COOLING DEGREE DAYS (BASE = 65 F) =  0
+There were  0  days of missing degree day data.
+Number of days with Tmax of 90 F and above =  0
+Number of days with Tmin of 32 F and below =  3
+
+Values are for the 24 hour period ending 8 AM PST.       Missing data = -99.
+Temperatures in degrees F, precipiation and evaporation in inches.
+Wind passage in statute miles, wind direction valid at 8 AM.
+
+    NOAA Reference Climatological station operated by the Department of
+      Land, Air and Water Resources, University of California, Davis.
+
