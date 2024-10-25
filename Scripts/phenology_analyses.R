@@ -5,15 +5,17 @@
 # script calculate dead, flowering, non-flowering proportions of individuals
 # Script produces Figures 1,S3,S5
 
+# Users, please specify your own path to load data in this script.
+
 # load libraries
-library(tidyverse)
-library(lubridate)
-library(emmeans)
+library(tidyverse) # version 2.0.0
+library(lubridate) # version 1.9.2
+library(emmeans) # 1.8.7
 
 #### Calculating days to first bud, flower, fruit ####
 # code includes calculation of days to first flower and fruit, but these are correlated with days to first bud
 
-final.data=read.csv("./Germination.Fitness/Formatted.Data/final.data.csv")
+final.data=read.csv("./final.data.csv") # final.data.csv generated using data_cleaning.R script
 
 # remove CAAM because don't actually have it in the study
 # remove STTO_BH because didn't have any phenology/perennial
@@ -119,7 +121,7 @@ emmip(days.2.bud.model.ss, phy_order ~ transplantjul.std, cov.reduce = range)
 # evaluate significance of fixed effects in model
 anova(days.2.bud.model.ss)
 
-#### Model of days to first bud final ####
+#### Model of days to first bud FINAL ####
 # linear model
 # standardized transplant date (cohort date as continuous from Sept. 1)
 # phy_order (species as factor)
@@ -275,7 +277,7 @@ days.2.bud.plot.2
 #ggsave("Germination.Fitness/Results/bud.day2pheno.plot.all.pts.pdf", height = 10, width = 12)
 
 
-#### Figure 1 Revised ####
+#### Figure 1 REVISED ####
 
 # new data for prediction
 mylist <- list(transplantjul.std=unique(final.data.5$transplantjul.std), 
@@ -437,7 +439,7 @@ anova(days.2.flower.model.nopop.ss)
 # days since Sept. 1 to first bud to standardize among cohorts
 # when in the season the first bud occurs
 
-final.data=read.csv("./Germination.Fitness/Formatted.Data/final.data.csv")
+final.data=read.csv("./final.data.csv")
 
 # remove CAAM because don't actually have it in the study
 # remove STTO_BH because didn't have any phenology/perennial
@@ -520,7 +522,7 @@ anova(bud.sept1.model.pop)
 #write.csv(bud.sept1.model.pop.emm$emtrends, file="./Germination.Fitness/Results/bud.sept1.pheno.emtrends.csv")
 #write.csv(bud.sept1.model.pop.emm$contrasts, file="./Germination.Fitness/Results/bud.sept1.pheno.contrasts.csv")
 
-#### Model of first bud date final ####
+#### Model of first bud date FINAL ####
 # linear model
 # standardized transplant date (cohort date as continuous from Sept. 1)
 # phy_order (species as factor)
@@ -687,7 +689,7 @@ bud_daySep1.plot.2
 #ggsave("Germination.Fitness/Results/bud.date.sept1.pheno.plot.all.pts.pdf", height = 10, width = 12)
 
 
-#### Figure S3 Revised ####
+#### Figure S3 REVISED ####
 
 # new data for prediction
 mylist <- list(transplantjul.std=unique(final.data.5$transplantjul.std), 
@@ -857,7 +859,7 @@ anova(flower.sept1.model.nopop.ss)
 # of the experiment but never flowered (dark gray), died before reaching the 
 # first reproductive stage, budding (light gray)
 
-final.data=read.csv("./Germination.Fitness/Formatted.Data/final.data.csv")
+final.data=read.csv("./final.data.csv")
 
 # correct date for one
 final.data[294,29] = "12/30/21"
@@ -940,7 +942,7 @@ total.numb.3$flower.proportion = total.numb.3$flowered/total.numb.3$n
 
 #### Figure S5 ####
 # read in data
-proportions = read.csv("./Germination.Fitness/Results/proportions.long.csv")
+proportions = read.csv("./proportions.long.csv") # found in the results folder and generated in the above chuck of code
 
 proportions = proportions %>%
   mutate(phy_order = fct_relevel(phy_order, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 

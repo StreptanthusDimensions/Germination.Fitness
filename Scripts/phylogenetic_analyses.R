@@ -3,22 +3,23 @@
 # Do species with greater compensatory flowering plasticity have greater fitness stability in the face of variable germination timing?
 # Is there evidence of climate adaptation?
 
+# Users, please specify your own path to load data in this script.
+
 # load libraries
-library(ape)
-library(phytools)
-library(RColorBrewer)
-library(ggnewscale)
-library(caper)
-library(tidyverse)
-library(ggpubr)
-library(ggrepel)
-library(cowplot)
-library(car)
+library(ape) # version 5.7.1
+library(phytools) # version 1.9.16
+library(ggnewscale)  # version 0.5.0
+library(caper) # version 1.0.3
+library(tidyverse) # version 2.0.0
+library(ggpubr) # version 0.6.0
+library(ggrepel) # version 0.9.3
+library(cowplot) # version 1.1.1
+library(car) # version 3.1.2
 
 remotes::install_github("clauswilke/colorblindr")
-library(colorblindr)
+library(colorblindr) # version 0.1.0
 
-BiocManager::install("ggtree", force = TRUE)
+BiocManager::install("ggtree", force = TRUE) # version 3.6.2
 library(ggtree) # https://yulab-smu.top/treedata-book/chapter7.html
 
 
@@ -41,7 +42,7 @@ phylo=keep.tip(all.phylo, sp.list)
 # testing for phylogenetic signal in slopes
 
 # read in slopes dataframe, also includes standard error of slopes
-model.slopes=read.csv("Germination.Fitness/Results/pheno.slopes.csv")
+model.slopes=read.csv("./pheno.slopes.csv")
 
 # days.2.bud and sept.1.bud are direct opposites of each other, difference in p is due to randomization
 
@@ -100,7 +101,7 @@ phylosig(phylo, model.slopes$sept.1.flower.CAAN2.CAIN4, method = "K", test = TRU
 # K = 1.19488, p = 0.120
 
 # fitness slopes
-fitness.slopes=read.csv("Germination.Fitness/Results/fitness.slopes.2.csv")
+fitness.slopes=read.csv("./fitness.slopes.2.csv")
 
 phylosig(phylo, fitness.slopes$pflwr, method = "K", test = TRUE, se = fitness.slopes$pflwr.se,nsim=1000)
 # K = 0.973273, p = 0.908
@@ -164,7 +165,7 @@ phylosig(phylo, fitness.slopes$seed_mass.CAAN2.CAIN4, method = "K", test = TRUE,
 
 #### Figure 5 #####
 
-all.phylo <- ggtree::read.tree("./Germination.Fitness/Raw.Data/tree_pruned.new")
+all.phylo <- ggtree::read.tree("./tree_pruned.new")
 
 sp.list=c("Caulanthus_anceps","Caulanthus_coulteri","Caulanthus_inflatus",
           "Streptanthus_breweri","Streptanthus_diversifolius","Streptanthus_drepanoides",
@@ -185,7 +186,7 @@ tree = ggtree(phylo, size =1)
 tree
 
 # read in slopes
-all.slopes=read.csv("Germination.Fitness/Results/all.slopes.csv")
+all.slopes=read.csv("./all.slopes.csv")
 
 pheno.slopes$sp = c("Caulanthus inflatus","Caulanthus coulteri","Caulanthus anceps",
                     "Streptanthus glandulosus","Streptanthus insignis","Streptanthus polygaloides",
@@ -246,9 +247,9 @@ phylo_plot.3
 
 #ggsave("./Germination.Fitness/Results/color.gray.T2B.Seed.slopes.ontree.pc1.pdf", height = 10, width = 12)
 
-#### Figure 5 Revised #####
+#### Figure 5 REVISED #####
 
-all.phylo <- ggtree::read.tree("./Germination.Fitness/Raw.Data/tree_pruned.new")
+all.phylo <- ggtree::read.tree("./tree_pruned.new")
 
 sp.list=c("Caulanthus_anceps","Caulanthus_coulteri","Caulanthus_inflatus",
           "Streptanthus_breweri","Streptanthus_diversifolius","Streptanthus_drepanoides",
@@ -269,7 +270,7 @@ tree = ggtree(phylo, size =1)
 tree
 
 # read in slopes
-all.slopes=read.csv("Germination.Fitness/Results/all.slopes.csv")
+all.slopes=read.csv("./all.slopes.csv")
 
 all.slopes$sp = c("Caulanthus inflatus","Caulanthus coulteri","Caulanthus anceps",
                     "Streptanthus glandulosus","Streptanthus insignis","Streptanthus polygaloides",
@@ -332,7 +333,7 @@ phylo_plot.3
 
 #### Figure S8 ####
 
-all.phylo <- ggtree::read.tree("./Germination.Fitness/Raw.Data/tree_pruned.new")
+all.phylo <- ggtree::read.tree("./tree_pruned.new")
 
 sp.list=c("Caulanthus_anceps","Caulanthus_coulteri","Caulanthus_inflatus",
           "Streptanthus_breweri","Streptanthus_diversifolius","Streptanthus_drepanoides",
@@ -428,11 +429,9 @@ phylo_plot.3.supp
 
 # ggsave("./Germination.Fitness/Results/color.gray.supp.slopes.ontree.pdf", height = 10, width = 12)
 
+#### Figure S8 REVISED ####
 
-
-#### Figure S8 Revised ####
-
-all.phylo <- ggtree::read.tree("./Germination.Fitness/Raw.Data/tree_pruned.new")
+all.phylo <- ggtree::read.tree("./tree_pruned.new")
 
 sp.list=c("Caulanthus_anceps","Caulanthus_coulteri","Caulanthus_inflatus",
           "Streptanthus_breweri","Streptanthus_diversifolius","Streptanthus_drepanoides",
@@ -453,7 +452,7 @@ tree = ggtree(phylo, size =1)
 tree
 
 # read in slopes
-all.slopes=read.csv("Germination.Fitness/Results/all.slopes.csv")
+all.slopes=read.csv("./all.slopes.csv")
 
 all.slopes$sp = c("Caulanthus inflatus","Caulanthus coulteri","Caulanthus anceps",
                     "Streptanthus glandulosus","Streptanthus insignis","Streptanthus polygaloides",
@@ -532,7 +531,7 @@ ggsave("./Germination.Fitness/Results/color.gray.supp.slopes.ontree.final.pdf", 
 
 #### PGLS to relate phenology and fitness slopes ####
 # read in tree
-all.phylo <- read.tree("./Germination.Fitness/Raw.Data/tree_pruned.new")
+all.phylo <- read.tree("./tree_pruned.new")
 
 sp.list=c("Caulanthus_anceps","Caulanthus_coulteri","Caulanthus_inflatus",
           "Streptanthus_breweri","Streptanthus_diversifolius","Streptanthus_drepanoides",
@@ -542,7 +541,7 @@ sp.list=c("Caulanthus_anceps","Caulanthus_coulteri","Caulanthus_inflatus",
 # prune phylogeny to only includes our species
 phylo=keep.tip(all.phylo, sp.list)
 
-all.slopes=read.csv("Germination.Fitness/Results/all.slopes.csv")
+all.slopes=read.csv("./all.slopes.csv")
 
 # pgls using caper package
 
@@ -648,7 +647,7 @@ d2bud.yr1fit.pgls.plot= ggplot(all.slopes, aes(y = days.2.bud, x = year1fit))+
 d2bud.yr1fit.pgls.plot
 #ggsave("Germination.Fitness/Results/days2bud.yr1fit.pgls.pdf", height = 7, width = 7)
 
-#### Figure S10 Revised ####
+#### Figure S10 REVISED ####
 
 d2bud.seed.num.pgls.plot= ggplot(all.slopes, aes(y = days.2.bud.final, x = seed_num_nb.final))+
   geom_point(size=4)+
@@ -675,9 +674,9 @@ d2bud.yr1fit.pgls.plot
 #ggsave("Germination.Fitness/Results/days2bud.yr1fit.pgls.final.pdf", height = 7, width = 7)
 
 #### PGLS to relate germination slopes to fitness slopes ####
-# Germination timing slopes come from Worthy et al. 2023 bioRxiv
+# Germination timing slopes come from Worthy et al. 2024 Ecology
 
-all.slopes=read.csv("Germination.Fitness/Results/all.slopes.csv")
+all.slopes=read.csv("./all.slopes.csv")
 
 # add slopes from germ pheno: germination_fraction~cohort
 # had to average two CAIN and two CAAN slopes
@@ -692,7 +691,7 @@ all.slopes$pheno.slopes.CAAN2.CAIN3 = c(-0.4941,-0.1238,0.032425,-0.59355,-0.339
 all.slopes$pheno.slopes.CAAN2.CAIN4 = c(-0.42386,-0.1238,0.03242,-0.59355,-0.33908,-0.25232,-0.40204,-0.2401,
                                         -0.36986,-0.36455)
 
-all.phylo <- read.tree("./Germination.Fitness/Raw.Data/tree_pruned.new")
+all.phylo <- read.tree("./tree_pruned.new")
 
 sp.list=c("Caulanthus_anceps","Caulanthus_coulteri","Caulanthus_inflatus",
           "Streptanthus_breweri","Streptanthus_diversifolius","Streptanthus_drepanoides",
@@ -769,7 +768,7 @@ pheno.slopes.year1fit.pgls.plot
 
 #ggsave("Germination.Fitness/Results/yr1fit.pheno.slopes.pgls.pdf", height = 7, width = 7)
 
-#### Figure S9 Revised ####
+#### Figure S9 REVISED ####
 
 # no line b/c not significant
 pheno.slopes.seed.num.pgls.plot= ggplot(all.slopes, aes(y = seed_num_nb.final, x = pheno.slopes))+
@@ -790,7 +789,7 @@ pheno.slopes.year1fit.pgls.plot
 
 #### PGLS to relate phenology and fitness slopes to climate ####
 
-all.phylo <- read.tree("./Germination.Fitness/Raw.Data/tree_pruned.new")
+all.phylo <- read.tree("./tree_pruned.new")
 
 sp.list=c("Caulanthus_anceps","Caulanthus_coulteri","Caulanthus_inflatus",
           "Streptanthus_breweri","Streptanthus_diversifolius","Streptanthus_drepanoides",
@@ -805,14 +804,12 @@ plot(phylo, no.margin = TRUE, font = 3, cex = .75)
 # merge climate data with slopes data
 # read in slopes  dataframe
 
-all.slopes=read.csv("Germination.Fitness/Results/all.slopes.csv")
+all.slopes=read.csv("./all.slopes.csv")
 
 # Get PC1
 
-setwd("~/Library/CloudStorage/Box-Box/StreptanthusDimensions/HerbariumStudy/merged_data")
-
-locs = read.csv("georeferencing_clean.csv")
-climate = read.csv("all_herbarium_climate.csv") %>%
+locs = read.csv("./georeferencing_clean.csv")
+climate = read.csv("./all_herbarium_climate.csv") %>%
   mutate(type = "herbarium")
 
 climsummaries = climate %>% 
@@ -977,7 +974,6 @@ days2bud.pc1.pgls.plot= ggplot(all.data.year.final, aes(y = days.2.bud, x = PC1,
   coord_cartesian( clip="off") #this keeps it from clipping off the stuff outside the plot
 days2bud.pc1.pgls.plot
 
-setwd("/Users/sjworthy/Documents/GitHub/")
 #ggsave("Germination.Fitness/Results/days2bud.pc1.pgls.pdf", height = 7, width = 7)
 
 all.data.year.final$pred.flwprob.pc1 = predict(flwprob.pc1.pgls)
@@ -1042,7 +1038,7 @@ Figure6 = plot_grid(days2bud.pc1.pgls.plot,pflwr.pc1.pgls.plot,seed.num.pc1.pgls
 
 
 
-#### Figure 6 Revised ####
+#### Figure 6 REVISED ####
 
 all.data.year.final$Pop.2 = c("CAIN","CACO","CAAN","STGL","STIN","STPO","STDI",
                               "STTO","STBR","STDR")
@@ -1063,7 +1059,6 @@ days2bud.pc1.pgls.plot= ggplot(all.data.year.final, aes(y = days.2.bud.final, x 
   coord_cartesian( clip="off") #this keeps it from clipping off the stuff outside the plot
 days2bud.pc1.pgls.plot
 
-setwd("/Users/sjworthy/Documents/GitHub/")
 ggsave("Germination.Fitness/Results/days2bud.pc1.pgls.final.pdf", height = 7, width = 7)
 
 all.data.year.final$pred.flwprob.pc1 = predict(flwprob.pc1.pgls.final)
@@ -1132,7 +1127,7 @@ Figure6
 #### Testing for differences in slopes between field and screenhouse species ####
 
 # read in slopes dataframe, also includes standard error of slopes
-all.slopes=read.csv("Germination.Fitness/Results/all.slopes.csv")
+all.slopes=read.csv("./all.slopes.csv")
 
 # add column of designation
 all.slopes$local = c("field","SC","both","field","SC","field","SC",

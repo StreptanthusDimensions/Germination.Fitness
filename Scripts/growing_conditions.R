@@ -1,12 +1,14 @@
 # Script to evaluate growing conditions of the different cohorts
 # Script produces Figure S2
 
+# Users, please specify your own path to load data in this script.
+
 # libraries
-library(chillR) # to get chilling units and growing degree hours
-library(lubridate)
-library(tidyverse)
+library(chillR) # to get chilling units and growing degree hours # version 0.75
+library(lubridate) # version 1.9.2
+library(tidyverse) # version 2.0.0
 library(readxl)
-library(weathermetrics)
+library(weathermetrics) # version 1.2.2
 
 # approximate lat long of orchard park = 38.543267, -121.763047
 # lat in degrees = 38.5
@@ -14,7 +16,7 @@ library(weathermetrics)
 ##### Getting hourly temps organized ####
 # temps come from iButtons in the screenhouse
 
-ibuttonall=read.csv("./Germination.Fitness/Formatted.Data/ibutton_all.csv")
+ibuttonall=read.csv("./ibutton_all.csv") # generated using the prep_iButton_Data.R script
 
 #### Get hourly temps for missing days ####
 
@@ -25,7 +27,7 @@ ibuttonall=read.csv("./Germination.Fitness/Formatted.Data/ibutton_all.csv")
 # also missing some of the hours for 
 # 6/22/22, 10/28/2021, 1/26/22, 1/21/22, 3/13/2022, 5/5/2022
 
-missing.temps=read.csv("./Germination.Fitness/Raw.Data/missing.temps.csv")
+missing.temps=read.csv("./missing.temps.csv")
 missing.temps$Date=mdy(missing.temps$Date)
 
 colnames(missing.temps)[4] = "Tmax"
@@ -79,9 +81,9 @@ all.hourtemps = rbind(hourtemps.missing.2,ibutton.6)
 # write.csv(all.hourtemps, file = "./Germination.Fitness/Formatted.Data/all.hourtemps.csv")
 
 # add temperatures that go back to transplant date
-# data come from iButtons in screenhouse deployed for Worthy et al. 2023 bioRxiv
+# data come from iButtons in screenhouse deployed for Worthy et al. 2024 Ecology
 
-ibutton.hourly.early = read.csv("./Germination.Fitness/Formatted.Data/ibutton_hourlytemps_round_2.csv")
+ibutton.hourly.early = read.csv("./ibutton_hourlytemps_round_2.csv")
 
 # subset for the dates we need 10/7/2021 - 10/27/2021
 ibutton.early.2 = ibutton.hourly.early[c(1312:1815),]
@@ -121,7 +123,7 @@ new.all.hourtemps = rbind(ibutton.6,hour.temps)
 #### Calculate chilling hours, Utah Chill units, Chill portions, Growing degree hours ####
 
 # ends on 6/22/22
-hour.temps=read.csv("./Germination.Fitness/Formatted.Data/transplant.all.hourtemps.csv", row.names = 1)
+hour.temps=read.csv("./transplant.all.hourtemps.csv", row.names = 1) # generated above
 
 cohort.1.chill=chilling(hourtemps=hour.temps, Start_JDay = 280, End_JDay = 173)
 cohort.2.chill=chilling(hourtemps=hour.temps, Start_JDay = 301, End_JDay = 173)
@@ -201,7 +203,7 @@ heat.hours.output=heat.hour.2[,c(1,3:13)]
 # formula: (Temperature - base) *d_range when T > base otherwise 0
 # called thermal progress toward flowering in Appendix A, Burghardt et al. 2015
 
-heat.hours.output=read.csv("./Germination.Fitness/Formatted.Data/temp.daylight.hours.csv", row.names = 1)
+heat.hours.output=read.csv("./Germination.Fitness/Formatted.Data/temp.daylight.hours.csv", row.names = 1) # generated above
 
 cohort.1.PTU = sum(ifelse(heat.hours.output[,8] - 4 > 0, (heat.hours.output[,8] - 4)*heat.hours.output$d.hours, 0))
 # 50734.07, Dates:10/07/21-6/22/22
@@ -242,7 +244,7 @@ cohort.8.PTU = sum(ifelse(heat.hours.output[c(1969:3625),8] - 4 > 0, (heat.hours
 
 #### Figure S2 ####
 
-cohort.conditions=read.csv("./Germination.Fitness/Formatted.Data/cohort.growing.conditions.csv")
+cohort.conditions=read.csv("./Germination.Fitness/Raw.Data/cohort.growing.conditions.csv")
 long.conditions = subset(cohort.conditions, cohort.conditions$Season.Length == "long")
 long.conditions$cohort.date = c("07-Oct","28-Oct","18-Nov","09-Dec",
                                 "30-Dec","27-Jan","24-Feb","24-Mar")
@@ -274,7 +276,7 @@ all_daylengths.3 = all_daylengths.2[c(1:173,280:365),]
 
 # write.csv(all_daylengths.3, file = "./Germination.Fitness/Formatted.Data/daylengths.csv")
 
-daylengths = read.csv("./Germination.Fitness/Formatted.Data/daylengths.csv", row.names = 1)
+daylengths = read.csv("./Germination.Fitness/Formatted.Data/daylengths.csv", row.names = 1) # generated above
 daylengths$JDay.fact = as.factor(daylengths$JDay)
 
 Figure_S2B = ggplot(daylengths, aes(x = fct_inorder(JDay.fact))) +
@@ -288,10 +290,10 @@ Figure_S2B
 
 #### Temperature in Screenhouse ####
 
-# get historical and comtemporary temps for species from the field
+# get historical and contemporary temps for species from the field
 # do up to 2015 because 2016 only has up until month 9 (25 years of values)
 
-flint.data.mothly = read.csv("~/Library/CloudStorage/Box-Box/StreptanthusDimensions/FlintBCM/HTG_climate_data.csv") %>% 
+flint.data.mothly = read.csv("./HTG_climate_data.csv") %>% 
   filter(id %in% c("CAAN1","CAAN2","CACO1","CAIN3","CAIN4","STBR3", "STDI","STDR2",
                    "STGL1","STIN","STPO1","STTO-TM2")) %>%
   mutate(tmean=(tmin+tmax)/2) %>%
@@ -332,7 +334,7 @@ flint.data.historical$upper.bound = flint.data.historical$historical.tmean + fli
 # weather.station.temp.csv is compiled from data in .txt files found in ./Germination.Fitness/Raw.Data/Davis.Climate
 # data downloaded from: https://atm.ucdavis.edu/weather/uc-davis-weather-climate-station
 
-weather.station.dat = read.csv("./Germination.Fitness/Formatted.Data/weather.station.temp.csv")
+weather.station.dat = read.csv("./weather.station.temp.csv")
 weather.station.dat$Max.2m.C = fahrenheit.to.celsius(weather.station.dat$Max.2m, round = 2)
 weather.station.dat$Min.2m.C= fahrenheit.to.celsius(weather.station.dat$Min.2m, round = 2)
 weather.station.dat$Max.15m.C = fahrenheit.to.celsius(weather.station.dat$Max.15m, round = 2)
@@ -348,10 +350,9 @@ station.average = weather.station.dat %>%
             Average.15m = mean(Mean.15m.C, na.rm = TRUE),
             SD.15m = sd(Mean.15m.C, na.rm = TRUE))
 
-
 #### End of Season Determination ####
 
-prism.data=read.csv("./Germination.Fitness/Formatted.Data/prism.data.1991_2020.csv",header=T) %>%
+prism.data=read.csv("./prism.data.1991_2020.csv",header=T) %>%
   filter(!Name %in% c("CAAM","STTO_BH"))
 prism.data[,4]=prism.data$ppt..inches.*25.4
 colnames(prism.data)[4]="ppt.mm"
@@ -382,40 +383,39 @@ quantile(month.averg.all$mean.2)
 
 ### Pollination ####
 
-caan1.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 CAAN1 Pollination Datasheet.xlsx", skip = 1)
+caan1.poll = read.csv("./Germ Fitness 2.0 CAAN1 Pollination Datasheet.csv", skip=1, na.strings=c("","NA"))
 caan.totals = as.data.frame(unlist(apply(caan1.poll[,c(6:48)], 2, table)))
 # 5 out of 43 (12%) had only 2 pollinators, all others 3 or more
-caan2.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 CAAN2 Pollination Datasheet.xlsx", skip = 1)
+caan2.poll = read.csv("./Germ Fitness 2.0 CAAN2 Pollination Datasheet.csv", skip = 1, na.strings=c("","NA"))
 caan.totals = as.data.frame(unlist(apply(caan2.poll[,c(6:39)], 2, table)))
 # 5 out of 34 (15%) had only 2 pollinators, all others 3 or more
-caco.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 CACO Pollination Datasheet.xlsx", skip = 1)
+caco.poll = read.csv("./Germ Fitness 2.0 CACO Pollination Datasheet.csv", skip = 1, na.strings=c("","NA"))
 caco.totals = as.data.frame(unlist(apply(caco.poll[,c(6:40)], 2, table)))
 # 4 out of 35 (11%) had only 2 pollinators, all others 3 or more
-cain3.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 CAIN3 Pollination Datasheet.xlsx", skip = 1)
+cain3.poll = read.csv("./Germ Fitness 2.0 CAIN3 Pollination Datasheet.csv", skip = 1, na.strings=c("","NA"))
 cain3.totals = as.data.frame(unlist(apply(cain3.poll[,c(6:40)], 2, table)))
 # 8 out of 35 (23%) had only 2 pollinators, all others 3 or more
-cain4.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 CAIN4 Pollination Datasheet.xlsx", skip = 1)
+cain4.poll = read.csv("./Germ Fitness 2.0 CAIN4 Pollination Datasheet.csv", skip = 1, na.strings=c("","NA"))
 cain4.totals = as.data.frame(unlist(apply(cain4.poll[,c(6:43)], 2, table)))
 # 1 out of 38 (3%) had only 2 pollinators, all others 3 or more
-stbr.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 STBR3 Pollination Datasheet.xlsx", skip = 1)
+stbr.poll = read.csv("./Germ Fitness 2.0 STBR3 Pollination Datasheet.csv", skip = 1, na.strings=c("","NA"))
 stbr.totals = as.data.frame(unlist(apply(stbr.poll[,c(6:31)], 2, table)))
 # 4 out of 26 (15%) had only 2 pollinators, all others 3 or more
-stdi.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 STDI Pollination Datasheet.xlsx", skip = 1)
+stdi.poll = read.csv("./Germ Fitness 2.0 STDI Pollination Datasheet.csv", skip = 1, na.strings=c("","NA"))
 stdi.totals = as.data.frame(unlist(apply(stdi.poll[,c(6:43)], 2, table)))
 # 1 out of 38 (3%) had only 2 pollinators, all others 3 or more
-stdr.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 STDR2 Pollination Datasheet.xlsx", skip = 1)
+stdr.poll = read.csv("./Germ Fitness 2.0 STDR2 Pollination Datasheet.csv", skip = 1, na.strings=c("","NA"))
 stdr.totals = as.data.frame(unlist(apply(stdr.poll[,c(6:35)], 2, table)))
 # 2 out of 30 (7%) had only 2 pollinators, all others 3 or more
-stgl.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 STGL1 Pollination Datasheet.xlsx", skip = 1)
+stgl.poll = read.csv("./Germ Fitness 2.0 STGL1 Pollination Datasheet.csv", skip = 1, na.strings=c("","NA"))
 stgl.totals = as.data.frame(unlist(apply(stgl.poll[,c(6:36)], 2, table)))
 # 1 out of 31 (3%) had only 2 pollinators, all others 3 or more
-stin.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 STIN Pollination Datasheet.xlsx", skip = 1)
+stin.poll = read.csv("./Germ Fitness 2.0 STIN Pollination Datasheet.csv", skip = 1, na.strings=c("","NA"))
 stin.totals = as.data.frame(unlist(apply(stin.poll[,c(6:59)], 2, table)))
 # 0 out of 54 (0%) had only 2 pollinators, all others 3 or more
-stpo.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 STPO Pollination Datasheet.xlsx", skip = 1)
+stpo.poll = read.csv("./Germ Fitness 2.0 STPO Pollination Datasheet.csv", skip = 1, na.strings=c("","NA"))
 stpo.totals = as.data.frame(unlist(apply(stpo.poll[,c(6:32)], 2, table)))
 # 1 out of 27 (4%) had only 2 pollinators, all others 3 or more
-stto.poll = read_xlsx("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Pollination Datasheets/Germ Fitness 2.0 STTO-TM2 Pollination Datasheet.xlsx", skip = 1)
+stto.poll = read.csv("./Germ Fitness 2.0 STTO-TM2 Pollination Datasheet.csv", skip = 1, na.strings=c("","NA"))
 stto.totals = as.data.frame(unlist(apply(stto.poll[,c(6:30)], 2, table)))
 # 3 out of 25 (12%) had only 2 pollinators, all others 3 or more
-

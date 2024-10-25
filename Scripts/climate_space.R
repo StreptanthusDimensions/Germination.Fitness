@@ -1,18 +1,17 @@
 # script to plot populations included in the study in the climate space of each species
 
+# Users, please specify your own path to load data in this script.
+
+
 # load libraries
-library(tidyverse)
-library(ggbiplot)
-library(cowplot)
+library(tidyverse) # version 2.0.0
+library(cowplot) # version 1.1.1
 
 
 #### Population in Climate Space ####
-## code and data here from Herbarium Study: https://ucdavis.app.box.com/folder/126809089300
 
-setwd("~/Library/CloudStorage/Box-Box/StreptanthusDimensions/HerbariumStudy/merged_data")
-
-locs = read.csv("georeferencing_clean.csv")
-climate = read.csv("all_herbarium_climate.csv") %>%
+locs = read.csv("./georeferencing_clean.csv")
+climate = read.csv("./all_herbarium_climate.csv") %>%
   mutate(type = "herbarium")
 
 climsummaries = climate %>% 
@@ -27,7 +26,7 @@ climsummaries = climate %>%
 
 ##### Get climate variables of populations from Flint ####
 
-flint.data = read.csv("~/Library/CloudStorage/Box-Box/StreptanthusDimensions/FlintBCM/HTG_climate_data.csv")
+flint.data = read.csv("./HTG_climate_data.csv")
 
 flint.data.2 = flint.data %>%
   filter(id %in% c("CAAN1","CAAN2","CACO1","CAIN3","CAIN4","STBR3", "STDI","STDR2",
@@ -235,8 +234,6 @@ climate.plots = plot_grid(stto.climate,stdi.climate,stpo.climate,stdr.climate,
 climate.plots.legend = plot_grid(stto.climate.legend,stdi.climate,stpo.climate,stdr.climate,
                                  stbr.climate,stin.climate,stgl.climate,caan.climate,
                                  caco.climate,cain.climate)
-
-setwd("/Users/sjworthy/Documents/GitHub/GermPhenoFitness")
 
 #ggsave("Germination.Fitness/Results/climate.plots.no.legend.pdf", height = 10, width = 12)
 #ggsave("Germination.Fitness/Results/climate.plots.legend.pdf", height = 10, width = 12)

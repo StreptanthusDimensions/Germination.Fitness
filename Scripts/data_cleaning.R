@@ -1,8 +1,9 @@
 # Script to clean Germ Fitness data
 
-library(tidyverse)
-library(readxl)
-library(lubridate)
+# Users, please specify your own path to load data in this script. All files are in the Raw data folder.
+
+library(tidyverse) # version 2.0.0
+library(lubridate) # version 1.9.2
 
 # files to merge 
 # 1. short season reproductive data
@@ -14,7 +15,7 @@ library(lubridate)
 # 7. fruit counts, seed counts and weights
 
 # Short season reproductive survey
-repro.survey.short = read.csv('./Germination.Fitness/Raw.Data/Germ Fitness Short Season Reproductive Success Survey Datasheets.final.csv')
+repro.survey.short = read.csv('./Germ Fitness Short Season Reproductive Success Survey Datasheets.final.csv')
 colnames(repro.survey.short)[6]="short.repro.census.date"
 colnames(repro.survey.short)[7]="short.flower.bud.count"
 colnames(repro.survey.short)[8]="short.mature.fruit.count"
@@ -23,7 +24,7 @@ colnames(repro.survey.short)[10]="short.STTO.BH.height.cm"
 colnames(repro.survey.short)[11]="short.repro.notes"
 
 # Long season reproductive survey
-repro.survey.long = read.csv('./Germination.Fitness/Raw.Data/Germination Fitness Long Season Reproductive Success Survey Datasheet.final.csv')
+repro.survey.long = read.csv('./Germination Fitness Long Season Reproductive Success Survey Datasheet.final.csv')
 colnames(repro.survey.long)[6]="long.repro.census.date"
 colnames(repro.survey.long)[7]="long.flower.bud.count"
 colnames(repro.survey.long)[8]="long.mature.fruit.count"
@@ -35,7 +36,7 @@ repro.survey.merge = left_join(repro.survey.long, repro.survey.short, by=c("Pop"
                                                                            "Block","Position","Cohort"))
 # Transplant height
 
-transplant.height=read.csv('./Germination.Fitness/Raw.Data/Transplant.height.final.csv')
+transplant.height=read.csv('./Transplant.height.final.csv')
 
 # covert height to cm to match units of other height
 transplant.height$transplant.height.cm=transplant.height$Height..mm./10
@@ -53,7 +54,7 @@ merge.2 = left_join(repro.survey.merge, transplant.height.2, by=c("Pop","Bench",
                                                                   "Position","Cohort"))
 
 # mid-season height data #
-mid.height=read.csv('./Germination.Fitness/Raw.Data/Midseason.height.survey.final.csv')
+mid.height=read.csv('./Midseason.height.survey.final.csv')
 colnames(mid.height)[6]="Mid.Season.Height.Pheno.Stage"
 colnames(mid.height)[7]="Mid.Season.Height.cm"
 colnames(mid.height)[8]="Mid.Season.Height.Notes"
@@ -73,7 +74,7 @@ merge.4=left_join(merge.3, phenology, by=c("Pop","Bench","Position","Cohort","Bl
 
 # biomass data #
 
-biomass=read.csv('./Germination.Fitness/Raw.Data/Germ_Fitness_round_2_biomass_data_entry_final.csv')
+biomass=read.csv('./Germ_Fitness_round_2_biomass_data_entry_final.csv')
 biomass$Envelope.1.Biomass..g.= as.numeric(biomass$Envelope.1.Biomass..g.)
 colnames(biomass)[5]="biomass.AGB.envelope1.g"
 colnames(biomass)[6]="biomass.AGB.envelope2.g"
@@ -95,7 +96,7 @@ merge.5=left_join(merge.4, biomass.2, by=c("Pop","Bench","Position","Cohort"))
 # 3 dates per cohort: planting date, transplant data, randomization date
 # This data is in the raw data file
 
-planted = read.csv("./Germination.Fitness/Raw.Data/Germ Fitness 2.0 Timeline.csv")
+planted = read.csv("./Germ Fitness 2.0 Timeline.csv")
 planted = mutate(planted, plant.date = mdy(Planting.Deployment.Date))
 planted = mutate(planted, transplant.date = mdy(Cone.Transplant.Date))
 planted = mutate(planted, rando.date = mdy(Randomization.Date))
@@ -126,7 +127,7 @@ seeds.2=seeds[,c(1:4,21:23)]
 
 merge.7=left_join(merge.6, seeds.2, by=c("Pop","Bench","Position","Cohort"))
 
-write.csv(merge.7, file="./Germination.Fitness/Formatted.Data/final.data.temp.csv")
+write.csv(merge.7, file="./final.data.temp.csv")
 
 # Issue manually removed from final.data.temp to make final.data.csv
 # remove STGL1	4	7	D08, it was pulled b/c it was a weed

@@ -4,12 +4,14 @@
 # This script analyses the fitness metrics: flowering probability, number of seeds, total seed mass, year 1 fitness
 # Script produces figures 2,3,S4,S6,S7
 
+# Users, please specify your own path to load data in this script.
+
 # libraries
-library(tidyverse)
-library(lubridate)
-library(MASS) #for glm.nb
-library(emmeans)
-library(car) #for logit function
+library(tidyverse) # version 2.0.0
+library(lubridate) # version 1.9.2 
+library(MASS) # for glm.nb version 7.3.58.2
+library(emmeans) # version 1.8.7
+library(car) # for logit function version 3.1.2
 
 # inverse logit function
 inv.logit <- function(f,a) {
@@ -18,7 +20,7 @@ inv.logit <- function(f,a) {
 }
 
 # load data
-fitdat = read.csv("Germination.Fitness/Formatted.Data/final.data.csv")
+fitdat = read.csv("./final.data.csv") # final.data.csv generated using data_cleaning.R script
 
 fitdat = fitdat %>%
   mutate(long.flower.bud.count = na_if(long.flower.bud.count, "N/A"), #need to remove any N/A in data, in lots of columns
@@ -152,7 +154,7 @@ pflwr_weighted_emtrends
 
 # write.csv(pflwr_weighted_emtrends$emtrends, file = "./Germination.Fitness/Results/prob.flower.weighted.emtrends.csv")
 
-#### Model of probability of flowering with weights final ####
+#### Model of probability of flowering with weights FINAL ####
 
 # generalized linear model with binomial error and logit link
 # can't include transplant height as a predictor since now data is successes/failures
@@ -312,7 +314,7 @@ pflwr.plot.2
 
 #ggsave("./Germination.Fitness/Results/Prob.flower_byspecies_glm.all.pts.pdf", height = 10, width = 12)
 
-#### Figure 2 Revised ####
+#### Figure 2 REVISED ####
 # new data to predict 
 mylist <- list(transplant.daySept1= seq(min(fitdat$transplant.daySept1, na.rm=T),
                                         max(fitdat$transplant.daySept1, na.rm=T)+2, by=10), 
@@ -378,7 +380,7 @@ sizebud_emtrends
 
 # write.csv(sizebud_emtrends$emtrends, file = "./Germination.Fitness/Results/bud.size.emtrends.csv")
 
-#### Model of size at first bud final ####
+#### Model of size at first bud FINAL ####
 # filter for individuals that did bud
 buddat = fitdat %>%
   filter(bud_yn == 1)
@@ -582,7 +584,7 @@ sizebud.plot.2
 
 #ggsave("./Germination.Fitness/Results/bud.size.all.pts.pdf", height = 10, width = 12)
 
-#### Figure S4 Revised ####
+#### Figure S4 REVISED ####
 mylist <- list(transplant.daySept1= seq(min(fitdat$transplant.daySept1, na.rm=T),
                                         max(fitdat$transplant.daySept1, na.rm=T)+2, by=10), 
                Species=c("CAAN","CACO","CAIN","STBR", "STDI","STDR","STGL","STIN","STPO","STTO"))
@@ -653,7 +655,7 @@ seednb_emtrends
 
 # write.csv(seednb_emtrends$emtrends, file = "./Germination.Fitness/Results/seed_number.emtrends.csv")
 
-#### Model of number of seeds final ####
+#### Model of number of seeds FINAL ####
 flwrdat = fitdat %>%
   filter(flowered == 1)
 summary(flwrdat)
@@ -825,7 +827,7 @@ seedcount.plot.2
 
 #ggsave("./Germination.Fitness/Results/seed.number.all.pts.pdf", height = 10, width = 12)
 
-#### Figure 3 Revised ####
+#### Figure 3 REVISED ####
 
 flwrdat3 = flwrdat2 %>%
   mutate(sigreg = if_else(Species %in% c("STDR", "STPO", "STGL", "STTO"), "Nonignificant", "Significant"))%>%
@@ -896,7 +898,7 @@ seedmass_emtrends
 
 # write.csv(seedmass_emtrends$emtrends, file = "./Germination.Fitness/Results/seed.mass.emtrends.csv")
 
-#### Model of total seed mass final ####
+#### Model of total seed mass FINAL ####
 
 flwrdat = fitdat %>%
   filter(flowered == 1)
@@ -1053,7 +1055,7 @@ seedmass.plot.2
 
 #ggsave("./Germination.Fitness/Results/seed.mass.all.pts.pdf", height = 10, width = 12)
 
-#### Figure S6 Revised ####
+#### Figure S6 REVISED ####
 
 flwrdat3 = flwrdat2 %>%
   mutate(sigreg = if_else(Species %in% c("CAAN", "CACO", "STDI", "STIN"), "Significant", "Nonsignificant"))%>%
@@ -1122,7 +1124,7 @@ year1_emtrends
 
 # write.csv(year1_emtrends$emtrends, file = "./Germination.Fitness/Results/year1fit.emtrends.csv")
 
-#### Model of first year fitness final ####
+#### Model of first year fitness FINAL ####
 # calculate first year fitness
 fitdat = fitdat %>%
   mutate(year1fit = flowered * long.seed.counts)
@@ -1266,7 +1268,7 @@ year1.plot.2
 #ggsave("./Germination.Fitness/Results/year1fitness.allpoints.pdf", height = 10, width = 12)
 
 
-#### Figure S7 Revised ####
+#### Figure S7 REVISED ####
 
 fitdat3 = fitdat2 %>%
   mutate(sigreg = if_else(Species %in% c("STDR", "STGL", "STPO"), "Nonsignificant", "Significant"))%>%

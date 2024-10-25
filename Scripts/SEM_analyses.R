@@ -3,23 +3,28 @@
 
 # This script fits and plots structural equation models for time to first bud and number of seeds
 
+# Users, please specify your own path to load data in this script.
+
 # https://jslefche.github.io/sem_book/coefficients.html
 # https://cran.r-project.org/web/packages/DiagrammeR/DiagrammeR.pdf
 
 # libraries
-library(lubridate)
-library(tidyverse)
-library(piecewiseSEM)
-library(MASS)
-library(semEff)
-library(DiagrammeR)
-library(rsvg)
-library(DiagrammeRsvg)
+library(lubridate) # version 1.9.2
+library(tidyverse) # version 2.0.0
+library(piecewiseSEM) # version 2.3.0, installed from source devtools::install_github("jslefche/piecewiseSEM@devel")
+library(MASS) # version 7.3.58.2
+library(rsvg) # version 2.6.0
+library(DiagrammeRsvg) # version 0.1
 
 #### Prepare the Data ####
 
-pheno.conditions = read.csv("./Germination.Fitness/Formatted.Data/final.data.pheno.conditions.csv", row.names = 1)
-cohort.conditions = read.csv("./Germination.Fitness/Formatted.Data/cohort.growing.conditions.csv")
+pheno.conditions = read.csv("./final.data.csv")
+# remove CAAM because not in study
+pheno.conditions=subset(pheno.conditions, !(Pop %in% "CAAM")) # no CAAM in study
+# remove BH because doesn't have phenology
+pheno.conditions=subset(pheno.conditions, !(Pop %in% "STTO_BH"))
+
+cohort.conditions = read.csv("./cohort.growing.conditions.csv")
 
 # calculate difference in time since September-01-2021
 
@@ -182,8 +187,6 @@ cohort.sd.yhat <- sqrt(var(predict(caan1.seed.counts.glm.nb.new, type = "link"))
 coef(caan1.seed.counts.glm.nb.new)[2]*sd(caan1.cohort.new$day2bud) / cohort.sd.yhat
 coef(caan1.seed.counts.glm.nb.new)[3]*sd(caan1.cohort.new$transplantjul.std) / cohort.sd.yhat
 coef(caan1.seed.counts.glm.nb.new)[4]*sd(caan1.cohort.new$transplant.height.cm) / cohort.sd.yhat
-
-
 
 #### CAAN2 ####
 
