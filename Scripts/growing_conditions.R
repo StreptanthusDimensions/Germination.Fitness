@@ -242,7 +242,7 @@ cohort.8.PTU = sum(ifelse(heat.hours.output[c(1969:3625),8] - 4 > 0, (heat.hours
 
 # values manually added to cohort.growing.conditions.csv
 
-#### Figure S2 ####
+#### Figure S3 ####
 
 cohort.conditions=read.csv("./Germination.Fitness/Raw.Data/cohort.growing.conditions.csv")
 long.conditions = subset(cohort.conditions, cohort.conditions$Season.Length == "long")
@@ -352,7 +352,7 @@ station.average = weather.station.dat %>%
 
 #### End of Season Determination ####
 
-prism.data=read.csv("./prism.data.1991_2020.csv",header=T) %>%
+prism.data=read.csv("./Germination.Fitness/Raw.Data/prism.data.1991_2020.csv",header=T) %>%
   filter(!Name %in% c("CAAM","STTO_BH"))
 prism.data[,4]=prism.data$ppt..inches.*25.4
 colnames(prism.data)[4]="ppt.mm"
@@ -380,6 +380,38 @@ month.averg.all = month.averg %>%
   dplyr::summarise(mean.2 = mean(mean))
 
 quantile(month.averg.all$mean.2)
+
+#### Figure S2 ####
+
+prism.data=read.csv("./Germination.Fitness/Raw.Data/prism.data.1991_2020.csv",header=T) %>%
+  filter(!Name %in% c("CAAM","STTO_BH"))
+prism.data[,4]=prism.data$ppt..inches.*25.4
+colnames(prism.data)[4]="ppt.mm"
+
+# remove blank rows
+prism.data.2 = prism.data[rowSums(is.na(prism.data)) == 0,]
+
+# add month column
+prism.data.2$Month = rep(1:12,360)
+prism.data.2$Month = as.factor(prism.data.2$Month)
+
+prism.data.3 = prism.data.2 %>%
+  mutate(Species = dplyr::recode(Name, "CAAN1" = "CAAN1", "CAAN2" = "CAAN2","CAIN3" = "CAIN3", "CAIN4" = "CAIN4",
+                                 "CACO1" = "CACO", 
+                                 "STTO_TM2" = "STTO", "STDR2" = "STDR", "STPO1" = "STPO", "STBR3" = "STBR", 
+                                 "STDI" = "STDI", "STGL1" = "STGL", "STIN" = "STIN")) %>%
+  mutate(phy_order = fct_relevel(Species, "STTO", "STDI", "STPO", "STDR", "STBR", "STIN", 
+                                 "STGL", "CAAN1", "CAAN2","CACO", "CAIN3", "CAIN4")) 
+
+rain.fig = ggplot(prism.data.3, aes(x = Month, y = ppt.mm, group = Month))+
+  geom_boxplot()+
+  theme_classic(base_size = 22)+
+  labs(y = "30-year (1991-2020) Monthly Precipitation (mm)") + 
+  facet_wrap(~phy_order)
+rain.fig
+
+#ggsave("Germination.Fitness/Results/rain.fig.pdf", height = 10, width = 12)
+#ggsave("Germination.Fitness/Results/rain.fig.png", height = 10, width = 12)
 
 ### Pollination ####
 

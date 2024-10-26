@@ -331,7 +331,7 @@ phylo_plot.3
 
 # ggsave("./Germination.Fitness/Results/color.gray.T2B.Seed.slopes.ontree.pc1.final.pdf", height = 10, width = 12)
 
-#### Figure S8 ####
+#### Figure S9 ####
 
 all.phylo <- ggtree::read.tree("./tree_pruned.new")
 
@@ -429,7 +429,7 @@ phylo_plot.3.supp
 
 # ggsave("./Germination.Fitness/Results/color.gray.supp.slopes.ontree.pdf", height = 10, width = 12)
 
-#### Figure S8 REVISED ####
+#### Figure S9 REVISED ####
 
 all.phylo <- ggtree::read.tree("./tree_pruned.new")
 
@@ -622,7 +622,7 @@ summary(d2bud.yr1fit.pgls.pop) # not-significant, p = 0.44
 d2bud.yr1fit.pgls.pop = pgls(days.2.bud.CAAN2.CAIN4~year1fit.CAAN2.CAIN4, data=comp.data.1)
 summary(d2bud.yr1fit.pgls.pop) # not-significant, p = 0.61
 
-#### Figure S10 ####
+#### Figure S11 ####
 
 d2bud.seed.num.pgls.plot= ggplot(all.slopes, aes(y = days.2.bud, x = seed_num_nb))+
   geom_point(size=2)+
@@ -647,7 +647,7 @@ d2bud.yr1fit.pgls.plot= ggplot(all.slopes, aes(y = days.2.bud, x = year1fit))+
 d2bud.yr1fit.pgls.plot
 #ggsave("Germination.Fitness/Results/days2bud.yr1fit.pgls.pdf", height = 7, width = 7)
 
-#### Figure S10 REVISED ####
+#### Figure S11 REVISED ####
 
 d2bud.seed.num.pgls.plot= ggplot(all.slopes, aes(y = days.2.bud.final, x = seed_num_nb.final))+
   geom_point(size=4)+
@@ -749,7 +749,7 @@ summary(pheno.slopes.year1fit.pgls.pop) # not-significant, p = 0.93
 pheno.slopes.year1fit.pgls.pop = pgls(year1fit.CAAN2.CAIN4~pheno.slopes.CAAN2.CAIN4, data=comp.data)
 summary(pheno.slopes.year1fit.pgls.pop) # not-significant, p = 0.50
 
-#### Figure S9 ####
+#### Figure S10 ####
 
 # no line b/c not significant
 pheno.slopes.seed.num.pgls.plot= ggplot(all.slopes, aes(y = seed_num_nb, x = pheno.slopes))+
@@ -768,7 +768,7 @@ pheno.slopes.year1fit.pgls.plot
 
 #ggsave("Germination.Fitness/Results/yr1fit.pheno.slopes.pgls.pdf", height = 7, width = 7)
 
-#### Figure S9 REVISED ####
+#### Figure S10 REVISED ####
 
 # no line b/c not significant
 pheno.slopes.seed.num.pgls.plot= ggplot(all.slopes, aes(y = seed_num_nb.final, x = pheno.slopes))+

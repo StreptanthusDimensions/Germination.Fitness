@@ -540,7 +540,7 @@ sizeflwr_emtrends.nopop.ss
 #write.csv(sizeflwr_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Flower/flower.size.emtrends.CAAN2.CAIN4.csv")
 
 
-#### Figure S4 ####
+#### Figure S5 ####
 mylist <- list(transplant.daySept1= seq(min(fitdat$transplant.daySept1, na.rm=T),
                                         max(fitdat$transplant.daySept1, na.rm=T)+2, by=10), 
                Species=c("CAAN","CACO","CAIN","STBR", "STDI","STDR","STGL","STIN","STPO","STTO"))
@@ -584,7 +584,7 @@ sizebud.plot.2
 
 #ggsave("./Germination.Fitness/Results/bud.size.all.pts.pdf", height = 10, width = 12)
 
-#### Figure S4 REVISED ####
+#### Figure S5 REVISED ####
 mylist <- list(transplant.daySept1= seq(min(fitdat$transplant.daySept1, na.rm=T),
                                         max(fitdat$transplant.daySept1, na.rm=T)+2, by=10), 
                Species=c("CAAN","CACO","CAIN","STBR", "STDI","STDR","STGL","STIN","STPO","STTO"))
@@ -1009,7 +1009,7 @@ seedmass_emtrends.nopop.ss
 
 #write.csv(seedmass_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/seed.mass.emtrends.CAAN2.CAIN4.csv")
 
-#### Figure S6 ####
+#### Figure S7 ####
 
 flwrdat3 = flwrdat2 %>%
   mutate(sigreg = if_else(Species %in% c("CAAN", "CACO", "STDI", "STIN"), "Significant", "Nonsignificant"))%>%
@@ -1055,7 +1055,7 @@ seedmass.plot.2
 
 #ggsave("./Germination.Fitness/Results/seed.mass.all.pts.pdf", height = 10, width = 12)
 
-#### Figure S6 REVISED ####
+#### Figure S7 REVISED ####
 
 flwrdat3 = flwrdat2 %>%
   mutate(sigreg = if_else(Species %in% c("CAAN", "CACO", "STDI", "STIN"), "Significant", "Nonsignificant"))%>%
@@ -1233,7 +1233,7 @@ year1_emtrends.nopop.ss
 
 #write.csv(year1_emtrends.nopop.ss$emtrends, file = "./Germination.Fitness/Results/Pop.Sensitivity/year1fit.emtrends.CAAN2.CAIN4.csv")
 
-#### Figure S7 ####
+#### Figure S8 ####
 
 fitdat3 = fitdat2 %>%
   mutate(sigreg = if_else(Species %in% c("STDR", "STGL", "STPO"), "Nonsignificant", "Significant"))%>%
@@ -1268,7 +1268,7 @@ year1.plot.2
 #ggsave("./Germination.Fitness/Results/year1fitness.allpoints.pdf", height = 10, width = 12)
 
 
-#### Figure S7 REVISED ####
+#### Figure S8 REVISED ####
 
 fitdat3 = fitdat2 %>%
   mutate(sigreg = if_else(Species %in% c("STDR", "STGL", "STPO"), "Nonsignificant", "Significant"))%>%

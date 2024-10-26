@@ -652,7 +652,7 @@ anova(bud.sept1.model.nopop.ss)
 
 #write.csv(bud.sept1.model.nopop.ss.emm$emtrends, file="./Germination.Fitness/Results/Pop.Sensitivity/bud.sept1.pheno.emtrends.CAAN2.CAIN4.csv")
 
-#### Figure S3 ####
+#### Figure S4 ####
 
 # new data for prediction
 mylist <- list(transplantjul.std=unique(final.data.5$transplantjul.std), 
@@ -689,7 +689,7 @@ bud_daySep1.plot.2
 #ggsave("Germination.Fitness/Results/bud.date.sept1.pheno.plot.all.pts.pdf", height = 10, width = 12)
 
 
-#### Figure S3 REVISED ####
+#### Figure S4 REVISED ####
 
 # new data for prediction
 mylist <- list(transplantjul.std=unique(final.data.5$transplantjul.std), 
@@ -940,7 +940,7 @@ total.numb.3$flower.proportion = total.numb.3$flowered/total.numb.3$n
 # stacked bar chart with flowering proportion on bottom
 # made it long format so read back in (proportions.long.csv)
 
-#### Figure S5 ####
+#### Figure S6 ####
 # read in data
 proportions = read.csv("./proportions.long.csv") # found in the results folder and generated in the above chuck of code
 
