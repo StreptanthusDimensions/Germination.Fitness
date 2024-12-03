@@ -5,11 +5,17 @@ The timing of early life cycle events has cascading effects on phenology and fit
 
 ## Authors
 
--   
+-   Samantha J. Worthy
+-   Sarah R. Ashlock
+-   Arquel Miller
+-   Julin N. Maloof
+-   Sharon Y. Strauss
+-   Jennifer R. Gremer
+-   Johanna Schmitt
 
 ### Corresponding authors contact
 
--   
+-   sjworthy@ucdavis.edu or sworthy2@unl.edu
 
 ### Software version and package information
 
